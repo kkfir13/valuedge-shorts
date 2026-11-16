@@ -56,6 +56,10 @@ export function drawFx(g, kind, t, w, h) {
     g.save(); g.strokeStyle = "#a8352c"; g.lineWidth = 5; for (let i = -3; i <= 3; i++) { g.beginPath(); g.moveTo(cx + i * w * 0.09, by - h * 0.5); g.lineTo(cx + i * w * 0.1, by - 6); g.stroke(); } g.restore();
     p.poly([[cx - w * 0.42, by - h * 0.14], [cx + w * 0.42, by - h * 0.14], [cx + w * 0.42, by + h * 0.04], [cx - w * 0.42, by + h * 0.04]], "#b83c32", 9);
     p.ell(cx, by - h * 0.64, w * 0.11, h * 0.11, "#f4f1ea", 8);
+  } else if (kind === "spice") { // a dried mace/nutmeg pod: red-orange lacy husk around a brown seed
+    p.ol = 7; p.ell(w / 2, h / 2, w * 0.36, h * 0.4, "#c8452a", 8);
+    g.save(); g.strokeStyle = "#f08a3c"; g.lineWidth = 9; for (let i = -2; i <= 2; i++) { g.beginPath(); g.moveTo(w / 2 + i * w * 0.08, h * 0.16); g.quadraticCurveTo(w / 2 + i * w * 0.16, h / 2, w / 2 + i * w * 0.07, h * 0.84); g.stroke(); } g.restore();
+    p.ell(w / 2, h / 2, w * 0.16, h * 0.18, "#6b3f22", 6);
   } else if (kind === "tape") { // ticker tape strip
     p.ol = 4; p.poly([[6, 14], [w - 6, 8], [w - 6, h - 14], [6, h - 8]], "#f6f1df", 5);
     g.fillStyle = "#3d3a44"; g.font = `bold ${Math.round(h * 0.42)}px "Courier New", monospace`; g.textAlign = "left"; g.textBaseline = "middle";

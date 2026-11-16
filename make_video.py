@@ -22,6 +22,7 @@ SHOTS = {"intro", "wide", "work", "closeup", "gift", "empty_chair", "vault", "cr
 HITS_NEEDED = {"intro": 1, "closeup": 3, "gift": 1, "vault": 1, "crates": 3, "rock": 1, "grow": 1, "rain": 2, "finale": 1,
                "chart": 1, "ticker": 1, "bankrun": 1, "ship": 1, "stack": 3, "calendar": 1}
 LOCS = {"gas", "store", "street", "porch", "meadow", "city", "exchange", "harbor", "office"}
+ERAS = {"1600s", "1700s", "1800s", "1900s", "modern"}
 CAMS = {"push", "pull", "orbit", "low", "high", "dutch", "whip", "drift"}
 
 

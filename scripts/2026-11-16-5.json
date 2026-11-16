@@ -1,0 +1,151 @@
+{
+ "slug": "2026-11-16-5",
+ "title": "Paid in Spice",
+ "seed": 2,
+ "era": "1600s",
+ "narrator": "af_heart",
+ "hero": {
+  "jacket": "#2b2f3a",
+  "hair": "#6a4a2a",
+  "skin": "#f0c49c",
+  "hat": "tophat",
+  "moustache": "#6a4a2a"
+ },
+ "chart": {
+  "trend": "zero",
+  "label": "DIVIDEND"
+ },
+ "calendar": "1602",
+ "beats": [
+  {
+   "shot": "ship",
+   "text": "The very first stock in history paid nothing for almost a decade.",
+   "hit_words": [
+    "decade."
+   ],
+   "dir": "out",
+   "light": "golden",
+   "cam": "low"
+  },
+  {
+   "shot": "wide",
+   "text": "In sixteen-oh-two, the Dutch East India Company sold shares to anyone who wanted one.",
+   "hit_words": [],
+   "loc": "harbor",
+   "cam": "drift"
+  },
+  {
+   "shot": "closeup",
+   "text": "Merchants bought in, and so did ordinary townspeople.",
+   "hit_words": [
+    "Merchants",
+    "so",
+    "townspeople."
+   ],
+   "loc": "harbor",
+   "expr": "grin",
+   "cam": "push"
+  },
+  {
+   "shot": "chart",
+   "text": "Then they waited, and the dividend board stayed empty.",
+   "hit_words": [
+    "empty."
+   ],
+   "trend": "zero",
+   "label": "DIVIDEND"
+  },
+  {
+   "shot": "calendar",
+   "text": "One year passed, then another, and another.",
+   "hit_words": [
+    "another."
+   ],
+   "from": 1602,
+   "to": 1609
+  },
+  {
+   "shot": "crowd",
+   "text": "Shareholders grew restless, and the grumbling got louder every year.",
+   "hit_words": [],
+   "loc": "exchange",
+   "mood": "nervous",
+   "cam": "orbit"
+  },
+  {
+   "shot": "ship",
+   "text": "Meanwhile, the ships kept sailing home from Asia, heavy with cargo.",
+   "hit_words": [
+    "cargo."
+   ],
+   "dir": "in",
+   "cam": "drift"
+  },
+  {
+   "shot": "wide",
+   "text": "And the warehouses filled with pepper, cloves and mace.",
+   "hit_words": [],
+   "loc": "harbor",
+   "light": "dusk",
+   "cam": "pull"
+  },
+  {
+   "shot": "intro",
+   "text": "When the first dividend finally came, it wasn't paid in money.",
+   "hit_words": [
+    "money."
+   ],
+   "loc": "exchange",
+   "fx": "none",
+   "expr": "nervous",
+   "twist": true,
+   "cam": "dutch"
+  },
+  {
+   "shot": "vault",
+   "text": "It was paid in spice.",
+   "hit_words": [
+    "spice."
+   ],
+   "item": "spice"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "VOC IPO 1602, shares open to all residents",
+   "sources": [
+    "https://www.euronews.com/2025/04/13/how-a-dutch-trading-company-started-the-worlds-first-stock-exchange",
+    "https://borsaefinanza.it/primo-dividendo-compagnia-olandese-delle-indie-orientali/"
+   ]
+  },
+  {
+   "claim": "No dividends for almost a decade / eight years",
+   "sources": [
+    "https://www.euronews.com/2025/04/13/how-a-dutch-trading-company-started-the-worlds-first-stock-exchange",
+    "https://borsaefinanza.it/primo-dividendo-compagnia-olandese-delle-indie-orientali/"
+   ]
+  },
+  {
+   "claim": "First dividend paid in mace (spice), not cash",
+   "sources": [
+    "https://www.euronews.com/2025/04/13/how-a-dutch-trading-company-started-the-worlds-first-stock-exchange",
+    "https://borsaefinanza.it/primo-dividendo-compagnia-olandese-delle-indie-orientali/"
+   ]
+  },
+  {
+   "claim": "Later dividends also in kind (cloves); some shareholders refused payment in kind",
+   "sources": [
+    "https://www.euronews.com/2025/04/13/how-a-dutch-trading-company-started-the-worlds-first-stock-exchange",
+    "https://borsaefinanza.it/primo-dividendo-compagnia-olandese-delle-indie-orientali/",
+    "https://globalfinancialdata.com/the-first-and-the-greatest-the-rise-and-fall-of-the-united-east-india-company"
+   ]
+  }
+ ],
+ "caption": "In 1602 the Dutch East India Company let anyone buy a share. Then shareholders waited almost a decade for a payout.\n\nWhen the first dividend came, it wasn't cash. It was mace, a spice.\n\n#investinghistory #dividends #patience #longterminvesting #stockmarket\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "The First Stock in History Paid Its Dividend in Spice",
+ "sources": [
+  "https://www.euronews.com/2025/04/13/how-a-dutch-trading-company-started-the-worlds-first-stock-exchange",
+  "https://borsaefinanza.it/primo-dividendo-compagnia-olandese-delle-indie-orientali/",
+  "https://globalfinancialdata.com/the-first-and-the-greatest-the-rise-and-fall-of-the-united-east-india-company"
+ ]
+}

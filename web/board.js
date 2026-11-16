@@ -67,6 +67,7 @@ const NPCS = ["neighbor", "t1", "lawyer", "t2", "digger", "t3", "t4"];
 // period costume for the townspeople: board.era = 1700s | 1800s | 1900s | modern (default)
 const ERA = {
   "1700s": { neighbor: { hat: "bonnet" }, t1: { hat: "tricorn" }, lawyer: { hat: "wig", hair: "#eeeae2" }, t2: { hat: "bonnet" }, digger: { hat: "tricorn" }, t3: { hat: "wig", hair: "#e4dfd6" }, t4: { hat: "bonnet" } },
+  "1600s": { neighbor: { hat: "bonnet" }, t1: { hat: "tophat" }, lawyer: { hat: "tophat" }, t2: { hat: "bonnet" }, digger: { hat: "cap" }, t3: { hat: "tophat" }, t4: { hat: "bonnet" } },
   "1800s": { neighbor: { hat: "bonnet" }, t1: { hat: "tophat" }, lawyer: { hat: "tophat" }, t2: { hat: "bonnet" }, digger: { hat: "bowler" }, t3: { hat: "bowler" }, t4: { hat: "bonnet" } },
   "1900s": { neighbor: { hat: "hair" }, t1: { hat: "bowler" }, lawyer: { hat: "tophat" }, t2: { hat: "hair" }, digger: { hat: "cap" }, t3: { hat: "bowler" }, t4: { hat: "hair" } },
 };
@@ -186,7 +187,7 @@ function T_vault(f, bt, X) {
       const t0 = h + (i % 6), t = (f - t0) / 30; if (t < 0) continue;
       const vx = (hash(i) - 0.5) * 2.6, vy = 2.6 + hash(i + 9) * 1.8, vz = 0.4 + hash(i + 3) * 1.4;
       const yy = 1.25 + vy * t - 2.2 * t * t; if (yy < 0.9 && t > 0.5) continue;
-      const sz = kind === "paper" ? [0.34, 0.23, 300, 200] : [0.2, 0.2, 256, 256];
+      const sz = kind === "paper" ? [0.34, 0.23, 300, 200] : kind === "spice" ? [0.26, 0.26, 256, 256] : [0.2, 0.2, 256, 256];
       X.out.fx.push({ kind, cw: sz[2], ch: sz[3], x: 120 + vx * t, y: Math.max(0.9, yy), z: -0.6 + vz * t * 0.7, w: sz[0], h: sz[1], rot: (hash(i + 5) - 0.5) * 8 * t });
     }
   }
@@ -260,7 +261,7 @@ function T_rain(f, bt, X) {
 }
 function T_crowd(f, bt, X) {
   const mood = bt.mood || "nervous", L = LOC[bt.loc] || LOC.street, { x, y, z } = L;
-  X.light = mood === "nervous" ? LIGHTS.flashback : X.base; X.out.snow = bt.snow === false || mood !== "nervous" && L.snow === 0 ? 0 : (L.snow || 0.45);
+  X.light = mood === "nervous" ? LIGHTS.flashback : X.base; X.out.snow = bt.snow === false || !L.snow ? 0 : L.snow;
   X.cam = camFromKeys([{ f: bt.a, p: [x + 0.05, y + 1.72, z + 6.0], t: [x + 0.05, y + 1.4, z + 0.2], fov: 45 }, { f: bt.b, p: [x + 0.05, y + 1.66, z + 5.2], t: [x + 0.05, y + 1.4, z + 0.2], fov: 45 }], f, KICKS);
   X.out.focus = 5.4; X.out.coc = 5;
   X.R.CAR.position.x = 30;
@@ -298,6 +299,7 @@ const CURVES = {
   compound: [(x) => 0.04 + 0.92 * (Math.exp(3.4 * x) - 1) / (Math.exp(3.4) - 1), 0.85],
   zigzag: [(x) => 0.3 + 0.5 * x + 0.16 * Math.sin(x * 22), 0.6],
   flat: [(x) => 0.45 + 0.03 * Math.sin(x * 25), 0.5],
+  zero: [(x) => 0.05 + 0.006 * Math.sin(x * 30), 0.9],
 };
 let chartKey = "";
 function drawChart(R, trend, t, label) {
@@ -314,11 +316,11 @@ function T_chart(f, bt, X) {
   drawChart(X.R, trend, t, bt.label || "PRICE");
   X.cam = camFromKeys([{ f: bt.a, p: [x + 0.6, 1.9, z + 9.5], t: [x + 0.9, 2.9, -6.0], fov: 46 }, { f: bt.b, p: [x + 1.1, 2.2, z + 7.0], t: [x + 1.3, 3.2, -6.6], fov: 46 }], f, KICKS);
   X.out.focus = 7; X.out.coc = 3;
-  const after = f >= h, bad = trend === "bubble" || trend === "crash";
-  X.hero({ x: x - 0.4, y: 0, z: z + 0.6, look: -0.5, expr: after ? (bad ? "shock" : "grin") : (bad ? "grin" : "smile"), wave: !after && bad ? 0.5 + 0.3 * Math.sin(f * 0.4) : undefined });
-  X.npc("t1", f, { x: x + 2.3, y: 0, z: z + 0.2, look: -0.6, expr: after ? (bad ? "nervous" : "laugh") : "laugh", tilt: after && bad ? 0 : 4 * Math.sin(f * 0.4) });
-  X.npc("lawyer", f, { x: x + 4.0, y: 0, z: z - 0.6, look: -0.6, expr: after ? (bad ? "shock" : "grin") : "grin" });
-  if (after && f < h + 16) X.out.fx.push({ kind: "burst", t: prog(f, h, h + 16), x: x + 2.0, y: 4.2, z: -6.7, w: 2.2, h: 2.2 });
+  const after = f >= h, bad = trend === "bubble" || trend === "crash", meh = trend === "zero" || trend === "flat";
+  X.hero({ x: x - 0.4, y: 0, z: z + 0.6, look: -0.5, expr: bt.expr || (meh ? (after ? "nervous" : "neutral") : after ? (bad ? "shock" : "grin") : (bad ? "grin" : "smile")), wave: !after && bad ? 0.5 + 0.3 * Math.sin(f * 0.4) : undefined });
+  X.npc("t1", f, { x: x + 2.3, y: 0, z: z + 0.2, look: -0.6, expr: meh ? "nervous" : after ? (bad ? "nervous" : "laugh") : "laugh", tilt: after && bad ? 0 : 4 * Math.sin(f * 0.4) });
+  X.npc("lawyer", f, { x: x + 4.0, y: 0, z: z - 0.6, look: -0.6, expr: meh ? "stern" : after ? (bad ? "shock" : "grin") : "grin" });
+  if (after && !meh && f < h + 16) X.out.fx.push({ kind: "burst", t: prog(f, h, h + 16), x: x + 2.0, y: 4.2, z: -6.7, w: 2.2, h: 2.2 });
 }
 function T_ticker(f, bt, X) {
   const L = LOC.exchange, tx = X.R.ticker.position.x, tz = X.R.ticker.position.z;
@@ -355,11 +357,11 @@ function T_ship(f, bt, X) {
   X.cam = camFromKeys([{ f: bt.a, p: [x - 3.2, 1.9, z + 5.2], t: [x + 1.5, 2.6, -14], fov: 46 }, { f: bt.b, p: [x - 2.6, 2.1, z + 4.4], t: [x + 1.0, 2.8, -14], fov: 46 }], f, KICKS);
   X.out.focus = 4.5; X.out.coc = 3;
   const S = X.R.ship, tt = out ? ss(prog(f, bt.a, bt.b)) : easeOut(prog(f, bt.a, h));
-  S.position.set(out ? x + 1 - 26 * tt : x + 26 - 25 * tt, 0.12 * Math.sin(f * 0.12), -16); S.rotation.z = 0.03 * Math.sin(f * 0.09); S.rotation.x = 0.02 * Math.sin(f * 0.07);
+  S.position.set(out ? x + 1.5 - 4 * tt : x + 7 - 5.5 * tt, 0.12 * Math.sin(f * 0.12), out ? -16 - 55 * tt : -70 + 54 * tt); S.rotation.z = 0.03 * Math.sin(f * 0.09); S.rotation.x = 0.02 * Math.sin(f * 0.07);
   X.R.sea.position.y = 0.008 + 0.02 * Math.sin(f * 0.1);
   X.hero({ x: x - 0.8, y, z, wave: 0.55 + 0.35 * Math.sin(f * 0.45), look: 0.5, expr: f >= h ? (bt.expr || "grin") : "smile" });
   if (bt.npc) X.npc(bt.npc, f, { x: x + 0.6, y, z: z - 0.4, look: 0.6, expr: "smile" });
-  if (f >= h && f < h + 16) X.out.fx.push({ kind: "stars", t: prog(f, h, h + 16), x: S.position.x + 2, y: 6, z: -15.5, w: 3, h: 3 });
+  if (f >= h && f < h + 16) X.out.fx.push({ kind: "stars", t: prog(f, h, h + 16), x: S.position.x + 2, y: 6, z: S.position.z + 0.5, w: 3, h: 3 });
 }
 function T_stack(f, bt, X) {
   X.R.deskLamp.intensity = 5;
@@ -375,7 +377,7 @@ function T_stack(f, bt, X) {
 function T_calendar(f, bt, X) {
   X.R.deskLamp.intensity = 5;
   const L = LOC.office, [h] = hitsOf(bt, 1);
-  X.cam = camFromKeys([{ f: bt.a, p: [L.x + 0.2, 2.3, 1.6], t: [L.x + 1.4, 2.8, -5.3], fov: 44 }, { f: bt.b, p: [L.x + 0.9, 2.7, -0.6], t: [L.x + 1.4, 3.0, -5.3], fov: 40 }], f, KICKS);
+  X.cam = camFromKeys([{ f: bt.a, p: [L.x + 1.1, 2.5, 1.4], t: [L.x + 1.4, 2.9, -5.3], fov: 44 }, { f: bt.b, p: [L.x + 0.9, 2.7, -0.6], t: [L.x + 1.4, 3.0, -5.3], fov: 40 }], f, KICKS);
   X.out.focus = 4.6; X.out.coc = 5;
   const from = +bt.from, to = +bt.to, u = prog(f, bt.a + 4, h), e = 1 - Math.pow(1 - u, 2.2);
   const val = Number.isFinite(from) && Number.isFinite(to) ? Math.round(from + (to - from) * e) : (u < 1 ? bt.from : bt.to);

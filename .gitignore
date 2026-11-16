@@ -4,3 +4,4 @@ out/
 stills/
 web/boards/
 *.log
+__pycache__/

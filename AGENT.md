@@ -79,7 +79,7 @@ python3 make_video.py scripts/<slug>.json --stills-only   # ~1 min: out/<slug>_s
 python3 make_video.py scripts/<slug>.json       # ~15–25 min: out/<slug>.mp4 (+ .srt, _sheet.jpg, .json QA)
 ```
 Voice, in order: (1) ElevenLabs Roger through the connected connector, passed in with `--voice file.mp3` (or the API when
-`ELEVENLABS_API_KEY` is set); (2) fallback `--tts kokoro` — offline Kokoro-82M (Apache-2.0, voice `am_michael`), model
+`ELEVENLABS_API_KEY` is set); (2) fallback `--tts kokoro` — offline Kokoro-82M (Apache-2.0, voice `am_fenrir`), model
 downloaded once from GitHub releases into ~/.cache/kokoro; each beat is spoken separately so timing is exact.
 The voice is generated once per slug and reused on reruns (work/<slug>/voice.mp3). QA in out/<slug>.json: freezes and black must be empty, LUFS ≈ −14.
 

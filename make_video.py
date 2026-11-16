@@ -65,7 +65,7 @@ def eleven(text, out_mp3):
 
 KOKORO_DIR = os.path.expanduser("~/.cache/kokoro")
 KOKORO_URL = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
-KOKORO_VOICE = os.environ.get("KOKORO_VOICE", "am_michael")
+KOKORO_VOICE = os.environ.get("KOKORO_VOICE", "am_fenrir")
 
 
 def kokoro(beats, out_mp3):

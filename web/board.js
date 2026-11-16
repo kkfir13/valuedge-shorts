@@ -37,6 +37,10 @@ const LIGHTS = {
   night: { skyTop: "#162246", skyHor: "#3d5285", fog: "#2e3f6a", fogNear: 30, fogFar: 220, hemiSky: "#5a6faa", hemiGround: "#2a3050", hemi: 1.1, sun: "#a9bfff", sunI: 1.1, az: 20, el: 42, sat: 0.95, tint: [0.84, 0.92, 1.12], lift: [0, 0, 0.01], vign: 0.4, card: "#aeb9dc" },
   vault: { skyTop: "#3a3230", skyHor: "#3a3230", fog: "#3a3230", fogNear: 40, fogFar: 140, hemiSky: "#ffe3c0", hemiGround: "#6a5a50", hemi: 1.5, sun: "#ffe8c8", sunI: 1.4, az: 20, el: 62, sat: 1.06, tint: [1.04, 1.0, 0.94], lift: [0, 0, 0], vign: 0.38, card: "#fff1e0" },
   spring: { skyTop: "#4f9ee6", skyHor: "#d8f0ff", fog: "#cfe6f5", fogNear: 50, fogFar: 300, hemiSky: "#e2f2ff", hemiGround: "#a9c88a", hemi: 1.5, sun: "#fff6dc", sunI: 2.8, az: 40, el: 45, sat: 1.15, tint: [1, 1, 1], lift: [0, 0, 0], vign: 0.22, card: "#ffffff" },
+  hall: { skyTop: "#4a3a30", skyHor: "#6a5444", fog: "#4a3a30", fogNear: 40, fogFar: 160, hemiSky: "#ffe6c8", hemiGround: "#7a6050", hemi: 1.7, sun: "#ffe2b8", sunI: 0.9, az: 60, el: 30, sat: 1.08, tint: [1.04, 1.0, 0.93], lift: [0.004, 0.002, 0], vign: 0.36, card: "#fff3e2" },
+  lamp: { skyTop: "#1e2846", skyHor: "#3a4870", fog: "#2a2a3a", fogNear: 40, fogFar: 160, hemiSky: "#ffd9a8", hemiGround: "#5a4038", hemi: 1.35, sun: "#ffcf90", sunI: 0.6, az: -40, el: 25, sat: 1.05, tint: [1.06, 0.98, 0.88], lift: [0.006, 0.002, 0], vign: 0.45, card: "#ffe8cc" },
+  storm: { skyTop: "#4a5466", skyHor: "#9aa3b0", fog: "#8a929e", fogNear: 40, fogFar: 220, hemiSky: "#c8d0dc", hemiGround: "#6a6e78", hemi: 1.35, sun: "#d8dde6", sunI: 1.2, az: 20, el: 50, sat: 0.7, tint: [0.95, 0.98, 1.05], lift: [0, 0.002, 0.01], vign: 0.42, card: "#e6e9ef" },
+  dusk: { skyTop: "#3a3f78", skyHor: "#f08a6a", fog: "#c88a80", fogNear: 50, fogFar: 300, hemiSky: "#ffc8b0", hemiGround: "#8a7090", hemi: 1.25, sun: "#ff9a6a", sunI: 2.4, az: -70, el: 9, sat: 1.18, tint: [1.06, 0.97, 0.95], lift: [0.008, 0, 0.006], vign: 0.34, card: "#ffe2d2" },
   flashback: { skyTop: "#6fa8de", skyHor: "#e4eef7", fog: "#dde8f3", fogNear: 50, fogFar: 300, hemiSky: "#dbe8ff", hemiGround: "#c4cfe0", hemi: 1.5, sun: "#fff3df", sunI: 2.6, az: 35, el: 40, sat: 0.35, tint: [1.1, 1.0, 0.84], lift: [0.02, 0.012, 0], vign: 0.5, card: "#ffffff" },
 };
 const C = new THREE.Color(), D = new THREE.Color();
@@ -60,6 +64,13 @@ OUTFITS.hero_beanie = { ...heroBase, hat: "beanie", cap: H0.beanie || "#d4473b",
 OUTFITS.hero_cap = { ...heroBase, hat: "cap", cap: H0.capColor || HAT_COL.cap };
 const heroOutfit = (hat) => (hat === "beanie" ? "hero_beanie" : hat === "cap" ? "hero_cap" : "hero");
 const NPCS = ["neighbor", "t1", "lawyer", "t2", "digger", "t3", "t4"];
+// period costume for the townspeople: board.era = 1700s | 1800s | 1900s | modern (default)
+const ERA = {
+  "1700s": { neighbor: { hat: "bonnet" }, t1: { hat: "tricorn" }, lawyer: { hat: "wig", hair: "#eeeae2" }, t2: { hat: "bonnet" }, digger: { hat: "tricorn" }, t3: { hat: "wig", hair: "#e4dfd6" }, t4: { hat: "bonnet" } },
+  "1800s": { neighbor: { hat: "bonnet" }, t1: { hat: "tophat" }, lawyer: { hat: "tophat" }, t2: { hat: "bonnet" }, digger: { hat: "bowler" }, t3: { hat: "bowler" }, t4: { hat: "bonnet" } },
+  "1900s": { neighbor: { hat: "hair" }, t1: { hat: "bowler" }, lawyer: { hat: "tophat" }, t2: { hat: "hair" }, digger: { hat: "cap" }, t3: { hat: "bowler" }, t4: { hat: "hair" } },
+};
+for (const [k, v] of Object.entries(ERA[B.era] || {})) OUTFITS[k] = { ...OUTFITS[k], ...v };
 const SEED = { neighbor: 5, t1: 11, lawyer: 8, t2: 12, digger: 9, t3: 13, t4: 14 };
 
 // town anchors (hero stands here)
@@ -69,10 +80,15 @@ const LOC = {
   street: { x: 0.55, y: 0, z: -2.2, snow: 0.45 },
   porch: { x: -12.55, y: 0.5, z: -7.6, snow: 0.3 },
   meadow: { x: -91.7, y: 0, z: -5.2, snow: 0, light: "spring" },
+  city: { x: 220, y: 0, z: -2.6, snow: 0 },
+  exchange: { x: 318.0, y: 0, z: -2.4, snow: 0, light: "hall" },
+  harbor: { x: 420, y: 0.6, z: -0.6, snow: 0 },
+  office: { x: 519.6, y: 0, z: -3.15, snow: 0, light: "lamp" },
 };
 // default location per shot (used for flashes on place changes)
-const SHOT_LOC = { vault: "vault", crates: "porch", rock: "chair", empty_chair: "chair", grow: "meadow", rain: "hill", finale: "hill", crowd: "street" };
-export const beatLoc = (bt) => SHOT_LOC[bt.shot] || bt.loc || "gas";
+const SHOT_LOC = { vault: "vault", crates: "porch", rock: "chair", empty_chair: "chair", grow: "meadow", rain: "hill", finale: "hill",
+  chart: "exchange", ticker: "exchange", bankrun: "city", ship: "harbor", stack: "office", calendar: "office" };
+export const beatLoc = (bt) => SHOT_LOC[bt.shot] || bt.loc || (bt.shot === "crowd" ? "street" : "gas");
 
 // precompute flashes and kicks
 export const FLASH = [], KICKS = [];
@@ -243,17 +259,17 @@ function T_rain(f, bt, X) {
   for (const [at, bx] of [[h1, -8], [h2, -20]]) if (f >= at && f < at + 16) X.out.fx.push({ kind: "burst", t: prog(f, at, at + 16), x: bx, y: hy + 1.2, z: -48.0, w: 7, h: 7 });
 }
 function T_crowd(f, bt, X) {
-  const mood = bt.mood || "nervous";
-  X.light = mood === "nervous" ? LIGHTS.flashback : X.base; X.out.snow = 0.45;
-  X.cam = camFromKeys([{ f: bt.a, p: [0.6, 1.72, 3.8], t: [0.6, 1.4, -2.0], fov: 45 }, { f: bt.b, p: [0.6, 1.66, 3.0], t: [0.6, 1.4, -2.0], fov: 45 }], f, KICKS);
+  const mood = bt.mood || "nervous", L = LOC[bt.loc] || LOC.street, { x, y, z } = L;
+  X.light = mood === "nervous" ? LIGHTS.flashback : X.base; X.out.snow = bt.snow === false || mood !== "nervous" && L.snow === 0 ? 0 : (L.snow || 0.45);
+  X.cam = camFromKeys([{ f: bt.a, p: [x + 0.05, y + 1.72, z + 6.0], t: [x + 0.05, y + 1.4, z + 0.2], fov: 45 }, { f: bt.b, p: [x + 0.05, y + 1.66, z + 5.2], t: [x + 0.05, y + 1.4, z + 0.2], fov: 45 }], f, KICKS);
   X.out.focus = 5.4; X.out.coc = 5;
   X.R.CAR.position.x = 30;
   const happy = mood !== "nervous", ex = happy ? "laugh" : "nervous";
-  X.hero({ x: 0.55, y: 0, z: -2.2, expr: bt.expr || (happy ? "grin" : "smile_closed") });
-  X.npc("t3", f, { x: 1.15, y: 0, z: -3.6, expr: ex, look: -0.6, headTilt: -8 * Math.sin(f * 0.25), tilt: happy ? 4 * Math.sin(f * 0.4) : 0 });
-  X.npc("t1", f, { x: -0.4, y: 0, z: -1.0, expr: happy ? "grin" : ex, look: 0.6, wave: happy ? 0.6 + 0.3 * Math.sin(f * 0.5) : 0.15, headTilt: 7 * Math.sin(f * 0.22) });
-  X.npc("t2", f, { x: 1.6, y: 0, z: -1.2, expr: ex, look: -0.6, headTilt: -6 * Math.sin(f * 0.2 + 1) });
-  if (!happy && bt.coin !== false) X.out.fx.push({ kind: "coin", x: -0.05, y: 1.55 + 0.02 * Math.sin(f * 0.3), z: -0.95, w: 0.16, h: 0.16 });
+  X.hero({ x, y, z, expr: bt.expr || (happy ? "grin" : "smile_closed") });
+  X.npc("t3", f, { x: x + 0.6, y, z: z - 1.4, expr: ex, look: -0.6, headTilt: -8 * Math.sin(f * 0.25), tilt: happy ? 4 * Math.sin(f * 0.4) : 0 });
+  X.npc("t1", f, { x: x - 0.95, y, z: z + 1.2, expr: happy ? "grin" : ex, look: 0.6, wave: happy ? 0.6 + 0.3 * Math.sin(f * 0.5) : 0.15, headTilt: 7 * Math.sin(f * 0.22) });
+  X.npc("t2", f, { x: x + 1.05, y, z: z + 1.0, expr: ex, look: -0.6, headTilt: -6 * Math.sin(f * 0.2 + 1) });
+  if (!happy && bt.coin !== false) X.out.fx.push({ kind: "coin", x: x - 0.6, y: y + 1.55 + 0.02 * Math.sin(f * 0.3), z: z + 1.25, w: 0.16, h: 0.16 });
 }
 function T_finale(f, bt, X) {
   X.light = LIGHTS.golden; X.out.snow = 0;
@@ -273,8 +289,118 @@ function T_finale(f, bt, X) {
   if (f >= h) { const t = prog(f, h, h + 26); X.out.fx.push({ kind: "glow", x: -14, y: hy + 4, z: -49.5, w: 26 * easeOut(t), h: 26 * easeOut(t), cw: 256, ch: 256 });
     if (f < h + 18) X.out.fx.push({ kind: "burst", t: prog(f, h, h + 18), x: -14, y: hy + 5, z: -49.0, w: 16, h: 16 }); }
 }
+
+// ---------- new sets ----------
+const CURVES = {
+  bubble: [(x) => (x < 0.72 ? 0.06 + 0.9 * Math.pow(x / 0.72, 2.4) : Math.max(0.1, 0.96 - 4.2 * (x - 0.72))), 0.72],
+  crash: [(x) => (x < 0.4 ? 0.84 + 0.05 * Math.sin(x * 30) : Math.max(0.08, 0.89 - 2.4 * (x - 0.4))), 0.4],
+  up: [(x) => 0.08 + 0.82 * x + 0.04 * Math.sin(x * 40), 0.8],
+  compound: [(x) => 0.04 + 0.92 * (Math.exp(3.4 * x) - 1) / (Math.exp(3.4) - 1), 0.85],
+  zigzag: [(x) => 0.3 + 0.5 * x + 0.16 * Math.sin(x * 22), 0.6],
+  flat: [(x) => 0.45 + 0.03 * Math.sin(x * 25), 0.5],
+};
+let chartKey = "";
+function drawChart(R, trend, t, label) {
+  const k = trend + Math.round(t * 200) + label; if (k === chartKey) return; chartKey = k;
+  R.P.chartDraw(R.chartCv.getContext("2d"), R.chartCv.width, R.chartCv.height, (CURVES[trend] || CURVES.up)[0], t, label); R.chartTex.needsUpdate = true;
+}
+let calKey = "";
+function drawCal(R, text, sub) { const k = text + "|" + sub; if (k === calKey) return; calKey = k; R.P.calendarDraw(R.calCv.getContext("2d"), R.calCv.width, R.calCv.height, text, sub); R.calTex.needsUpdate = true; }
+
+function T_chart(f, bt, X) {
+  const L = LOC.exchange, x = L.x, z = L.z, trend = bt.trend || "bubble", [, xe] = CURVES[trend] || CURVES.up;
+  const [h] = hitsOf(bt, 1), u = prog(f, bt.a, bt.b);
+  const t = f < h ? xe * prog(f, bt.a + 4, h) : xe + (1 - xe) * prog(f, h, bt.b - 6);
+  drawChart(X.R, trend, t, bt.label || "PRICE");
+  X.cam = camFromKeys([{ f: bt.a, p: [x + 0.6, 1.9, z + 9.5], t: [x + 0.9, 2.9, -6.0], fov: 46 }, { f: bt.b, p: [x + 1.1, 2.2, z + 7.0], t: [x + 1.3, 3.2, -6.6], fov: 46 }], f, KICKS);
+  X.out.focus = 7; X.out.coc = 3;
+  const after = f >= h, bad = trend === "bubble" || trend === "crash";
+  X.hero({ x: x - 0.4, y: 0, z: z + 0.6, look: -0.5, expr: after ? (bad ? "shock" : "grin") : (bad ? "grin" : "smile"), wave: !after && bad ? 0.5 + 0.3 * Math.sin(f * 0.4) : undefined });
+  X.npc("t1", f, { x: x + 2.3, y: 0, z: z + 0.2, look: -0.6, expr: after ? (bad ? "nervous" : "laugh") : "laugh", tilt: after && bad ? 0 : 4 * Math.sin(f * 0.4) });
+  X.npc("lawyer", f, { x: x + 4.0, y: 0, z: z - 0.6, look: -0.6, expr: after ? (bad ? "shock" : "grin") : "grin" });
+  if (after && f < h + 16) X.out.fx.push({ kind: "burst", t: prog(f, h, h + 16), x: x + 2.0, y: 4.2, z: -6.7, w: 2.2, h: 2.2 });
+}
+function T_ticker(f, bt, X) {
+  const L = LOC.exchange, tx = X.R.ticker.position.x, tz = X.R.ticker.position.z;
+  X.cam = camFromKeys([{ f: bt.a, p: [tx - 1.0, 1.6, tz + 3.0], t: [tx - 0.5, 1.3, tz], fov: 44 }, { f: bt.b, p: [tx - 0.75, 1.5, tz + 2.3], t: [tx - 0.45, 1.25, tz], fov: 44 }], f, KICKS);
+  X.out.focus = 2.6; X.out.coc = 8;
+  const [h] = hitsOf(bt, 1);
+  X.hero({ x: tx - 0.9, y: 0, z: tz + 0.2, prop: "paper", expr: f >= h ? (bt.expr || "shock") : "smile" });
+  const rate = f >= h ? 3 : 9;
+  for (let i = 0; i < 26; i++) {
+    const t0 = bt.a + i * rate - (f >= h ? (h - bt.a) * 0.6 : 0), tt = (f - t0) / 24; if (tt < 0 || tt > 1.4) continue;
+    out_tape(X, tx + 0.05 + 0.5 * (hash(i) - 0.5) * tt, Math.max(0.12, 1.5 - 1.4 * tt * tt), tz + 0.3 + 0.4 * hash(i + 1) * tt, (hash(i + 2) - 0.5) * 3 * tt);
+  }
+  if (f >= h && f < h + 14) X.out.fx.push({ kind: "burst", t: prog(f, h, h + 14), x: tx, y: 1.55, z: tz + 0.1, w: 1.1, h: 1.1 });
+}
+const out_tape = (X, x, y, z, rot) => X.out.fx.push({ kind: "tape", cw: 320, ch: 64, x, y, z, w: 0.5, h: 0.1, rot });
+function T_bankrun(f, bt, X) {
+  X.light = LIGHTS[bt.light || "storm"]; X.out.snow = 0;
+  const bx = 220, bz = -6.4, [h] = hitsOf(bt, 1);
+  X.cam = camFromKeys([{ f: bt.a, p: [bx + 3.0, 5.2, bz + 13], t: [bx, 1.6, bz - 0.5], fov: 44 }, { f: bt.b, p: [bx + 2.0, 3.6, bz + 10.5], t: [bx, 1.8, bz - 0.5], fov: 44 }], f, KICKS);
+  X.out.focus = 11; X.out.coc = 3;
+  const shut = f >= h ? spring((f - h) / 18) : 0;
+  X.R.bankDoors.forEach((g, i) => (g.rotation.y = (i ? -1 : 1) * 1.35 * (1 - shut)));
+  const ids = ["t1", "t2", "t3", "t4", "digger", "neighbor"];
+  ids.forEach((id, i) => {
+    const side = i % 2 ? 1 : -1, d0 = 7 + hash(i) * 4, tt = prog(f, bt.a - 10 + i * 4, h + 6);
+    const px = bx + side * (d0 * (1 - ss(tt)) + 0.4 + (i % 3) * 0.5), pz = bz + 2.6 + (i % 3) * 0.7 - 1.0 * ss(tt);
+    X.npc(id, f, { x: px, y: 0, z: pz, mode: tt < 1 ? "stroll" : "stand", phase: f * 0.09 + i, look: -side * 0.6, expr: f >= h ? "shock" : "nervous", wave: f >= h ? 0.7 + 0.3 * Math.sin(f * 0.8 + i) : undefined });
+  });
+  if (bt.hero !== false) X.hero({ x: bx + 4.6, y: 0, z: bz + 4.4, expr: bt.expr || "smile_closed", look: -0.6 });
+  if (f >= h && f < h + 12) X.out.fx.push({ kind: "puff", t: prog(f, h, h + 12), x: bx, y: 1.2, z: bz + 0.6, w: 2.4, h: 2.4 });
+}
+function T_ship(f, bt, X) {
+  const L = LOC.harbor, { x, y, z } = L, [h] = hitsOf(bt, 1), out = bt.dir === "out";
+  X.cam = camFromKeys([{ f: bt.a, p: [x - 3.2, 1.9, z + 5.2], t: [x + 1.5, 2.6, -14], fov: 46 }, { f: bt.b, p: [x - 2.6, 2.1, z + 4.4], t: [x + 1.0, 2.8, -14], fov: 46 }], f, KICKS);
+  X.out.focus = 4.5; X.out.coc = 3;
+  const S = X.R.ship, tt = out ? ss(prog(f, bt.a, bt.b)) : easeOut(prog(f, bt.a, h));
+  S.position.set(out ? x + 1 - 26 * tt : x + 26 - 25 * tt, 0.12 * Math.sin(f * 0.12), -16); S.rotation.z = 0.03 * Math.sin(f * 0.09); S.rotation.x = 0.02 * Math.sin(f * 0.07);
+  X.R.sea.position.y = 0.008 + 0.02 * Math.sin(f * 0.1);
+  X.hero({ x: x - 0.8, y, z, wave: 0.55 + 0.35 * Math.sin(f * 0.45), look: 0.5, expr: f >= h ? (bt.expr || "grin") : "smile" });
+  if (bt.npc) X.npc(bt.npc, f, { x: x + 0.6, y, z: z - 0.4, look: 0.6, expr: "smile" });
+  if (f >= h && f < h + 16) X.out.fx.push({ kind: "stars", t: prog(f, h, h + 16), x: S.position.x + 2, y: 6, z: -15.5, w: 3, h: 3 });
+}
+function T_stack(f, bt, X) {
+  X.R.deskLamp.intensity = 5;
+  const L = LOC.office, hits = hitsOf(bt, 3), heights = bt.heights || [2, 4, 8, 16];
+  X.cam = camFromKeys([{ f: bt.a, p: [L.x + 0.35, 1.45, -0.2], t: [L.x + 0.3, 1.2, -1.9], fov: 42 }, { f: bt.b, p: [L.x + 0.4, 1.38, -0.55], t: [L.x + 0.32, 1.22, -1.9], fov: 42 }], f, KICKS);
+  X.out.focus = 1.45; X.out.coc = 9;
+  const shown = 1 + hits.filter((hh) => f >= hh).length;
+  X.R.stacks.forEach((g, i) => { const on = i < shown, at = i ? hits[i - 1] : bt.a; g.children.forEach((c, k) => (c.visible = on && k < heights[i]));
+    const b = on && i ? Math.exp(-(f - at) / 5) : 0; g.scale.set(1 + 0.3 * b, 1 - 0.3 * b, 1 + 0.3 * b); });
+  X.hero({ x: L.x, y: 0, z: L.z, expr: shown >= 4 ? "grin" : "smile", look: 0.3 });
+  hits.forEach((hh) => { if (f >= hh && f < hh + 14) X.out.fx.push({ kind: "stars", t: prog(f, hh, hh + 14), x: L.x - 0.1 + hits.indexOf(hh) * 0.32 + 0.32, y: 1.5, z: -1.8, w: 0.5, h: 0.5 }); });
+}
+function T_calendar(f, bt, X) {
+  X.R.deskLamp.intensity = 5;
+  const L = LOC.office, [h] = hitsOf(bt, 1);
+  X.cam = camFromKeys([{ f: bt.a, p: [L.x + 0.2, 2.3, 1.6], t: [L.x + 1.4, 2.8, -5.3], fov: 44 }, { f: bt.b, p: [L.x + 0.9, 2.7, -0.6], t: [L.x + 1.4, 3.0, -5.3], fov: 40 }], f, KICKS);
+  X.out.focus = 4.6; X.out.coc = 5;
+  const from = +bt.from, to = +bt.to, u = prog(f, bt.a + 4, h), e = 1 - Math.pow(1 - u, 2.2);
+  const val = Number.isFinite(from) && Number.isFinite(to) ? Math.round(from + (to - from) * e) : (u < 1 ? bt.from : bt.to);
+  drawCal(X.R, val, bt.sub || "YEAR");
+  X.hero({ x: L.x - 0.6, y: 0, z: L.z + 0.2, look: 0.6, expr: f >= h ? (bt.expr || "grin") : "neutral" });
+  if (u > 0 && u < 1) for (let i = 0; i < 6; i++) { const t0 = (f + i * 5) % 30 / 30; X.out.fx.push({ kind: "page", cw: 128, ch: 150, x: L.x + 1.4 + 1.2 * t0 + 0.2 * hash(i), y: 3.2 - 2.4 * t0 * t0, z: -5.1 + 0.8 * t0, w: 0.4, h: 0.47, rot: 4 * t0 * (hash(i + 3) - 0.5) }); }
+  if (f >= h && f < h + 14) X.out.fx.push({ kind: "burst", t: prog(f, h, h + 14), x: L.x + 1.4, y: 3.0, z: -5.2, w: 1.6, h: 1.6 });
+}
+
+// ---------- camera styles: any beat can add "cam": push | pull | orbit | low | high | dutch | whip | drift ----------
+function camStyle(cam, f, bt) {
+  const st = bt.cam; if (!st || !cam) return cam;
+  const u = prog(f, bt.a, bt.b), p = cam.p.slice(), t = cam.t.slice(), d = [p[0] - t[0], p[1] - t[1], p[2] - t[2]];
+  if (st === "push") for (let i = 0; i < 3; i++) p[i] = t[i] + d[i] * (1 - 0.35 * ss(u));
+  if (st === "pull") for (let i = 0; i < 3; i++) p[i] = t[i] + d[i] * (0.7 + 0.5 * ss(u));
+  if (st === "orbit" || st === "drift") { const a = (st === "orbit" ? 0.55 : 0.22) * (ss(u) - 0.5), c = Math.cos(a), s = Math.sin(a); p[0] = t[0] + d[0] * c + d[2] * s; p[2] = t[2] - d[0] * s + d[2] * c; }
+  if (st === "low") { p[1] = Math.max(t[1] - 0.9, 0.35 + (t[1] > 2 ? 1 : 0)); t[1] += 0.25; }
+  if (st === "high") { p[1] += 1.6 + Math.hypot(d[0], d[2]) * 0.25; }
+  if (st === "whip") { const k = 1 - easeOut(prog(f, bt.a, bt.a + 10)); t[0] += 3.5 * k; }
+  return { p, t, fov: cam.fov, roll: (cam.roll || 0) + (st === "dutch" ? 0.1 : 0) };
+}
+
 const TEMPLATES = { intro: T_intro, wide: T_wide, work: T_work, closeup: T_closeup, gift: T_gift, empty_chair: T_empty_chair, vault: T_vault,
-  crates: T_crates, rock: T_rock, grow: T_grow, rain: T_rain, crowd: T_crowd, finale: T_finale };
+  crates: T_crates, rock: T_rock, grow: T_grow, rain: T_rain, crowd: T_crowd, finale: T_finale,
+  chart: T_chart, ticker: T_ticker, bankrun: T_bankrun, ship: T_ship, stack: T_stack, calendar: T_calendar };
 export const SHOT_NAMES = Object.keys(TEMPLATES);
 
 export function frameState(f, R) {
@@ -286,6 +412,12 @@ export function frameState(f, R) {
   R.lid.rotation.x = 0; R.vlamp.intensity = 0;
   R.bigOak.g.scale.setScalar(0.001); R.oaks.forEach((o) => o.g.scale.setScalar(o.s));
   R.dirtM.visible = false;
+  R.bankDoors.forEach((g, i) => (g.rotation.y = (i ? -1 : 1) * 1.35)); R.ship.position.set(431, 0, -16); R.ship.rotation.set(0, 0, 0); R.sea.position.y = 0.008;
+  R.stacks.forEach((g, i) => { g.scale.setScalar(1); g.children.forEach((c, k) => (c.visible = k < [2, 4, 8, 16][i])); });
+  const bl = beatLoc(bt);
+  R.hallLamp.intensity = bl === "exchange" ? 9 : 0; R.deskLamp.intensity = bl === "office" ? 5 : 0;
+  if (bl === "exchange" && !["chart"].includes(bt.shot)) drawChart(R, B.chart?.trend || "up", 1, B.chart?.label || "PRICE");
+  if (bl === "office" && bt.shot !== "calendar") drawCal(R, B.calendar ?? "", B.calendarSub || "YEAR");
   const setWins = (list, lit) => list.forEach((m) => { const t = R.P.windowTex(lit); if (m.face.map !== t) m.face.map = t; });
   setWins(R.hospWins, false); setWins(R.libWins, false);
   const leaf = (k) => R.yardTree.lv.forEach((m) => (m.material = R.leafMats[k]));
@@ -302,6 +434,7 @@ export function frameState(f, R) {
     leaf, wins: (k, lit) => setWins(k === "hosp" ? R.hospWins : R.libWins, lit),
   };
   (TEMPLATES[bt.shot] || T_intro)(f, bt, X);
+  X.cam = camStyle(X.cam, f, bt);
   for (const a of out.actors) if (a.blink === undefined) a.blink = blinkAt(f, a.seed);
   for (const c of FLASH) { const d = f - c; if (d >= 0 && d < 6) out.flash = Math.max(out.flash, 0.9 * (1 - d / 6)); }
   out.cam = X.cam; out.light = X.light; out.cardTint = X.light.card;

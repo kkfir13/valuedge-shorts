@@ -15,9 +15,14 @@ import audio_lib as A
 FPS, SR = 30, 48000
 VOICE_ID = os.environ.get("VOICE_ID", "CwhRBWXzGAHq8TQ4Fs17")  # ElevenLabs premade "Roger - Laid-Back, Casual, Resonant"
 VOICE_SETTINGS = {"stability": 0.55, "similarity_boost": 0.70}
-SHOT_LOC = {"vault": "vault", "crates": "porch", "rock": "chair", "empty_chair": "chair", "grow": "meadow", "rain": "hill", "finale": "hill", "crowd": "street"}
-SHOTS = {"intro", "wide", "work", "closeup", "gift", "empty_chair", "vault", "crates", "rock", "grow", "rain", "crowd", "finale"}
-HITS_NEEDED = {"intro": 1, "closeup": 3, "gift": 1, "vault": 1, "crates": 3, "rock": 1, "grow": 1, "rain": 2, "finale": 1}
+SHOT_LOC = {"vault": "vault", "crates": "porch", "rock": "chair", "empty_chair": "chair", "grow": "meadow", "rain": "hill", "finale": "hill",
+            "chart": "exchange", "ticker": "exchange", "bankrun": "city", "ship": "harbor", "stack": "office", "calendar": "office"}
+SHOTS = {"intro", "wide", "work", "closeup", "gift", "empty_chair", "vault", "crates", "rock", "grow", "rain", "crowd", "finale",
+         "chart", "ticker", "bankrun", "ship", "stack", "calendar"}
+HITS_NEEDED = {"intro": 1, "closeup": 3, "gift": 1, "vault": 1, "crates": 3, "rock": 1, "grow": 1, "rain": 2, "finale": 1,
+               "chart": 1, "ticker": 1, "bankrun": 1, "ship": 1, "stack": 3, "calendar": 1}
+LOCS = {"gas", "store", "street", "porch", "meadow", "city", "exchange", "harbor", "office"}
+CAMS = {"push", "pull", "orbit", "low", "high", "dutch", "whip", "drift"}
 
 
 def sh(cmd, **kw):
@@ -65,12 +70,16 @@ def eleven(text, out_mp3):
 
 KOKORO_DIR = os.path.expanduser("~/.cache/kokoro")
 KOKORO_URL = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
-KOKORO_VOICE = os.environ.get("KOKORO_VOICE", "am_fenrir")
+KOKORO_VOICE = os.environ.get("KOKORO_VOICE", "af_heart")
+# narration mastering: rumble cut, a little warmth and presence, gentle de-ess, light compression, a small dry room
+VOICE_CHAIN = ("highpass=f=70,equalizer=f=180:t=q:w=1:g=2,equalizer=f=3200:t=q:w=1.2:g=2.5,equalizer=f=7500:t=q:w=1.5:g=-2.5,"
+               "acompressor=threshold=-20dB:ratio=2.5:attack=8:release=120:makeup=2,aecho=0.85:0.5:23|37:0.12|0.08,loudnorm=I=-18:TP=-2")
 
 
-def kokoro(beats, out_mp3):
-    """Offline fallback voice (Kokoro-82M via kokoro-onnx, Apache-2.0). Each beat is spoken separately and joined with
-    fixed pauses, so beat boundaries are exact; words inside a beat are spread by length. Returns word timings."""
+def kokoro(beats, out_mp3, voice=None, speed=0.96):
+    """Offline voice (Kokoro-82M via kokoro-onnx, Apache-2.0). Whole sentences are spoken in one pass so the
+    intonation carries across a sentence; beat boundaries inside a sentence snap to the model's own pauses.
+    Pauses between sentences are paced: longer after the hook and before the twist. Returns word timings."""
     try:
         from kokoro_onnx import Kokoro
     except ImportError:
@@ -81,24 +90,55 @@ def kokoro(beats, out_mp3):
         if not os.path.exists(f"{KOKORO_DIR}/{f}"):
             sh(["curl", "-sSfL", "--retry", "3", "-o", f"{KOKORO_DIR}/{f}", KOKORO_URL + f])
     k = Kokoro(f"{KOKORO_DIR}/kokoro-v1.0.onnx", f"{KOKORO_DIR}/voices-v1.0.bin")
-    sr0, chunks, words, t = None, [], [], 0.25
-    for b in beats:
-        txt = b["text"].strip()
-        a, sr0 = k.create(txt, voice=KOKORO_VOICE, speed=1.0, lang="en-us")
+    voice = voice or KOKORO_VOICE
+    if "+" in voice:  # blend, e.g. "am_michael+am_fenrir"
+        parts = voice.split("+"); voice = sum(k.get_voice_style(v) for v in parts) / len(parts)
+    groups, cur = [], []
+    for i, b in enumerate(beats):
+        cur.append(i)
+        if re.search(r"[.!?]['\"]?$", b["text"].strip()) or i == len(beats) - 1: groups.append(cur); cur = []
+    twist = next((i for i, b in enumerate(beats) if b.get("twist")), None)
+    sr0, chunks, words, t = 24000, [np.zeros(int(0.25 * 24000), np.float32)], [], 0.25
+    for gi, g in enumerate(groups):
+        texts = [beats[i]["text"].strip() for i in g]
+        a, sr0 = k.create(" ".join(texts), voice=voice, speed=speed, lang="en-us")
         a = np.asarray(a, dtype=np.float32)
         nz = np.where(np.abs(a) > 0.01)[0]
-        if len(nz): a = a[max(0, nz[0] - int(0.03 * sr0)): nz[-1] + int(0.06 * sr0)]
+        if len(nz): a = a[max(0, nz[0] - int(0.03 * sr0)): nz[-1] + int(0.08 * sr0)]
         d = len(a) / sr0
-        ws = txt.split(); L = [len(w) + 1 for w in ws]; c = np.cumsum([0] + L) / sum(L)
-        for i, w in enumerate(ws): words.append({"w": w, "s": t + c[i] * d, "e": t + c[i + 1] * d - 0.02})
-        gap = 0.45 if re.search(r"[.!?]$", txt) else 0.28
-        chunks += [np.zeros(int((0.25 if not chunks else 0) * sr0), np.float32), a, np.zeros(int(gap * sr0), np.float32)]
+        # energy envelope (10 ms) to find the model's own pauses
+        hop = int(0.01 * sr0); env = np.sqrt(np.convolve(a ** 2, np.ones(hop) / hop, "same"))[::hop]; quiet = env < 0.02
+        lens = [len(x) for x in texts]; cum = np.cumsum([0] + lens) / sum(lens)
+        bounds = [0.0]
+        for j in range(1, len(texts)):
+            exp = cum[j] * d; best, bs = None, -1e9
+            i = 0
+            while i < len(quiet):
+                if quiet[i]:
+                    j2 = i
+                    while j2 < len(quiet) and quiet[j2]: j2 += 1
+                    mid, ln = (i + j2) / 2 * 0.01, (j2 - i) * 0.01
+                    if ln >= 0.04 and mid > bounds[-1] + 0.3:
+                        sc = ln * 3 - abs(mid - exp)
+                        if sc > bs: best, bs = mid, sc
+                    i = j2
+                else: i += 1
+            bounds.append(best if best is not None and abs(best - exp) < 0.35 * d else exp)
+        bounds.append(d)
+        for j, txt in enumerate(texts):
+            s0, e0 = bounds[j], bounds[j + 1]
+            ws = txt.split(); L = [len(w) + 1 for w in ws]; c = np.cumsum([0] + L) / sum(L)
+            for q, w in enumerate(ws): words.append({"w": w, "s": t + s0 + c[q] * (e0 - s0), "e": t + s0 + c[q + 1] * (e0 - s0) - 0.02})
+        nxt = g[-1] + 1
+        gap = 0.62 if gi == 0 else 0.72 if twist is not None and nxt == twist else 0.85 if twist is not None and nxt == twist + 1 else 0.42
+        if gi == len(groups) - 1: gap = 0.3
+        chunks += [a, np.zeros(int(gap * sr0), np.float32)]
         t += d + gap
     audio = np.concatenate(chunks)
     raw = f"{out_mp3}.f32"; audio.astype("<f4").tofile(raw)
-    sh(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(sr0), "-ac", "1", "-i", raw, "-af", "loudnorm=I=-18:TP=-2", "-ar", "44100", "-b:a", "160k", out_mp3])
+    sh(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(sr0), "-ac", "1", "-i", raw, "-af", VOICE_CHAIN, "-ar", "44100", "-b:a", "192k", out_mp3])
     os.remove(raw)
-    print(f"voice: kokoro {KOKORO_VOICE}, {t:.1f}s")
+    print(f"voice: kokoro {voice if isinstance(voice, str) else 'blend'}, {t:.1f}s")
     return words
 
 
@@ -177,6 +217,8 @@ def build_board(script, words, dur):
         if len(bw) < n: raise SystemExit(f"timing mismatch in beat {i}")
         bt = {k: v for k, v in b.items() if k not in ("text", "hit_words")}
         if bt.get("shot") not in SHOTS: raise SystemExit(f"beat {i}: unknown shot {bt.get('shot')}")
+        if bt.get("loc") and bt["loc"] not in LOCS: raise SystemExit(f"beat {i}: unknown loc {bt['loc']}")
+        if bt.get("cam") and bt["cam"] not in CAMS: raise SystemExit(f"beat {i}: unknown cam {bt['cam']}")
         bt["_s"], bt["_e"], bt["_words"] = bw[0]["s"], bw[-1]["e"], bw
         hits, j = [], 0
         for hwd in b.get("hit_words", []):
@@ -193,9 +235,10 @@ def build_board(script, words, dur):
         bt["hits"] = [h for h in bt["hits"] if bt["a"] <= h < bt["b"]]
         while len(bt["hits"]) < need: bt["hits"].append(round(bt["a"] + (bt["b"] - bt["a"]) * (len(bt["hits"]) + 1) / (need + 1)))
     board = {"frames": N, "seed": script.get("seed", 0), "hero": script.get("hero", {}), "crates": script.get("crates", ["SOAP", "POWER", "RAILS"]),
-             "buildings": script.get("buildings", ["HOSPITAL", "LIBRARY"]),
+             "buildings": script.get("buildings", ["HOSPITAL", "LIBRARY"]), "era": script.get("era", "modern"), "sets": script.get("sets", {}),
+             "chart": script.get("chart", {}), "calendar": script.get("calendar", ""),
              "beats": [{k: v for k, v in bt.items() if not k.startswith("_")} for bt in beats]}
-    loc = lambda bt: SHOT_LOC.get(bt["shot"]) or bt.get("loc") or "gas"
+    loc = lambda bt: SHOT_LOC.get(bt["shot"]) or bt.get("loc") or ("street" if bt["shot"] == "crowd" else "gas")
     flashes = [bt["a"] for i, bt in enumerate(board["beats"]) if i > 0 and bt.get("flash", loc(bt) != loc(board["beats"][i - 1]))]
     return board, beats, flashes
 
@@ -316,7 +359,7 @@ def main():
     elif a.tts == "kokoro":
         wj = f"{work}/words_kokoro.json"
         if os.path.exists(voice) and os.path.exists(wj): words = json.load(open(wj)); print("voice: reused kokoro")
-        else: words = kokoro(script["beats"], voice); json.dump(words, open(wj, "w"))
+        else: words = kokoro(script["beats"], voice, script.get("narrator"), script.get("speed", 0.96)); json.dump(words, open(wj, "w"))
         dur = duration(voice)
     else:
         if os.path.exists(voice) and os.path.exists(f"{work}/align.json"): al = json.load(open(f"{work}/align.json")) or None; print("voice: reused")
@@ -345,7 +388,9 @@ def main():
     sh(["ffmpeg", "-v", "error", "-y", "-i", mp4, "-vf", "fps=1,scale=216:384,tile=8x6", "-frames:v", "1", f"{ROOT}/out/{slug}_sheet.jpg"])
     meta = {"slug": slug, "title": script.get("title"), "duration": duration(mp4), "bytes": os.path.getsize(mp4), "levels": levels,
             "freezes": re.findall(r"freeze_duration: ([\d.]+)", qa), "black": re.findall(r"black_start:([\d.]+)", qa),
-            "lufs": (re.findall(r"I:\s+(-?[\d.]+) LUFS", qa) or [None])[-1], "render_s": round(time.time() - t0), "captions": len(cues)}
+            "lufs": (re.findall(r"I:\s+(-?[\d.]+) LUFS", qa) or [None])[-1], "render_s": round(time.time() - t0), "captions": len(cues),
+            "shots": [f"{b['shot']}@{SHOT_LOC.get(b['shot']) or b.get('loc') or ('street' if b['shot'] == 'crowd' else 'gas')}" for b in board["beats"]],
+            "era": board.get("era"), "narrator": "eleven:roger" if a.tts == "eleven" and not a.voice else (script.get("narrator") or KOKORO_VOICE)}
     json.dump(meta, open(f"{ROOT}/out/{slug}.json", "w"), indent=1)
     print(json.dumps(meta))
 

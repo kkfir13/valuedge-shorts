@@ -210,6 +210,109 @@ export const oaks = [[-94, -9, 0.9], [-86.5, -10, 0.85], [-97, -14, 1.0], [-83, 
 { const R = P.rng(5); for (let i = 0; i < 18; i++) { const a = R() * 6.28, r = 26 + R() * 30; const t = oak(-90 + Math.cos(a) * r, -10 - Math.abs(Math.sin(a)) * r, 1 + R() * 0.6); } }
 const dirtM = new THREE.Mesh(new THREE.CircleGeometry(0.45, 16), toon("dirt", P.dirt())); dirtM.rotation.x = -Math.PI / 2; dirtM.position.set(-90.2, 0.04, -5.6); world.add(dirtM);
 
+
+// ================= extra sets =================
+const BWORDS = BOARD?.sets || {};
+const plane = (w, d, mat, x, y, z, rep) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, d), mat); m.rotation.x = -Math.PI / 2; m.position.set(x, y, z);
+  m.geometry.attributes.uv.array.forEach((v, i, a) => (a[i] = v * (i % 2 ? d : w) / (rep || 4))); m.receiveShadow = true; world.add(m); return m; };
+const INKC = flat(0x241726), GOLD = flat(0xd9a441), DARK = flat(0x2e2a36);
+/** lamp post */
+function lamp(x, z) { cyl(0.07, 0.09, 3.4, DARK, x, 0, z, 8); tbox(0.34, 0.42, 0.34, toon("lampG", P.windowTex(true)), x, 3.3, z); tbox(0.46, 0.08, 0.46, DARK, x, 3.72, z); }
+/** brick rowhouse with stoop, cornice, windows; front face at z + d/2 */
+function rowhouse(x, z, w, h, col, door = true, lit = false) {
+  const d = 6, M = toon("row" + col, P.rowhouse(col)); tbox(w, h, d, M, x, 0, z);
+  tbox(w + 0.3, 0.35, d + 0.3, flat(0xe8e0cc), x, h, z); tbox(w + 0.5, 0.2, d + 0.5, flat(0x5a4a40), x, h + 0.35, z);
+  const fz = z + d / 2 + 0.03;
+  for (let r = 0; r < Math.max(1, Math.floor((h - 1.2) / 2.1)); r++) for (const wx of [-w * 0.3, w * 0.3]) {
+    if (door && r === 0 && wx < 0) continue;
+    decal(0.9, 1.3, P.windowTex(lit && (r + wx > 0)), x + wx, 1.3 + r * 2.1, fz); tbox(1.1, 0.1, 0.12, flat(0xe8e0cc), x + wx, 0.6 + r * 2.1, fz + 0.04);
+  }
+  if (door) { decal(1.0, 2.1, P.planks("#3f2e28"), x - w * 0.3, 1.25, fz); for (let k = 0; k < 3; k++) tbox(1.5, 0.18, 0.45 - k * 0.12, flat(0xb8aea0), x - w * 0.3, k * 0.18, fz + 0.4 - k * 0.12); }
+}
+// ---- CITY (x = 220): cobbled street, rowhouses, a marble bank ----
+plane(160, 70, toon("cobble", P.cobble()), 220, 0.015, -12, 3);
+tbox(160, 0.16, 2.6, flat(0xb8aea0), 220, 0, -5.1);
+{ const cols = ["#b5533f", "#8c5a46", "#a8743f", "#7a4a3a", "#c0806a", "#96604c"]; let x = 196;
+  for (let i = 0; x < 246; i++) { const w = 4.6 + (i % 3) * 0.7, h = 6.5 + ((i * 5) % 4) * 1.4; if (Math.abs(x + w / 2 - 220) > 5.5) rowhouse(x + w / 2, -9.6, w, h, cols[i % cols.length], true, i % 2 === 0); x += w + (Math.abs(x + w - 214) < 3 ? 12 : 0); }
+  for (let i = 0; i < 14; i++) { const x2 = 186 + i * 5.4; tbox(5.2, 10 + (i % 4) * 2.5, 6, toon("rowb" + i, P.rowhouse(cols[(i + 2) % 6])), x2, 0, -22 - (i % 2) * 3); }
+  for (const lx of [210, 216, 224, 230]) lamp(lx, -4.4);
+}
+// bank: steps, columns, pediment, doors
+const BANK_X = 220, BANK_Z = -10.6;
+{ const MB = toon("marble", P.marble());
+  tbox(11, 7.6, 7, MB, BANK_X, 0, BANK_Z); for (let k = 0; k < 4; k++) tbox(11.4 - k * 0.3, 0.22, 1.2 - k * 0.0, MB, BANK_X, k * 0.22, BANK_Z + 4.0 - k * 0.32);
+  for (let c = 0; c < 6; c++) cyl(0.3, 0.34, 5.6, MB, BANK_X - 4.5 + c * 1.8, 0.88, BANK_Z + 3.95, 14);
+  tbox(11.6, 0.6, 1.4, MB, BANK_X, 6.48, BANK_Z + 3.95);
+  const sh = new THREE.Shape([new THREE.Vector2(-5.9, 0), new THREE.Vector2(5.9, 0), new THREE.Vector2(0, 1.9)]);
+  const pd = new THREE.Mesh(new THREE.ExtrudeGeometry(sh, { depth: 1.2, bevelEnabled: false }), MB); pd.position.set(BANK_X, 7.08, BANK_Z + 3.3); pd.castShadow = true; world.add(pd);
+  decal(5.4, 0.85, P.sign(BWORDS.bank || "BANK", "#f4efe2", "#241726"), BANK_X, 6.48, BANK_Z + 4.67);
+  for (const wx of [-3.6, 3.6]) decal(1.2, 2.2, P.windowTex(true), BANK_X + wx, 2.6, BANK_Z + 3.53);
+}
+export const bankDoors = [-1, 1].map((s) => { const g = new THREE.Group(); g.position.set(BANK_X + s * 1.1, 0.88, BANK_Z + 3.53); world.add(g);
+  tbox(1.1, 3.0, 0.12, toon("bdoor", P.planks("#5a3b2a")), -s * 0.55, 0, 0, 0, g); tbox(0.12, 0.12, 0.2, GOLD, -s * 0.95, 1.4, 0.1, 0, g); return g; });
+tbox(2.4, 3.1, 0.1, flat(0x1d1b22), BANK_X, 0.88, BANK_Z + 3.47);
+
+// ---- EXCHANGE HALL (x = 320): panelled hall, live chalk price board, ticker machine ----
+const EX = 320;
+{ const WALL = toon("wallp", P.wallpaper("#3f5a6a")), WOOD = toon("panel", P.planks("#6b4a33"));
+  plane(18, 16, toon("floor", P.floorboards()), EX, 0.02, -2, 3);
+  tbox(18, 7, 0.3, WALL, EX, 0, -7.2, 0, world, 3); tbox(18, 1.1, 0.34, WOOD, EX, 0, -7.0);
+  for (const s of [-1, 1]) { tbox(0.3, 7, 16, WALL, EX + s * 9, 0, -2, 0, world, 3); tbox(0.34, 1.1, 16, WOOD, EX + s * 8.85, 0, -2);
+    for (const wz of [-4.5, 0.5]) decal(1.6, 3.2, P.windowTex(true), EX + s * 8.82, 3.4, wz, -s * Math.PI / 2); }
+  tbox(18, 0.3, 16, toon("ceil", P.plaster("#e9e2d4")), EX, 7, -2);
+  for (const cx of [-5, 5]) cyl(0.32, 0.36, 7, toon("marble", P.marble()), EX + cx, 0, -5.4, 14);
+  tbox(14, 0.2, 0.6, WOOD, EX, 1.0, -4.6); for (let k = 0; k < 8; k++) tbox(0.08, 1.0, 0.08, WOOD, EX - 6.8 + k * 1.95, 0, -4.6);
+}
+export const chartCv = document.createElement("canvas"); chartCv.width = 1024; chartCv.height = 640;
+export const chartTex = new THREE.CanvasTexture(chartCv); chartTex.colorSpace = THREE.SRGBColorSpace;
+{ const m = new THREE.Mesh(new THREE.PlaneGeometry(7.2, 4.5), new THREE.MeshBasicMaterial({ map: chartTex })); m.position.set(EX, 3.75, -7.0); world.add(m);
+  tbox(7.6, 0.25, 0.3, toon("panel", null), EX, 1.4, -6.95); }
+export const ticker = new THREE.Group(); ticker.position.set(EX + 3.2, 0, -3.0); world.add(ticker);
+{ cyl(0.08, 0.3, 1.0, toon("brass", P.metal("#c9a24a")), 0, 0, 0, 10, ticker); tbox(0.6, 0.35, 0.45, toon("brass", null), 0, 1.0, 0, 0, ticker);
+  const dome = new THREE.Mesh(new THREE.SphereGeometry(0.3, 14, 10, 0, 6.29, 0, 1.6), new THREE.MeshToonMaterial({ color: 0xcfe4ee, gradientMap: grad, transparent: true, opacity: 0.55 }));
+  dome.position.y = 1.35; ticker.add(dome); }
+const hallLamp = new THREE.PointLight(0xffe2b0, 0, 22, 1.2); hallLamp.position.set(EX, 6.0, -2); world.add(hallLamp);
+
+// ---- HARBOR (x = 420): sea, wooden pier, sailing ship ----
+const HB = 420;
+export const sea = plane(170, 300, toon("water", P.water()), HB, 0.008, -152.9, 6);
+plane(26, 7, toon("pier", P.floorboards("#8a6a4a")), HB, 0.6, 0.5, 3);
+tbox(26, 0.6, 7, toon("pierS", P.planks("#6b4a33")), HB, 0, 0.5);
+for (let k = 0; k < 9; k++) { cyl(0.18, 0.18, 1.6, toon("bark", P.bark()), HB - 12 + k * 3, -0.8, -2.95, 8); cyl(0.14, 0.18, 0.5, DARK, HB - 12 + k * 3, 0.6, -2.7, 8); }
+for (const [bx, bz, s] of [[HB - 5.2, 1.6, 0.9], [HB - 4.3, 1.9, 0.7], [HB + 5.5, 1.2, 0.8]]) tbox(s, s, s, toon("crate", P.planks("#a4774f")), bx, 0.6, bz);
+for (const [bx, bz] of [[HB + 4.4, 2.0], [HB + 4.9, 2.6]]) cyl(0.32, 0.32, 0.9, toon("barrel", P.planks("#7a4f2e")), bx, 0.6, bz, 12);
+{ const R2 = P.rng(9); for (let i = 0; i < 7; i++) ball(30 + R2() * 25, toon("headland", P.grass()), HB - 160 + i * 55, -14, -230 - R2() * 40, 0.45, world, 18); }
+export const ship = new THREE.Group(); ship.position.set(HB, 0, -16); world.add(ship);
+{ const hull = new THREE.Shape([new THREE.Vector2(-6, 1.4), new THREE.Vector2(6.8, 1.6), new THREE.Vector2(5.4, -0.6), new THREE.Vector2(-5, -0.6)]);
+  const hm = new THREE.Mesh(new THREE.ExtrudeGeometry(hull, { depth: 3, bevelEnabled: false }), [toon("hullC", null, 0x5a3b2a), toon("hull", P.planks("#6b4a33"))]);
+  hm.position.set(0, 0, -1.5); hm.castShadow = true; ship.add(hm);
+  tbox(12, 0.12, 3.0, toon("hullC", null, 0x5a3b2a), 0.3, 1.45, 0, 0, ship); tbox(12.6, 0.3, 0.2, flat(0xd9a441), 0.3, 1.1, 1.55, 0, ship);
+  const SAIL = toon("sail", P.sailcloth());
+  for (const [mx, mh] of [[-2.6, 8.5], [2.2, 9.5]]) { cyl(0.13, 0.16, mh, toon("mast", P.bark()), mx, 1.5, 0, 8, ship);
+    for (const [sy, sw, shh] of [[3.4, 4.4, 2.6], [6.4, 3.6, 2.2]]) { const sm = new THREE.Mesh(new THREE.BoxGeometry(sw, shh, 0.08), SAIL); sm.position.set(mx, sy + 1.5, 0.15); sm.castShadow = true; ship.add(sm); }
+    const fl = new THREE.Mesh(new THREE.BoxGeometry(0.9, 0.5, 0.04), flat(0xc0353a)); fl.position.set(mx + 0.5, mh + 1.4, 0); ship.add(fl); }
+}
+
+// ---- OFFICE (x = 520): desk, lamp, ledger, wall calendar, coin stacks ----
+const OF = 520;
+{ const WALL = toon("wallpO", P.wallpaper("#6a4a3a"));
+  plane(12, 10, toon("floorO", P.floorboards("#7a5232")), OF, 0.02, -2, 3);
+  tbox(12, 5, 0.3, WALL, OF, 0, -5.5, 0, world, 3); for (const s of [-1, 1]) tbox(0.3, 5, 10, WALL, OF + s * 6, 0, -2, 0, world, 3);
+  tbox(12, 0.3, 10, toon("ceil", null), OF, 5, -2);
+  decal(2.2, 2.0, P.windowTex(true), OF - 3.2, 2.6, -5.32);
+  tbox(2.6, 0.12, 1.2, toon("desk", P.planks("#5a3b2a")), OF, 0.92, -2.2); tbox(2.5, 0.92, 1.1, toon("desk", null), OF, 0, -2.2);
+  tbox(0.9, 0.06, 0.6, flat(0xf1ece0), OF - 0.5, 1.04, -2.1); tbox(0.06, 0.07, 0.6, flat(0x8c3b4a), OF - 0.5, 1.04, -2.1);
+  cyl(0.12, 0.14, 0.04, DARK, OF + 0.8, 1.04, -2.45, 10); cyl(0.025, 0.025, 0.5, DARK, OF + 0.8, 1.06, -2.45, 6);
+  const shade = new THREE.Mesh(new THREE.ConeGeometry(0.22, 0.2, 12, 1, true), flat(0x3f8a5a)); shade.position.set(OF + 0.8, 1.6, -2.45); world.add(shade);
+  tbox(1.4, 2.2, 0.4, toon("shelf", P.planks("#6b4a33")), OF + 3.6, 0, -5.1);
+}
+export const calCv = document.createElement("canvas"); calCv.width = 512; calCv.height = 600;
+export const calTex = new THREE.CanvasTexture(calCv); calTex.colorSpace = THREE.SRGBColorSpace;
+{ const m = new THREE.Mesh(new THREE.PlaneGeometry(1.5, 1.76), new THREE.MeshBasicMaterial({ map: calTex })); m.position.set(OF + 1.4, 3.0, -5.32); world.add(m); }
+export const stacks = [0, 1, 2, 3].map((i) => { const g = new THREE.Group(); g.position.set(OF - 0.1 + i * 0.32, 1.04, -1.85); world.add(g);
+  for (let k = 0; k < 16; k++) { const c = cyl(0.11, 0.11, 0.04, toon("coinM", null, 0xf2c14e), 0, k * 0.045, 0, 14, g); c.visible = false; } return g; });
+const deskLamp = new THREE.PointLight(0xffd9a0, 0, 8, 1.5); deskLamp.position.set(OF + 0.8, 1.5, -2.3); world.add(deskLamp);
+
 // ---------- lights ----------
 const hemi = new THREE.HemisphereLight(0xcfe2ff, 0xb8c4d8, 1.0); scene.add(hemi);
 const sun = new THREE.DirectionalLight(0xffffff, 2.0); sun.castShadow = true;
@@ -352,7 +455,8 @@ function placeFx(list, cam, used) {
 }
 
 window.renderFrame = (f) => {
-  st = S.frameState(f, { chair, toys, yardTree, hospWins, libWins, ronWins, box, lid, bigOak, oaks, CAR, carPaint, vlamp, hillY, dirtM, leafMats, P });
+  st = S.frameState(f, { chair, toys, yardTree, hospWins, libWins, ronWins, box, lid, bigOak, oaks, CAR, carPaint, vlamp, hillY, dirtM, leafMats, P,
+    bankDoors, chartCv, chartTex, ticker, hallLamp, ship, sea, calCv, calTex, stacks, deskLamp });
   const cm = st.cam;
   camera.position.set(...cm.p); camera.fov = cm.fov; camera.up.set(Math.sin(cm.roll || 0), Math.cos(cm.roll || 0), 0);
   camera.lookAt(tmpV.set(...cm.t)); camera.updateProjectionMatrix();

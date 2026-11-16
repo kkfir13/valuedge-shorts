@@ -56,6 +56,14 @@ export function drawFx(g, kind, t, w, h) {
     g.save(); g.strokeStyle = "#a8352c"; g.lineWidth = 5; for (let i = -3; i <= 3; i++) { g.beginPath(); g.moveTo(cx + i * w * 0.09, by - h * 0.5); g.lineTo(cx + i * w * 0.1, by - 6); g.stroke(); } g.restore();
     p.poly([[cx - w * 0.42, by - h * 0.14], [cx + w * 0.42, by - h * 0.14], [cx + w * 0.42, by + h * 0.04], [cx - w * 0.42, by + h * 0.04]], "#b83c32", 9);
     p.ell(cx, by - h * 0.64, w * 0.11, h * 0.11, "#f4f1ea", 8);
+  } else if (kind === "tape") { // ticker tape strip
+    p.ol = 4; p.poly([[6, 14], [w - 6, 8], [w - 6, h - 14], [6, h - 8]], "#f6f1df", 5);
+    g.fillStyle = "#3d3a44"; g.font = `bold ${Math.round(h * 0.42)}px "Courier New", monospace`; g.textAlign = "left"; g.textBaseline = "middle";
+    g.fillText("RR 3/8 ▲ USS 1/4 ▼", 18, h / 2 + 1);
+  } else if (kind === "page") { // calendar page flying off
+    p.ol = 5; p.poly([[6, 6], [w - 6, 10], [w - 10, h - 6], [8, h - 10]], "#f6f1e4", 6);
+    g.fillStyle = "#c0353a"; g.fillRect(12, 12, w - 24, h * 0.2);
+    g.strokeStyle = "#9a948a"; g.lineWidth = 3; for (let i = 0; i < 4; i++) { g.beginPath(); g.moveTo(20, h * (0.42 + i * 0.13)); g.lineTo(w - 20, h * (0.42 + i * 0.13)); g.stroke(); }
   } else if (kind === "zz") {
     g.fillStyle = "#ffffff"; g.strokeStyle = INK; g.lineWidth = 10; g.font = `bold ${Math.round(h * 0.6)}px Arial`; g.textAlign = "center"; g.textBaseline = "middle";
     g.strokeText("z", w / 2, h / 2); g.fillText("z", w / 2, h / 2);

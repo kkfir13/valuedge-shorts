@@ -140,6 +140,29 @@ def sfx(board, dur, flashes):
                 t0 = (h2 - 18 if i >= 14 else h1 - 66) + (i % 14) * 4 + 18
                 add(s, ting(2000 + 600 * ((i * 7) % 5) / 5, 0.35), F(t0), 0.18)
             for f in (h1, h2): add(s, tone(hz(84), 1.2, 0.002, 0.5, (1, 0.4, 0.2)), F(f), 0.4)
+        elif sh == "chart":
+            bad = bt.get("trend", "bubble") in ("bubble", "crash")
+            for k, f in enumerate(range(a + 4, h0, 5)): add(s, tone(hz(72 + min(k, 14)), 0.12, 0.002, 0.05, (1, 0.3)), F(f), 0.12)
+            if bad: add(s, thunk(50, 0.9), F(h0), 0.8); add(s, tone(hz(48), 1.2, 0.002, 0.6, (1, 0.5)) * np.linspace(1, 0.4, int(1.2 * SR)), F(h0), 0.4); add(s, whoosh(1.0, 0.3, 0.05), F(h0), 0.5)
+            else: add(s, ting(2600, 0.8), F(h0), 0.5)
+        elif sh == "ticker":
+            for f in np.arange(a + 2, b, 1.6): add(s, lp(noise(0.03), 0.7) * env(int(0.03 * SR), 0.001, 0.008), F(f), 0.18)
+            add(s, whoosh(0.6, 0.2, 0.6), F(h0), 0.5); add(s, ting(2200, 0.5), F(h0), 0.35)
+        elif sh == "bankrun":
+            n = int(F(b - a) * SR); mur = lp(noise(F(b - a)), 0.08) * (0.6 + 0.4 * np.sin(np.arange(n) / SR * 7) ** 2)
+            add(s, mur * np.minimum(1, np.arange(n) / (0.3 * SR)), F(a), 0.35)
+            for f in np.arange(a + 3, h0, 7.5): add(s, thunk(140, 0.08), F(f), 0.18)
+            add(s, thunk(60, 0.7), F(h0), 0.9); add(s, creak(0.3), F(h0 - 6), 0.3)
+        elif sh == "ship":
+            n = int(F(b - a) * SR); add(s, lp(noise(F(b - a)), 0.03) * (0.5 + 0.5 * np.sin(np.arange(n) / SR * 1.4) ** 2), F(a), 0.4)
+            add(s, sum(tone(hz(m), 1.6, 0.08, 1.2, (1, 0.6, 0.3)) for m in (43, 50)), F(h0), 0.45)
+        elif sh == "stack":
+            for f in H[:3]:
+                for j in range(4): add(s, ting(3000 + 300 * j, 0.25), F(f) + j * 0.035, 0.22)
+        elif sh == "calendar":
+            u = 0.0
+            while a + 4 + u < h0: add(s, lp(noise(0.06), 0.5) * env(int(0.06 * SR), 0.002, 0.02), F(a + 4 + u), 0.3); u += max(1.2, 5 - u * 0.08)
+            add(s, ting(1800, 0.9), F(h0), 0.5)
         elif sh == "finale":
             add(s, thunk(45, 1.2), F(a), 0.8); add(s, tone(hz(36), 1.5, 0.002, 0.6, (1, 0.6)), F(a), 0.4)
             add(s, ting(1500, 1.5), F(h0), 0.35)

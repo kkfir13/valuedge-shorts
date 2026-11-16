@@ -8,14 +8,24 @@ Publishing is fully automatic, so **accuracy is the gate**: a video that is not 
 ## 1. Content rules (hard)
 - Audience: active long-term investors. Theme: patience, compounding, temperament, valuation discipline, famous
   investing history, behavioural mistakes, market myths. Tone: warm, witty, a twist at the end.
-- Every factual claim is checked with a web search against at least two reliable sources (official records, major
-  news outlets, primary documents, reputable history/finance references). Numbers, dates, names and places must match.
+- **Research deep, not wide-and-thin.** Read the actual pages (not just search snippets) of at least three independent
+  sources per story, at least one of them primary or institutional (archives, official records, museums, academic papers,
+  the institution's own history page, newspapers of the time). Every name, number, date and place in the narration must
+  be confirmed by two of them; record it in the script's `facts` list. A figure only one source gives stays out of the
+  narration. Look for the specific, surprising, physical detail (what they wore, ate, carried, said) — that is what makes
+  a scene; the generic summary everyone repeats is not enough.
   If sources disagree, use the safest documented version or drop the story. Legends/parables are allowed only when the
   script itself frames them as a legend ("Legend says…", "An old parable…").
 - No stock picks, price targets, "buy/sell" language, return promises, or advice to any individual. No crypto hype.
 - No real living people as characters (deceased historical figures are fine, treated respectfully). No brands as jokes,
   no politics, nothing graphic. No real company logos in captions or visuals.
 - Never repeat a story listed in `posted.json`. Vary eras and themes across the three daily videos.
+- **No template videos.** Each story gets its own world: the set where it really happened (`city`, `exchange`, `harbor`,
+  `office`, or the snowy small `town` only when the story is a small-town story), period costumes (`era`), a hero dressed for
+  the part, and props/labels from the story. Compare against the last three entries in `posted.json` (`shots`, `era`, `sets`)
+  and do NOT reuse their opening shot+location, their ending shot, or their order of shots. The Janitor's signature moments
+  (beanie gift, empty rocking chair with the beanie, coins raining on HOSPITAL/LIBRARY, hilltop finale) are reserved for
+  stories that truly match them — at most one of them per video.
 - Each post caption ends with: `Not financial advice. Stories for long-term investors. valuedge.app`
 
 ## 2. Script format (`scripts/<slug>.json`)
@@ -45,7 +55,17 @@ Publishing is fully automatic, so **accuracy is the gate**: a video that is not 
     (4) Pivot — "But when…" / "You see," reveals the real mechanism, ideally with an everyday analogy;
     (5) Twist / payoff — short, ironic, the last words of the video.
   - Plain spoken English, contractions, sentences of 8–15 words, numbers written as words. Never describe what the viewer sees.
+- **Write for the ear.** Every sentence has a verb. No one-word or list-fragment sentences ("Railroads. Real estate. Bonds."
+  breaks the voice) — put lists inside one sentence ("She bought railroads, real estate and bonds."). Vary sentence length
+  (a short punch after two longer lines), at most one rhetorical question, no parentheses, no abbreviations or symbols.
+  Read it aloud in your head: if a line would sound odd from a radio storyteller, rewrite it.
+- Before writing, do the skill's Stage 2 for yourself: draft 10 candidate ideas (different eras and themes), score each on
+  surprise, a physical cause-and-effect you can show, the twist, and fit with the sets — pick the best one that is not in
+  `posted.json` and not like the last three videos. Write the hook three different ways and keep the strongest.
 - 95–120 spoken words total (≈ 35–45 s with the Roger voice), 10–14 beats. One beat = one spoken phrase/sentence (5–14 words).
+- Extra fields: `"era"` (1700s | 1800s | 1900s | modern — costumes the townspeople), `"sets": {"bank": "≤13 letters"}`
+  (name on the city bank), `"chart": {"trend": "...", "label": "..."}` (default chalk board in the exchange), `"calendar"`
+  (default text on the office calendar), `"facts": [{"claim": "...", "sources": ["url", "url"]}]` (required).
 - Numbers written as words. Contractions. No stage directions in `text`.
 - `hit_words`: words *inside that beat's text* (copy them exactly, punctuation allowed) where the visual event lands.
 - `seed` 0–2 picks the music loop; vary it across the day.
@@ -71,16 +91,34 @@ Publishing is fully automatic, so **accuracy is the gate**: a video that is not 
 | `crowd` | townspeople around the hero; `mood:"nervous"` = faded sepia memory of doubters, `"happy"` = laughing crowd | `mood`, `expr` | – |
 | `finale` | the whole town on the hill at sunset; a big sun glow bursts on the last word | `hero` | 1 (glow) |
 
+| `chart` | exchange hall; a live chalk price chart draws itself on the big board; hero + two traders react | `trend`: bubble \| crash \| up \| compound \| zigzag \| flat, `label` (board title) | 1 (the turn: peak/crash/goal) |
+| `ticker` | exchange hall; brass ticker machine spews tape around the hero reading the news | `expr` | 1 (tape burst) |
+| `bankrun` | city; townspeople hurry to the marble bank, its doors slam shut; hero calm at the side (`hero:false` to hide) | `light` (default storm), `expr` | 1 (doors slam) |
+| `ship` | harbor; a sailing ship glides in (`dir:"in"`) or sails away (`"out"`), hero waving on the pier | `dir`, `npc` | 1 (ship arrives / sparkle) |
+| `stack` | office; coin stacks pop up on the desk, each double the last (compounding) | `heights` (4 numbers ≤ 16) | 3 (each new stack) |
+| `calendar` | office; the wall calendar flips from `from` to `to` (years) with pages flying; lands on the hit | `from`, `to`, `sub` | 1 (final page) |
+
 Locations for `loc`: `gas` (gas station), `store` (DEPT. STORE front), `street` (road by the gas station),
-`porch` (hero's house porch), `meadow` (green spring meadow). Other shots have fixed places.
+`porch` (hero's house porch), `meadow` (green spring meadow) — the snowy small town; and `city` (cobbled street of brick
+rowhouses in front of a marble bank), `exchange` (wood-panelled trading hall with the chalk price board), `harbor`
+(wooden pier, sea, sailing ship), `office` (desk, lamp, ledger, wall calendar). `intro`, `wide`, `work`, `closeup`,
+`crowd` and `gift` work in every location. Other shots have fixed places.
+Hero hats (`hero.hat`): hair | beanie | cap | tophat | bowler | tricorn | wig | bonnet (with `dress` for women).
+Camera style (`"cam"` on any beat): push | pull | orbit | drift | low | high | dutch | whip — use at least four different
+ones per video; never three beats in a row without one.
+Extra lights: `hall` (warm interior), `lamp` (evening office), `storm` (grey panic), `dusk` (pink sunset).
 Expressions (`expr`): smile, smile_closed, grin, laugh, neutral, nervous, shock, stern, whistle.
 Beat options for any shot: `"light": "day" | "golden" | "night" | "spring"`, `"snow": false`, `"twist": true` (the music
 stops at this beat — put it on the twist line), `"flash": true|false` (override the white flash between places).
 
-Storyboard craft: open on `intro` (the hook image), vary shot sizes, illustrate each sentence literally, use
-`twist:true` on the line before the payoff, end on `finale` (or `rain`/`crowd` happy) on the last word.
-Not every story fits the town metaphors literally — map the idea: compounding → `grow`/`rain`, patience → `rock`,
-diversification/owning businesses → `crates`, hidden wealth → `vault`, years passing → `wide` timelapse / `empty_chair`.
+Storyboard craft (cartoon-audio-short skill, 4.2): frame 0 is already the hook image — pick the most striking literal
+picture of sentence one (a crash on the chalk board, a bank run, a ship, a vault bursting — not always a close-up with a
+coin). Vary shot sizes (wide → medium → insert → reaction), illustrate each sentence literally with the set where it
+happened, put `twist:true` on the line before the payoff, and land the payoff's physical event on the last word with
+whatever shot fits that story (finale is one option, not the default).
+Map ideas to the strongest picture: bubble/crash/mania → `chart` (bubble/crash) + `ticker` + `crowd` happy→nervous;
+panic/bank failure → `bankrun`; trade/voyages/waiting for returns → `ship`; compounding → `stack`, `chart` compound,
+`grow`; decades passing → `calendar`, `wide` timelapse, `rock`; hidden wealth → `vault`; owning businesses → `crates`.
 
 ## 4. Build a video
 ```bash
@@ -88,9 +126,13 @@ bash setup.sh                                   # once per session
 python3 make_video.py scripts/<slug>.json --stills-only   # ~1 min: out/<slug>_sheet.jpg — LOOK at it
 python3 make_video.py scripts/<slug>.json       # full 1080x1920, ~60–90 min: out/<slug>.mp4 (+ .srt, _sheet.jpg, .json QA)
 ```
-Voice: `--tts kokoro` — offline Kokoro-82M (Apache-2.0, voice `am_fenrir`), model downloaded from GitHub releases into
-~/.cache/kokoro; each beat is spoken separately so timing is exact. The ElevenLabs connector cannot hand its audio file to
-this pipeline (verified 2026-11-16), so it is not used; ElevenLabs works only via `--voice file.mp3` or `ELEVENLABS_API_KEY`.
+Voice, in this order:
+1. **ElevenLabs Roger through the API** — `ELEVENLABS_API_KEY` set in the environment (the default `--tts eleven`; exact
+   word timestamps come back with the audio). This is the house voice and the quality bar.
+2. The ElevenLabs connector cannot hand its audio file to this sandbox (the file host is blocked), so it is not a route.
+3. Only if no key is set: `--tts kokoro` (offline Kokoro-82M, default narrator `af_heart`, override with `"narrator"` in the
+   script; sentences are spoken whole, pauses are paced, the voice is mastered). It is clearly below Roger — say so in the
+   run's notification.
 The voice is generated once per slug and reused on reruns (work/<slug>/voice.mp3). QA in out/<slug>.json: freezes and black must be empty, LUFS ≈ −14. Audio: music 16 dB under the voice (owner's choice;
 quieter than the skill's −6 dB) with its mid-range cut, SFX 6 dB under; burned-in captions + valuedge.app mark (owner asked for both).
 
@@ -104,4 +146,5 @@ quieter than the skill's −6 dB) with its mid-range cut, SFX 6 dB under; burned
    `madeForKids:false`), `mode:"customScheduled"`, `schedulingType:"automatic"`, `dueAt` at 08:30, 16:30 and 00:30
    (next day) Asia/Jerusalem (UTC+02:00 in winter, +03:00 in summer — take the offset from Buffer get_account).
    Buffer's plan allows 10 scheduled posts at once; never exceed it.
-3. Append the three stories to `posted.json` (date, slug, title, sources, Buffer post ids) and commit to `main`.
+3. Append the story to `posted.json` (date, slug, title, sources, Buffer post ids, `shots` = the beat shot list with
+   locations, `era`, `sets` used, narrator) and commit to `main`.

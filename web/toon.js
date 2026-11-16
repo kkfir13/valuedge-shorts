@@ -417,6 +417,27 @@ const hatOn = (p     , o        , hp      , H      , cx        , hc        , lig
     p.poly(body, null, ow);
     const [bx, by] = R([[cx, yb + 1 * u]])[0];
     p.ell(bx, by, 0.45 * W, 0.05 * HH, "#1d1b22", ow, 0, 360, (a * 180) / Math.PI);
+  } else if (o.hat === "bowler") {
+    const yb = crown + 0.24 * HH, col = o.capColor || "#2b2730", ht = 0.46 * HH, wb = 0.36 * W;
+    const dome = []; for (let i = 0; i <= 16; i++) { const t = Math.PI * i / 16; dome.push([cx - wb * Math.cos(t), yb - ht * Math.sin(t)]); }
+    const body = R(dome);
+    p.shadedFill(body, col, mul(col, SH_FELT), light, wb, 0.4);
+    p.clip(body, () => p.band(R([[cx - wb - 4 * u, yb - 0.08 * HH], [cx + wb + 4 * u, yb - 0.08 * HH]]), "#4a3a2a", 0.1 * HH, 0.8 * u));
+    p.poly(body, null, ow);
+    const [bx, by] = R([[cx, yb + 1 * u]])[0];
+    p.ell(bx, by, 0.46 * W, 0.045 * HH, shade(col, 0.8), ow, 0, 360, (a * 180) / Math.PI);
+  } else if (o.hat === "tricorn") {
+    const yb = crown + 0.3 * HH, col = o.capColor || "#26222c", W2 = 0.66 * W;
+    const body = R([[cx - W2, yb - 0.02 * HH], [cx - 0.5 * W, yb - 0.3 * HH], [cx - 0.16 * W, yb - 0.4 * HH], [cx, yb - 0.5 * HH], [cx + 0.16 * W, yb - 0.4 * HH],
+      [cx + 0.5 * W, yb - 0.3 * HH], [cx + W2, yb - 0.02 * HH], [cx + 0.3 * W, yb + 0.03 * HH], [cx, yb + 0.1 * HH], [cx - 0.3 * W, yb + 0.03 * HH]]);
+    p.shadedFill(body, col, mul(col, SH_FELT), light, W2, 0.4);
+    p.poly(body, null, ow);
+    p.stroke(R([[cx - W2 + 6 * u, yb - 0.04 * HH], [cx - 0.3 * W, yb + 0.0 * HH], [cx, yb + 0.06 * HH], [cx + 0.3 * W, yb + 0.0 * HH], [cx + W2 - 6 * u, yb - 0.04 * HH]]), 3 * u, "#d9a441");
+  } else if (o.hat === "wig") {
+    const col = o.hair || "#eeeae2", cut = crown + 0.4 * HH;
+    const top = []; for (let i = 0; i <= 16; i++) { const t = Math.PI * i / 16; top.push([cx - 0.56 * W * Math.cos(t), cut - 0.62 * HH * Math.sin(t)]); }
+    const body = R(top); p.shadedFill(body, col, mul(col, SH_FELT), light, 0.56 * W, 0.35); p.poly(body, null, ow);
+    for (const s2 of [-1, 1]) for (let k = 0; k < 2; k++) { const [qx, qy] = R([[cx + s2 * 0.56 * W, cut + 0.02 * HH + k * 0.17 * HH]])[0]; p.ell(qx, qy, 11 * u, 8 * u, col, ow * 0.8); }
   } else if (o.hat === "bonnet") {
     const [bx, by] = R([[cx + (side ? 6 * u : 0), crown + 0.16 * HH]])[0];
     p.arc(bx, by, 0.5 * W, 0.2 * HH, 200, 340, 7 * u, BONNET_BRIM);
@@ -634,7 +655,7 @@ export const bodyFront = (p     , o        , opts           ) => {
   p.shadedFill(hp, skin, mul(skin, SH_SKIN), light, H.a);
   p.inkRing(hp, ow, thick);
   hatOn(p, o, hp, H, 300, hc, light, seed, facing, false);
-  const brim = !!o.hat && o.hat !== "hair" && o.hat !== "bonnet" && o.hat !== "cap";
+  const brim = !!o.hat && o.hat !== "hair" && o.hat !== "bonnet" && o.hat !== "cap" && o.hat !== "wig";
   faceFront(p, 300, hc, W, expr, facing, look, lid, brim, skin, o.moustache, o.build === "stout");
   p.rot = null;
 };
@@ -757,7 +778,7 @@ export const bodySide = (p     , o        , opts          ) => {
   p.shadedFill(hp, skin, mul(skin, SH_SKIN), light, H.a);
   p.inkRing(hp, ow, thick);
   hatOn(p, o, hp, H, hx, hc, light, seed, 1, true);
-  const brim = !!o.hat && o.hat !== "hair" && o.hat !== "bonnet" && o.hat !== "cap";
+  const brim = !!o.hat && o.hat !== "hair" && o.hat !== "bonnet" && o.hat !== "cap" && o.hat !== "wig";
   faceSide(p, hx, hc, W, expr, lid, brim, skin, o.moustache, o.build === "stout");
   p.rot = null;
 };

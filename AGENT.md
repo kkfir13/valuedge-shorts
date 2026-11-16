@@ -1,7 +1,8 @@
 # ValuEdge Shorts — daily agent playbook
 
-Every day this repo turns three short scripts into three vertical cartoon videos (1080x1920, 25–35 s) and they are
-published through Buffer to the ValuEdge Instagram (Reels) and YouTube (Shorts) accounts, 8 hours apart.
+Every 8 hours one run of the scheduled task turns ONE story into ONE vertical cartoon video (1080x1920, full resolution,
+30–45 s, the same look and quality bar as the reference short "The Janitor Nobody Noticed") and schedules it through
+Buffer to the ValuEdge Instagram (Reels) and YouTube (Shorts) accounts.
 Publishing is fully automatic, so **accuracy is the gate**: a video that is not verified does not get made.
 
 ## 1. Content rules (hard)
@@ -35,7 +36,16 @@ Publishing is fully automatic, so **accuracy is the gate**: a video that is not 
   "sources": ["https://…", "https://…"]
 }
 ```
-- 70–95 spoken words total (≈ 25–35 s with the Roger voice). 8–12 beats. One beat = one spoken phrase/sentence (5–14 words).
+- Write it with the cartoon-audio-short skill's Stage 2 and Stage 3 rules (invoke the skill `anthropic-skills:cartoon-audio-short`
+  when it is available and follow its idea and script sections; its Stage 4 build kit is replaced by this repo). In short:
+  - Idea: one surprising story with a physical cause and effect you can show, an everyman character, stakes that escalate,
+    and an ironic twist in the last line. True stories only when verified; legends framed as legends.
+  - Formula: (1) Hook — sentence 1, no setup, the absurd fact stated plainly; (2) Setting — 1–2 lines: when, where, who,
+    one concrete detail; (3) Escalation — 2–4 beats, each bigger, others doubt or mock, one exaggeration joke;
+    (4) Pivot — "But when…" / "You see," reveals the real mechanism, ideally with an everyday analogy;
+    (5) Twist / payoff — short, ironic, the last words of the video.
+  - Plain spoken English, contractions, sentences of 8–15 words, numbers written as words. Never describe what the viewer sees.
+- 95–120 spoken words total (≈ 35–45 s with the Roger voice), 10–14 beats. One beat = one spoken phrase/sentence (5–14 words).
 - Numbers written as words. Contractions. No stage directions in `text`.
 - `hit_words`: words *inside that beat's text* (copy them exactly, punctuation allowed) where the visual event lands.
 - `seed` 0–2 picks the music loop; vary it across the day.
@@ -76,12 +86,13 @@ diversification/owning businesses → `crates`, hidden wealth → `vault`, years
 ```bash
 bash setup.sh                                   # once per session
 python3 make_video.py scripts/<slug>.json --stills-only   # ~1 min: out/<slug>_sheet.jpg — LOOK at it
-python3 make_video.py scripts/<slug>.json       # ~15–25 min: out/<slug>.mp4 (+ .srt, _sheet.jpg, .json QA)
+python3 make_video.py scripts/<slug>.json       # full 1080x1920, ~60–90 min: out/<slug>.mp4 (+ .srt, _sheet.jpg, .json QA)
 ```
 Voice, in order: (1) ElevenLabs Roger through the connected connector, passed in with `--voice file.mp3` (or the API when
 `ELEVENLABS_API_KEY` is set); (2) fallback `--tts kokoro` — offline Kokoro-82M (Apache-2.0, voice `am_fenrir`), model
 downloaded once from GitHub releases into ~/.cache/kokoro; each beat is spoken separately so timing is exact.
-The voice is generated once per slug and reused on reruns (work/<slug>/voice.mp3). QA in out/<slug>.json: freezes and black must be empty, LUFS ≈ −14.
+The voice is generated once per slug and reused on reruns (work/<slug>/voice.mp3). QA in out/<slug>.json: freezes and black must be empty, LUFS ≈ −14. Audio: music 16 dB under the voice (owner's choice;
+quieter than the skill's −6 dB) with its mid-range cut, SFX 6 dB under; burned-in captions + valuedge.app mark (owner asked for both).
 
 ## 5. Publish
 1. Copy the three MP4s to the `media` branch (orphan branch holding only yesterday's and today's dated folders plus

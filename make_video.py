@@ -303,7 +303,7 @@ Dialogue: 1,{ts(0)},{ts(dur)},Mark,,0,0,0,,valuedge.app
 # ---------------- main ----------------
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("script"); ap.add_argument("--voice"); ap.add_argument("--scale", type=float, default=0.6667)
+    ap.add_argument("script"); ap.add_argument("--voice"); ap.add_argument("--scale", type=float, default=1.0)
     ap.add_argument("--procs", type=int, default=2); ap.add_argument("--stills-only", action="store_true")
     ap.add_argument("--tts", choices=["eleven", "kokoro"], default=os.environ.get("TTS", "eleven"), help="voice source when --voice is not given")
     a = ap.parse_args()

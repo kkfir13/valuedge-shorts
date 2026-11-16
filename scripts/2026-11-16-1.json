@@ -1,0 +1,120 @@
+{
+ "slug": "2026-11-16-1",
+ "title": "Newton's Bubble",
+ "seed": 0,
+ "hero": {
+  "jacket": "#3b2f5c",
+  "hair": "#f2efe8",
+  "skin": "#f3cfb0",
+  "moustache": "#f3cfb0",
+  "hat": "hair"
+ },
+ "crates": [
+  "STOCK",
+  "GOLD",
+  "BONDS"
+ ],
+ "buildings": [
+  "MINT",
+  "EXCHANGE"
+ ],
+ "beats": [
+  {
+   "shot": "intro",
+   "text": "Isaac Newton, one of history's greatest minds, got burned by a stock bubble.",
+   "hit_words": [
+    "bubble."
+   ],
+   "loc": "street",
+   "fx": "burst",
+   "expr": "shock"
+  },
+  {
+   "shot": "wide",
+   "text": "He ran England's Royal Mint.",
+   "hit_words": [],
+   "loc": "street"
+  },
+  {
+   "shot": "work",
+   "text": "In early seventeen twenty, South Sea Company shares were soaring.",
+   "hit_words": [],
+   "loc": "porch",
+   "prop": "paper"
+  },
+  {
+   "shot": "closeup",
+   "text": "Newton sold his shares and doubled his money.",
+   "hit_words": [
+    "sold",
+    "doubled",
+    "money."
+   ],
+   "loc": "porch",
+   "expr": "grin"
+  },
+  {
+   "shot": "crowd",
+   "text": "But the price kept climbing, past a thousand pounds a share.",
+   "hit_words": [],
+   "mood": "happy",
+   "expr": "nervous"
+  },
+  {
+   "shot": "wide",
+   "text": "So he jumped back in, near the very top.",
+   "hit_words": [],
+   "loc": "street"
+  },
+  {
+   "shot": "empty_chair",
+   "text": "By September, the shares had collapsed below two hundred.",
+   "hit_words": []
+  },
+  {
+   "shot": "closeup",
+   "text": "The man who explained gravity lost a fortune.",
+   "hit_words": [
+    "explained",
+    "gravity",
+    "fortune."
+   ],
+   "loc": "street",
+   "expr": "shock",
+   "light": "night"
+  },
+  {
+   "shot": "intro",
+   "text": "Legend says he grumbled he could calculate the heavens,",
+   "hit_words": [
+    "heavens,"
+   ],
+   "loc": "porch",
+   "fx": "stars",
+   "expr": "stern",
+   "light": "night"
+  },
+  {
+   "shot": "crowd",
+   "text": "but not the madness of people.",
+   "hit_words": [],
+   "mood": "nervous",
+   "twist": true
+  },
+  {
+   "shot": "finale",
+   "text": "In markets, temperament beats brilliance.",
+   "hit_words": [
+    "brilliance."
+   ]
+  }
+ ],
+ "caption": "Isaac Newton sold his South Sea Company shares early in 1720 and doubled his money. Then he bought back in near the top, and the bubble burst.\n\nEven a genius needs temperament more than brilliance.\n\n#investing #longterminvesting #behavioralfinance #stockmarket #investinghistory\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "Isaac Newton Lost a Fortune in the South Sea Bubble",
+ "sources": [
+  "https://www.smithsonianmag.com/smart-news/market-crash-cost-newton-fortune-180961655/",
+  "https://newtonandthemint.history.ox.ac.uk/global-financial-world/newton-and-the-south-sea-bubble",
+  "https://physicstoday.aip.org/features/isaac-newton-and-the-perils-of-the-financial-south-sea",
+  "https://www.openculture.com/2018/01/how-isaac-newton-lost-3-million-dollars-in-the-south-sea-bubble-of-1720-even-geniuses-cant-prevail-against-the-machinations-of-the-markets.html"
+ ]
+}

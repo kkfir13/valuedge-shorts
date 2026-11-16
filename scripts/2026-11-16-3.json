@@ -1,0 +1,115 @@
+{
+ "slug": "2026-11-16-3",
+ "title": "Franklin's 200-Year Gift",
+ "seed": 2,
+ "hero": {
+  "jacket": "#6b4a2b",
+  "hair": "#cfc8bc",
+  "skin": "#f0c49c",
+  "moustache": "#f0c49c",
+  "hat": "hair",
+  "build": "stout"
+ },
+ "crates": [
+  "LOANS",
+  "TRADES",
+  "TIME"
+ ],
+ "buildings": [
+  "SCHOOL",
+  "INSTITUTE"
+ ],
+ "beats": [
+  {
+   "shot": "intro",
+   "text": "In seventeen ninety, Benjamin Franklin left a strange gift in his will.",
+   "hit_words": [
+    "gift"
+   ],
+   "loc": "street",
+   "fx": "coin"
+  },
+  {
+   "shot": "vault",
+   "text": "One thousand pounds each to Boston and Philadelphia.",
+   "hit_words": [
+    "Philadelphia."
+   ],
+   "item": "coin"
+  },
+  {
+   "shot": "work",
+   "text": "The money would be lent to young tradesmen, at interest.",
+   "hit_words": [],
+   "loc": "porch",
+   "prop": "paper"
+  },
+  {
+   "shot": "rock",
+   "text": "Then the funds would wait. For two hundred years.",
+   "hit_words": [
+    "years."
+   ]
+  },
+  {
+   "shot": "closeup",
+   "text": "He trusted compounding to do the rest.",
+   "hit_words": [
+    "trusted",
+    "compounding",
+    "rest."
+   ],
+   "loc": "porch",
+   "expr": "smile_closed"
+  },
+  {
+   "shot": "empty_chair",
+   "text": "He never lived to see a penny of it.",
+   "hit_words": []
+  },
+  {
+   "shot": "grow",
+   "text": "But the money kept working, generation after generation.",
+   "hit_words": [
+    "money"
+   ]
+  },
+  {
+   "shot": "rain",
+   "text": "It helped build a trade school in Boston, and an institute in Philadelphia.",
+   "hit_words": [
+    "Boston,",
+    "Philadelphia."
+   ]
+  },
+  {
+   "shot": "crowd",
+   "text": "By nineteen ninety, the two funds were worth millions.",
+   "hit_words": [],
+   "mood": "happy",
+   "expr": "laugh"
+  },
+  {
+   "shot": "crowd",
+   "text": "Not by being clever.",
+   "hit_words": [],
+   "mood": "nervous",
+   "twist": true
+  },
+  {
+   "shot": "finale",
+   "text": "Just by being patient.",
+   "hit_words": [
+    "patient."
+   ]
+  }
+ ],
+ "caption": "In 1790 Benjamin Franklin left £1,000 each to Boston and Philadelphia, to be lent out and left to grow for two centuries.\n\nBy 1990 the two funds were worth millions.\n\n#compounding #investinghistory #longterminvesting #patience #benjaminfranklin\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "Ben Franklin's 200-Year Experiment in Compounding",
+ "sources": [
+  "https://www.philanthropyroundtable.org/magazine/what-miracle-of-compound-interest/",
+  "https://www.mentalfloss.com/history/government-politics/200-year-old-gift-from-benjamin-franklin-to-boston-and-philadelphia",
+  "https://www.snopes.com/fact-check/ben-franklin-2000-dollars/",
+  "https://fi.edu/en/support/benjamin-franklins-donor-story"
+ ]
+}

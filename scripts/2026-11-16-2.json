@@ -1,0 +1,114 @@
+{
+ "slug": "2026-11-16-2",
+ "title": "The Secretary's Secret",
+ "seed": 1,
+ "hero": {
+  "jacket": "#4f6b8a",
+  "hair": "#d9d6d0",
+  "skin": "#e8b98f",
+  "dress": "#8a4a6a",
+  "hat": "hair"
+ },
+ "crates": [
+  "STOCK",
+  "SAVINGS",
+  "CASH"
+ ],
+ "buildings": [
+  "COLLEGE",
+  "ABROAD"
+ ],
+ "beats": [
+  {
+   "shot": "intro",
+   "text": "In nineteen thirty-five, Grace Groner spent one hundred eighty dollars on her company's stock.",
+   "hit_words": [
+    "dollars"
+   ],
+   "loc": "store",
+   "fx": "coin"
+  },
+  {
+   "shot": "wide",
+   "text": "She worked there as a secretary for forty-three years.",
+   "hit_words": [],
+   "loc": "store",
+   "timelapse": true,
+   "wave": true
+  },
+  {
+   "shot": "closeup",
+   "text": "She bought her clothes at rummage sales,",
+   "hit_words": [
+    "bought",
+    "clothes",
+    "sales,"
+   ],
+   "loc": "store",
+   "expr": "smile"
+  },
+  {
+   "shot": "wide",
+   "text": "and walked everywhere instead of buying a car.",
+   "hit_words": [],
+   "loc": "street"
+  },
+  {
+   "shot": "rock",
+   "text": "Her stock? She never sold a single share.",
+   "hit_words": [
+    "share."
+   ]
+  },
+  {
+   "shot": "grow",
+   "text": "The dividends went right back in, year after year.",
+   "hit_words": [
+    "dividends"
+   ]
+  },
+  {
+   "shot": "empty_chair",
+   "text": "When she died at one hundred,",
+   "hit_words": []
+  },
+  {
+   "shot": "vault",
+   "text": "that one-hundred-eighty-dollar stake had grown to seven million dollars.",
+   "hit_words": [
+    "seven"
+   ]
+  },
+  {
+   "shot": "rain",
+   "text": "She left it to her old college, to fund study abroad.",
+   "hit_words": [
+    "college,",
+    "abroad."
+   ]
+  },
+  {
+   "shot": "crowd",
+   "text": "She never needed to look rich.",
+   "hit_words": [],
+   "mood": "nervous",
+   "twist": true
+  },
+  {
+   "shot": "finale",
+   "text": "She just needed time.",
+   "hit_words": [
+    "time."
+   ]
+  }
+ ],
+ "caption": "In 1935 Grace Groner put $180 into her employer's stock. She never sold, reinvested the dividends and lived simply.\n\nWhen she died at 100, she left about $7 million to Lake Forest College.\n\n#investing #compounding #longterminvesting #dividends #patience\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "She Turned $180 Into $7 Million by Never Selling",
+ "sources": [
+  "https://www.lakeforest.edu/news/alumna-grace-groner-31-gives-7-million-to-lake-forest-college",
+  "https://www.cbsnews.com/news/frugal-centenarian-left-7m-to-alma-mater",
+  "https://nonprofitquarterly.org/nonprofit-newswire-donors-frugal-lifestyle-enriches-illinois-college/",
+  "https://abc7chicago.com/archive/7311646/",
+  "https://www.philanthropy.com/news/former-secretary-leaves-7-million-to-her-illinois-alma-mater/"
+ ]
+}

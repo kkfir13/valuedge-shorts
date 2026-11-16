@@ -249,7 +249,7 @@ WrapStyle: 0
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Cap,{font},116,&H00FFFFFF,&H00FFFFFF,&H00201420,&H80000000,-1,0,0,0,100,100,0,0,1,10,4,2,70,70,500,1
-Style: Mark,{font},40,&H40FFFFFF,&H40FFFFFF,&H60201420,&H00000000,-1,0,0,0,100,100,1,0,1,3,0,8,40,40,70,1
+Style: Mark,{font},54,&H40FFFFFF,&H40FFFFFF,&H60201420,&H00000000,-1,0,0,0,100,100,1,0,1,3,0,8,40,40,70,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text

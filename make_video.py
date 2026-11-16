@@ -40,13 +40,13 @@ def _ctx():
     return ssl.create_default_context()
 
 
-def eleven(text, out_mp3):
+def eleven(text, out_mp3, speed=1.0):
     """Returns per-character (char, start, end) alignment, or None when only plain audio was available."""
     key = os.environ.get("ELEVENLABS_API_KEY")
     if not key: raise SystemExit("ELEVENLABS_API_KEY is not set")
     errors = []
     for model in (os.environ.get("TTS_MODEL", "eleven_v4"), "eleven_multilingual_v2"):
-        body = json.dumps({"text": text, "model_id": model, "voice_settings": VOICE_SETTINGS}).encode()
+        body = json.dumps({"text": text, "model_id": model, "voice_settings": {**VOICE_SETTINGS, "speed": speed}}).encode()
         req = urllib.request.Request(f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}/with-timestamps?output_format=mp3_44100_128",
                                      data=body, headers={"xi-api-key": key, "Content-Type": "application/json"})
         try:
@@ -58,7 +58,7 @@ def eleven(text, out_mp3):
         except Exception as e:  # noqa
             errors.append(f"{model}: {e}")
     # plain TTS as last resort (timing from silence detection)
-    body = json.dumps({"text": text, "model_id": os.environ.get("TTS_MODEL", "eleven_v4"), "voice_settings": VOICE_SETTINGS}).encode()
+    body = json.dumps({"text": text, "model_id": os.environ.get("TTS_MODEL", "eleven_v4"), "voice_settings": {**VOICE_SETTINGS, "speed": speed}}).encode()
     req = urllib.request.Request(f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}?output_format=mp3_44100_128",
                                  data=body, headers={"xi-api-key": key, "Content-Type": "application/json"})
     try:
@@ -304,7 +304,7 @@ def ts(x, srt=False):
     return f"{h:02d}:{m:02d}:{s:06.3f}".replace(".", ",") if srt else f"{h}:{m:02d}:{s:05.2f}"
 
 
-def captions(beats, dur, work, srt_path, max_words=6):
+def captions(beats, dur, work, srt_path, max_words=2):
     cues = []
     for bt in beats:
         ws, cur = bt["_words"], []
@@ -331,7 +331,7 @@ WrapStyle: 0
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,{font},116,&H00FFFFFF,&H00FFFFFF,&H00201420,&H80000000,-1,0,0,0,100,100,0,0,1,10,4,2,70,70,500,1
+Style: Cap,{font},108,&H00FFFFFF,&H00FFFFFF,&H00201420,&H80000000,-1,0,0,0,100,100,0,0,1,10,4,2,70,70,560,1
 Style: Mark,{font},54,&H40FFFFFF,&H40FFFFFF,&H60201420,&H00000000,-1,0,0,0,100,100,1,0,1,3,0,8,40,40,70,1
 
 [Events]
@@ -364,7 +364,7 @@ def main():
         dur = duration(voice)
     else:
         if os.path.exists(voice) and os.path.exists(f"{work}/align.json"): al = json.load(open(f"{work}/align.json")) or None; print("voice: reused")
-        else: al = eleven(text, voice); json.dump(al, open(f"{work}/align.json", "w"))
+        else: al = eleven(text, voice, float(script.get("speed", 1.08))); json.dump(al, open(f"{work}/align.json", "w"))
         dur = duration(voice)
         words = words_from_alignment(text, al) if al else words_from_silence(script["beats"], speech_segments(voice))
     board, beats, flashes = build_board(script, words, dur)

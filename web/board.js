@@ -94,7 +94,7 @@ export const beatLoc = (bt) => SHOT_LOC[bt.shot] || bt.loc || (bt.shot === "crow
 // precompute flashes and kicks
 export const FLASH = [], KICKS = [];
 B.beats.forEach((bt, i) => {
-  if (i > 0 && (bt.flash ?? beatLoc(bt) !== beatLoc(B.beats[i - 1]))) FLASH.push(bt.a);
+  if (i > 0 && bt.flash === true) FLASH.push(bt.a); // hard cuts by default; white flash only when a beat asks for it (a real time jump)
   if (["vault", "crates", "finale"].includes(bt.shot)) for (const h of bt.hits || []) KICKS.push(h);
 });
 const beatAt = (f) => { let k = 0; for (let i = 0; i < B.beats.length; i++) if (f >= B.beats[i].a) k = i; return k; };

@@ -30,6 +30,28 @@ Publishing is fully automatic, so **accuracy is the gate**: a video that is not 
   stories that truly match them — at most one of them per video.
 - Each post caption ends with: `Not financial advice. Stories for long-term investors. valuedge.app`
 
+## 1b. What a 10-million-view short does (studied 2026-11-16: "Why the Second Draw Always Wins", 56 s, same art style)
+Measured, not guessed: 219 words in 56 s (3.9 words/s); a new picture every ~2 s; one-word captions; hook action on frame 0.
+Use these principles (never copy its story or shots):
+1. **Hook = a rule that sounds wrong, plus motion on frame 0.** "The fastest gun in the West had one rule: never draw first."
+   The first four seconds are one continuous camera move following an object (a bullet) to the hero. No static open.
+2. **Put the viewer inside the story — second person.** "Imagine you're standing in the street at noon…", "you grab for
+   your gun…", "you're face down in the dirt". The viewer is the one who makes the mistake; the lesson lands on them.
+3. **A named, nicknamed everyman** ("Slow Eddie") and **one exaggeration joke** ("He'd lose a race to the saloon against a
+   guy carrying two beers"). Slapstick payoffs for the loser, funny faces.
+4. **Ask the mystery out loud at ~15 s** ("How is that possible?"), then escalate before answering ("men ride in from three
+   states away… every one goes down the same way") and drop one clue ("Eddie never looks at your face").
+5. **Pivot with "You see," into an everyday analogy the viewer has lived** (a phone sliding off a table — you caught it
+   before you decided to), staged in-world, then the mechanism shown as a creative metaphor (the brain as a telegraph office).
+6. **One coherent world, many corners of it** (street, saloon, photographer's shop, telegraph office), varied angles and
+   lighting (night blue for the explanation) — not unrelated sets glued together.
+7. **End on the mechanism, abruptly — no moral, no summary.** The last line is the punch; the investing lesson is implied
+   for the viewer to connect (it makes them replay and comment). Never end on a lecture.
+8. **Universal topic first, finance second.** Lead with a human-behaviour or history hook anyone would watch; the investing
+   connection is the twist or the subtext. Panic selling, FOMO, patience, compounding, hidden value all fit this.
+9. **Captions one or two words at a time**, centred low; hard cuts and camera moves instead of white flashes (flashes only
+   for a true time jump, `"flash": true`).
+
 ## 2. Script format (`scripts/<slug>.json`)
 ```json
 {
@@ -56,7 +78,8 @@ Publishing is fully automatic, so **accuracy is the gate**: a video that is not 
     one concrete detail; (3) Escalation — 2–4 beats, each bigger, others doubt or mock, one exaggeration joke;
     (4) Pivot — "But when…" / "You see," reveals the real mechanism, ideally with an everyday analogy;
     (5) Twist / payoff — short, ironic, the last words of the video.
-  - Plain spoken English, contractions, sentences of 8–15 words, numbers written as words. Never describe what the viewer sees.
+  - Plain spoken English, contractions, sentences of 6–15 words, numbers written as words. Never describe what the viewer sees.
+  - Prefer second person ("Imagine you…") and a nickname for the everyman; ask the mystery question out loud; end on the punch.
 - **Write for the ear.** Every sentence has a verb. No one-word or list-fragment sentences ("Railroads. Real estate. Bonds."
   breaks the voice) — put lists inside one sentence ("She bought railroads, real estate and bonds."). Vary sentence length
   (a short punch after two longer lines), at most one rhetorical question, no parentheses, no abbreviations or symbols.
@@ -64,7 +87,8 @@ Publishing is fully automatic, so **accuracy is the gate**: a video that is not 
 - Before writing, do the skill's Stage 2 for yourself: draft 10 candidate ideas (different eras and themes), score each on
   surprise, a physical cause-and-effect you can show, the twist, and fit with the sets — pick the best one that is not in
   `posted.json` and not like the last three videos. Write the hook three different ways and keep the strongest.
-- 95–120 spoken words total (≈ 35–45 s with the Roger voice), 10–14 beats. One beat = one spoken phrase/sentence (5–14 words).
+- 150–210 spoken words total (≈ 40–55 s with Roger at speed 1.08 — about 3.8 words per second, the pace of the 10M-view
+  reference below), 16–24 beats of 5–12 words, so the picture changes every 2–3 seconds.
 - Extra fields: `"era"` (1700s | 1800s | 1900s | modern — costumes the townspeople), `"sets": {"bank": "≤13 letters"}`
   (name on the city bank), `"chart": {"trend": "...", "label": "..."}` (default chalk board in the exchange), `"calendar"`
   (default text on the office calendar), `"facts": [{"claim": "...", "sources": ["url", "url"]}]` (required).
@@ -111,7 +135,7 @@ ones per video; never three beats in a row without one.
 Extra lights: `hall` (warm interior), `lamp` (evening office), `storm` (grey panic), `dusk` (pink sunset).
 Expressions (`expr`): smile, smile_closed, grin, laugh, neutral, nervous, shock, stern, whistle.
 Beat options for any shot: `"light": "day" | "golden" | "night" | "spring"`, `"snow": false`, `"twist": true` (the music
-stops at this beat — put it on the twist line), `"flash": true|false` (override the white flash between places).
+stops at this beat — put it on the twist line), `"flash": true` (white flash for a real time jump; the default is a hard cut).
 
 Storyboard craft (cartoon-audio-short skill, 4.2): frame 0 is already the hook image — pick the most striking literal
 picture of sentence one (a crash on the chalk board, a bank run, a ship, a vault bursting — not always a close-up with a

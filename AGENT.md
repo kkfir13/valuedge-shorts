@@ -88,9 +88,9 @@ bash setup.sh                                   # once per session
 python3 make_video.py scripts/<slug>.json --stills-only   # ~1 min: out/<slug>_sheet.jpg — LOOK at it
 python3 make_video.py scripts/<slug>.json       # full 1080x1920, ~60–90 min: out/<slug>.mp4 (+ .srt, _sheet.jpg, .json QA)
 ```
-Voice, in order: (1) ElevenLabs Roger through the connected connector, passed in with `--voice file.mp3` (or the API when
-`ELEVENLABS_API_KEY` is set); (2) fallback `--tts kokoro` — offline Kokoro-82M (Apache-2.0, voice `am_fenrir`), model
-downloaded once from GitHub releases into ~/.cache/kokoro; each beat is spoken separately so timing is exact.
+Voice: `--tts kokoro` — offline Kokoro-82M (Apache-2.0, voice `am_fenrir`), model downloaded from GitHub releases into
+~/.cache/kokoro; each beat is spoken separately so timing is exact. The ElevenLabs connector cannot hand its audio file to
+this pipeline (verified 2026-11-16), so it is not used; ElevenLabs works only via `--voice file.mp3` or `ELEVENLABS_API_KEY`.
 The voice is generated once per slug and reused on reruns (work/<slug>/voice.mp3). QA in out/<slug>.json: freezes and black must be empty, LUFS ≈ −14. Audio: music 16 dB under the voice (owner's choice;
 quieter than the skill's −6 dB) with its mid-range cut, SFX 6 dB under; burned-in captions + valuedge.app mark (owner asked for both).
 

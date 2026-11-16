@@ -63,6 +63,45 @@ def eleven(text, out_mp3):
     return None
 
 
+KOKORO_DIR = os.path.expanduser("~/.cache/kokoro")
+KOKORO_URL = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
+KOKORO_VOICE = os.environ.get("KOKORO_VOICE", "am_michael")
+
+
+def kokoro(beats, out_mp3):
+    """Offline fallback voice (Kokoro-82M via kokoro-onnx, Apache-2.0). Each beat is spoken separately and joined with
+    fixed pauses, so beat boundaries are exact; words inside a beat are spread by length. Returns word timings."""
+    try:
+        from kokoro_onnx import Kokoro
+    except ImportError:
+        sh([sys.executable, "-m", "pip", "install", "--break-system-packages", "-q", "kokoro-onnx", "soundfile"])
+        from kokoro_onnx import Kokoro
+    os.makedirs(KOKORO_DIR, exist_ok=True)
+    for f in ("kokoro-v1.0.onnx", "voices-v1.0.bin"):
+        if not os.path.exists(f"{KOKORO_DIR}/{f}"):
+            sh(["curl", "-sSfL", "--retry", "3", "-o", f"{KOKORO_DIR}/{f}", KOKORO_URL + f])
+    k = Kokoro(f"{KOKORO_DIR}/kokoro-v1.0.onnx", f"{KOKORO_DIR}/voices-v1.0.bin")
+    sr0, chunks, words, t = None, [], [], 0.25
+    for b in beats:
+        txt = b["text"].strip()
+        a, sr0 = k.create(txt, voice=KOKORO_VOICE, speed=1.0, lang="en-us")
+        a = np.asarray(a, dtype=np.float32)
+        nz = np.where(np.abs(a) > 0.01)[0]
+        if len(nz): a = a[max(0, nz[0] - int(0.03 * sr0)): nz[-1] + int(0.06 * sr0)]
+        d = len(a) / sr0
+        ws = txt.split(); L = [len(w) + 1 for w in ws]; c = np.cumsum([0] + L) / sum(L)
+        for i, w in enumerate(ws): words.append({"w": w, "s": t + c[i] * d, "e": t + c[i + 1] * d - 0.02})
+        gap = 0.45 if re.search(r"[.!?]$", txt) else 0.28
+        chunks += [np.zeros(int((0.25 if not chunks else 0) * sr0), np.float32), a, np.zeros(int(gap * sr0), np.float32)]
+        t += d + gap
+    audio = np.concatenate(chunks)
+    raw = f"{out_mp3}.f32"; audio.astype("<f4").tofile(raw)
+    sh(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(sr0), "-ac", "1", "-i", raw, "-af", "loudnorm=I=-18:TP=-2", "-ar", "44100", "-b:a", "160k", out_mp3])
+    os.remove(raw)
+    print(f"voice: kokoro {KOKORO_VOICE}, {t:.1f}s")
+    return words
+
+
 def duration(p):
     return float(sh(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p]).stdout)
 
@@ -266,16 +305,24 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("script"); ap.add_argument("--voice"); ap.add_argument("--scale", type=float, default=0.6667)
     ap.add_argument("--procs", type=int, default=2); ap.add_argument("--stills-only", action="store_true")
+    ap.add_argument("--tts", choices=["eleven", "kokoro"], default=os.environ.get("TTS", "eleven"), help="voice source when --voice is not given")
     a = ap.parse_args()
     script = json.load(open(a.script)); slug = script["slug"]
     work = f"{ROOT}/work/{slug}"; os.makedirs(work, exist_ok=True); os.makedirs(f"{ROOT}/out", exist_ok=True)
     text = " ".join(b["text"].strip() for b in script["beats"])
     voice = f"{work}/voice.mp3"
-    if a.voice: sh(["cp", a.voice, voice]); al = None
-    elif os.path.exists(voice) and os.path.exists(f"{work}/align.json"): al = json.load(open(f"{work}/align.json")) or None; print("voice: reused")
-    else: al = eleven(text, voice); json.dump(al, open(f"{work}/align.json", "w"))
-    dur = duration(voice)
-    words = words_from_alignment(text, al) if al else words_from_silence(script["beats"], speech_segments(voice))
+    if a.voice:
+        sh(["cp", a.voice, voice]); dur = duration(voice); words = words_from_silence(script["beats"], speech_segments(voice))
+    elif a.tts == "kokoro":
+        wj = f"{work}/words_kokoro.json"
+        if os.path.exists(voice) and os.path.exists(wj): words = json.load(open(wj)); print("voice: reused kokoro")
+        else: words = kokoro(script["beats"], voice); json.dump(words, open(wj, "w"))
+        dur = duration(voice)
+    else:
+        if os.path.exists(voice) and os.path.exists(f"{work}/align.json"): al = json.load(open(f"{work}/align.json")) or None; print("voice: reused")
+        else: al = eleven(text, voice); json.dump(al, open(f"{work}/align.json", "w"))
+        dur = duration(voice)
+        words = words_from_alignment(text, al) if al else words_from_silence(script["beats"], speech_segments(voice))
     board, beats, flashes = build_board(script, words, dur)
     bname = f"boards/{slug}.json"; os.makedirs(f"{ROOT}/web/boards", exist_ok=True)
     json.dump(board, open(f"{ROOT}/web/{bname}", "w"), indent=1)

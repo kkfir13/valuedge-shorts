@@ -1,0 +1,141 @@
+{
+ "slug": "2026-11-16-4",
+ "title": "The Witch Who Saved New York",
+ "seed": 1,
+ "hero": {
+  "jacket": "#26242b",
+  "hair": "#9a9288",
+  "skin": "#dcae86",
+  "dress": "#1f1d24",
+  "hat": "hair"
+ },
+ "crates": [
+  "RAILS",
+  "LAND",
+  "BONDS"
+ ],
+ "buildings": [
+  "CITY HALL",
+  "BANK"
+ ],
+ "beats": [
+  {
+   "shot": "crowd",
+   "text": "In nineteen-oh-seven, New York City ran short of cash.",
+   "hit_words": [],
+   "mood": "nervous",
+   "snow": false,
+   "light": "golden"
+  },
+  {
+   "shot": "intro",
+   "text": "So it turned to a woman the newspapers called a witch.",
+   "hit_words": [
+    "witch."
+   ],
+   "loc": "street",
+   "fx": "burst",
+   "expr": "stern",
+   "snow": false,
+   "light": "golden"
+  },
+  {
+   "shot": "closeup",
+   "text": "Hetty Green always wore an old black dress.",
+   "hit_words": [
+    "always",
+    "old",
+    "dress."
+   ],
+   "loc": "store",
+   "expr": "neutral"
+  },
+  {
+   "shot": "crowd",
+   "text": "People laughed at her as a miser.",
+   "hit_words": [],
+   "mood": "happy",
+   "expr": "smile_closed"
+  },
+  {
+   "shot": "work",
+   "text": "But before the panic, she'd quietly turned her deals into cash.",
+   "hit_words": [],
+   "loc": "porch",
+   "prop": "paper",
+   "light": "night"
+  },
+  {
+   "shot": "crates",
+   "text": "She liked boring things. Railroads. Real estate. Bonds.",
+   "hit_words": [
+    "Railroads.",
+    "estate.",
+    "Bonds."
+   ]
+  },
+  {
+   "shot": "rock",
+   "text": "When markets crashed, she simply waited.",
+   "hit_words": [
+    "waited."
+   ],
+   "sleep": false
+  },
+  {
+   "shot": "grow",
+   "text": "Then she bought what nobody wanted, and held on.",
+   "hit_words": [
+    "bought"
+   ],
+   "light": "spring",
+   "snow": false
+  },
+  {
+   "shot": "rain",
+   "text": "So when the city came knocking, Hetty had the money.",
+   "hit_words": [
+    "city",
+    "money."
+   ]
+  },
+  {
+   "shot": "intro",
+   "text": "She said the secret was simple: buy cheap, sell dear, be persistent.",
+   "hit_words": [
+    "persistent."
+   ],
+   "loc": "porch",
+   "fx": "stars",
+   "expr": "smile_closed",
+   "light": "golden",
+   "snow": false
+  },
+  {
+   "shot": "wide",
+   "text": "She died in nineteen sixteen, worth about a hundred million dollars.",
+   "hit_words": [],
+   "loc": "meadow",
+   "timelapse": true,
+   "twist": true,
+   "snow": false
+  },
+  {
+   "shot": "vault",
+   "text": "Not bad for a witch.",
+   "hit_words": [
+    "witch."
+   ],
+   "item": "coin"
+  }
+ ],
+ "caption": "When New York City needed cash during the Panic of 1907, it turned to Hetty Green, the woman the papers mocked as the Witch of Wall Street.\n\nShe held cash, bought what nobody wanted, and waited.\n\n#investing #valueinvesting #investinghistory #patience #longterminvesting\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "The 'Witch of Wall Street' Who Bailed Out New York City",
+ "sources": [
+  "https://fortune.com/2024/03/17/how-richest-woman-world-saved-new-york-city-panic-1907/",
+  "https://www.nps.gov/nebe/learn/historyculture/hettygreen.htm",
+  "https://www.massmoments.org/moment-details/richest-woman-in-america-born-in-new-bedford.html",
+  "https://www.morningstar.com/stocks/5-lessons-witch-wall-street",
+  "https://www.newenglandhistoricalsociety.com/another-look-hetty-green-witch-wall-street/"
+ ]
+}

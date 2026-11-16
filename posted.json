@@ -56,5 +56,25 @@
   "scheduled": "2026-11-17T16:30:00+02:00",
   "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-16/2026-11-16-3.mp4",
   "voice": "work/2026-11-16-3/voice.mp3 (Kokoro am_fenrir fallback; ElevenLabs audio host blocked by network policy)"
+ },
+ {
+  "date": "2026-11-16",
+  "slug": "2026-11-16-4",
+  "title": "The Witch Who Saved New York",
+  "yt_title": "The 'Witch of Wall Street' Who Bailed Out New York City",
+  "sources": [
+   "https://fortune.com/2024/03/17/how-richest-woman-world-saved-new-york-city-panic-1907/",
+   "https://www.nps.gov/nebe/learn/historyculture/hettygreen.htm",
+   "https://www.massmoments.org/moment-details/richest-woman-in-america-born-in-new-bedford.html",
+   "https://www.morningstar.com/stocks/5-lessons-witch-wall-street",
+   "https://www.newenglandhistoricalsociety.com/another-look-hetty-green-witch-wall-street/"
+  ],
+  "buffer": {
+   "instagram": "6afb3119d256d7c2468f5606",
+   "youtube": "6afb3124e94446819598934b"
+  },
+  "scheduled": "shareNow 2026-11-16T18:36+02:00 (owner asked to publish immediately)",
+  "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-16/2026-11-16-4.mp4",
+  "voice": "work/2026-11-16-4/voice.mp3 (Kokoro am_fenrir)"
  }
 ]

@@ -1,1 +1,60 @@
-[]
+[
+ {
+  "date": "2026-11-16",
+  "slug": "2026-11-16-1",
+  "title": "Newton's Bubble",
+  "yt_title": "Isaac Newton Lost a Fortune in the South Sea Bubble",
+  "sources": [
+   "https://www.smithsonianmag.com/smart-news/market-crash-cost-newton-fortune-180961655/",
+   "https://newtonandthemint.history.ox.ac.uk/global-financial-world/newton-and-the-south-sea-bubble",
+   "https://physicstoday.aip.org/features/isaac-newton-and-the-perils-of-the-financial-south-sea",
+   "https://www.openculture.com/2018/01/how-isaac-newton-lost-3-million-dollars-in-the-south-sea-bubble-of-1720-even-geniuses-cant-prevail-against-the-machinations-of-the-markets.html"
+  ],
+  "buffer": {
+   "instagram": "6afb1c441a0e9d01e788bf22",
+   "youtube": "6afb1c4568127944d4de7639"
+  },
+  "scheduled": "2026-11-17T00:30:00+02:00",
+  "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-16/2026-11-16-1.mp4",
+  "voice": "work/2026-11-16-1/voice.mp3 (Kokoro am_fenrir fallback; ElevenLabs audio host blocked by network policy)"
+ },
+ {
+  "date": "2026-11-16",
+  "slug": "2026-11-16-2",
+  "title": "The Secretary's Secret",
+  "yt_title": "She Turned $180 Into $7 Million by Never Selling",
+  "sources": [
+   "https://www.lakeforest.edu/news/alumna-grace-groner-31-gives-7-million-to-lake-forest-college",
+   "https://www.cbsnews.com/news/frugal-centenarian-left-7m-to-alma-mater",
+   "https://nonprofitquarterly.org/nonprofit-newswire-donors-frugal-lifestyle-enriches-illinois-college/",
+   "https://abc7chicago.com/archive/7311646/",
+   "https://www.philanthropy.com/news/former-secretary-leaves-7-million-to-her-illinois-alma-mater/"
+  ],
+  "buffer": {
+   "instagram": "6afb1c531a0e9d01e788cb62",
+   "youtube": "6afb1c5475345b4eae9724f7"
+  },
+  "scheduled": "2026-11-17T08:30:00+02:00",
+  "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-16/2026-11-16-2.mp4",
+  "voice": "work/2026-11-16-2/voice.mp3 (Kokoro am_fenrir fallback; ElevenLabs audio host blocked by network policy)"
+ },
+ {
+  "date": "2026-11-16",
+  "slug": "2026-11-16-3",
+  "title": "Franklin's 200-Year Gift",
+  "yt_title": "Ben Franklin's 200-Year Experiment in Compounding",
+  "sources": [
+   "https://www.philanthropyroundtable.org/magazine/what-miracle-of-compound-interest/",
+   "https://www.mentalfloss.com/history/government-politics/200-year-old-gift-from-benjamin-franklin-to-boston-and-philadelphia",
+   "https://www.snopes.com/fact-check/ben-franklin-2000-dollars/",
+   "https://fi.edu/en/support/benjamin-franklins-donor-story"
+  ],
+  "buffer": {
+   "instagram": "6afb1c556b7e529a1fde9b4a",
+   "youtube": "6afb1c56da3ceb8b6e9f8b20"
+  },
+  "scheduled": "2026-11-17T16:30:00+02:00",
+  "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-16/2026-11-16-3.mp4",
+  "voice": "work/2026-11-16-3/voice.mp3 (Kokoro am_fenrir fallback; ElevenLabs audio host blocked by network policy)"
+ }
+]

@@ -1,0 +1,121 @@
+{
+ "slug": "example-ronald",
+ "title": "The Janitor Nobody Noticed",
+ "seed": 0,
+ "hero": {
+  "jacket": "#7a5a3c",
+  "hair": "#eeeae2",
+  "moustache": "#e4e0d8",
+  "pins": true,
+  "patch": "#5b7a4a"
+ },
+ "crates": [
+  "SOAP",
+  "POWER",
+  "RAILS"
+ ],
+ "buildings": [
+  "HOSPITAL",
+  "LIBRARY"
+ ],
+ "beats": [
+  {
+   "shot": "intro",
+   "text": "The poorest-looking man in town was secretly worth eight million dollars.",
+   "hit_words": [
+    "million"
+   ],
+   "loc": "gas",
+   "fx": "coin"
+  },
+  {
+   "shot": "wide",
+   "text": "Ronald Read pumped gas in Brattleboro, Vermont, for twenty-five years.",
+   "hit_words": [],
+   "loc": "gas",
+   "timelapse": true,
+   "wave": true
+  },
+  {
+   "shot": "work",
+   "text": "Then he swept floors.",
+   "hit_words": [],
+   "loc": "store"
+  },
+  {
+   "shot": "closeup",
+   "text": "His coat was held shut with safety pins.",
+   "hit_words": [
+    "held",
+    "safety",
+    "pins."
+   ],
+   "loc": "store"
+  },
+  {
+   "shot": "gift",
+   "text": "A neighbor once knitted him a hat to help him through winter.",
+   "hit_words": [
+    "hat"
+   ],
+   "loc": "store"
+  },
+  {
+   "shot": "empty_chair",
+   "text": "But when he died at ninety-two,",
+   "hit_words": []
+  },
+  {
+   "shot": "vault",
+   "text": "his lawyer opened his safe-deposit box. It was packed with stock certificates.",
+   "hit_words": [
+    "packed"
+   ]
+  },
+  {
+   "shot": "crates",
+   "text": "You see, for decades, Ronald bought solid, boring companies.",
+   "hit_words": [
+    "solid,",
+    "boring",
+    "companies."
+   ]
+  },
+  {
+   "shot": "rock",
+   "text": "Then he did the hardest thing in investing. Nothing.",
+   "hit_words": [
+    "Nothing."
+   ]
+  },
+  {
+   "shot": "grow",
+   "text": "Like planting acorns, and never digging them up to check.",
+   "hit_words": [
+    "acorns,"
+   ]
+  },
+  {
+   "shot": "rain",
+   "text": "He left six million dollars to the town's hospital and library.",
+   "hit_words": [
+    "hospital",
+    "library."
+   ]
+  },
+  {
+   "shot": "crowd",
+   "text": "Everyone thought he needed help.",
+   "hit_words": [],
+   "mood": "nervous",
+   "twist": true
+  },
+  {
+   "shot": "finale",
+   "text": "In the end, he helped everyone.",
+   "hit_words": [
+    "everyone."
+   ]
+  }
+ ]
+}

@@ -82,7 +82,8 @@ python3 make_video.py scripts/<slug>.json       # ~15–25 min: out/<slug>.mp4 (
 slug and reused on reruns (work/<slug>/voice.mp3). QA in out/<slug>.json: freezes and black must be empty, LUFS ≈ −14.
 
 ## 5. Publish
-1. Copy the three MP4s to the `media` branch (orphan branch with only the last two days of files, force-pushed) under
+1. Copy the three MP4s to the `media` branch (orphan branch holding only yesterday's and today's dated folders plus
+   everything under `media/keep/` and `media/test/` — those are never deleted; one fresh commit, force-pushed) under
    `media/<YYYY-MM-DD>/<slug>.mp4`. Public URL: `https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/<YYYY-MM-DD>/<slug>.mp4`.
    Check each URL returns HTTP 200 and the right byte size before posting.
 2. Buffer (organization "My Organization"): for each video create one Instagram post (`metadata.instagram.type:"reel"`,

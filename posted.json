@@ -76,5 +76,43 @@
   "scheduled": "shareNow 2026-11-16T18:36+02:00 (owner asked to publish immediately)",
   "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-16/2026-11-16-4.mp4",
   "voice": "work/2026-11-16-4/voice.mp3 (Kokoro am_fenrir)"
+ },
+ {
+  "date": "2026-11-16",
+  "slug": "2026-11-16-5",
+  "title": "Paid in Spice",
+  "yt_title": "The First Stock in History Paid Its Dividend in Spice",
+  "sources": [
+   "https://www.euronews.com/2025/04/13/how-a-dutch-trading-company-started-the-worlds-first-stock-exchange",
+   "https://borsaefinanza.it/primo-dividendo-compagnia-olandese-delle-indie-orientali/",
+   "https://globalfinancialdata.com/the-first-and-the-greatest-the-rise-and-fall-of-the-united-east-india-company"
+  ],
+  "buffer": {
+   "instagram": "6afb65243509d4c5b8800ae0",
+   "youtube": "6afb652f9c7c07cbc84e8243"
+  },
+  "scheduled": "shareNow 2026-11-16T22:18+02:00 (owner approved)",
+  "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-16/2026-11-16-5.mp4",
+  "shots": [
+   "ship@harbor",
+   "wide@harbor",
+   "closeup@harbor",
+   "chart@exchange",
+   "calendar@office",
+   "crowd@exchange",
+   "ship@harbor",
+   "wide@harbor",
+   "intro@exchange",
+   "vault@vault"
+  ],
+  "era": "1600s",
+  "sets": [
+   "harbor",
+   "exchange",
+   "office",
+   "vault"
+  ],
+  "narrator": "eleven:roger",
+  "note": "Reference quality bar for the upgraded engine (owner: 'maintain this level and creativity')."
  }
 ]

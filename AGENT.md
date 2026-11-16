@@ -1,7 +1,9 @@
 # ValuEdge Shorts — daily agent playbook
 
 Every 8 hours one run of the scheduled task turns ONE story into ONE vertical cartoon video (1080x1920, full resolution,
-30–45 s, the same look and quality bar as the reference short "The Janitor Nobody Noticed") and schedules it through
+30–45 s, the quality bar of the reference shorts "The Janitor Nobody Noticed" and "Paid in Spice" (2026-11-16-5 — the
+owner's approved model for the upgraded engine: its own world for the story, period costumes, a fresh opening, a
+physical payoff on the last word)) and schedules it through
 Buffer to the ValuEdge Instagram (Reels) and YouTube (Shorts) accounts.
 Publishing is fully automatic, so **accuracy is the gate**: a video that is not verified does not get made.
 

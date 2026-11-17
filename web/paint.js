@@ -160,3 +160,55 @@ export function calendarDraw(g, w, h, text, sub) {
   g.fillStyle = "#241726"; g.font = `bold ${Math.round(h * (String(text).length > 4 ? 0.3 : 0.4))}px Georgia, serif`; g.fillText(String(text), w / 2, h * 0.62);
   g.strokeStyle = "#241726"; g.lineWidth = 10; g.strokeRect(5, 5, w - 10, h - 10);
 }
+
+// ---------- film kit textures ----------
+export const sand = (col = "#e2c48f") => ctex("sand" + col, 512, 512, (g, w, h) => {
+  g.fillStyle = col; g.fillRect(0, 0, w, h); speckle(g, w, h, hex(col, 0.9), 80, 34, 61, 0.35); speckle(g, w, h, hex(col, 1.08), 60, 22, 62, 0.4);
+  speckle(g, w, h, hex(col, 0.7), 140, 3, 63, 0.5); const R = rng(64); g.strokeStyle = hex(col, 0.88); g.lineWidth = 3;
+  for (let i = 0; i < 14; i++) { const x = R() * w, y = R() * h; g.beginPath(); g.moveTo(x, y); g.quadraticCurveTo(x + 40, y - 8, x + 80, y); g.stroke(); }
+});
+export const asphalt = () => ctex("asphalt", 512, 512, (g, w, h) => {
+  g.fillStyle = "#4a4d55"; g.fillRect(0, 0, w, h); speckle(g, w, h, "#3d4047", 120, 20, 65, 0.5); speckle(g, w, h, "#5d606a", 200, 3, 66, 0.6);
+});
+export const tiles = (col = "#e8e2d4", col2) => ctex("tiles" + col + col2, 256, 256, (g, w, h) => {
+  const c2 = col2 || hex(col, 0.8); for (let r = 0; r < 4; r++) for (let c = 0; c < 4; c++) { g.fillStyle = (r + c) % 2 ? c2 : col; g.fillRect(c * 64, r * 64, 64, 64); }
+  g.strokeStyle = hex(col, 0.6); g.lineWidth = 3; for (let i = 0; i <= 4; i++) { g.beginPath(); g.moveTo(i * 64, 0); g.lineTo(i * 64, h); g.moveTo(0, i * 64); g.lineTo(w, i * 64); g.stroke(); }
+});
+export const carpet = (col = "#8c3b4a") => ctex("carpet" + col, 256, 256, (g, w, h) => {
+  g.fillStyle = col; g.fillRect(0, 0, w, h); speckle(g, w, h, hex(col, 0.85), 200, 3, 67, 0.5);
+  g.strokeStyle = hex(col, 1.3); g.lineWidth = 6; for (let y = 32; y < h; y += 64) for (let x = 32; x < w; x += 64) { g.beginPath(); g.moveTo(x, y - 14); g.lineTo(x + 14, y); g.lineTo(x, y + 14); g.lineTo(x - 14, y); g.closePath(); g.stroke(); }
+});
+export const concrete = (col = "#b9b7b0") => ctex("concrete" + col, 256, 256, (g, w, h) => {
+  g.fillStyle = col; g.fillRect(0, 0, w, h); speckle(g, w, h, hex(col, 0.9), 60, 20, 68, 0.35); g.fillStyle = hex(col, 0.75); g.fillRect(0, 0, w, 3); g.fillRect(0, 0, 3, h);
+});
+export const glass = (col = "#5f8fb8", lit = false) => ctex("glass" + col + lit, 256, 256, (g, w, h) => { // curtain-wall: 4x4 panes
+  g.fillStyle = "#c9d3dc"; g.fillRect(0, 0, w, h);
+  for (let r = 0; r < 4; r++) for (let c = 0; c < 4; c++) { const R = rng(r * 9 + c); g.fillStyle = lit && R() > 0.45 ? "#ffd86b" : hex(col, 0.85 + R() * 0.3); g.fillRect(c * 64 + 5, r * 64 + 5, 54, 54); }
+  g.fillStyle = "rgba(255,255,255,0.35)"; for (let r = 0; r < 4; r++) for (let c = 0; c < 4; c++) { g.beginPath(); g.moveTo(c * 64 + 10, r * 64 + 40); g.lineTo(c * 64 + 40, r * 64 + 10); g.lineTo(c * 64 + 50, r * 64 + 10); g.lineTo(c * 64 + 10, r * 64 + 50); g.fill(); }
+});
+export const westwood = (col = "#b07a4a") => ctex("westwood" + col, 256, 256, (g, w, h) => { // horizontal clapboards
+  g.fillStyle = col; g.fillRect(0, 0, w, h); const R = rng(69);
+  for (let y = 0; y < h; y += 21) { g.fillStyle = hex(col, 0.85 + R() * 0.25); g.fillRect(0, y, w, 18); g.fillStyle = hex(col, 0.6); g.fillRect(0, y + 18, w, 3); }
+  speckle(g, w, h, hex(col, 0.7), 40, 4, 70, 0.35);
+});
+export const stripes = (a = "#c0353a", b = "#f4efe2") => ctex("stripes" + a + b, 256, 64, (g, w, h) => { for (let x = 0; x < w; x += 32) { g.fillStyle = (x / 32) % 2 ? b : a; g.fillRect(x, 0, 32, h); } });
+export const panel = (col = "#4a6b5a") => ctex("panel" + col, 256, 256, (g, w, h) => { // wainscot / riveted panels
+  g.fillStyle = col; g.fillRect(0, 0, w, h); g.strokeStyle = hex(col, 0.7); g.lineWidth = 6; g.strokeRect(12, 12, w - 24, h - 24);
+  g.fillStyle = hex(col, 1.2); for (const [x, y] of [[24, 24], [w - 24, 24], [24, h - 24], [w - 24, h - 24]]) { g.beginPath(); g.arc(x, y, 6, 0, 7); g.fill(); }
+});
+export const books = () => ctex("books", 256, 256, (g, w, h) => {
+  g.fillStyle = "#5a3b2a"; g.fillRect(0, 0, w, h); const R = rng(71); const cols = ["#8c3b4a", "#3f6fb5", "#d9a441", "#5d7a3a", "#7b5ac9", "#c0806a", "#2f5f6a"];
+  for (let s = 0; s < 4; s++) { let x = 6; while (x < w - 10) { const bw = 10 + R() * 14, bh = 40 + R() * 16; g.fillStyle = cols[(R() * cols.length) | 0]; g.fillRect(x, s * 64 + 62 - bh, bw, bh); x += bw + 2; } g.fillStyle = "#3a2618"; g.fillRect(0, s * 64 + 58, w, 6); }
+});
+/** big screen / board texture; draw = (g,w,h)=>void each frame via a CanvasTexture you own */
+export function screenDraw(g, w, h, { curve, t = 1, label = "", bg = "#13202b", line = "#4fd18b", down = false, ticker = "" }) {
+  g.fillStyle = bg; g.fillRect(0, 0, w, h);
+  g.strokeStyle = "rgba(255,255,255,0.08)"; g.lineWidth = 2; for (let i = 1; i < 8; i++) { g.beginPath(); g.moveTo(0, i * h / 8); g.lineTo(w, i * h / 8); g.stroke(); g.beginPath(); g.moveTo(i * w / 8, 0); g.lineTo(i * w / 8, h); g.stroke(); }
+  if (label) { g.fillStyle = "#e9eef2"; g.font = `bold ${Math.round(h * 0.1)}px Arial`; g.textAlign = "left"; g.fillText(label, w * 0.05, h * 0.15); }
+  if (curve) { const n = 160, pts = []; for (let i = 0; i <= n * t; i++) { const x = i / n; pts.push([w * 0.05 + x * w * 0.9, h * 0.9 - curve(x) * h * 0.65]); }
+    if (pts.length > 1) { const col = down ? "#ff5a5a" : line; g.lineJoin = g.lineCap = "round";
+      g.strokeStyle = col + "55"; g.lineWidth = 18; g.beginPath(); pts.forEach(([x, y], i) => (i ? g.lineTo(x, y) : g.moveTo(x, y))); g.stroke();
+      g.strokeStyle = col; g.lineWidth = 7; g.beginPath(); pts.forEach(([x, y], i) => (i ? g.lineTo(x, y) : g.moveTo(x, y))); g.stroke();
+      const [lx, ly] = pts[pts.length - 1]; g.fillStyle = "#ffffff"; g.beginPath(); g.arc(lx, ly, 9, 0, 7); g.fill(); } }
+  if (ticker) { g.fillStyle = "#000000aa"; g.fillRect(0, h * 0.92, w, h * 0.08); g.fillStyle = "#ffd25a"; g.font = `bold ${Math.round(h * 0.06)}px "Courier New", monospace`; g.textAlign = "left"; g.fillText(ticker, w * 0.02, h * 0.98); }
+}

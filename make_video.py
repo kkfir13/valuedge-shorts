@@ -77,7 +77,7 @@ VOICE_CHAIN = ("highpass=f=70,equalizer=f=180:t=q:w=1:g=2,equalizer=f=3200:t=q:w
                "acompressor=threshold=-20dB:ratio=2.5:attack=8:release=120:makeup=2,aecho=0.85:0.5:23|37:0.12|0.08,loudnorm=I=-18:TP=-2")
 
 
-def kokoro(beats, out_mp3, voice=None, speed=0.96):
+def kokoro(beats, out_mp3, voice=None, speed=0.96, pace=1.0):
     """Offline voice (Kokoro-82M via kokoro-onnx, Apache-2.0). Whole sentences are spoken in one pass so the
     intonation carries across a sentence; beat boundaries inside a sentence snap to the model's own pauses.
     Pauses between sentences are paced: longer after the hook and before the twist. Returns word timings."""
@@ -132,6 +132,7 @@ def kokoro(beats, out_mp3, voice=None, speed=0.96):
             for q, w in enumerate(ws): words.append({"w": w, "s": t + s0 + c[q] * (e0 - s0), "e": t + s0 + c[q + 1] * (e0 - s0) - 0.02})
         nxt = g[-1] + 1
         gap = 0.62 if gi == 0 else 0.72 if twist is not None and nxt == twist else 0.85 if twist is not None and nxt == twist + 1 else 0.42
+        gap *= pace
         if gi == len(groups) - 1: gap = 0.3
         chunks += [a, np.zeros(int(gap * sr0), np.float32)]
         t += d + gap
@@ -244,14 +245,32 @@ def build_board(script, words, dur):
     return board, beats, flashes
 
 
+def film_timing(script, words, dur):
+    """film mode: beat windows + word frames for the film module (web/films/<slug>.timing.json)."""
+    beats, wi = [], 0
+    for i, b in enumerate(script["beats"]):
+        n = len(b["text"].split()); bw = words[wi:wi + n]; wi += n
+        if len(bw) < n: raise SystemExit(f"timing mismatch in beat {i}")
+        beats.append({"text": b["text"], "twist": bool(b.get("twist")), "finale": bool(b.get("finale")), "_s": bw[0]["s"], "_e": bw[-1]["e"], "_words": bw})
+    N = int(math.ceil((dur + 0.6) * FPS))
+    for i, bt in enumerate(beats): bt["a"] = 0 if i == 0 else max(beats[i - 1]["a"] + 8, round(bt["_s"] * FPS) - 2)
+    for i, bt in enumerate(beats): bt["b"] = beats[i + 1]["a"] if i + 1 < len(beats) else N
+    timing = {"fps": FPS, "frames": N, "beats": [{"a": bt["a"], "b": bt["b"], "text": bt["text"],
+              "words": [{"w": w["w"], "f": round(w["s"] * FPS), "e": round(w["e"] * FPS)} for w in bt["_words"]]} for bt in beats]}
+    board = {"frames": N, "seed": script.get("seed", 0),
+             "beats": [{"a": bt["a"], "b": bt["b"], "twist": bt["twist"], "shot": "finale" if bt["finale"] else "film",
+                        "hits": [round(bt["_words"][-1]["s"] * FPS)]} for bt in beats]}
+    return timing, board, beats
+
+
 # ---------------- render ----------------
-def render(board_name, out_dir, N, scale, procs, frames=None):
+def render(board_name, out_dir, N, scale, procs, frames=None, film=None, manifest=None):
     os.makedirs(out_dir, exist_ok=True)
-    env = {**os.environ, "BOARD": board_name, "SCALE": str(scale)}
+    env = {**os.environ, "SCALE": str(scale), **({"FILM": film[0], "TIMING": film[1]} if film else {"BOARD": board_name})}
     if frames is not None:
-        sh(["node", "render.mjs", out_dir, ",".join(map(str, frames))], cwd=ROOT, env=env); return
+        sh(["node", "render.mjs", out_dir, ",".join(map(str, frames)) or "none"], cwd=ROOT, env={**env, **({"MANIFEST": manifest} if manifest else {})}); return
     cuts = [round(N * k / procs) for k in range(procs + 1)]
-    ps = [subprocess.Popen(["node", "render.mjs", out_dir, f"{cuts[k]}-{cuts[k + 1] - 1}"], cwd=ROOT, env={**env, "RESUME": "1"},
+    ps = [subprocess.Popen(["node", "render.mjs", out_dir, f"{cuts[k]}-{cuts[k + 1] - 1}"], cwd=ROOT, env={**env, "RESUME": "1", **({"MANIFEST": manifest} if manifest and k == 0 else {})},
                            stdout=open(f"{out_dir}/r{k}.log", "w"), stderr=subprocess.STDOUT) for k in range(procs)]
     t0 = time.time()
     while any(p.poll() is None for p in ps):
@@ -276,9 +295,9 @@ def gated_rms(x, gate_db=-40):
     return float(np.sqrt((r[keep] ** 2).mean()))
 
 
-def make_audio(board, flashes, voice_mp3, work, music_db=-16.0, sfx_db=-6.0):
+def make_audio(board, flashes, voice_mp3, work, music_db=-16.0, sfx_db=-6.0, cues=None):
     dur = board["frames"] / FPS
-    A.save(f"{work}/music.wav", A.music(board, dur)); A.save(f"{work}/sfx.wav", A.sfx(board, dur, flashes))
+    A.save(f"{work}/music.wav", A.music(board, dur)); A.save(f"{work}/sfx.wav", A.sfx_film(cues, dur, FPS) if cues is not None else A.sfx(board, dur, flashes))
     sh(["ffmpeg", "-v", "error", "-y", "-i", f"{work}/music.wav", "-af", "equalizer=f=1500:t=o:w=2.2:g=-6,equalizer=f=300:t=q:w=1:g=-3", f"{work}/music_eq.wav"])
     v, m, s = load(voice_mp3), load(f"{work}/music_eq.wav"), load(f"{work}/sfx.wav")
     L = int(dur * SR); v = np.pad(v, (0, max(0, L - len(v))))[:L]; m = np.pad(m, (0, max(0, L - len(m))))[:L]; s = np.pad(s, (0, max(0, L - len(s))))[:L]
@@ -331,7 +350,7 @@ WrapStyle: 0
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,{font},108,&H00FFFFFF,&H00FFFFFF,&H00201420,&H80000000,-1,0,0,0,100,100,0,0,1,10,4,2,70,70,560,1
+Style: Cap,{font},84,&H00FFFFFF,&H00FFFFFF,&H00201420,&H70000000,-1,0,0,0,100,100,0,0,1,5,3,2,70,70,520,1
 Style: Mark,{font},54,&H40FFFFFF,&H40FFFFFF,&H60201420,&H00000000,-1,0,0,0,100,100,1,0,1,3,0,8,40,40,70,1
 
 [Events]
@@ -340,8 +359,55 @@ Dialogue: 1,{ts(0)},{ts(dur)},Mark,,0,0,0,,valuedge.app
 """
     with open(f"{work}/subs.ass", "w") as f:
         f.write(hdr)
-        for s, e, t in out: f.write(f"Dialogue: 0,{ts(s)},{ts(e)},Cap,,0,0,0,,{{\\fad(60,60)}}{t}\n")
+        for s, e, t in out: f.write(f"Dialogue: 0,{ts(s)},{ts(e)},Cap,,0,0,0,,{t}\n")
     return out
+
+
+# ---------------- film mode ----------------
+def film_main(a, script, slug, work, voice, words, dur):
+    """The script's film module (web/films/<slug>.js, or the path in "film") stages every shot; this renders it."""
+    import shutil
+    timing, board, beats = film_timing(script, words, dur)
+    fpath = f"films/{slug}.js"; src = script["film"] if isinstance(script["film"], str) else f"web/{fpath}"
+    src = src if os.path.isabs(src) else f"{ROOT}/{src}"
+    tpath0 = f"films/{slug}.timing.json"
+    if not os.path.exists(src):
+        json.dump(timing, open(f"{ROOT}/web/{tpath0}", "w"))
+        for i, b in enumerate(timing["beats"]): print(f"  beat {i} [{b['a']}-{b['b']}] " + " ".join(f"{w['w']}@{w['f']}" for w in b["words"]))
+        print(f"voice ready ({dur:.1f}s, {timing['frames']} frames). Now write the film module {src} and run again."); return
+    if os.path.abspath(src) != os.path.abspath(f"{ROOT}/web/{fpath}"): shutil.copy(src, f"{ROOT}/web/{fpath}")
+    tpath = f"films/{slug}.timing.json"; json.dump(timing, open(f"{ROOT}/web/{tpath}", "w"))
+    N = timing["frames"]; man = f"{work}/manifest.json"; film = (fpath, tpath)
+    print(f"{slug}: {dur:.1f}s voice, {N} frames, {len(beats)} beats (film mode)")
+    for i, b in enumerate(timing["beats"]): print(f"  beat {i} [{b['a']}-{b['b']}] " + " ".join(f"{w['w']}@{w['f']}" for w in b["words"]))
+    if a.stills_only:
+        st = f"{work}/stills"; shutil.rmtree(st, ignore_errors=True)
+        render(None, st, N, a.scale, 1, [], film=film, manifest=man)
+        M = json.load(open(man)); fr = sorted(set(min(N - 1, s["a"] + max(6, (s["b"] - s["a"]) // 2)) for s in M["shots"]))
+        print(f"shots {len(M['shots'])}, cues {len(M['cues'])}, sets {sorted(set(s['set'] for s in M['shots']))}")
+        render(None, st, N, a.scale, 1, fr, film=film)
+        sh(["python3", "sheet.py", st, f"{ROOT}/out/{slug}_sheet.jpg"], cwd=ROOT); print("stills:", f"out/{slug}_sheet.jpg"); return
+    t0 = time.time()
+    render(None, f"{work}/frames", N, a.scale, a.procs, film=film, manifest=man)
+    M = json.load(open(man))
+    levels = make_audio(board, [], voice, work, cues=M["cues"])
+    cues = captions(beats, N / FPS, work, f"{ROOT}/out/{slug}.srt")
+    mp4 = f"{ROOT}/out/{slug}.mp4"
+    sh(["ffmpeg", "-v", "error", "-y", "-framerate", str(FPS), "-i", f"{work}/frames/f%04d.jpg", "-i", f"{work}/master.wav",
+        "-map", "0:v:0", "-map", "1:a:0", "-vf", f"scale=1080:1920:flags=lanczos,ass={work}/subs.ass", "-c:v", "libx264", "-preset", "veryfast",
+        "-crf", "20", "-pix_fmt", "yuv420p", "-movflags", "+faststart", "-c:a", "aac", "-b:a", "192k", "-shortest", mp4])
+    qa = subprocess.run(["ffmpeg", "-hide_banner", "-i", mp4, "-vf", "freezedetect=n=0.0005:d=0.4,blackdetect=d=0.05:pix_th=0.05",
+                         "-af", "ebur128=framelog=quiet", "-f", "null", "-"], capture_output=True, text=True).stderr
+    sh(["ffmpeg", "-v", "error", "-y", "-i", mp4, "-vf", "fps=1,scale=216:384,tile=8x6", "-frames:v", "1", f"{ROOT}/out/{slug}_sheet.jpg"])
+    sl = [s["b"] - s["a"] for s in M["shots"]]
+    meta = {"slug": slug, "title": script.get("title"), "duration": duration(mp4), "bytes": os.path.getsize(mp4), "levels": levels,
+            "freezes": re.findall(r"freeze_duration: ([\d.]+)", qa), "black": re.findall(r"black_start:([\d.]+)", qa),
+            "lufs": (re.findall(r"I:\s+(-?[\d.]+) LUFS", qa) or [None])[-1], "render_s": round(time.time() - t0), "captions": len(cues),
+            "mode": "film", "shots": [f"{s['set']}:{s['trans']}" + (f":{s['name']}" if s.get("name") else "") for s in M["shots"]],
+            "sets": sorted(set(s["set"] for s in M["shots"])), "avg_shot_s": round(sum(sl) / len(sl) / FPS, 2), "sfx_cues": len(M["cues"]),
+            "narrator": script.get("narrator") or KOKORO_VOICE if a.tts == "kokoro" else "eleven:roger"}
+    json.dump(meta, open(f"{ROOT}/out/{slug}.json", "w"), indent=1)
+    print(json.dumps(meta))
 
 
 # ---------------- main ----------------
@@ -360,13 +426,14 @@ def main():
     elif a.tts == "kokoro":
         wj = f"{work}/words_kokoro.json"
         if os.path.exists(voice) and os.path.exists(wj): words = json.load(open(wj)); print("voice: reused kokoro")
-        else: words = kokoro(script["beats"], voice, script.get("narrator"), script.get("speed", 0.96)); json.dump(words, open(wj, "w"))
+        else: words = kokoro(script["beats"], voice, script.get("narrator"), script.get("speed", 1.04 if script.get("film") else 0.96), script.get("pace", 0.7 if script.get("film") else 1.0)); json.dump(words, open(wj, "w"))
         dur = duration(voice)
     else:
         if os.path.exists(voice) and os.path.exists(f"{work}/align.json"): al = json.load(open(f"{work}/align.json")) or None; print("voice: reused")
         else: al = eleven(text, voice, float(script.get("speed", 1.08))); json.dump(al, open(f"{work}/align.json", "w"))
         dur = duration(voice)
         words = words_from_alignment(text, al) if al else words_from_silence(script["beats"], speech_segments(voice))
+    if script.get("film"): return film_main(a, script, slug, work, voice, words, dur)
     board, beats, flashes = build_board(script, words, dur)
     bname = f"boards/{slug}.json"; os.makedirs(f"{ROOT}/web/boards", exist_ok=True)
     json.dump(board, open(f"{ROOT}/web/{bname}", "w"), indent=1)

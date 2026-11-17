@@ -169,6 +169,33 @@ def sfx(board, dur, flashes):
     return s
 
 
+def sfx_film(cues, dur, fps=30):
+    """film mode: one sound per cue [kind, frame] collected from pops, kicks and transitions."""
+    N = int(dur * SR); s = np.zeros(N); F = lambda f: f / float(fps)
+    for kind, f in cues:
+        t = F(f)
+        if kind == "whip": add(s, whoosh(0.32, 0.15, 0.7), t - 0.05, 0.55)
+        elif kind == "zoom": add(s, whoosh(0.6, 0.03, 0.5), t, 0.5)
+        elif kind == "flash": add(s, whoosh(0.45), t - 0.3, 0.5)
+        elif kind in ("kick", "smash"): add(s, thunk(70, 0.4), t, 0.8)
+        elif kind in ("impact", "word", "exclaim", "zap"):
+            add(s, thunk(95, 0.3), t, 0.7); add(s, pop(), t + 0.01, 0.35)
+            if kind == "zap": add(s, ting(3200, 0.3), t, 0.3)
+        elif kind in ("coin", "dollar", "stars", "bill", "ring"): add(s, ting(2400 if kind != "ring" else 1800, 0.5), t, 0.4); add(s, ting(3400, 0.35), t + 0.05, 0.2)
+        elif kind == "sparks": add(s, ting(2900, 0.4), t, 0.35); add(s, lp(noise(0.25), 0.7) * env(int(0.25 * SR), 0.001, 0.06), t, 0.25)
+        elif kind == "arrow":
+            n = int(0.35 * SR); fr = np.linspace(500, 1400, n); add(s, np.sin(2 * np.pi * np.cumsum(fr) / SR) * env(n, 0.005, 0.12), t, 0.25)
+        elif kind == "confetti": add(s, pop(), t, 0.5); add(s, ting(2600, 0.6), t + 0.04, 0.3)
+        elif kind in ("burst", "glow"): add(s, ting(2000, 0.8), t, 0.4); add(s, whoosh(0.4, 0.2, 0.6), t, 0.3)
+        elif kind in ("smoke", "puff"): add(s, lp(noise(0.4), 0.2) * env(int(0.4 * SR), 0.01, 0.15), t, 0.4)
+        elif kind == "speed": add(s, whoosh(0.5, 0.1, 0.6), t, 0.4)
+        elif kind == "aura": add(s, lp(noise(0.8), 0.08) * env(int(0.8 * SR), 0.05, 0.4), t, 0.5)
+        elif kind == "sweat": add(s, pop(), t, 0.2)
+        elif kind in ("none", "silent"): pass
+        else: add(s, pop(), t, 0.4)
+    return s
+
+
 def save(p, x):
     x = np.clip(x / max(1e-9, np.abs(x).max()) * 0.9, -1, 1)
     with wave.open(p, "wb") as w:

@@ -9,9 +9,10 @@ const srv = await serve(), br = await browser();
 const pg = await br.newPage({ viewport: { width: Math.round(1080 * (+process.env.SCALE || 1) / 2) * 2, height: Math.round(1920 * (+process.env.SCALE || 1) / 2) * 2 } });
 pg.on("pageerror", (e) => console.log("[err]", e.message));
 pg.on("console", (m) => { if (m.type() === "error") console.log("[console]", m.text()); });
-const qs = new URLSearchParams({ s: process.env.SCALE || "1", ...(process.env.BOARD ? { board: process.env.BOARD } : {}) });
+const qs = new URLSearchParams({ s: process.env.SCALE || "1", ...(process.env.BOARD ? { board: process.env.BOARD } : {}), ...(process.env.FILM ? { film: process.env.FILM } : {}), ...(process.env.TIMING ? { timing: process.env.TIMING } : {}) });
 await pg.goto(`http://localhost:${srv.address().port}/index.html?${qs}`);
 await pg.waitForFunction(() => window.ready, null, { timeout: 180000 });
+if (process.env.MANIFEST) { const man = await pg.evaluate(() => window.filmScan()); fs.writeFileSync(process.env.MANIFEST, JSON.stringify(man)); console.log("manifest", man.cues.length, "cues"); }
 const t0 = Date.now(); let n = 0;
 for (const f of frames) {
   const file = `${out}/f${String(f).padStart(4, "0")}.jpg`;

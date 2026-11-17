@@ -417,6 +417,19 @@ const hatOn = (p     , o        , hp      , H      , cx        , hc        , lig
     p.poly(body, null, ow);
     const [bx, by] = R([[cx, yb + 1 * u]])[0];
     p.ell(bx, by, 0.45 * W, 0.05 * HH, "#1d1b22", ow, 0, 360, (a * 180) / Math.PI);
+  } else if (o.hat === "cowboy") {
+    const yb = crown + 0.26 * HH, col = o.capColor || "#8a5a34", ht = 0.5 * HH, wb = 0.3 * W;
+    const body = R([[cx - wb, yb], [cx - wb * 0.95, yb - ht * 0.75], [cx - wb * 0.55, yb - ht], [cx - wb * 0.12, yb - ht * 0.86], [cx, yb - ht * 0.8], [cx + wb * 0.12, yb - ht * 0.86], [cx + wb * 0.55, yb - ht], [cx + wb * 0.95, yb - ht * 0.75], [cx + wb, yb]]);
+    p.shadedFill(body, col, mul(col, SH_FELT), light, wb, 0.4);
+    p.clip(body, () => p.band(R([[cx - wb - 4 * u, yb - 0.09 * HH], [cx + wb + 4 * u, yb - 0.09 * HH]]), o.band || "#3a2418", 0.1 * HH, 0.8 * u));
+    p.poly(body, null, ow);
+    const brim = R([[cx - 0.62 * W, yb - 0.14 * HH], [cx - 0.5 * W, yb + 0.02 * HH], [cx, yb + 0.07 * HH], [cx + 0.5 * W, yb + 0.02 * HH], [cx + 0.62 * W, yb - 0.14 * HH], [cx + 0.52 * W, yb - 0.04 * HH], [cx, yb - 0.01 * HH], [cx - 0.52 * W, yb - 0.04 * HH]]);
+    p.poly(brim, shade(col, 0.85), ow);
+  } else if (o.hat === "hardhat") {
+    const yb = crown + 0.3 * HH, col = o.capColor || "#f2c14e", wb = 0.4 * W, ht = 0.42 * HH;
+    const dome = []; for (let i = 0; i <= 16; i++) { const t = Math.PI * i / 16; dome.push([cx - wb * Math.cos(t), yb - ht * Math.sin(t)]); }
+    const body = R(dome); p.shadedFill(body, col, mul(col, SH_FELT), light, wb, 0.4); p.poly(body, null, ow);
+    p.poly(R([[cx - 0.52 * W, yb - 0.04 * HH], [cx + 0.52 * W, yb - 0.04 * HH], [cx + 0.5 * W, yb + 0.04 * HH], [cx - 0.5 * W, yb + 0.04 * HH]]), shade(col, 0.85), ow);
   } else if (o.hat === "bowler") {
     const yb = crown + 0.24 * HH, col = o.capColor || "#2b2730", ht = 0.46 * HH, wb = 0.36 * W;
     const dome = []; for (let i = 0; i <= 16; i++) { const t = Math.PI * i / 16; dome.push([cx - wb * Math.cos(t), yb - ht * Math.sin(t)]); }
@@ -539,13 +552,27 @@ export const bodyFront = (p     , o        , opts           ) => {
   if (mode === "sit") for (const side of [-1, 1]) arms.push({ pts: [sh(side), [tcx + side * (1.1 * T.a + 6 * u), sh(side)[1] + 0.4 * HH], [tcx + side * (1.2 * T.a + 10 * u), torsoBot + 0.04 * HH]], front: false });
   else if (mode === "fall") for (const side of [-1, 1]) arms.push({ pts: [sh(side), [tcx + side * (1.15 * T.a + 12 * u), sh(side)[1] - 0.25 * HH], [tcx + side * (1.3 * T.a + 24 * u), sh(side)[1] - 0.68 * HH]], front: false });
   else {
-    if (!(prop === "paper" || (Array.isArray(prop) && prop[0] === "broom"))) arms.push({ pts: prop === "shako" ? hang(-1, 0) : hang(-1, -sw), front: false });
+    const two_ = prop === "up" || prop === "hold" || prop === "shrug" || prop === "fists";
+    if (!(prop === "paper" || two_ || (Array.isArray(prop) && prop[0] === "broom"))) arms.push({ pts: prop === "shako" ? hang(-1, 0) : hang(-1, -sw), front: false });
+    if (two_) for (const sd of [-1, 1]) { const S = sh(sd);
+      if (prop === "up") arms.push({ pts: [S, [tcx + sd * (1.25 * T.a + 14 * u), S[1] - 0.3 * HH], [tcx + sd * (1.15 * T.a + 22 * u), S[1] - 0.95 * HH]], front: false });
+      else if (prop === "hold") arms.push({ pts: [S, [tcx + sd * 1.08 * T.a, S[1] + 0.45 * HH], [tcx + sd * 0.42 * T.a, S[1] + 0.42 * HH]], front: true });
+      else if (prop === "fists") arms.push({ pts: [S, [tcx + sd * (1.3 * T.a + 8 * u), S[1] + 0.25 * HH], [tcx + sd * (0.9 * T.a), S[1] - 0.2 * HH]], front: true });
+      else arms.push({ pts: [S, [tcx + sd * (1.35 * T.a + 10 * u), S[1] + 0.3 * HH], [tcx + sd * (1.55 * T.a + 22 * u), S[1] + 0.02 * HH]], front: false }); }
+
     if (rifle) {
       const G = lerp2(R0, R1, 0.1);
       arms.push({ pts: [sh(1), [tcx + 1.12 * T.a + 5 * u, sh(1)[1] + 0.45 * HH], G], front: false });
     } else if (wave !== undefined) {
       const S = sh(1);
       arms.push({ pts: [S, [tcx + 1.1 * T.a + 10 * u + 3 * u * wave, S[1] - 0.22 * HH], [tcx + 1.18 * T.a + 16 * u + 12 * u * wave, S[1] - 0.6 * HH]], front: false });
+    } else if (two_) {
+    } else if (prop === "point") {
+      const S = sh(1);
+      arms.push({ pts: [S, [tcx + 1.45 * T.a + 18 * u, S[1] - 0.02 * HH], [tcx + 2.0 * T.a + 40 * u, S[1] - 0.12 * HH]], front: false });
+    } else if (prop === "chin") {
+      const S = sh(1);
+      arms.push({ pts: [S, [tcx + 1.1 * T.a + 6 * u, S[1] + 0.35 * HH], [tcx + 0.25 * T.a, chin + 0.02 * HH]], front: true });
     } else if (prop === "icecream") {
       const S = sh(1);
       arms.push({ pts: [S, [tcx + 1.05 * T.a + 4 * u, S[1] + 0.45 * HH], [tcx + 0.5 * T.a, S[1] + 0.4 * HH]], front: true });

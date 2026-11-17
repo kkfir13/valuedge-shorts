@@ -1,0 +1,97 @@
+{
+ "slug": "2026-11-17-film1",
+ "title": "The Marshmallow Test Was Never About Willpower",
+ "film": true,
+ "seed": 2,
+ "narrator": "am_fenrir",
+ "beats": [
+  {
+   "text": "Scientists once thought one marshmallow could predict a child's future."
+  },
+  {
+   "text": "Here's the test. A kid sits alone with one marshmallow."
+  },
+  {
+   "text": "Eat it now, or wait fifteen minutes and get two."
+  },
+  {
+   "text": "Imagine you're four. The clock ticks. That marshmallow is staring at you."
+  },
+  {
+   "text": "Some kids cover their eyes. Some sing. Some just stare."
+  },
+  {
+   "text": "Years later, the kids who waited seemed to do better at school."
+  },
+  {
+   "text": "So it was all willpower, right? Then, in two thousand twelve, researchers changed one thing."
+  },
+  {
+   "text": "Before the test, an adult promised the kids fancy art supplies."
+  },
+  {
+   "text": "For half the kids, she came back with them."
+  },
+  {
+   "text": "For the other half, she came back empty-handed and said sorry."
+  },
+  {
+   "text": "Then came the marshmallow."
+  },
+  {
+   "text": "Kids who'd been let down waited about three minutes."
+  },
+  {
+   "text": "Kids who'd seen a kept promise waited about twelve."
+  },
+  {
+   "text": "Same test. Same marshmallow. Four times the patience.",
+   "twist": true
+  },
+  {
+   "text": "You see, waiting isn't just willpower."
+  },
+  {
+   "text": "It's whether you believe the second marshmallow is really coming."
+  },
+  {
+   "text": "And nobody waits for a promise they don't believe.",
+   "finale": true
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The marshmallow task (Mischel, Stanford): one treat now or two if the child waits, up to fifteen minutes; later follow-ups linked longer waiting to better school results such as SAT scores",
+   "sources": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3730121/",
+    "https://www.psychologytoday.com/us/blog/brain-babble/201210/kids-willpower-influenced-others-reliability",
+    "https://www.eurekalert.org/news-releases/901725"
+   ]
+  },
+  {
+   "claim": "University of Rochester study (Kidd, Palmeri, Aslin, Cognition, published 2012): 28 children aged three to five; before the task an experimenter promised better art supplies and either returned with them (reliable) or returned empty-handed and apologised (unreliable)",
+   "sources": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3730121/",
+    "https://www.cbsnews.com/news/new-marshmallow-test-suggests-trust-matters",
+    "https://www.eurekalert.org/news-releases/901725"
+   ]
+  },
+  {
+   "claim": "Unreliable group waited about three minutes on average, reliable group about twelve minutes, roughly four times longer",
+   "sources": [
+    "https://www.eurekalert.org/news-releases/901725",
+    "https://www.cbsnews.com/news/new-marshmallow-test-suggests-trust-matters",
+    "https://lesswrong.com/posts/CHdsSaQGAvtkXBzmJ"
+   ]
+  }
+ ],
+ "caption": "The marshmallow test was famous for measuring willpower. Then one small change made kids wait four times longer: a kept promise.\nPatience follows trust.\n#investing #longterminvesting #psychology #patience #behavioralfinance\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "The Marshmallow Test Was Never About Willpower",
+ "sources": [
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC3730121/",
+  "https://www.eurekalert.org/news-releases/901725",
+  "https://www.cbsnews.com/news/new-marshmallow-test-suggests-trust-matters"
+ ],
+ "speed": 1.15,
+ "pace": 0.45
+}

@@ -68,8 +68,7 @@ The narration lives in the script; the pictures live in a **film module** you wr
   "title": "The Marshmallow Test Was Never About Willpower",
   "film": true,
   "seed": 2,
-  "narrator": "am_fenrir",
-  "beats": [
+    "beats": [
     {"text": "Scientists once thought one marshmallow could predict a child's future."},
     {"text": "Same test. Same marshmallow. Four times the patience.", "twist": true},
     {"text": "And nobody waits for a promise they don't believe.", "finale": true}
@@ -80,8 +79,8 @@ The narration lives in the script; the pictures live in a **film module** you wr
   "sources": ["https://…", "https://…"]
 }
 ```
-- Beats are sentences (or two short ones), 14–20 of them, **140–175 spoken words** → 45–52 s with Kokoro am_fenrir at the
-  film defaults (`speed` 1.15, `pace` 0.45 — the reference pace; leave them unless a run comes out over 55 s).
+- Beats are sentences (or two short ones), 12–18 of them, **125–150 spoken words** → 48–60 s with the Jackson voice
+  (section 4). Every word must earn its place: short, concrete, spoken sentences.
 - `twist: true` stops the music on that beat (put it on the line before the payoff). `finale: true` on the last beat adds the
   closing chord on its last word. No shot fields in the script — staging is all in the film module.
 - Write it with the cartoon-audio-short skill's Stage 2 and Stage 3 rules (invoke `anthropic-skills:cartoon-audio-short`
@@ -195,19 +194,21 @@ python3 make_video.py scripts/<slug>.json --tts kokoro                        # 
   with `FILM=films/<slug>.js TIMING=films/<slug>.timing.json SCALE=0.5 node render.mjs /tmp/chk "120,124,128"` if unsure.
 - The full build renders in the background (run it with nohup, poll the log). Sound effects come automatically from
   pops, kicks and transitions; music sits 16 dB under the voice (owner's choice), SFX 6 dB under; burned-in captions +
-  valuedge.app mark. QA in out/<slug>.json: duration 40–56 s, freezes and black empty, LUFS ≈ −14, `avg_shot_s` ≤ 2.3.
-- **Voice — ElevenLabs Roger first (owner pays for the Starter plan), Kokoro only as the fallback:**
+  valuedge.app mark. QA in out/<slug>.json: duration 45–60 s, freezes and black empty, LUFS ≈ −14, `avg_shot_s` ≤ 2.3.
+- **Voice — ElevenLabs "Jackson" on the eleven_v4 model (owner's choice 2026-11-17: the most human-sounding of the
+  tested voices; paid Starter plan), Kokoro only as the fallback:**
   1. ElevenLabs connector `account_get_usage`: if `character_limit − character_count` is below the narration length + 300,
      skip to step 4.
   2. `creative_generate_speech` once: `prompt` = all beat texts joined with single spaces, exactly as in the script;
-     `voice_id` `CwhRBWXzGAHq8TQ4Fs17` (Roger), `model_id` `eleven_multilingual_v2`, `generations_count` 1. Never call it a
-     second time for the same line (every call is charged). Poll `creative_get_flow_run_status` (flow_id + session_ids)
-     until completed and take `media[0].url`.
+     `voice_id` `ZthjuvLPty3kTMaNKVKb` (Jackson), `model_id` `eleven_v4`, `generations_count` 1. Never call it a second
+     time for the same text (every call is charged). Poll `creative_get_flow_run_status` (flow_id + session_ids) until
+     completed and take `media[0].url`.
   3. `curl -sSfL -o work/<slug>/eleven.mp3 "<url>"` (quote the URL; retry the download, not the generation). Add
-     `"tempo": 1.15, "voice_label": "eleven:roger"` to the script and run every make_video command with
-     `--voice work/<slug>/eleven.mp3` instead of `--tts kokoro` (pauses over 0.3 s are tightened and word timing comes from the pauses; Roger reads at ≈2.7 words/s, so 1.15 lands at the reference pace). Target 42–56 s.
-  4. Fallback when the plan is out of characters, the generation fails, or the download is refused (HTTP 403 from the
-     sandbox proxy means `elevenlabsusercontent.com` is not on this environment's network allowlist): `--tts kokoro`
+     `"tempo": 1.05, "voice_label": "eleven:jackson-v4"` to the script and run every make_video command with
+     `--voice work/<slug>/eleven.mp3` instead of `--tts kokoro`. Jackson reads at ≈2.4 words/s, so the script is
+     125–150 words and lands at 48–60 s. **Naturalness beats speed**: never set tempo above 1.08 (heavier time-stretching
+     is what made the earlier Roger videos sound synthetic); if the narration is too long, cut words instead.
+  4. Fallback when the plan is out of characters, the generation fails, or the download is refused: `--tts kokoro`
      (`am_fenrir`), and say which voice was used and why in the run's report.
 - Legacy mode (a script without `"film"` uses the old snowy-town shot catalog in web/board.js) is kept only as a fallback.
 

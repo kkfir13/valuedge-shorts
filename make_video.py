@@ -422,8 +422,8 @@ def main():
     text = " ".join(b["text"].strip() for b in script["beats"])
     voice = f"{work}/voice.mp3"
     if a.voice:
-        tempo = float(script.get("tempo", 1.0))  # e.g. 1.15 brings Roger (≈2.7 words/s) to the reference pace
-        af = ["silenceremove=stop_periods=-1:stop_duration=0.3:stop_threshold=-40dB:stop_silence=0.24"] if script.get("film") else []
+        tempo = float(script.get("tempo", 1.0))  # keep ≤ 1.08: more audibly hurts naturalness (owner: voice must sound human)
+        af = ["silenceremove=stop_periods=-1:stop_duration=0.45:stop_threshold=-40dB:stop_silence=0.32"] if script.get("film") else []
         if tempo != 1.0: af.append(f"atempo={tempo}")
         if af: sh(["ffmpeg", "-v", "error", "-y", "-i", a.voice, "-af", ",".join(af), "-ar", "44100", "-b:a", "192k", voice])
         else: sh(["cp", a.voice, voice])

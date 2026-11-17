@@ -194,8 +194,8 @@ python3 make_video.py scripts/<slug>.json --tts kokoro                        # 
      second time for the same line (every call is charged). Poll `creative_get_flow_run_status` (flow_id + session_ids)
      until completed and take `media[0].url`.
   3. `curl -sSfL -o work/<slug>/eleven.mp3 "<url>"` (quote the URL; retry the download, not the generation). Add
-     `"tempo": 1.08, "voice_label": "eleven:roger"` to the script and run every make_video command with
-     `--voice work/<slug>/eleven.mp3` instead of `--tts kokoro` (word timing comes from the pauses). Target 42–56 s.
+     `"tempo": 1.15, "voice_label": "eleven:roger"` to the script and run every make_video command with
+     `--voice work/<slug>/eleven.mp3` instead of `--tts kokoro` (pauses over 0.3 s are tightened and word timing comes from the pauses; Roger reads at ≈2.7 words/s, so 1.15 lands at the reference pace). Target 42–56 s.
   4. Fallback when the plan is out of characters, the generation fails, or the download is refused (HTTP 403 from the
      sandbox proxy means `elevenlabsusercontent.com` is not on this environment's network allowlist): `--tts kokoro`
      (`am_fenrir`), and say which voice was used and why in the run's report.

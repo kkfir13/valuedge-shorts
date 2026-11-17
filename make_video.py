@@ -422,8 +422,10 @@ def main():
     text = " ".join(b["text"].strip() for b in script["beats"])
     voice = f"{work}/voice.mp3"
     if a.voice:
-        tempo = float(script.get("tempo", 1.0))  # e.g. 1.08 to bring a connector voice to the reference pace
-        if tempo != 1.0: sh(["ffmpeg", "-v", "error", "-y", "-i", a.voice, "-af", f"atempo={tempo}", "-b:a", "192k", voice])
+        tempo = float(script.get("tempo", 1.0))  # e.g. 1.15 brings Roger (≈2.7 words/s) to the reference pace
+        af = ["silenceremove=stop_periods=-1:stop_duration=0.3:stop_threshold=-40dB:stop_silence=0.24"] if script.get("film") else []
+        if tempo != 1.0: af.append(f"atempo={tempo}")
+        if af: sh(["ffmpeg", "-v", "error", "-y", "-i", a.voice, "-af", ",".join(af), "-ar", "44100", "-b:a", "192k", voice])
         else: sh(["cp", a.voice, voice])
         dur = duration(voice); words = words_from_silence(script["beats"], speech_segments(voice))
     elif a.tts == "kokoro":

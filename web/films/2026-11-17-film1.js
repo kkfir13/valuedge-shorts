@@ -50,7 +50,7 @@ export default (K, T) => {
     shots: [
       // 0 · hook: a giant marshmallow slams onto a pedestal on frame 0
       { set: "candy", f: 0, light: K.backdrop("#ff8fb8"), cam: CAM.fit([0, 1.3, 0], { w: 3.4, a0: -25, a1: 8, e0: -8, e1: 3, push: 0.18 }),
-        act: (S, u, f) => { const k = E.prog(f, 0, 7); H.big1.g.position.y = 0.5 + 5 * (1 - E.easeIn(k)); H.big1.g.scale.y = 7 * (f >= 7 && f < 12 ? 0.8 + 0.04 * (f - 7) : 1);
+        act: (S, u, f) => { const k = E.prog(f, 0, 7); H.big1.g.position.y = 0.5 + 2.6 * (1 - E.easeIn(k)); H.big1.g.scale.y = 7 * (f >= 7 && f < 12 ? 0.8 + 0.04 * (f - 7) : 1);
           S.kick(7, 0.09); S.pop("puff", 7, 14, { x: 0, y: 0.7, z: 0.9, w: 2.4, h: 1.2 }); } },
       // 1 · could predict a child's future
       { set: "lab", word: [0, "could"], light: "interior", cam: CAM.fit([0, 0.85, 0], { w: 1.5, a0: 20, a1: -10, elev: 6, push: 0.15 }),

@@ -8,8 +8,18 @@ Buffer to the ValuEdge Instagram (Reels), YouTube (Shorts) and TikTok accounts.
 Publishing is fully automatic, so **accuracy is the gate**: a video that is not verified does not get made.
 
 ## 1. Content rules (hard)
-- Audience: active long-term investors. Theme: patience, compounding, temperament, valuation discipline, famous
-  investing history, behavioural mistakes, market myths. Tone: warm, witty, a twist at the end.
+- Audience: active long-term investors. **Every story is about the stock market and investing — not a general-interest
+  story with a finance moral bolted on** (owner, 2026-11-17: "as close as possible to capital markets, long-term
+  investing and value investing"). The main characters are investors, companies, shareholders, markets, crashes,
+  bubbles, exchanges, dividends, prices and valuations. Good territory: value investing (margin of safety, buying below
+  intrinsic value, Mr. Market, cigar butts vs. quality compounders) and its historical masters (deceased only); famous
+  long holds and what they turned into; crashes and bubbles and who kept their head (1720 South Sea, 1929, 1987,
+  dot-com, 2008); stock-market history (first shares, first exchanges, first dividends, index funds); compounding and
+  reinvested dividends with real numbers; behavioural mistakes measured in real studies on investors (selling winners
+  early, panic selling, overtrading, recency bias); market myths tested against data; how a valuation metric was born
+  and what it tells you. A psychology or non-finance story is allowed only when the narration itself is about investors
+  or markets (e.g. a study run on real brokerage accounts) — never stories like "rat bounties" or "marshmallows" where
+  investing is only the metaphor. Tone: warm, witty, a twist at the end.
 - **Research deep, not wide-and-thin.** Read the actual pages (not just search snippets) of at least three independent
   sources per story, at least one of them primary or institutional (archives, official records, museums, academic papers,
   the institution's own history page, newspapers of the time). Every name, number, date and place in the narration must

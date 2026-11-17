@@ -186,8 +186,19 @@ python3 make_video.py scripts/<slug>.json --tts kokoro                        # 
 - The full build renders in the background (run it with nohup, poll the log). Sound effects come automatically from
   pops, kicks and transitions; music sits 16 dB under the voice (owner's choice), SFX 6 dB under; burned-in captions +
   valuedge.app mark. QA in out/<slug>.json: duration 40–56 s, freezes and black empty, LUFS ≈ −14, `avg_shot_s` ≤ 2.3.
-- Voice: Kokoro `am_fenrir` (owner's choice). The ElevenLabs connector cannot hand its audio file to this sandbox — do not
-  use it.
+- **Voice — ElevenLabs Roger first (owner pays for the Starter plan), Kokoro only as the fallback:**
+  1. ElevenLabs connector `account_get_usage`: if `character_limit − character_count` is below the narration length + 300,
+     skip to step 4.
+  2. `creative_generate_speech` once: `prompt` = all beat texts joined with single spaces, exactly as in the script;
+     `voice_id` `CwhRBWXzGAHq8TQ4Fs17` (Roger), `model_id` `eleven_multilingual_v2`, `generations_count` 1. Never call it a
+     second time for the same line (every call is charged). Poll `creative_get_flow_run_status` (flow_id + session_ids)
+     until completed and take `media[0].url`.
+  3. `curl -sSfL -o work/<slug>/eleven.mp3 "<url>"` (quote the URL; retry the download, not the generation). Add
+     `"tempo": 1.08, "voice_label": "eleven:roger"` to the script and run every make_video command with
+     `--voice work/<slug>/eleven.mp3` instead of `--tts kokoro` (word timing comes from the pauses). Target 42–56 s.
+  4. Fallback when the plan is out of characters, the generation fails, or the download is refused (HTTP 403 from the
+     sandbox proxy means `elevenlabsusercontent.com` is not on this environment's network allowlist): `--tts kokoro`
+     (`am_fenrir`), and say which voice was used and why in the run's report.
 - Legacy mode (a script without `"film"` uses the old snowy-town shot catalog in web/board.js) is kept only as a fallback.
 
 ## 5. Publish

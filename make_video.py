@@ -405,7 +405,7 @@ def film_main(a, script, slug, work, voice, words, dur):
             "lufs": (re.findall(r"I:\s+(-?[\d.]+) LUFS", qa) or [None])[-1], "render_s": round(time.time() - t0), "captions": len(cues),
             "mode": "film", "shots": [f"{s['set']}:{s['trans']}" + (f":{s['name']}" if s.get("name") else "") for s in M["shots"]],
             "sets": sorted(set(s["set"] for s in M["shots"])), "avg_shot_s": round(sum(sl) / len(sl) / FPS, 2), "sfx_cues": len(M["cues"]),
-            "narrator": script.get("narrator") or KOKORO_VOICE if a.tts == "kokoro" else "eleven:roger"}
+            "narrator": script.get("voice_label") or ("file:" + os.path.basename(a.voice) if a.voice else (script.get("narrator") or KOKORO_VOICE) if a.tts == "kokoro" else "eleven:roger")}
     json.dump(meta, open(f"{ROOT}/out/{slug}.json", "w"), indent=1)
     print(json.dumps(meta))
 
@@ -422,7 +422,10 @@ def main():
     text = " ".join(b["text"].strip() for b in script["beats"])
     voice = f"{work}/voice.mp3"
     if a.voice:
-        sh(["cp", a.voice, voice]); dur = duration(voice); words = words_from_silence(script["beats"], speech_segments(voice))
+        tempo = float(script.get("tempo", 1.0))  # e.g. 1.08 to bring a connector voice to the reference pace
+        if tempo != 1.0: sh(["ffmpeg", "-v", "error", "-y", "-i", a.voice, "-af", f"atempo={tempo}", "-b:a", "192k", voice])
+        else: sh(["cp", a.voice, voice])
+        dur = duration(voice); words = words_from_silence(script["beats"], speech_segments(voice))
     elif a.tts == "kokoro":
         wj = f"{work}/words_kokoro.json"
         if os.path.exists(voice) and os.path.exists(wj): words = json.load(open(wj)); print("voice: reused kokoro")

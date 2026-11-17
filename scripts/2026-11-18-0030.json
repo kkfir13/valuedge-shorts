@@ -1,0 +1,155 @@
+{
+ "slug": "2026-11-18-0030",
+ "title": "The City That Paid for Rat Tails",
+ "film": true,
+ "seed": 7,
+ "narrator": null,
+ "tempo": 1.15,
+ "voice_label": "eleven:roger",
+ "beats": [
+  {
+   "text": "In nineteen oh two, a city paid people to kill rats, and made the problem worse."
+  },
+  {
+   "text": "Imagine you're in Hanoi. The French just built shiny new sewers."
+  },
+  {
+   "text": "To a rat, that's a cozy palace with no cats."
+  },
+  {
+   "text": "Rats start popping out of fancy toilets."
+  },
+  {
+   "text": "So the city hires catchers to crawl into the muck."
+  },
+  {
+   "text": "One June day, they catch over twenty thousand."
+  },
+  {
+   "text": "Barely a dent. So, a new offer."
+  },
+  {
+   "text": "One cent per rat. Just bring a tail to city hall."
+  },
+  {
+   "text": "Nobody wants a mountain of dead rats at the office."
+  },
+  {
+   "text": "Tails pour in. Then, something strange."
+  },
+  {
+   "text": "Rats running around town, alive, healthy, and without tails."
+  },
+  {
+   "text": "How is that possible? Inspectors outside town find rat farms."
+  },
+  {
+   "text": "You see, it's like paying a kid per page read. Suddenly they love huge letters."
+  },
+  {
+   "text": "Kill a rat: one cent, once. Snip its tail and let it go: a cent today, and baby rats tomorrow."
+  },
+  {
+   "text": "The bounty didn't kill rats. It farmed them.",
+   "twist": true
+  },
+  {
+   "text": "They weren't paying for fewer rats. They were paying for tails.",
+   "finale": true
+  }
+ ],
+ "facts": [
+  {
+   "claim": "In 1902 Hanoi's French colonial government ran a rat-killing campaign that made the rat problem worse",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Great_Hanoi_Rat_Massacre",
+    "https://www.atlasobscura.com/articles/hanoi-rat-massacre-1902",
+    "https://worldhistoryconnected.press.uillinois.edu/15.2/vann_interview.html"
+   ]
+  },
+  {
+   "claim": "The French had just built a new modern sewer system under Hanoi, where rats bred with no predators",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Great_Hanoi_Rat_Massacre",
+    "https://www.atlasobscura.com/articles/hanoi-rat-massacre-1902",
+    "https://worldhistoryconnected.press.uillinois.edu/15.2/vann_interview.html"
+   ]
+  },
+  {
+   "claim": "Rats came up through toilets into French homes; the campaign was driven by fear of bubonic plague",
+   "sources": [
+    "https://saigoneer.com/hanoi-heritage/23265-author-michael-vann-on-hanoi-s-infamous-colonial-rat-hunt",
+    "https://worldhistoryconnected.press.uillinois.edu/15.2/vann_interview.html",
+    "https://www.atlasobscura.com/articles/hanoi-rat-massacre-1902"
+   ]
+  },
+  {
+   "claim": "Vietnamese rat catchers were hired to hunt rats in the sewers, among human waste",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Great_Hanoi_Rat_Massacre",
+    "https://www.atlasobscura.com/articles/hanoi-rat-massacre-1902",
+    "https://saigoneer.com/hanoi-heritage/23265-author-michael-vann-on-hanoi-s-infamous-colonial-rat-hunt"
+   ]
+  },
+  {
+   "claim": "On one day in June 1902 over 20,000 rats were killed (20,112 on June 21 per Wikipedia/Atlas; 20,114 per Saigoneer; 'over 20,000 in a single day' per Vann)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Great_Hanoi_Rat_Massacre",
+    "https://www.atlasobscura.com/articles/hanoi-rat-massacre-1902",
+    "https://worldhistoryconnected.press.uillinois.edu/15.2/vann_interview.html"
+   ]
+  },
+  {
+   "claim": "The hunt failed to make a dent against rat breeding",
+   "sources": [
+    "https://www.atlasobscura.com/articles/hanoi-rat-massacre-1902",
+    "https://saigoneer.com/hanoi-heritage/23265-author-michael-vann-on-hanoi-s-infamous-colonial-rat-hunt"
+   ]
+  },
+  {
+   "claim": "A bounty of one cent per rat was offered to anyone who handed a rat tail to the municipal offices / city hall",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Great_Hanoi_Rat_Massacre",
+    "https://www.atlasobscura.com/articles/hanoi-rat-massacre-1902",
+    "https://saigoneer.com/hanoi-heritage/23265-author-michael-vann-on-hanoi-s-infamous-colonial-rat-hunt",
+    "https://worldhistoryconnected.press.uillinois.edu/15.2/vann_interview.html"
+   ]
+  },
+  {
+   "claim": "Tails were asked for because officials did not want thousands of dead rats brought to city hall",
+   "sources": [
+    "https://worldhistoryconnected.press.uillinois.edu/15.2/vann_interview.html",
+    "https://en.wikipedia.org/wiki/Great_Hanoi_Rat_Massacre"
+   ]
+  },
+  {
+   "claim": "Live, healthy rats without tails were seen; hunters cut tails off and let rats go to breed",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Great_Hanoi_Rat_Massacre",
+    "https://www.atlasobscura.com/articles/hanoi-rat-massacre-1902",
+    "https://saigoneer.com/hanoi-heritage/23265-author-michael-vann-on-hanoi-s-infamous-colonial-rat-hunt",
+    "https://worldhistoryconnected.press.uillinois.edu/15.2/vann_interview.html"
+   ]
+  },
+  {
+   "claim": "Health inspectors found rat-breeding farms on the outskirts of Hanoi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Great_Hanoi_Rat_Massacre",
+    "https://www.atlasobscura.com/articles/hanoi-rat-massacre-1902",
+    "https://worldhistoryconnected.press.uillinois.edu/15.2/vann_interview.html"
+   ]
+  },
+  {
+   "claim": "Page-reading analogy is an illustrative everyday analogy, not a historical claim",
+   "sources": []
+  }
+ ],
+ "caption": "In 1902, Hanoi paid one cent per rat tail.\nSo people started farming rats.\nWhat you measure is what you get.\n#investinghistory #incentives #longterminvesting #behavioralfinance #history\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "The City That Paid for Rat Tails and Got More Rats (Hanoi, 1902)",
+ "sources": [
+  "https://worldhistoryconnected.press.uillinois.edu/15.2/vann_interview.html",
+  "https://en.wikipedia.org/wiki/Great_Hanoi_Rat_Massacre",
+  "https://www.atlasobscura.com/articles/hanoi-rat-massacre-1902",
+  "https://saigoneer.com/hanoi-heritage/23265-author-michael-vann-on-hanoi-s-infamous-colonial-rat-hunt"
+ ]
+}

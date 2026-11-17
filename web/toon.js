@@ -417,6 +417,12 @@ const hatOn = (p     , o        , hp      , H      , cx        , hc        , lig
     p.poly(body, null, ow);
     const [bx, by] = R([[cx, yb + 1 * u]])[0];
     p.ell(bx, by, 0.45 * W, 0.05 * HH, "#1d1b22", ow, 0, 360, (a * 180) / Math.PI);
+  } else if (o.hat === "conical") { // woven leaf hat: one wide flat cone sitting low on the crown
+    const yb = crown + 0.3 * HH, ht = 0.42 * HH, wb = 0.78 * W, col = o.capColor || "#e8cf8a";
+    const body = R([[cx - wb, yb], [cx, yb - ht], [cx + wb, yb], [cx + wb * 0.5, yb + 4 * u], [cx - wb * 0.5, yb + 4 * u]]);
+    p.shadedFill(body, col, mul(col, SH_FELT), light, wb, 0.4);
+    for (const k of [0.33, 0.66]) p.stroke(R([[cx - wb * k, yb - ht * (1 - k)], [cx + wb * k, yb - ht * (1 - k)]]), 1.6 * u, shade(col, 0.72));
+    p.poly(body, null, ow);
   } else if (o.hat === "cowboy") {
     const yb = crown + 0.26 * HH, col = o.capColor || "#8a5a34", ht = 0.5 * HH, wb = 0.3 * W;
     const body = R([[cx - wb, yb], [cx - wb * 0.95, yb - ht * 0.75], [cx - wb * 0.55, yb - ht], [cx - wb * 0.12, yb - ht * 0.86], [cx, yb - ht * 0.8], [cx + wb * 0.12, yb - ht * 0.86], [cx + wb * 0.55, yb - ht], [cx + wb * 0.95, yb - ht * 0.75], [cx + wb, yb]]);

@@ -171,5 +171,69 @@
   "avg_shot_s": 2.05,
   "narrator": "eleven:roger",
   "note": "First engine-v2 film; worked example web/films/2026-11-17-film1.js."
+ },
+ {
+  "date": "2026-11-18",
+  "slug": "2026-11-18-0030",
+  "title": "The City That Paid for Rat Tails",
+  "yt_title": "The City That Paid for Rat Tails and Got More Rats (Hanoi, 1902)",
+  "sources": [
+   "https://worldhistoryconnected.press.uillinois.edu/15.2/vann_interview.html",
+   "https://en.wikipedia.org/wiki/Great_Hanoi_Rat_Massacre",
+   "https://www.atlasobscura.com/articles/hanoi-rat-massacre-1902",
+   "https://saigoneer.com/hanoi-heritage/23265-author-michael-vann-on-hanoi-s-infamous-colonial-rat-hunt"
+  ],
+  "buffer": {
+   "instagram": "6afccb82006387f8517b0026",
+   "youtube": "6afccb83fb083fe55d4bee1e",
+   "tiktok": "6afccb84b06007478e35353c"
+  },
+  "scheduled": "2026-11-18T00:30:00+02:00",
+  "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-18/2026-11-18-0030.mp4",
+  "voice": "eleven:roger",
+  "narrator": "eleven:roger",
+  "mode": "film",
+  "sets": [
+   "1902 Hanoi colonial street with a sewer grate and yellow city hall",
+   "brick sewer tunnel with murky channel and a crowned 'king rat'",
+   "French villa bathroom with a rat popping out of the toilet",
+   "city hall bounty counter piling up rat tails",
+   "rat farm with pens and paddies on the outskirts",
+   "kid's reading nook with a coin jar (page-pay analogy)",
+   "green metaphor stage with two pedestals: one cent vs a rat family"
+  ],
+  "opening": "rat bursting out of a street sewer grate at the lens",
+  "shots": [
+   "street:cut",
+   "hall:cut",
+   "street:smash",
+   "street:whip",
+   "sewer:dissolve",
+   "sewer:cut",
+   "bath:whip",
+   "hall:cut",
+   "sewer:whip",
+   "hall:flash",
+   "sewer:whip",
+   "hall:zoom",
+   "hall:cut",
+   "street:whip",
+   "hall:whip",
+   "hall:cut",
+   "street:dissolve",
+   "street:whip",
+   "street:cut",
+   "hall:cut",
+   "farm:whip",
+   "reading:zoom",
+   "reading:cut",
+   "stage:whip",
+   "stage:cut",
+   "stage:dissolve",
+   "farm:dissolve",
+   "hall:whip",
+   "hall:smash"
+  ],
+  "avg_shot_s": 1.87
  }
 ]

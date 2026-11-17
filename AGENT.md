@@ -4,7 +4,7 @@ Every 8 hours one run of the scheduled task turns ONE story into ONE vertical ca
 30–45 s, the quality bar of the reference shorts "The Janitor Nobody Noticed" and "Paid in Spice" (2026-11-16-5 — the
 owner's approved model for the upgraded engine: its own world for the story, period costumes, a fresh opening, a
 physical payoff on the last word)) and schedules it through
-Buffer to the ValuEdge Instagram (Reels) and YouTube (Shorts) accounts.
+Buffer to the ValuEdge Instagram (Reels), YouTube (Shorts) and TikTok accounts.
 Publishing is fully automatic, so **accuracy is the gate**: a video that is not verified does not get made.
 
 ## 1. Content rules (hard)
@@ -169,7 +169,7 @@ quieter than the skill's −6 dB) with its mid-range cut, SFX 6 dB under; burned
    Check each URL returns HTTP 200 and the right byte size before posting.
 2. Buffer (organization "My Organization"): for each video create one Instagram post (`metadata.instagram.type:"reel"`,
    `shouldShareToFeed:true`) and one YouTube post (`metadata.youtube.title`, `categoryId:"27"`, `privacy:"public"`,
-   `madeForKids:false`), `mode:"customScheduled"`, `schedulingType:"automatic"`, `dueAt` at 08:30, 16:30 and 00:30
+   `madeForKids:false`) and one TikTok post (`metadata.tiktok.title` = yt_title), `mode:"customScheduled"`, `schedulingType:"automatic"`, `dueAt` at 08:30, 16:30 and 00:30
    (next day) Asia/Jerusalem (UTC+02:00 in winter, +03:00 in summer — take the offset from Buffer get_account).
    Buffer's plan allows 10 scheduled posts at once; never exceed it.
 3. Append the story to `posted.json` (date, slug, title, sources, Buffer post ids, `shots` = the beat shot list with

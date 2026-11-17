@@ -114,5 +114,62 @@
   ],
   "narrator": "eleven:roger",
   "note": "Reference quality bar for the upgraded engine (owner: 'maintain this level and creativity')."
+ },
+ {
+  "date": "2026-11-17",
+  "slug": "2026-11-17-film1r",
+  "title": "The Marshmallow Test Was Never About Willpower",
+  "yt_title": "The Marshmallow Test Was Never About Willpower",
+  "sources": [
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC3730121/",
+   "https://www.eurekalert.org/news-releases/901725",
+   "https://www.cbsnews.com/news/new-marshmallow-test-suggests-trust-matters"
+  ],
+  "buffer": {
+   "instagram": "6afca36832ea84693c380b33",
+   "youtube": "6afca373d4c8ef4106f84b93",
+   "tiktok": "6afca37676241fcf0c6d1d56"
+  },
+  "scheduled": "shareNow 2026-11-17T20:56+02:00 (owner asked to publish now)",
+  "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-17/2026-11-17-film1r.mp4",
+  "mode": "film",
+  "sets": [
+   "nursery playroom with the marshmallow table",
+   "pink candy stage with giant marshmallows",
+   "classroom with a grades chalkboard",
+   "mind control room inside a kid's head",
+   "blue bar-chart stage"
+  ],
+  "shots": [
+   "candy:cut",
+   "lab:cut",
+   "lab:whip",
+   "lab:cut",
+   "lab:cut",
+   "candy:smash",
+   "lab:zoom",
+   "lab:cut",
+   "lab:cut",
+   "lab:dissolve",
+   "lab:cut",
+   "lab:cut",
+   "school:flash",
+   "school:cut",
+   "mind:whip",
+   "lab:whip",
+   "lab:cut",
+   "lab:dissolve",
+   "lab:whip",
+   "lab:cut",
+   "lab:smash",
+   "lab:whip",
+   "bars:flash",
+   "mind:zoom",
+   "candy:dissolve",
+   "lab:whip"
+  ],
+  "avg_shot_s": 2.05,
+  "narrator": "eleven:roger",
+  "note": "First engine-v2 film; worked example web/films/2026-11-17-film1.js."
  }
 ]

@@ -235,5 +235,71 @@
    "hall:smash"
   ],
   "avg_shot_s": 1.87
+ },
+ {
+  "date": "2026-11-18",
+  "slug": "2026-11-18-0830",
+  "title": "The Cash Filed Under Boring",
+  "yt_title": "Ben Graham Found $95 of Cash Inside a $65 Stock (1926)",
+  "sources": [
+   "https://www.ivey.uwo.ca/media/3065497/ben-graham-father-financial-analysis.pdf",
+   "https://sites.duke.edu/djepapers/files/2016/08/bierig.pdf",
+   "https://www.gurufocus.com/news/84521/the-value-of-shareholder-management-team-relations",
+   "https://undervaluedjapan.blogspot.com/2014/04/benjamin-graham-was-shareholder-activist.html",
+   "https://hedgefundalpha.com/strategies/benjamin-graham-northern-pipeline/"
+  ],
+  "buffer": {
+   "instagram": "6afd35c693fa11d37d0ba328",
+   "youtube": "6afd35c6aa3b065dd975a764",
+   "tiktok": "6afd35c7aa3b065dd975a79c"
+  },
+  "scheduled": "2026-11-18T08:30:00+02:00",
+  "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-18/2026-11-18-0830.mp4",
+  "voice": "eleven:jackson-v4",
+  "narrator": "eleven:jackson-v4",
+  "mode": "film",
+  "era": "1920s",
+  "sets": [
+   "giant 'Northern Pipe Line' strongbox with a cash drawer and $65 price tag on a teal pedestal stage",
+   "ICC reading room in Washington: book walls, long table, green desk lamps, report stacks, 'BORING' filing cabinet",
+   "1920s Wall Street: brick/victorian fronts, brokers rushing past an unread report on a bench",
+   "Pennsylvania oil country: wooden derricks, pump house, long pipeline with a red valve",
+   "company president's office with a desk drawer stuffed with railroad bonds",
+   "Oil City annual meeting hall: purple wallpaper, raised board table, rows of chairs, gavel, proxy stacks",
+   "sunny suburban yard sale with a $65 wallet (analogy)"
+  ],
+  "opening": "giant strongbox crashing onto a pedestal, price tag swinging",
+  "shots": [
+   "stage:cut",
+   "stage:cut",
+   "stage:smash",
+   "icc:whip",
+   "icc:cut",
+   "wallst:whip",
+   "wallst:cut",
+   "icc:dissolve",
+   "oil:whip",
+   "oil:cut",
+   "office:zoom",
+   "office:cut",
+   "icc:whip",
+   "office:whip",
+   "office:cut",
+   "office:cut",
+   "hall:whip",
+   "hall:cut",
+   "wallst:flash",
+   "hall:whip",
+   "hall:smash",
+   "yard:zoom",
+   "yard:cut",
+   "yard:cut",
+   "stage:whip",
+   "hall:whip",
+   "hall:smash",
+   "icc:dissolve",
+   "icc:cut"
+  ],
+  "avg_shot_s": 2.04
  }
 ]

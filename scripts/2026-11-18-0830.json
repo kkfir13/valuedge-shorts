@@ -1,0 +1,130 @@
+{
+ "slug": "2026-11-18-0830",
+ "title": "The Cash Filed Under Boring",
+ "film": true,
+ "seed": 5,
+ "narrator": null,
+ "beats": [
+  {
+   "text": "In nineteen twenty-six, a stock sold for sixty-five dollars with ninety-five in cash inside."
+  },
+  {
+   "text": "Imagine you're Benjamin Graham, reading dull pipeline reports in Washington."
+  },
+  {
+   "text": "Wall Street never opens these. Too boring."
+  },
+  {
+   "text": "Then you spot Northern Pipe Line, a Standard Oil spin-off."
+  },
+  {
+   "text": "Its pipes earn peanuts. Its drawer is stuffed with railroad bonds."
+  },
+  {
+   "text": "So why would anyone sell money at a discount?"
+  },
+  {
+   "text": "You buy shares and visit the bosses."
+  },
+  {
+   "text": "Pipelines are complex, they say. Don't like it? Sell your shares."
+  },
+  {
+   "text": "At the meeting in Oil City, nobody even seconds your motion."
+  },
+  {
+   "text": "You collect proxies, and by nineteen twenty-eight you win two board seats."
+  },
+  {
+   "text": "You see, it's a yard-sale wallet: sixty-five dollars, ninety-five inside. Nobody opens it."
+  },
+  {
+   "text": "The market priced the sleepy pipes, not the drawer."
+  },
+  {
+   "text": "Suddenly the company agrees to pay out seventy dollars a share.",
+   "twist": true
+  },
+  {
+   "text": "The money was never hidden. It was just filed under boring.",
+   "finale": true
+  }
+ ],
+ "facts": [
+  {
+   "claim": "In 1926 Benjamin Graham found the pipeline data in Interstate Commerce Commission annual reports and studied the full filings in Washington (ICC reading room)",
+   "sources": [
+    "https://www.ivey.uwo.ca/media/3065497/ben-graham-father-financial-analysis.pdf",
+    "https://undervaluedjapan.blogspot.com/2014/04/benjamin-graham-was-shareholder-activist.html",
+    "https://hedgefundalpha.com/strategies/benjamin-graham-northern-pipeline/",
+    "https://www.gurufocus.com/news/84521/the-value-of-shareholder-management-team-relations"
+   ]
+  },
+  {
+   "claim": "Northern Pipe Line was one of the pipeline companies spun off from Standard Oil in 1911",
+   "sources": [
+    "https://www.ivey.uwo.ca/media/3065497/ben-graham-father-financial-analysis.pdf",
+    "https://undervaluedjapan.blogspot.com/2014/04/benjamin-graham-was-shareholder-activist.html"
+   ]
+  },
+  {
+   "claim": "The stock sold at $65 while holding about $95 per share of cash assets, mostly high-grade railroad bonds; its operating revenue was small (about $300,000 vs $3.6m of bonds)",
+   "sources": [
+    "https://www.ivey.uwo.ca/media/3065497/ben-graham-father-financial-analysis.pdf",
+    "https://sites.duke.edu/djepapers/files/2016/08/bierig.pdf",
+    "https://www.gurufocus.com/news/84521/the-value-of-shareholder-management-team-relations",
+    "https://undervaluedjapan.blogspot.com/2014/04/benjamin-graham-was-shareholder-activist.html"
+   ]
+  },
+  {
+   "claim": "Graham bought about 5% of the shares (2,000 of 40,000) and met management, who said the pipeline business was complex/specialised and that if he did not approve he should sell his shares",
+   "sources": [
+    "https://www.ivey.uwo.ca/media/3065497/ben-graham-father-financial-analysis.pdf",
+    "https://sites.duke.edu/djepapers/files/2016/08/bierig.pdf",
+    "https://www.gurufocus.com/news/84521/the-value-of-shareholder-management-team-relations"
+   ]
+  },
+  {
+   "claim": "At the annual meeting in Oil City, Pennsylvania, nobody seconded Graham's motion and the meeting adjourned",
+   "sources": [
+    "https://www.ivey.uwo.ca/media/3065497/ben-graham-father-financial-analysis.pdf",
+    "https://www.gurufocus.com/news/84521/the-value-of-shareholder-management-team-relations"
+   ]
+  },
+  {
+   "claim": "At the 1928 annual meeting Graham held proxies for about 38% of the shares and his side won two board seats",
+   "sources": [
+    "https://www.ivey.uwo.ca/media/3065497/ben-graham-father-financial-analysis.pdf",
+    "https://sites.duke.edu/djepapers/files/2016/08/bierig.pdf",
+    "https://www.gurufocus.com/news/84521/the-value-of-shareholder-management-team-relations"
+   ]
+  },
+  {
+   "claim": "The company then agreed to distribute $70 per share to shareholders ($50 at once plus $20 promised, per Gurufocus)",
+   "sources": [
+    "https://www.ivey.uwo.ca/media/3065497/ben-graham-father-financial-analysis.pdf",
+    "https://sites.duke.edu/djepapers/files/2016/08/bierig.pdf",
+    "https://undervaluedjapan.blogspot.com/2014/04/benjamin-graham-was-shareholder-activist.html",
+    "https://www.gurufocus.com/news/84521/the-value-of-shareholder-management-team-relations"
+   ]
+  },
+  {
+   "claim": "The information came from public filings that Wall Street had not bothered to read (yard-sale wallet is the narrator's analogy, not a historical claim)",
+   "sources": [
+    "https://www.ivey.uwo.ca/media/3065497/ben-graham-father-financial-analysis.pdf",
+    "https://undervaluedjapan.blogspot.com/2014/04/benjamin-graham-was-shareholder-activist.html"
+   ]
+  }
+ ],
+ "caption": "1926: a stock trades at $65 with $95 a share of bonds inside. Everyone could see it. Nobody read it.\nBenjamin Graham did, and went to war with the board in Oil City.\n\n#valueinvesting #benjamingraham #stockmarkethistory #investing #marginofsafety #longterminvesting\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "Ben Graham Found $95 of Cash Inside a $65 Stock (1926)",
+ "sources": [
+  "https://www.ivey.uwo.ca/media/3065497/ben-graham-father-financial-analysis.pdf",
+  "https://sites.duke.edu/djepapers/files/2016/08/bierig.pdf",
+  "https://www.gurufocus.com/news/84521/the-value-of-shareholder-management-team-relations",
+  "https://undervaluedjapan.blogspot.com/2014/04/benjamin-graham-was-shareholder-activist.html",
+  "https://hedgefundalpha.com/strategies/benjamin-graham-northern-pipeline/"
+ ],
+ "tempo": 1.05,
+ "voice_label": "eleven:jackson-v4"
+}

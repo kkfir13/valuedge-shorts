@@ -498,5 +498,65 @@
    "table:smash"
   ],
   "avg_shot_s": 2.04
+ },
+ {
+  "date": "2026-11-18",
+  "slug": "2026-11-18-1656",
+  "title": "The Dullest Stocks in America",
+  "yt_title": "$50,000 to $900 Million in Boring Insurance Stocks: the Davis Double Play",
+  "sources": [
+   "https://www.morningstar.com.au/insights/personal-finance/165469/shelby-davis-the-time-to-make-money-is-in-a-bear-market",
+   "https://hedgefundalpha.com/shelby-davis-resource-page/",
+   "https://www.gurufocus.com/news/190806/growing-50000-into-900-million-davis-and-his-insurance-investing",
+   "https://www.bankers-anonymous.com/?p=2934",
+   "https://en.wikipedia.org/wiki/Shelby_Cullom_Davis",
+   "https://paw.princeton.edu/memorial/shelby-c-davis-30"
+  ],
+  "buffer": {
+   "instagram": "6afdd1170a57e5a1571ed05c",
+   "youtube": "6afdd117b3f8322ac74d6489",
+   "tiktok": "6afdd118b35a3030f043e568"
+  },
+  "scheduled": "2026-11-19T16:30:00+02:00",
+  "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-18/2026-11-18-1656.mp4",
+  "voice": "kokoro:am_fenrir",
+  "narrator": "kokoro:am_fenrir",
+  "voice_note": "ElevenLabs connector timed out three times (generation never ran), Kokoro fallback",
+  "mode": "film",
+  "era": "1947-1994",
+  "sets": [
+   "grey 1947 'Insurance Row': three brick insurer fronts (LIFE INS., FIRE INS., CASUALTY) on cobbles, 4x EARNINGS sign, tumbleweed",
+   "green-wallpaper 1947 office of SHELBY C. DAVIS & CO.: desk with report stacks, INSURANCE DEPT. nameplate, 1947 calendar, envelope of sums",
+   "apple orchard metaphor on a farm: rows of oaks sprouting apples, striped fruit stand mobbed by buyers",
+   "navy 'double play' stage: certificate lifted by an EARNINGS column and a MULTIPLE column, coin tower"
+  ],
+  "opening": "tumbleweed rolling down a grey street of insurance offices",
+  "shots": [
+   "row:cut",
+   "play:smash",
+   "office:whip",
+   "office:dissolve",
+   "office:cut",
+   "office:whip",
+   "row:whip",
+   "row:dissolve",
+   "row:whip",
+   "office:whip",
+   "orchard:zoom",
+   "orchard:cut",
+   "orchard:whip",
+   "orchard:cut",
+   "play:smash",
+   "play:flash",
+   "play:smash",
+   "office:whip",
+   "office:cut",
+   "play:flash",
+   "play:smash",
+   "row:dissolve",
+   "row:whip"
+  ],
+  "avg_shot_s": 2.06,
+  "duration": 47.4
  }
 ]

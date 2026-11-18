@@ -7,6 +7,21 @@ physical payoff on the last word)) and schedules it through
 Buffer to the ValuEdge Instagram (Reels), YouTube (Shorts) and TikTok accounts.
 Publishing is fully automatic, so **accuracy is the gate**: a video that is not verified does not get made.
 
+## 0. Queue mode (owner, 2026-11-18: "keep a spare in Buffer, schedule ahead")
+The scheduled task fires every 4 hours, and runs can also be started by hand. A run does NOT serve one fixed slot:
+- **Stop early if the queue is full.** Count the ValuEdge videos already waiting in Buffer (status `scheduled`, the three
+  channels; one video = one dueAt) plus the runs in progress in `claims.json` (claims younger than 4 h). If that is 3 or
+  more, stop (Buffer's free plan holds at most 10 scheduled posts = 3 videos).
+- **Claim the story.** Right after choosing a story (before voice or film), append `{"started": <ISO time>, "slug":
+  <slug>, "story": <one line>, "theme": <short>}` to `claims.json`, commit and push to `main` (fetch + rebase if rejected).
+  Then read `claims.json` again: if another claim younger than 4 h has the same story or theme and an earlier `started`,
+  drop yours and pick another story. Never choose a story claimed in the last 24 h or listed in `posted.json`.
+- **Slug** = `<YYYY-MM-DD>-<HHMM>` of the run's start time (Asia/Jerusalem), not of the slot.
+- **Pick the slot when publishing**, not at the start: the earliest of 08:30 / 16:30 / 00:30 Asia/Jerusalem that is at
+  least 25 minutes away and has no ValuEdge post (scheduled, sending or sent) on any of the three channels. Days ahead is fine.
+- In the same commit that appends to `posted.json`, remove your claim from `claims.json`. A failed run removes its claim
+  too (or leaves it to expire after 4 h).
+
 ## 1. Content rules (hard)
 - Audience: active long-term investors. **Every story is about the stock market and investing — not a general-interest
   story with a finance moral bolted on** (owner, 2026-11-17: "as close as possible to capital markets, long-term

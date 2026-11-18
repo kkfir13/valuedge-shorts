@@ -213,6 +213,10 @@ python3 make_video.py scripts/<slug>.json --tts kokoro                        # 
 - Legacy mode (a script without `"film"` uses the old snowy-town shot catalog in web/board.js) is kept only as a fallback.
 
 ## 5. Publish
+0. **Check the previous run first.** Read the Buffer posts of the last entry in `posted.json` (get_post per channel).
+   If one is in status `error` (Instagram sometimes rejects a reel at send time even when the file is fine), create that
+   channel's post again once with the same text, asset and metadata, `customScheduled` 10 minutes from now, write the new
+   id into that entry, and mention it in the report. Never retry a channel twice, and never touch posts that were sent.
 1. Copy the three MP4s to the `media` branch (orphan branch holding only yesterday's and today's dated folders plus
    everything under `media/keep/` and `media/test/` — those are never deleted; one fresh commit, force-pushed) under
    `media/<YYYY-MM-DD>/<slug>.mp4`. Public URL: `https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/<YYYY-MM-DD>/<slug>.mp4`.

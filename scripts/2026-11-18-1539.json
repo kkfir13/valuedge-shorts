@@ -1,0 +1,145 @@
+{
+ "slug": "2026-11-18-1539",
+ "title": "Bogle's Folly",
+ "film": true,
+ "seed": 11,
+ "tempo": 1.05,
+ "voice_label": "eleven:jackson-v4",
+ "beats": [
+  {
+   "text": "In nineteen seventy-six, a man launched a fund built to be average."
+  },
+  {
+   "text": "Wall Street called it un-American."
+  },
+  {
+   "text": "Imagine you're Jack Bogle. You hoped to raise a hundred and fifty million dollars."
+  },
+  {
+   "text": "The bankers bring in about eleven million."
+  },
+  {
+   "text": "You call it an abject failure."
+  },
+  {
+   "text": "The bankers offer to scrap it. You say no."
+  },
+  {
+   "text": "Critics call it Bogle's Folly. Rivals say nobody settles for average."
+  },
+  {
+   "text": "So why buy a fund that can't win?"
+  },
+  {
+   "text": "You see, the market is one giant pizza every investor shares."
+  },
+  {
+   "text": "Before fees, the average slice is exactly the market. That's arithmetic."
+  },
+  {
+   "text": "But stock pickers take a bite first: salaries, research, trading."
+  },
+  {
+   "text": "Your fund takes a crumb, under half a percent a year."
+  },
+  {
+   "text": "So the average dollar chasing the market must trail it.",
+   "twist": true
+  },
+  {
+   "text": "The folly was never being average. It was paying to try.",
+   "finale": true
+  }
+ ],
+ "facts": [
+  {
+   "claim": "John C. Bogle launched First Index Investment Trust (now Vanguard 500 Index Fund), the first index mutual fund, on August 31, 1976",
+   "sources": [
+    "https://workplace.vanguard.com/insights-and-research/perspective/50-years-50-facts-indexing-since-1976.html",
+    "https://jasonzweig.com/?p=5486",
+    "https://www.ifa.com/articles/fifty_years_bogle_folly",
+    "https://www.evidenceinvestor.com/post/vanguard-name-origin"
+   ]
+  },
+  {
+   "claim": "Bogle hoped the initial underwriting would raise up to $150 million (Vanguard/IFA: $50-150 million; Zweig/Evidence Investor: $150 million target)",
+   "sources": [
+    "https://jasonzweig.com/?p=5486",
+    "https://www.evidenceinvestor.com/post/vanguard-name-origin",
+    "https://workplace.vanguard.com/insights-and-research/perspective/50-years-50-facts-indexing-since-1976.html",
+    "https://www.ifa.com/articles/fifty_years_bogle_folly"
+   ]
+  },
+  {
+   "claim": "The offering raised a little more than $11 million ($11.3 million)",
+   "sources": [
+    "https://workplace.vanguard.com/insights-and-research/perspective/50-years-50-facts-indexing-since-1976.html",
+    "https://www.ifa.com/articles/fifty_years_bogle_folly",
+    "https://jasonzweig.com/?p=5486",
+    "https://www.evidenceinvestor.com/post/vanguard-name-origin"
+   ]
+  },
+  {
+   "claim": "Bogle himself called the result 'an abject failure'",
+   "sources": [
+    "https://workplace.vanguard.com/insights-and-research/perspective/50-years-50-facts-indexing-since-1976.html",
+    "https://www.ifa.com/articles/fifty_years_bogle_folly"
+   ]
+  },
+  {
+   "claim": "The underwriters offered to scrap the launch / give the money back; Bogle refused",
+   "sources": [
+    "https://jasonzweig.com/?p=5486",
+    "https://www.evidenceinvestor.com/post/vanguard-name-origin"
+   ]
+  },
+  {
+   "claim": "Critics called it 'Bogle's Folly'",
+   "sources": [
+    "https://workplace.vanguard.com/insights-and-research/perspective/50-years-50-facts-indexing-since-1976.html",
+    "https://jasonzweig.com/?p=5486",
+    "https://www.ifa.com/articles/fifty_years_bogle_folly",
+    "https://www.evidenceinvestor.com/post/vanguard-name-origin"
+   ]
+  },
+  {
+   "claim": "Critics called index funds un-American (Wall Street poster: 'Help Stamp Out Index Funds! Index Funds are Un-American')",
+   "sources": [
+    "https://jasonzweig.com/?p=5486",
+    "https://johncbogle.com/wordpress/wp-content/uploads/2017/04/Morningstar-Essay-4-27-17.pdf"
+   ]
+  },
+  {
+   "claim": "Rival industry leader(s) said investors would not be satisfied with average returns",
+   "sources": [
+    "https://johncbogle.com/wordpress/wp-content/uploads/2017/04/Morningstar-Essay-4-27-17.pdf",
+    "https://www.evidenceinvestor.com/post/vanguard-name-origin"
+   ]
+  },
+  {
+   "claim": "The fund launched with operating expenses of 0.43% a year (under half a percent)",
+   "sources": [
+    "https://workplace.vanguard.com/insights-and-research/perspective/50-years-50-facts-indexing-since-1976.html",
+    "https://www.ifa.com/articles/fifty_years_bogle_folly"
+   ]
+  },
+  {
+   "claim": "Sharpe (FAJ 1991): before costs the average actively managed dollar earns the same as the average passive dollar (the market); after costs it must be less, for any period",
+   "sources": [
+    "https://marottaonmoney.com/wp-content/uploads/2021/07/The-Arithmetic-of-Active-Management.pdf",
+    "https://rpc.cfainstitute.org/blogs/enterprising-investor/2025/from-sharpe-to-pedersen-why-active-management-isnt-zero-sum-after-all"
+   ]
+  }
+ ],
+ "caption": "1976: the first index mutual fund hoped for $150 million and raised about $11 million.\nCritics called it Bogle's Folly, and un-American.\nThe arithmetic of fees said otherwise.\n\n#indexfunds #investing #longterminvesting #stockmarkethistory #valueinvesting\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "The First Index Fund Raised $11 Million and Was Called Un-American (1976)",
+ "sources": [
+  "https://workplace.vanguard.com/insights-and-research/perspective/50-years-50-facts-indexing-since-1976.html",
+  "https://jasonzweig.com/?p=5486",
+  "https://www.ifa.com/articles/fifty_years_bogle_folly",
+  "https://www.evidenceinvestor.com/post/vanguard-name-origin",
+  "https://johncbogle.com/wordpress/wp-content/uploads/2017/04/Morningstar-Essay-4-27-17.pdf",
+  "https://marottaonmoney.com/wp-content/uploads/2021/07/The-Arithmetic-of-Active-Management.pdf",
+  "https://rpc.cfainstitute.org/blogs/enterprising-investor/2025/from-sharpe-to-pedersen-why-active-management-isnt-zero-sum-after-all"
+ ]
+}

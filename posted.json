@@ -435,5 +435,68 @@
   ],
   "avg_shot_s": 1.98,
   "duration": 51.466667
+ },
+ {
+  "date": "2026-11-18",
+  "slug": "2026-11-18-1539",
+  "title": "Bogle's Folly",
+  "yt_title": "The First Index Fund Raised $11 Million and Was Called Un-American (1976)",
+  "sources": [
+   "https://workplace.vanguard.com/insights-and-research/perspective/50-years-50-facts-indexing-since-1976.html",
+   "https://jasonzweig.com/?p=5486",
+   "https://www.ifa.com/articles/fifty_years_bogle_folly",
+   "https://www.evidenceinvestor.com/post/vanguard-name-origin",
+   "https://johncbogle.com/wordpress/wp-content/uploads/2017/04/Morningstar-Essay-4-27-17.pdf",
+   "https://marottaonmoney.com/wp-content/uploads/2021/07/The-Arithmetic-of-Active-Management.pdf",
+   "https://rpc.cfainstitute.org/blogs/enterprising-investor/2025/from-sharpe-to-pedersen-why-active-management-isnt-zero-sum-after-all"
+  ],
+  "buffer": {
+   "instagram": "6afdc1326a70d040daff72d0",
+   "youtube": "6afdc133b3f8322ac74626a8",
+   "tiktok": "6afdc133b35a3030f03c8bb1"
+  },
+  "scheduled": "2026-11-19T08:30:00+02:00",
+  "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-18/2026-11-18-1539.mp4",
+  "voice": "eleven:jackson-v4",
+  "narrator": "eleven:jackson-v4",
+  "mode": "film",
+  "era": "1976",
+  "sets": [
+   "1976 underwriter's office: navy wallpaper, desk with the INDEX FUND certificate, red rubber stamp AVERAGE, fund-raising thermometer GOAL $150M stuck at $11M",
+   "Manhattan newsstand at night: green kiosk with HELP STAMP OUT INDEX FUNDS! UN-AMERICAN! poster and BOGLE'S FOLLY headline",
+   "1970s pizzeria with brick walls, checkered tablecloth, neon PIZZA sign (shared-pizza analogy)",
+   "giant checkered tabletop with one giant pizza = THE MARKET, tiny investors, slices bitten by fees (metaphor)",
+   "cinder race track at golden hour, START 1976 banner, stock pickers carrying FEES sacks behind the MARKET runner"
+  ],
+  "opening": "rubber stamp slams AVERAGE onto the index fund certificate on a desk",
+  "shots": [
+   "office:cut",
+   "office:cut",
+   "office:cut",
+   "news:whip",
+   "news:cut",
+   "office:whip",
+   "office:cut",
+   "office:cut",
+   "office:smash",
+   "office:cut",
+   "office:whip",
+   "office:smash",
+   "news:whip",
+   "news:dissolve",
+   "track:whip",
+   "pizzeria:dissolve",
+   "table:zoom",
+   "table:cut",
+   "table:cut",
+   "table:whip",
+   "table:cut",
+   "table:whip",
+   "track:whip",
+   "track:smash",
+   "office:dissolve",
+   "table:smash"
+  ],
+  "avg_shot_s": 2.04
  }
 ]

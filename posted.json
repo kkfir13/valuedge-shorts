@@ -249,7 +249,7 @@
    "https://hedgefundalpha.com/strategies/benjamin-graham-northern-pipeline/"
   ],
   "buffer": {
-   "instagram": "6afd35c693fa11d37d0ba328",
+   "instagram": "6afd8f7bf712d4c5a23a12cf",
    "youtube": "6afd35c6aa3b065dd975a764",
    "tiktok": "6afd35c7aa3b065dd975a79c"
   },
@@ -300,6 +300,77 @@
    "icc:dissolve",
    "icc:cut"
   ],
-  "avg_shot_s": 2.04
+  "avg_shot_s": 2.04,
+  "reposts": {
+   "instagram": {
+    "id": "6afd8f7bf712d4c5a23a12cf",
+    "reason": "original 6afd35c693fa11d37d0ba328 failed with a media error at send time; re-posted once 2026-11-18T13:55+02:00, sent",
+    "url": "https://www.instagram.com/reel/Df4ck8tCBUT/"
+   }
+  }
+ },
+ {
+  "date": "2026-11-18",
+  "slug": "2026-11-18-1630",
+  "title": "The Crash Inside a Winning Year",
+  "yt_title": "The Dow Fell 22.6% in One Day in 1987. The Year Still Ended Up.",
+  "sources": [
+   "https://www.federalreservehistory.org/essays/stock-market-crash-of-1987",
+   "https://www.britannica.com/topic/Black-Monday",
+   "https://www.financial-planning.com/slideshow/black-monday-stock-market-crash-of-1987-30-years-later",
+   "https://ca.rbcwealthmanagement.com/william.vastis/blog/1294862-The-crash-of-1987-by-the-numbers",
+   "https://www.slickcharts.com/dowjones/returns"
+  ],
+  "buffer": {
+   "instagram": "6afda9ae275aba8f453cbf41",
+   "youtube": "6afda9ae6c30c3c862855a2c",
+   "tiktok": "6afda9afa509ab209386fb57"
+  },
+  "scheduled": "2026-11-18T16:30:00+02:00",
+  "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-18/2026-11-18-1630.mp4",
+  "voice": "eleven:jackson-v4",
+  "mode": "film",
+  "era": "1987",
+  "sets": [
+   "purple metaphor stage with a four-block DOW tower on a pedestal (red arrow knocks off a quarter; green +2% block on New Year's Eve)",
+   "Ned's 1987 wood-panelled den with orange shag rug, green couch, CRT TV and OCT 19 1987 calendar",
+   "trading floor with tiered steps, quote boards turning red and a brass opening bell",
+   "packed theater with red curtains and rows of seats (stand-up-and-run analogy)",
+   "1980s computer room with beige tape-reel mainframes, a green terminal printing SELL, PORTFOLIO INSURANCE sign",
+   "snowy slope with a giant SELL snowball pushed by computer cabinets"
+  ],
+  "opening": "red arrow plunges onto a four-block DOW tower on a purple stage and knocks the top quarter off",
+  "shots": [
+   "tower:cut",
+   "tower:whip",
+   "den:whip",
+   "den:dissolve",
+   "pit:whip",
+   "pit:cut",
+   "pit:smash",
+   "den:whip",
+   "den:smash",
+   "den:dissolve",
+   "den:cut",
+   "tower:whip",
+   "theater:zoom",
+   "theater:cut",
+   "theater:smash",
+   "theater:whip",
+   "machines:whip",
+   "machines:cut",
+   "machines:smash",
+   "machines:cut",
+   "slope:whip",
+   "slope:cut",
+   "den:whip",
+   "den:cut",
+   "tower:flash",
+   "den:whip",
+   "den:smash"
+  ],
+  "avg_shot_s": 2.05,
+  "reposts": null,
+  "narrator": "eleven:jackson-v4"
  }
 ]

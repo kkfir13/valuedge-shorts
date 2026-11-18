@@ -1,0 +1,100 @@
+{
+ "slug": "2026-11-18-1630",
+ "title": "The Crash Inside a Winning Year",
+ "film": true,
+ "seed": 7,
+ "tempo": 1.05,
+ "voice_label": "eleven:jackson-v4",
+ "beats": [
+  {
+   "text": "In one day, the market lost almost a quarter of its value. The year still ended up."
+  },
+  {
+   "text": "October nineteenth, nineteen eighty-seven. You're Ned, savings all in stocks."
+  },
+  {
+   "text": "The opening bell rings, and the Dow drops."
+  },
+  {
+   "text": "Screens go red."
+  },
+  {
+   "text": "By the close: down twenty-two point six percent."
+  },
+  {
+   "text": "Ned stares until his coffee grows a skin."
+  },
+  {
+   "text": "How does a market lose a quarter of itself before dinner?"
+  },
+  {
+   "text": "You see, it's a packed theater. Everyone's plan: if someone stands, run."
+  },
+  {
+   "text": "Big funds used a new portfolio insurance: computers that sell when prices fall."
+  },
+  {
+   "text": "Selling pushed prices down. Lower prices triggered more selling."
+  },
+  {
+   "text": "A snowball, rolled by machines."
+  },
+  {
+   "text": "So Ned sells everything at the bottom."
+  },
+  {
+   "text": "But by New Year's Eve, the Dow was higher than in January.",
+   "twist": true
+  },
+  {
+   "text": "Ned lost money in a year the market went up.",
+   "finale": true
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Black Monday was October 19, 1987; the Dow Jones Industrial Average fell 508 points, or 22.6 percent, in one session (almost a quarter)",
+   "sources": [
+    "https://www.federalreservehistory.org/essays/stock-market-crash-of-1987",
+    "https://www.financial-planning.com/slideshow/black-monday-stock-market-crash-of-1987-30-years-later",
+    "https://www.britannica.com/topic/Black-Monday"
+   ]
+  },
+  {
+   "claim": "The Dow crashed at the opening bell",
+   "sources": [
+    "https://www.federalreservehistory.org/essays/stock-market-crash-of-1987"
+   ]
+  },
+  {
+   "claim": "Portfolio insurance, a new product popular with institutional investors, used futures/options and computerized programs that sold as prices fell, so losses led to further rounds of selling",
+   "sources": [
+    "https://www.federalreservehistory.org/essays/stock-market-crash-of-1987",
+    "https://www.britannica.com/topic/Black-Monday",
+    "https://ca.rbcwealthmanagement.com/william.vastis/blog/1294862-The-crash-of-1987-by-the-numbers"
+   ]
+  },
+  {
+   "claim": "Despite Black Monday the Dow ended 1987 higher than it began (about 1,897 on Jan 2 to 1,939 on Dec 31; +2.26% for the year)",
+   "sources": [
+    "https://www.britannica.com/topic/Black-Monday",
+    "https://www.slickcharts.com/dowjones/returns"
+   ]
+  },
+  {
+   "claim": "Theater-fire analogy for the crash was used at the time (Andrew Grove quote in the Fed essay); Ned is a fictional everyman",
+   "sources": [
+    "https://www.federalreservehistory.org/essays/stock-market-crash-of-1987"
+   ]
+  }
+ ],
+ "caption": "October 19, 1987: the Dow falls 22.6% in a single day.\nComputers sold because prices fell, and prices fell because computers sold.\nThen the year ended higher than it began.\n\n#blackmonday #stockmarkethistory #investing #longterminvesting #marketcrash #valueinvesting\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "The Dow Fell 22.6% in One Day in 1987. The Year Still Ended Up.",
+ "sources": [
+  "https://www.federalreservehistory.org/essays/stock-market-crash-of-1987",
+  "https://www.britannica.com/topic/Black-Monday",
+  "https://www.financial-planning.com/slideshow/black-monday-stock-market-crash-of-1987-30-years-later",
+  "https://ca.rbcwealthmanagement.com/william.vastis/blog/1294862-The-crash-of-1987-by-the-numbers",
+  "https://www.slickcharts.com/dowjones/returns"
+ ]
+}

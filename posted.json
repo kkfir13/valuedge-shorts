@@ -372,5 +372,68 @@
   "avg_shot_s": 2.05,
   "reposts": null,
   "narrator": "eleven:jackson-v4"
+ },
+ {
+  "date": "2026-11-18",
+  "slug": "2026-11-18-1536",
+  "title": "The Busiest Traders Earned the Least",
+  "yt_title": "66,465 Investors Studied: The Busiest Traders Earned the Least",
+  "sources": [
+   "https://faculty.haas.berkeley.edu/odean/Papers%20current%20versions/Individual_Investor_Performance_Final.pdf",
+   "https://econpapers.repec.org/RePEc:bla:jfinan:v:55:y:2000:i:2:p:773-806",
+   "https://hedgefundalpha.com/strategies/common-stock-investment-performance-individual-investors/",
+   "https://rikatillsammans.se/studier/de-som-handlar-mest-med-aktier-forlorar-mest/",
+   "https://finance.martinsewell.com/traders"
+  ],
+  "buffer": {
+   "instagram": "6afdbc43b3f8322ac743721f",
+   "youtube": "6afdbc430a7aa6dca2c33c61",
+   "tiktok": "6afdbc440a57e5a15714dd23"
+  },
+  "scheduled": "2026-11-19T00:30:00+02:00",
+  "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-18/2026-11-18-1536.mp4",
+  "voice": "eleven:jackson-v4",
+  "narrator": "eleven:jackson-v4",
+  "mode": "film",
+  "era": "1991-1996",
+  "sets": [
+   "early-90s tiled kitchen with a beige wall phone, MAY 1992 calendar and a piggy bank on the table",
+   "sunny suburban street with two village houses side by side and DAVE / PAT mailboxes",
+   "Pat's backyard: picket fence, oak, bench, an untouched phone with a cobweb on a side table",
+   "research room/library with two empty desks, green lamps, growing printout towers and a 66,465 HOUSEHOLDS banner",
+   "warm brown metaphor stage with three bars: MARKET 17.9 / BUSY DAVE 11.4 / PAT 18.5",
+   "desert 'TRADING HWY' with a gantry sign, yellow toll booths and striped barrier arms, Dave's red car and a gold market car"
+  ],
+  "opening": "kitchen wall phone ringing, receiver hopping on its cradle (RING!)",
+  "shots": [
+   "kitchen:cut",
+   "kitchen:whip",
+   "kitchen:cut",
+   "suburb:whip",
+   "kitchen:whip",
+   "kitchen:cut",
+   "kitchen:smash",
+   "kitchen:whip",
+   "garden:whip",
+   "garden:cut",
+   "archive:whip",
+   "archive:cut",
+   "bars:whip",
+   "bars:cut",
+   "bars:smash",
+   "bars:dissolve",
+   "highway:zoom",
+   "highway:whip",
+   "highway:whip",
+   "highway:cut",
+   "highway:whip",
+   "kitchen:whip",
+   "garden:dissolve",
+   "bars:smash",
+   "kitchen:whip",
+   "kitchen:smash"
+  ],
+  "avg_shot_s": 1.98,
+  "duration": 51.466667
  }
 ]

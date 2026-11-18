@@ -1,0 +1,43 @@
+{
+ "slug": "2026-11-18-1536",
+ "title": "The Busiest Traders Earned the Least",
+ "film": true,
+ "seed": 11,
+ "tempo": 1.05,
+ "voice_label": "eleven:jackson-v4",
+ "beats": [
+  {"text": "The investors who worked hardest at the stock market earned the least."},
+  {"text": "Imagine it's the early nineties. You're Dave, calling your broker every week."},
+  {"text": "Buy this, sell that. Your portfolio turns over more than twice a year."},
+  {"text": "Your neighbor Pat barely touches the phone."},
+  {"text": "Two professors studied sixty-six thousand households like yours."},
+  {"text": "The market returned seventeen point nine percent a year."},
+  {"text": "The busiest traders? Eleven point four."},
+  {"text": "So where did the money go?"},
+  {"text": "You see, trading is a highway with a toll booth at every exit."},
+  {"text": "Each round trip cost about four percent in commissions and spreads."},
+  {"text": "Before the tolls, Dave kept pace with the market."},
+  {"text": "The professors' explanation: overconfidence."},
+  {"text": "And Pat, who barely traded? Eighteen and a half percent.", "twist": true},
+  {"text": "The market never beat Dave. His phone did.", "finale": true}
+ ],
+ "facts": [
+  {"claim": "Barber & Odean studied 66,465 households with accounts at a large discount broker, 1991 to 1996 (Journal of Finance, 2000)", "sources": ["https://faculty.haas.berkeley.edu/odean/Papers%20current%20versions/Individual_Investor_Performance_Final.pdf", "https://econpapers.repec.org/RePEc:bla:jfinan:v:55:y:2000:i:2:p:773-806", "https://rikatillsammans.se/studier/de-som-handlar-mest-med-aktier-forlorar-mest/"]},
+  {"claim": "The market returned 17.9 percent a year; the households that traded most earned 11.4 percent net; the average household 16.4 percent", "sources": ["https://faculty.haas.berkeley.edu/odean/Papers%20current%20versions/Individual_Investor_Performance_Final.pdf", "https://econpapers.repec.org/RePEc:bla:jfinan:v:55:y:2000:i:2:p:773-806", "https://finance.martinsewell.com/traders"]},
+  {"claim": "The households that traded most turned over more than 250 percent of their portfolio a year (more than twice a year)", "sources": ["https://faculty.haas.berkeley.edu/odean/Papers%20current%20versions/Individual_Investor_Performance_Final.pdf", "https://rikatillsammans.se/studier/de-som-handlar-mest-med-aktier-forlorar-mest/"]},
+  {"claim": "The average round-trip trade above $1,000 cost about 3 percent in commissions and 1 percent in bid-ask spread (about four percent)", "sources": ["https://faculty.haas.berkeley.edu/odean/Papers%20current%20versions/Individual_Investor_Performance_Final.pdf", "https://rikatillsammans.se/studier/de-som-handlar-mest-med-aktier-forlorar-mest/"]},
+  {"claim": "Gross (before-cost) returns of frequent and infrequent traders were close to the market; the gap came from trading costs, not stock picks", "sources": ["https://faculty.haas.berkeley.edu/odean/Papers%20current%20versions/Individual_Investor_Performance_Final.pdf", "https://rikatillsammans.se/studier/de-som-handlar-mest-med-aktier-forlorar-mest/"]},
+  {"claim": "The authors' explanation is overconfidence", "sources": ["https://faculty.haas.berkeley.edu/odean/Papers%20current%20versions/Individual_Investor_Performance_Final.pdf", "https://econpapers.repec.org/RePEc:bla:jfinan:v:55:y:2000:i:2:p:773-806", "https://rikatillsammans.se/studier/de-som-handlar-mest-med-aktier-forlorar-mest/"]},
+  {"claim": "Infrequent traders earned 18.5 percent a year net", "sources": ["https://faculty.haas.berkeley.edu/odean/Papers%20current%20versions/Individual_Investor_Performance_Final.pdf", "https://rikatillsammans.se/studier/de-som-handlar-mest-med-aktier-forlorar-mest/"]},
+  {"claim": "Dave and Pat are fictional illustrations of the study's most-active and least-active households", "sources": []}
+ ],
+ "caption": "66,465 households. Six years of real trades.\nThe busiest traders earned 11.4% a year while the market made 17.9%.\nTheir picks weren't the problem. The tolls were.\n\n#investing #longterminvesting #behavioralfinance #stockmarket #valueinvesting #overtrading\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "66,465 Investors Studied: The Busiest Traders Earned the Least",
+ "sources": [
+  "https://faculty.haas.berkeley.edu/odean/Papers%20current%20versions/Individual_Investor_Performance_Final.pdf",
+  "https://econpapers.repec.org/RePEc:bla:jfinan:v:55:y:2000:i:2:p:773-806",
+  "https://hedgefundalpha.com/strategies/common-stock-investment-performance-individual-investors/",
+  "https://rikatillsammans.se/studier/de-som-handlar-mest-med-aktier-forlorar-mest/",
+  "https://finance.martinsewell.com/traders"
+ ]
+}

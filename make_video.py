@@ -211,6 +211,34 @@ def words_from_silence(beats, segs):
     return out
 
 
+def words_from_transcript(beats, tw, scale=1.0):
+    """Exact word timing from a transcript with per-word times (ElevenLabs Scribe words.json: {"words":[{text,start,end}]}).
+    Script words are matched to transcript words in order (difflib on normalised tokens); unmatched script words are
+    interpolated between their matched neighbours. Times are divided by `scale` (the atempo factor)."""
+    import difflib
+    norm = lambda w: re.sub(r"[^a-z0-9]", "", w.lower().replace("’", "'"))
+    tw = [x for x in (tw.get("words", tw) if isinstance(tw, dict) else tw) if x.get("type", "word") == "word" and norm(x["text"])]
+    sw = [w for b in beats for w in b["text"].split()]
+    A, B = [norm(w) for w in sw], [norm(x["text"]) for x in tw]
+    S = [None] * len(sw)
+    for blk in difflib.SequenceMatcher(None, A, B, autojunk=False).get_matching_blocks():
+        for k in range(blk.size): S[blk.a + k] = (tw[blk.b + k]["start"], tw[blk.b + k]["end"])
+    hit = sum(x is not None for x in S)
+    if hit < 0.7 * len(sw): raise SystemExit(f"transcript matches only {hit}/{len(sw)} script words — check the narration text")
+    end = tw[-1]["end"] if tw else 0.0
+    i = 0
+    while i < len(S):  # fill gaps by spreading them between the neighbours, by character length
+        if S[i] is not None: i += 1; continue
+        j = i
+        while j < len(S) and S[j] is None: j += 1
+        t0 = S[i - 1][1] if i > 0 else 0.0; t1 = S[j][0] if j < len(S) else end
+        L = [len(sw[k]) + 1 for k in range(i, j)]; c = np.cumsum([0] + L) / sum(L)
+        for q, k in enumerate(range(i, j)): S[k] = (t0 + (t1 - t0) * c[q], t0 + (t1 - t0) * c[q + 1] - 0.02)
+        i = j
+    print(f"word timing: transcript matched {hit}/{len(sw)} words")
+    return [{"w": w, "s": s / scale, "e": max(s, e) / scale} for w, (s, e) in zip(sw, S)]
+
+
 # ---------------- board ----------------
 def build_board(script, words, dur):
     beats, wi = [], 0
@@ -413,7 +441,7 @@ def film_main(a, script, slug, work, voice, words, dur):
 # ---------------- main ----------------
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("script"); ap.add_argument("--voice"); ap.add_argument("--scale", type=float, default=1.0)
+    ap.add_argument("script"); ap.add_argument("--voice"); ap.add_argument("--words", help="per-word transcript JSON for --voice (ElevenLabs Scribe words.json)"); ap.add_argument("--scale", type=float, default=1.0)
     ap.add_argument("--procs", type=int, default=2); ap.add_argument("--stills-only", action="store_true")
     ap.add_argument("--tts", choices=["eleven", "kokoro"], default=os.environ.get("TTS", "eleven"), help="voice source when --voice is not given")
     a = ap.parse_args()
@@ -423,11 +451,16 @@ def main():
     voice = f"{work}/voice.mp3"
     if a.voice:
         tempo = float(script.get("tempo", 1.0))  # keep ≤ 1.08: more audibly hurts naturalness (owner: voice must sound human)
-        af = ["silenceremove=stop_periods=-1:stop_duration=0.45:stop_threshold=-40dB:stop_silence=0.32"] if script.get("film") else []
+        # with a word-timed transcript the audio is only uniformly sped up (no pause trimming), so times stay exact
+        af = ["silenceremove=stop_periods=-1:stop_duration=0.45:stop_threshold=-40dB:stop_silence=0.32"] if script.get("film") and not a.words else []
         if tempo != 1.0: af.append(f"atempo={tempo}")
         if af: sh(["ffmpeg", "-v", "error", "-y", "-i", a.voice, "-af", ",".join(af), "-ar", "44100", "-b:a", "192k", voice])
         else: sh(["cp", a.voice, voice])
-        dur = duration(voice); words = words_from_silence(script["beats"], speech_segments(voice))
+        dur = duration(voice)
+        if a.words: words = words_from_transcript(script["beats"], json.load(open(a.words)), tempo)
+        else:
+            print("WARNING: no --words transcript; word timing is estimated from pauses (captions may drift)")
+            words = words_from_silence(script["beats"], speech_segments(voice))
     elif a.tts == "kokoro":
         wj = f"{work}/words_kokoro.json"
         if os.path.exists(voice) and os.path.exists(wj): words = json.load(open(wj)); print("voice: reused kokoro")

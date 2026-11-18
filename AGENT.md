@@ -203,9 +203,14 @@ python3 make_video.py scripts/<slug>.json --tts kokoro                        # 
      `voice_id` `ZthjuvLPty3kTMaNKVKb` (Jackson), `model_id` `eleven_v4`, `generations_count` 1. Never call it a second
      time for the same text (every call is charged). Poll `creative_get_flow_run_status` (flow_id + session_ids) until
      completed and take `media[0].url`.
-  3. `curl -sSfL -o work/<slug>/eleven.mp3 "<url>"` (quote the URL; retry the download, not the generation). Add
+  3. `curl -sSfL -o work/<slug>/eleven.mp3 "<url>"` (quote the URL; retry the download, not the generation).
+  3b. **Exact word timing (captions in sync):** `creative_transcribe_audio` with `model_id` `eleven_scribe_v1`, the SAME
+     `flow_id` and `connect_from: [<the speech node_id>]` (costs 0 credits); poll `creative_get_flow_run_status` until
+     completed, then `curl -sSfL -o work/<slug>/words.json "<transcripts[0].words_download_url>"`. Add
      `"tempo": 1.05, "voice_label": "eleven:jackson-v4"` to the script and run every make_video command with
-     `--voice work/<slug>/eleven.mp3` instead of `--tts kokoro`. Jackson reads at ≈2.4 words/s, so the script is
+     `--voice work/<slug>/eleven.mp3 --words work/<slug>/words.json` instead of `--tts kokoro`. make_video prints
+     "transcript matched N/N words" — it must match at least 95 %; without `--words` it falls back to guessing word times
+     from pauses (that guess was up to 2 s off and made captions, cuts and pops drift — never ship that). Jackson reads at ≈2.4 words/s, so the script is
      125–150 words and lands at 48–60 s. **Naturalness beats speed**: never set tempo above 1.08 (heavier time-stretching
      is what made the earlier Roger videos sound synthetic); if the narration is too long, cut words instead.
   4. Fallback when the plan is out of characters, the generation fails, or the download is refused: `--tts kokoro`

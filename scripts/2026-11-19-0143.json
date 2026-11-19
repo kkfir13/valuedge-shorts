@@ -1,0 +1,35 @@
+{
+ "slug": "2026-11-19-0143",
+ "title": "The Cow That Kept Giving Milk",
+ "film": true,
+ "seed": 7,
+ "narrator": "am_fenrir",
+ "beats": [
+  {"text": "History's most famous bad day to buy stocks didn't cost you twenty-five years."},
+  {"text": "September third, nineteen twenty-nine. You're Walter, a Brooklyn tailor, buying at the very top."},
+  {"text": "The Dow closes at three hundred eighty-one. Then October hits."},
+  {"text": "By July nineteen thirty-two, it's forty-one. Eighty-nine percent, gone."},
+  {"text": "Your neighbors panic and sell. You just keep sewing."},
+  {"text": "The Dow won't see three eighty-one again until nineteen fifty-four."},
+  {"text": "So how are you back to even by nineteen thirty-six?"},
+  {"text": "You see, a stock is a cow. Its price crashes at the fair, but it still gives milk."},
+  {"text": "At the bottom, dividends paid almost fourteen percent of the price, and you reinvest every check."},
+  {"text": "Meanwhile, everything gets cheaper. Living costs fall over eighteen percent."},
+  {"text": "Every dollar buys more bread, more cloth, more shares."},
+  {"text": "Count the milk and the cheaper bread, and you're even by late nineteen thirty-six.", "twist": true},
+  {"text": "The Dow took twenty-five years. The cow never stopped giving milk.", "finale": true}
+ ],
+ "facts": [
+  {"claim": "The Dow Jones Industrial Average peaked at 381.17 (close) on September 3, 1929", "sources": ["https://www.federalreservehistory.org/essays/stock-market-crash-of-1929", "https://www.historynewsnetwork.org/article/79770", "https://www.mymoneyblog.com/25-years-1929-stock-market-crash-myth.html"]},
+  {"claim": "Black Monday Oct 28 and Black Tuesday Oct 29, 1929 (the crash came in October)", "sources": ["https://www.federalreservehistory.org/essays/stock-market-crash-of-1929", "https://www.fool.ca/2020/03/16/dispelling-the-biggest-myth-about-the-1929-stock-market-crash/"]},
+  {"claim": "The Dow closed at 41.22 on July 8, 1932, 89 percent below its peak", "sources": ["https://www.federalreservehistory.org/essays/stock-market-crash-of-1929", "https://www.historynewsnetwork.org/article/79770", "https://www.mymoneyblog.com/25-years-1929-stock-market-crash-myth.html"]},
+  {"claim": "The Dow did not regain its 1929 high until November 23, 1954 (about 25 years)", "sources": ["https://www.federalreservehistory.org/essays/stock-market-crash-of-1929", "https://www.historynewsnetwork.org/article/79770", "https://www.fool.ca/2020/03/16/dispelling-the-biggest-myth-about-the-1929-stock-market-crash/"]},
+  {"claim": "At the mid-1932 low the stock market's dividend yield was close to 14 percent (Shiller data)", "sources": ["https://www.historynewsnetwork.org/article/79770", "https://www.mymoneyblog.com/25-years-1929-stock-market-crash-myth.html", "https://www.fool.ca/2020/03/16/dispelling-the-biggest-myth-about-the-1929-stock-market-crash/"]},
+  {"claim": "The CPI in late 1936 was more than 18 percent lower than in fall 1929", "sources": ["https://www.historynewsnetwork.org/article/79770", "https://www.mymoneyblog.com/25-years-1929-stock-market-crash-myth.html"]},
+  {"claim": "Counting dividends and deflation, a lump-sum investor in the average stock at the 1929 high was back to break-even by late 1936 (about 7 years; Hulbert, NYT 2009). Fool.ca cites an even shorter real-terms figure; we use the conservative one.", "sources": ["https://www.historynewsnetwork.org/article/79770", "https://www.mymoneyblog.com/25-years-1929-stock-market-crash-myth.html"]},
+  {"claim": "Walter the Brooklyn tailor is a fictional everyman", "sources": []}
+ ],
+ "caption": "Bought stocks at the very top in 1929? The Dow needed 25 years to get back to 381.\nBut dividends near 14% at the bottom and falling prices got investors back to even by late 1936.\n\n#stockmarkethistory #dividends #1929 #longterminvesting #investing #valueinvesting\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "Bought at the 1929 Top? Not 25 Years to Break Even: Dividends and Deflation",
+ "sources": ["https://www.federalreservehistory.org/essays/stock-market-crash-of-1929", "https://www.historynewsnetwork.org/article/79770", "https://www.mymoneyblog.com/25-years-1929-stock-market-crash-myth.html", "https://www.fool.ca/2020/03/16/dispelling-the-biggest-myth-about-the-1929-stock-market-crash/"]
+}

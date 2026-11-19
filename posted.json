@@ -558,5 +558,65 @@
   ],
   "avg_shot_s": 2.06,
   "duration": 47.4
+ },
+ {
+  "date": "2026-11-19",
+  "slug": "2026-11-19-0143",
+  "title": "The Cow That Kept Giving Milk",
+  "yt_title": "Bought at the 1929 Top? Not 25 Years to Break Even: Dividends and Deflation",
+  "sources": [
+   "https://www.federalreservehistory.org/essays/stock-market-crash-of-1929",
+   "https://www.historynewsnetwork.org/article/79770",
+   "https://www.mymoneyblog.com/25-years-1929-stock-market-crash-myth.html",
+   "https://www.fool.ca/2020/03/16/dispelling-the-biggest-myth-about-the-1929-stock-market-crash/"
+  ],
+  "buffer": {
+   "instagram": "6afe4e98e7d056972961430a",
+   "youtube": "6afe4e993802f5b9fc59b0d9",
+   "tiktok": "6afe4e9ae7d056972961438b"
+  },
+  "scheduled": "2026-11-20T00:30:00+02:00",
+  "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-19/2026-11-19-0143.mp4",
+  "voice": "kokoro:am_fenrir",
+  "narrator": "kokoro:am_fenrir",
+  "voice_note": "ElevenLabs connector needs reconnecting (not available in this run), Kokoro fallback",
+  "mode": "film",
+  "era": "1929-1954",
+  "sets": [
+   "1929 Brooklyn tailor shop: violet wallpaper, cutting table with cloth bolts and a sewing machine, SEPT 3 1929 calendar, framed STOCK certificate, W. TAILORING sign",
+   "1929 Wall Street on cobbles: BROKERS / STOCK EXCHANGE / BANK fronts, big DOW quote board on a stand (381 climb, crash to 41), WALL ST sign, flying STOCKS CRASH! front page, SELL papers in a storm",
+   "county fair metaphor: meadow, striped tents, fence pen, spotted dairy cow = THE STOCK, COW FOR SALE board flipping $381 to $41, milk pail = dividends, SHARES crate",
+   "1936 corner grocery: teal wallpaper, counter with loaves, bottle shelves, PRICES board with falling arrows and -18%",
+   "navy time-track stage: a row of year blocks 1929-1954 with a green 1936 block, a red DOW ball crawling the whole way"
+  ],
+  "shots": [
+   "wallst:cut",
+   "track:smash",
+   "tailor:whip",
+   "tailor:dissolve",
+   "wallst:whip",
+   "wallst:cut",
+   "wallst:smash",
+   "wallst:whip",
+   "wallst:cut",
+   "wallst:whip",
+   "tailor:whip",
+   "track:dissolve",
+   "track:cut",
+   "tailor:whip",
+   "fair:zoom",
+   "fair:whip",
+   "fair:cut",
+   "fair:whip",
+   "fair:whip",
+   "grocer:whip",
+   "grocer:cut",
+   "grocer:dissolve",
+   "track:flash",
+   "track:cut",
+   "track:whip",
+   "fair:whip"
+  ],
+  "avg_shot_s": 2.23
  }
 ]

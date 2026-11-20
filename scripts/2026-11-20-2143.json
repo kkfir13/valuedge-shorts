@@ -1,0 +1,127 @@
+{
+  "slug": "2026-11-20-2143",
+  "title": "The Man Who Tried to Prove Stocks Were a Bad Investment",
+  "film": true,
+  "seed": 13,
+  "narrator": "am_fenrir",
+  "beats": [
+    {
+      "text": "Imagine you set out to prove stocks are a bad investment, and end up fuelling the Roaring Twenties."
+    },
+    {
+      "text": "It's nineteen twenty-four. You're Edgar Lawrence Smith, and you plan a pamphlet: bonds beat stocks."
+    },
+    {
+      "text": "You test half a century of real prices, stacking every test in favour of bonds."
+    },
+    {
+      "text": "Stocks win. Then they win again. Eleven tests, and bonds take one."
+    },
+    {
+      "text": "How do ordinary shares beat the safest investment in the land?"
+    },
+    {
+      "text": "You see, a farmer sells his crop, but keeps back a sack of seed."
+    },
+    {
+      "text": "Next year, that seed grows a bigger field."
+    },
+    {
+      "text": "Good companies do the same, ploughing part of every profit back into the business."
+    },
+    {
+      "text": "Keynes calls it the book's most important point: compound interest, working for the shareholder."
+    },
+    {
+      "text": "Then Wall Street reads it, and hears only: stocks always win, at any price."
+    },
+    {
+      "text": "Then comes October, nineteen twenty-nine.",
+      "twist": true
+    },
+    {
+      "text": "The seed was real. The price of the field wasn't.",
+      "finale": true
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Edgar Lawrence Smith (1882-1971) published Common Stocks as Long Term Investments in 1924",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Edgar_Lawrence_Smith",
+        "https://novelinvestor.com/birth-stocks-long-run/",
+        "https://novelinvestor.com/notes/common-stocks-as-long-term-investments-by-edgar-lawrence-smith",
+        "https://digi.econbiz.de/viewer/api/v1/records/1815583320/files/plaintext/00000231.xml"
+      ]
+    },
+    {
+      "claim": "He set out to write a pamphlet showing bonds were the best long-term investment, but the evidence did not support it (own words, Harvard reunion book; NYT Feb 1925)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Edgar_Lawrence_Smith",
+        "https://novelinvestor.com/birth-stocks-long-run/"
+      ]
+    },
+    {
+      "claim": "Tests spanned roughly half a century of prices (from 1866 to 1922; Keynes: 'the past fifty years')",
+      "sources": [
+        "https://novelinvestor.com/birth-stocks-long-run/",
+        "https://novelinvestor.com/keynes-reviews-common-stocks-as-long-term-investments/",
+        "https://digi.econbiz.de/viewer/api/v1/records/1815583320/files/plaintext/00000231.xml"
+      ]
+    },
+    {
+      "claim": "Tests were designed to favour bonds ('every advantage given to bonds'; 'calculated to favor bonds')",
+      "sources": [
+        "https://novelinvestor.com/notes/common-stocks-as-long-term-investments-by-edgar-lawrence-smith",
+        "https://digi.econbiz.de/viewer/api/v1/records/1815583320/files/plaintext/00000231.xml"
+      ]
+    },
+    {
+      "claim": "Stocks came out ahead in ten of eleven tests; bonds won only one (Test 6, 1866-1885)",
+      "sources": [
+        "https://novelinvestor.com/keynes-reviews-common-stocks-as-long-term-investments/",
+        "https://novelinvestor.com/notes/common-stocks-as-long-term-investments-by-edgar-lawrence-smith",
+        "https://digi.econbiz.de/viewer/api/v1/records/1815583320/files/plaintext/00000231.xml"
+      ]
+    },
+    {
+      "claim": "Smith's key point: companies retain part of earnings and reinvest them, a compounding effect for shareholders; Keynes called it 'perhaps Mr. Smith's most important, and certainly his most novel, point' and wrote of 'an element of compound interest operating in favour of a sound industrial investment'",
+      "sources": [
+        "https://novelinvestor.com/keynes-reviews-common-stocks-as-long-term-investments/",
+        "https://novelinvestor.com/birth-stocks-long-run/",
+        "https://novelinvestor.com/notes/common-stocks-as-long-term-investments-by-edgar-lawrence-smith"
+      ]
+    },
+    {
+      "claim": "Keynes reviewed the book in 1925 (The Nation and Athenaeum)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Edgar_Lawrence_Smith",
+        "https://novelinvestor.com/keynes-reviews-common-stocks-as-long-term-investments/",
+        "https://novelinvestor.com/birth-stocks-long-run/"
+      ]
+    },
+    {
+      "claim": "The book became an intellectual support for the 1920s boom; Fisher and Graham said it influenced market psychology before the Great Crash of October 1929",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Edgar_Lawrence_Smith",
+        "https://ideas.repec.org/a/cup/jhisec/v42y2020i1p79-104_5.html",
+        "https://novelinvestor.com/birth-stocks-long-run/",
+        "https://novelinvestor.com/keynes-reviews-common-stocks-as-long-term-investments/"
+      ]
+    },
+    {
+      "claim": "Farmer/seed analogy is an illustration, not a fact claim",
+      "sources": []
+    }
+  ],
+  "caption": "1924: Edgar Lawrence Smith tried to prove bonds beat stocks. Over half a century of data, stocks won 10 of his 11 tests.\nKeynes said the key was profits companies keep and reinvest. Wall Street heard only: stocks always win. Then came 1929.\n\n#stockmarkethistory #valueinvesting #compounding #longterminvesting #investing\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+  "yt_title": "1924: He Tried to Prove Bonds Beat Stocks. Stocks Won 10 of 11 Tests. Then 1929.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Edgar_Lawrence_Smith",
+    "https://novelinvestor.com/birth-stocks-long-run/",
+    "https://novelinvestor.com/keynes-reviews-common-stocks-as-long-term-investments/",
+    "https://novelinvestor.com/notes/common-stocks-as-long-term-investments-by-edgar-lawrence-smith",
+    "https://ideas.repec.org/a/cup/jhisec/v42y2020i1p79-104_5.html",
+    "https://digi.econbiz.de/viewer/api/v1/records/1815583320/files/plaintext/00000231.xml"
+  ]
+}

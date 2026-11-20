@@ -665,5 +665,44 @@
   "avg_shot_s": 2.01,
   "duration": 52.333333,
   "lufs": "-14.5"
+ },
+ {
+  "date": "2026-11-20",
+  "slug": "2026-11-20-2143",
+  "title": "The Man Who Tried to Prove Stocks Were a Bad Investment",
+  "yt_title": "1924: He Tried to Prove Bonds Beat Stocks. Stocks Won 10 of 11 Tests. Then 1929.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Edgar_Lawrence_Smith",
+   "https://novelinvestor.com/birth-stocks-long-run/",
+   "https://novelinvestor.com/keynes-reviews-common-stocks-as-long-term-investments/",
+   "https://novelinvestor.com/notes/common-stocks-as-long-term-investments-by-edgar-lawrence-smith",
+   "https://ideas.repec.org/a/cup/jhisec/v42y2020i1p79-104_5.html",
+   "https://digi.econbiz.de/viewer/api/v1/records/1815583320/files/plaintext/00000231.xml"
+  ],
+  "buffer": {
+   "instagram": "6b00b7345102766245d2a882",
+   "youtube": "6b00b735d9cbb430a1f853a4",
+   "tiktok": "6b00b7355102766245d2a91a"
+  },
+  "scheduled": "2026-11-21T08:30:00+02:00",
+  "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-20/2026-11-20-2143.mp4",
+  "voice": "kokoro:am_fenrir",
+  "narrator": "kokoro:am_fenrir",
+  "voice_note": "ElevenLabs connector needs reconnecting (not available in this run), Kokoro fallback",
+  "mode": "film",
+  "era": "1924-1929",
+  "sets": [
+   "1924 New York office at night: navy wallpaper, desk with typewriter typing BONDS / BEAT / STOCKS, towers of ledgers, green banker's lamp, 1866-1922 sign",
+   "boxing ring on a dark stage: STOCKS (green) vs BONDS (blue) boxers, EXTRA crate boost for bonds, 11-tick scoreboard 10-1",
+   "1920s market square on cobbles: striped-awning produce stall (CORN, WHEAT), SEED sack kept back, soil plot sprouting into a field, giant $$$$$ price tag that crashes",
+   "teal metaphor stage: COMPANY brick building, KEEP hopper and PAY OUT chute, new floors stacking up = COMPOUNDING",
+   "Cambridge book-lined library 1925: Keynes in a reading chair with the blue book, MOST IMPORTANT POINT! bubble",
+   "jazz-age wine-red ballroom turned auction: chandelier, podium with gavel, STOCKS certificate with swelling $ tags, OCT 1929 crash"
+  ],
+  "opening": "frame 0: typewriter keys hammering CLACK, page rising, camera rushing in",
+  "shots": 25,
+  "avg_shot_s": 2.12,
+  "duration": 53.033333,
+  "lufs": "-14.5"
  }
 ]

@@ -625,5 +625,45 @@
     "reason": "original YouTube post errored: daily posting limit reached"
    }
   }
+ },
+ {
+  "date": "2026-11-20",
+  "slug": "2026-11-20-1743",
+  "title": "The Worst Stocks in America",
+  "yt_title": "1939: He Bought Every Stock Under $1, Even the Bankrupt Ones (Templeton)",
+  "sources": [
+   "https://www.americanrhodes.org/news-123.html",
+   "https://en.wikipedia.org/wiki/John_Templeton",
+   "https://www.templetonworldcharity.org/about-us/our-founder-1",
+   "https://www.philanthropyroundtable.org/hall-of-fame/john-templeton/",
+   "https://www.fool.com/investing/how-to-invest/famous-investors/john-templeton",
+   "https://theweek.com/articles/513914/john-templeton",
+   "https://www.morningstar.com.au/insights/personal-finance/203792/john-templeton-how-to-be-a-bargain-hunter"
+  ],
+  "buffer": {
+   "instagram": "6b007eaed425f1473afba39a",
+   "youtube": "6b007eafd425f1473afba425",
+   "tiktok": "6b007eb144c3619113482543"
+  },
+  "scheduled": "2026-11-21T00:30:00+02:00",
+  "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-20/2026-11-20-1743.mp4",
+  "voice": "kokoro:am_fenrir",
+  "narrator": "kokoro:am_fenrir",
+  "voice_note": "ElevenLabs connector needs reconnecting (not available in this run), Kokoro fallback",
+  "mode": "film",
+  "era": "1939-1943",
+  "sets": [
+   "1939 brokerage board room: marble walls, giant green chalk price board of fractions (NEW YORK EXCHANGE · SEPT 1939, ALL UNDER $1), broker's desk with rattling phone, wooden radio and BUY 100 EACH order slip, ticker machine",
+   "John's rented den: brick-red wallpaper, green felt poker table with chips and aces, TENNESSEE pennant and YALE '34 plaque, BORROWED money bag",
+   "desert junkyard of the worst stocks: pyramid of labelled crates (RAILROAD, STEEL, MOTORS...) stamped BANKRUPT, EVERYTHING UNDER $1 sign",
+   "dusty main-street umbrella shop in a drought (1¢ tag, tumbleweed, sleeping shopkeeper) that flips to a rainstorm ($5, SOLD OUT)",
+   "brick factory hall with machines and a conveyor, dark and IDLE, then lit with spinning wheels and ORDERS IN!",
+   "purple metaphor stage: market mood dial from OPTIMISM to MAXIMUM PESSIMISM, 1939 vs ~1943 bars, a green bar rocketing up past a SOLD crate"
+  ],
+  "opening": "frame 0: rattling desk phone + RING! in the 1939 board room",
+  "shots": 26,
+  "avg_shot_s": 2.01,
+  "duration": 52.333333,
+  "lufs": "-14.5"
  }
 ]

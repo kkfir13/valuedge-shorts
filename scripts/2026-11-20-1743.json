@@ -1,0 +1,40 @@
+{
+ "slug": "2026-11-20-1743",
+ "title": "The Worst Stocks in America",
+ "film": true,
+ "seed": 11,
+ "narrator": "am_fenrir",
+ "beats": [
+  {"text": "The day war broke out in Europe, a young man ordered the worst stocks in America."},
+  {"text": "Every stock on the New York exchange under one dollar. A hundred shares of each."},
+  {"text": "Imagine you're his broker, reading that list."},
+  {"text": "A hundred and four companies. Thirty-four already bankrupt."},
+  {"text": "The buyer is John Templeton, a young Tennessean who paid for college with poker winnings."},
+  {"text": "And he's buying with borrowed money, while everyone else sells."},
+  {"text": "So why buy bankrupt companies in the middle of a war?"},
+  {"text": "You see, an umbrella shop in a drought sells for pennies."},
+  {"text": "Nobody wants it. Then it rains."},
+  {"text": "The war was the rain. Idle factories filled with orders."},
+  {"text": "Within about four years, his junk pile was up roughly four hundred percent."},
+  {"text": "Only four of those companies ended up worthless."},
+  {"text": "He called it buying at the point of maximum pessimism."},
+  {"text": "And years later, his one regret?", "twist": true},
+  {"text": "He sold too soon.", "finale": true}
+ ],
+ "facts": [
+  {"claim": "In 1939, when World War II broke out in Europe (September 1939), Templeton had his broker buy (he said he called the day the war began)", "sources": ["https://www.americanrhodes.org/news-123.html", "https://www.morningstar.com.au/insights/personal-finance/203792/john-templeton-how-to-be-a-bargain-hunter", "https://www.fool.com/investing/how-to-invest/famous-investors/john-templeton", "https://en.wikipedia.org/wiki/John_Templeton"]},
+  {"claim": "100 shares each of every NYSE stock selling at $1 a share or less", "sources": ["https://www.fool.com/investing/how-to-invest/famous-investors/john-templeton", "https://en.wikipedia.org/wiki/John_Templeton", "https://www.americanrhodes.org/news-123.html", "https://theweek.com/articles/513914/john-templeton"]},
+  {"claim": "104 companies, including 34 in bankruptcy (Wikipedia says 37; the Washington Post obituary, The Week/WSJ, Morningstar and Motley Fool say 34)", "sources": ["https://www.americanrhodes.org/news-123.html", "https://theweek.com/articles/513914/john-templeton", "https://www.fool.com/investing/how-to-invest/famous-investors/john-templeton", "https://www.morningstar.com.au/insights/personal-finance/203792/john-templeton-how-to-be-a-bargain-hunter"]},
+  {"claim": "He bought with borrowed money (The Week/WSJ give $10,000; single source, left out of narration)", "sources": ["https://www.americanrhodes.org/news-123.html", "https://www.fool.com/investing/how-to-invest/famous-investors/john-templeton", "https://www.morningstar.com.au/insights/personal-finance/203792/john-templeton-how-to-be-a-bargain-hunter"]},
+  {"claim": "Born 1912 in Winchester, Tennessee; paid for Yale with poker winnings", "sources": ["https://www.americanrhodes.org/news-123.html", "https://en.wikipedia.org/wiki/John_Templeton", "https://www.templetonworldcharity.org/about-us/our-founder-1"]},
+  {"claim": "US industry picked up because of the war, which made the purchases pay off", "sources": ["https://en.wikipedia.org/wiki/John_Templeton", "https://www.morningstar.com.au/insights/personal-finance/203792/john-templeton-how-to-be-a-bargain-hunter"]},
+  {"claim": "After an average holding period of about four years the portfolio returned about 400 percent", "sources": ["https://www.philanthropyroundtable.org/hall-of-fame/john-templeton/", "https://www.fool.com/investing/how-to-invest/famous-investors/john-templeton"]},
+  {"claim": "Only four of the companies turned out worthless", "sources": ["https://www.americanrhodes.org/news-123.html", "https://theweek.com/articles/513914/john-templeton", "https://www.fool.com/investing/how-to-invest/famous-investors/john-templeton", "https://www.philanthropyroundtable.org/hall-of-fame/john-templeton/"]},
+  {"claim": "He described his method as buying at the point of maximum pessimism", "sources": ["https://www.americanrhodes.org/news-123.html", "https://theweek.com/articles/513914/john-templeton", "https://www.philanthropyroundtable.org/hall-of-fame/john-templeton/", "https://www.fool.com/investing/how-to-invest/famous-investors/john-templeton"]},
+  {"claim": "He later said he wished he had held those stocks longer", "sources": ["https://www.philanthropyroundtable.org/hall-of-fame/john-templeton/", "https://www.fool.com/investing/how-to-invest/famous-investors/john-templeton"]},
+  {"claim": "The broker (the viewer) and the umbrella shop are illustrative, not historical", "sources": []}
+ ],
+ "caption": "September 1939: as war broke out in Europe, a young John Templeton bought 100 shares of every NYSE stock under $1. 104 companies, 34 of them bankrupt.\nOnly four ended up worthless, and the pile returned about 400% in roughly four years.\n\n#valueinvesting #stockmarkethistory #contrarian #longterminvesting #investing\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "1939: He Bought Every Stock Under $1, Even the Bankrupt Ones (Templeton)",
+ "sources": ["https://www.americanrhodes.org/news-123.html", "https://en.wikipedia.org/wiki/John_Templeton", "https://www.templetonworldcharity.org/about-us/our-founder-1", "https://www.philanthropyroundtable.org/hall-of-fame/john-templeton/", "https://www.fool.com/investing/how-to-invest/famous-investors/john-templeton", "https://theweek.com/articles/513914/john-templeton", "https://www.morningstar.com.au/insights/personal-finance/203792/john-templeton-how-to-be-a-bargain-hunter"]
+}

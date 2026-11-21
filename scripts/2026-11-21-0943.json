@@ -1,0 +1,116 @@
+{
+  "slug": "2026-11-21-0943",
+  "title": "The Rule-Breaker's Biggest Win",
+  "film": true,
+  "seed": 9,
+  "beats": [
+    {
+      "text": "The father of value investing made his biggest profit breaking his own rule."
+    },
+    {
+      "text": "It's New York, nineteen forty-eight. You work for Benjamin Graham."
+    },
+    {
+      "text": "His rule: about five percent, tops, in any one stock."
+    },
+    {
+      "text": "He's so careful, he'd diversify his lunch."
+    },
+    {
+      "text": "Then a small car insurer comes up for sale."
+    },
+    {
+      "text": "It sells by mail to government workers. No agents."
+    },
+    {
+      "text": "Graham buys half of it for seven hundred twelve thousand dollars."
+    },
+    {
+      "text": "About a fifth of the fund, in one stock."
+    },
+    {
+      "text": "Why would Wall Street's most careful man do that?"
+    },
+    {
+      "text": "You see, it's a lemonade stand with no middleman. Cheaper cups, longer line."
+    },
+    {
+      "text": "Cheaper policies, more drivers, and the company kept growing."
+    },
+    {
+      "text": "By nineteen seventy-two, that stake was worth four hundred million dollars."
+    },
+    {
+      "text": "Graham wrote that one decision beat all his others, over twenty years, combined.",
+      "twist": true
+    },
+    {
+      "text": "One lucky break, or one supremely shrewd decision. Can we tell them apart?",
+      "finale": true
+    }
+  ],
+  "facts": [
+    {
+      "claim": "In 1948 Benjamin Graham's Graham-Newman Corp. bought half (50%) of GEICO for $712,000",
+      "sources": [
+        "https://www.ifa.com/articles/impact_geico_benjamin_graham_warren_buffett_luck_gecko/",
+        "https://media.moiglobal.com/manualofideas1/wp-content/uploads/geico-case-study.pdf",
+        "https://en.wikipedia.org/wiki/GEICO",
+        "https://fhmagazine.org/financial-history-134-summer-2020/0850549001596540706/p15"
+      ]
+    },
+    {
+      "claim": "Graham-Newman normally diversified widely, seldom more than about 5% in one holding; the GEICO stake was roughly 20% (about one fifth) of the fund",
+      "sources": [
+        "https://jasonzweig.com/was-benjamin-graham-skillful-or-lucky/",
+        "https://www.ifa.com/articles/impact_geico_benjamin_graham_warren_buffett_luck_gecko/"
+      ]
+    },
+    {
+      "claim": "GEICO, founded 1936 by Leo and Lillian Goodwin, sold auto insurance directly by mail to government employees, without agents; based in Washington, D.C. from 1937",
+      "sources": [
+        "https://www.geico.com/about/corporate/history-the-full-story/",
+        "https://www.fundinguniverse.com/company-histories/geico-corporation-history/",
+        "https://en.wikipedia.org/wiki/GEICO",
+        "https://media.moiglobal.com/manualofideas1/wp-content/uploads/geico-case-study.pdf"
+      ]
+    },
+    {
+      "claim": "The Graham-Newman GEICO position was worth about $400 million by 1972 (a more than 200-fold gain)",
+      "sources": [
+        "https://fhmagazine.org/financial-history-134-summer-2020/0850549001596540706/p15",
+        "https://www.ifa.com/articles/impact_geico_benjamin_graham_warren_buffett_luck_gecko/",
+        "https://media.moiglobal.com/manualofideas1/wp-content/uploads/geico-case-study.pdf",
+        "https://en.wikipedia.org/wiki/GEICO",
+        "https://jasonzweig.com/was-benjamin-graham-skillful-or-lucky/"
+      ]
+    },
+    {
+      "claim": "Graham's postscript to The Intelligent Investor: profits from this single decision far exceeded the sum of all others realized through 20 years; 'one lucky break, or one supremely shrewd decision - can we tell them apart?'",
+      "sources": [
+        "https://jasonzweig.com/was-benjamin-graham-skillful-or-lucky/",
+        "https://www.ifa.com/articles/impact_geico_benjamin_graham_warren_buffett_luck_gecko/",
+        "https://media.moiglobal.com/manualofideas1/wp-content/uploads/geico-case-study.pdf"
+      ]
+    },
+    {
+      "claim": "Graham is called the father of value investing; he died in 1976 (deceased)",
+      "sources": [
+        "https://www.ifa.com/articles/impact_geico_benjamin_graham_warren_buffett_luck_gecko/",
+        "https://jasonzweig.com/was-benjamin-graham-skillful-or-lucky/"
+      ]
+    }
+  ],
+  "caption": "1948: Benjamin Graham, who rarely put more than about 5% into one stock, bought half of a small mail-order car insurer for $712,000. About a fifth of his fund.\nBy 1972 it was worth some $400 million. His own verdict: lucky, or shrewd? Can we tell them apart?\n\n#benjamingraham #valueinvesting #stockmarkethistory #longterminvesting #investing #diversification\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+  "yt_title": "The Father of Value Investing Broke His Own Rule, and It Paid 200x",
+  "sources": [
+    "https://jasonzweig.com/was-benjamin-graham-skillful-or-lucky/",
+    "https://www.ifa.com/articles/impact_geico_benjamin_graham_warren_buffett_luck_gecko/",
+    "https://media.moiglobal.com/manualofideas1/wp-content/uploads/geico-case-study.pdf",
+    "https://fhmagazine.org/financial-history-134-summer-2020/0850549001596540706/p15",
+    "https://en.wikipedia.org/wiki/GEICO",
+    "https://www.geico.com/about/corporate/history-the-full-story/",
+    "https://www.fundinguniverse.com/company-histories/geico-corporation-history/"
+  ],
+  "narrator": "am_fenrir"
+}

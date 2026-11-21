@@ -246,6 +246,8 @@ python3 make_video.py scripts/<slug>.json --tts kokoro                        # 
    `madeForKids:false`) and one TikTok post (`metadata.tiktok.title` = yt_title), `mode:"customScheduled"`, `schedulingType:"automatic"`, `dueAt` at 08:30, 16:30 and 00:30
    (next day) Asia/Jerusalem (UTC+02:00 in winter, +03:00 in summer — take the offset from Buffer get_account).
    Buffer's plan allows 10 scheduled posts at once; never exceed it.
+   Buffer also allows at most 2 YouTube posts per calendar day (Asia/Jerusalem): when picking the slot, skip a slot whose day
+   already has 2 YouTube posts (scheduled or sent); if YouTube still rejects it, retry YouTube alone once at the next free slot.
 3. Append the story to `posted.json` (date, slug, title, sources, Buffer post ids, `sets` = the set ideas you built (short
    descriptions such as "nursery playroom", "pink candy stage", "mind control room"), `shots` and `avg_shot_s` from
    out/<slug>.json, narrator) and commit the script, `web/films/<slug>.js`, its timing JSON and posted.json to `main`.

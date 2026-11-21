@@ -704,5 +704,44 @@
   "avg_shot_s": 2.12,
   "duration": 53.033333,
   "lufs": "-14.5"
+ },
+ {
+  "date": "2026-11-21",
+  "slug": "2026-11-21-0143",
+  "title": "The Day the Market Forgot How to Subtract",
+  "yt_title": "2000: The Market Valued a Profitable Company at Minus $22 Billion. For Months.",
+  "sources": [
+   "https://www.nber.org/papers/w8302.pdf",
+   "https://www.chicagobooth.edu/review/can-market-add-and-subtract",
+   "https://money.cnn.com/2000/03/02/technology/palm/",
+   "https://www.theregister.com/on-prem/2000/03/03/palm-stock-rockets-to-create-534bn-company/766235",
+   "https://www.rcrwireless.com/20000306/archived-articles/palm-ipo-hits-market-big"
+  ],
+  "buffer": {
+   "instagram": "6b00f069d9cbb430a10d5009",
+   "youtube": "6b00f0725102766245e80765",
+   "tiktok": "6b00f06a5102766245e8049a"
+  },
+  "scheduled": "2026-11-21T16:30:00+02:00",
+  "scheduled_youtube": "2026-11-22T00:30:00+02:00",
+  "schedule_note": "YouTube rejected 16:30 on 2026-11-21 (Buffer: max 2 YouTube posts per day), retried once at 2026-11-22 00:30",
+  "video": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-21/2026-11-21-0143.mp4",
+  "voice": "kokoro:am_fenrir",
+  "narrator": "kokoro:am_fenrir",
+  "voice_note": "ElevenLabs connector needs reconnecting (not available in this run), Kokoro fallback",
+  "mode": "film",
+  "era": "2000",
+  "sets": [
+   "Times-Square-style plaza at night, March 2 2000: twin giant price screens PALM (up-spike) and 3COM (red fall), yellow ticker strip, green newsstand kiosk",
+   "Dan's 2000 apartment: mustard walls, beige CRT computer showing 3COM, pizza box, MARCH 2000 calendar, DOT COM! poster",
+   "3Com HQ: grey carpet, server racks with blinking LEDs, NETWORKS sign, open 3COM crate with the glowing PALM handheld, green PALM 95% block and sliver, -$63 tag",
+   "orange metaphor stage: giant leather wallet on a pedestal holding $140 in bills, $80 price tag, hourglass and calendar pages, wallet snaps shut",
+   "2000 rental shop for borrowing shares: blue striped walls, counter, emptying shelves, BORROW PALM sign, SOLD OUT"
+  ],
+  "opening": "frame 0: night plaza, the 3COM price line drawing down on a giant screen while the camera rushes in",
+  "shots": 27,
+  "avg_shot_s": 2.11,
+  "duration": 56.9,
+  "lufs": "-14.5"
  }
 ]

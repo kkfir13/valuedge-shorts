@@ -1,0 +1,136 @@
+{
+  "slug": "2026-11-21-0143",
+  "title": "The Day the Market Forgot How to Subtract",
+  "film": true,
+  "seed": 21,
+  "narrator": "am_fenrir",
+  "beats": [
+    {
+      "text": "In March two thousand, the market priced a profitable business below zero."
+    },
+    {
+      "text": "Imagine you own Three Com. It sells computer networks."
+    },
+    {
+      "text": "Inside it sits Palm, maker of the hottest handheld computer."
+    },
+    {
+      "text": "Three Com sells a sliver of Palm to the public."
+    },
+    {
+      "text": "Palm rockets from thirty-eight dollars to one sixty-five, then closes near ninety-five."
+    },
+    {
+      "text": "Each of your shares will get about one and a half Palm shares."
+    },
+    {
+      "text": "Over a hundred forty dollars of Palm. So your stock jumps?"
+    },
+    {
+      "text": "It falls, to eighty-one."
+    },
+    {
+      "text": "So everything else Three Com owns is worth minus sixty-three a share."
+    },
+    {
+      "text": "Minus twenty-two billion dollars."
+    },
+    {
+      "text": "How is a profitable business worth less than nothing?"
+    },
+    {
+      "text": "You see, it's a wallet holding a hundred forty dollars, on sale for eighty."
+    },
+    {
+      "text": "Everyone saw it. Newspapers wrote about it."
+    },
+    {
+      "text": "But cashing in meant betting against Palm, and almost no Palm shares could be borrowed."
+    },
+    {
+      "text": "The crazy price lasted months.",
+      "twist": true
+    },
+    {
+      "text": "Everyone could do the math. Nobody could pick up the money.",
+      "finale": true
+    }
+  ],
+  "facts": [
+    {
+      "claim": "On March 2, 2000 3Com sold a small part of Palm in an IPO and kept about 95 percent (sources give 4-6 percent sold)",
+      "sources": [
+        "https://www.chicagobooth.edu/review/can-market-add-and-subtract",
+        "https://www.nber.org/papers/w8302.pdf",
+        "https://money.cnn.com/2000/03/02/technology/palm/"
+      ]
+    },
+    {
+      "claim": "Palm, maker of handheld computers; 3Com, profitable seller of computer network systems",
+      "sources": [
+        "https://www.chicagobooth.edu/review/can-market-add-and-subtract",
+        "https://money.cnn.com/2000/03/02/technology/palm/"
+      ]
+    },
+    {
+      "claim": "Palm priced at $38, intraday high $165, closed $95.06 on day one",
+      "sources": [
+        "https://money.cnn.com/2000/03/02/technology/palm/",
+        "https://www.theregister.com/on-prem/2000/03/03/palm-stock-rockets-to-create-534bn-company/766235",
+        "https://www.rcrwireless.com/20000306/archived-articles/palm-ipo-hits-market-big"
+      ]
+    },
+    {
+      "claim": "3Com shareholders were to receive about 1.5 Palm shares per 3Com share (1.525) in a later spin-off",
+      "sources": [
+        "https://www.chicagobooth.edu/review/can-market-add-and-subtract",
+        "https://www.nber.org/papers/w8302.pdf"
+      ]
+    },
+    {
+      "claim": "1.5 x $95.06 = about $142.6 of Palm per 3Com share (arithmetic on two-source figures)",
+      "sources": [
+        "https://www.nber.org/papers/w8302.pdf",
+        "https://www.chicagobooth.edu/review/can-market-add-and-subtract"
+      ]
+    },
+    {
+      "claim": "3Com fell from $104.13 to close at $81.81 that day",
+      "sources": [
+        "https://www.chicagobooth.edu/review/can-market-add-and-subtract",
+        "https://www.nber.org/papers/w8302.pdf",
+        "https://money.cnn.com/2000/03/02/technology/palm/"
+      ]
+    },
+    {
+      "claim": "Implied stub value of 3Com's non-Palm assets: minus $63 per share, minus $22 billion in total",
+      "sources": [
+        "https://www.chicagobooth.edu/review/can-market-add-and-subtract",
+        "https://www.nber.org/papers/w8302.pdf"
+      ]
+    },
+    {
+      "claim": "The mispricing was noted by the Wall Street Journal and the New York Times and persisted for months",
+      "sources": [
+        "https://www.chicagobooth.edu/review/can-market-add-and-subtract",
+        "https://www.nber.org/papers/w8302.pdf"
+      ]
+    },
+    {
+      "claim": "Arbitrage was blocked by short-sale constraints: shorting Palm was very costly or impossible (short interest above 100 percent of float)",
+      "sources": [
+        "https://www.chicagobooth.edu/review/can-market-add-and-subtract",
+        "https://www.nber.org/papers/w8302.pdf"
+      ]
+    }
+  ],
+  "caption": "March 2000: 3Com owned about 95% of Palm, yet the market priced 3Com's own business at minus $22 billion.\nEveryone could see it. Almost no one could profit from it, because Palm shares were nearly impossible to borrow.\n\n#stockmarkethistory #dotcom #valueinvesting #marketmyths #longterminvesting #investing\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+  "yt_title": "2000: The Market Valued a Profitable Company at Minus $22 Billion. For Months.",
+  "sources": [
+    "https://www.nber.org/papers/w8302.pdf",
+    "https://www.chicagobooth.edu/review/can-market-add-and-subtract",
+    "https://money.cnn.com/2000/03/02/technology/palm/",
+    "https://www.theregister.com/on-prem/2000/03/03/palm-stock-rockets-to-create-534bn-company/766235",
+    "https://www.rcrwireless.com/20000306/archived-articles/palm-ipo-hits-market-big"
+  ]
+}

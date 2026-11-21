@@ -810,5 +810,68 @@
     ],
     "avg_shot_s": 1.84,
     "opening": "push into the green chart room, Graham at his desk, papers flying"
+  },
+  {
+    "date": "2026-11-21",
+    "slug": "2026-11-21-1344",
+    "title": "The Company That Bought Itself With Paper",
+    "yt_title": "1720: The Stock That Rose 20x on Money Its Own Bank Printed (Mississippi Bubble)",
+    "sources": [
+      "https://mshistory.mdah.ms.gov/issue/john-law-and-the-mississippi-bubble-1718-1720",
+      "https://www.chicagofed.org/-/media/publications/working-papers/2003/wp2003-31-pdf.pdf",
+      "https://hnoc.org/publishing/first-draft/the-rise-and-fall-of-john-law",
+      "https://www.winton.com/longer-view/the-mississippi-bubble",
+      "https://gallica.bnf.fr/dossiers/html/dossiers/FranceAmerique/en/D2/T2-2-3-b.htm",
+      "https://gopher.nypl.org/events/exhibitions/galleries/empire-imagination/item/11043"
+    ],
+    "buffer": {
+      "instagram": "6b019e1ed864a0110549d5b4",
+      "youtube": "6b019e1f846b0ee9070eebfe",
+      "tiktok": "6b019e1f0247969092d5ca33"
+    },
+    "scheduled": "2026-11-22T16:30:00+02:00 (Instagram, TikTok); 2026-11-23T00:30:00+02:00 (YouTube: 2 YouTube posts already on 2026-11-22)",
+    "retry": null,
+    "voice": "kokoro:am_fenrir",
+    "voice_reason": "ElevenLabs connector not available in this run (needs reconnect)",
+    "video_url": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-21/2026-11-21-1344.mp4",
+    "sets": [
+      "rue Quincampoix 1719: narrow cobbled lane of tall plaster houses packed with tricorn-hatted share buyers, MISSISSIPPI CO. · ACTIONS share office at the end with a flipping price board (500 / 10 000 / 9 000 / 1 000 LIVRES), Law's balcony, padlock FIXED; later in snow and at night",
+      "dream Louisiana: misty lilac shore with palms, rocks and a dark mine mouth, LOUISIANE signpost, gold bars and coins that pop up",
+      "maid's attic: plaster walls, narrow bed, broom, 1 ACTION certificate pinned up, bills raining, money bag; Margot in wig and gold dress = MILLIONAIRE",
+      "giant board game on a purple stage: green-white checker board, tumbling dice, BANK sign and a grey money-printer box spitting bills, banker = Law",
+      "Banque Royale: wine-red panelled hall, wooden screw printing press pounding, rising pile of notes, marble counter swapping ACTIONS certificates for notes, queue of sellers, banknote torn in half (-50%)",
+      "dark-plum finale stage: the Mississippi Co. house standing on a tower of its own banknotes fed by a little press; it collapses on 'paper.'"
+    ],
+    "shots": [
+      "quinc:cut",
+      "louis:whip",
+      "quinc:dissolve",
+      "quinc:cut",
+      "quinc:whip",
+      "quinc:cut",
+      "louis:whip",
+      "quinc:flash",
+      "quinc:smash",
+      "attic:whip",
+      "attic:cut",
+      "quinc:dissolve",
+      "game:zoom",
+      "game:cut",
+      "game:cut",
+      "bank:whip",
+      "bank:cut",
+      "quinc:whip",
+      "quinc:smash",
+      "bank:whip",
+      "bank:whip",
+      "bank:cut",
+      "quinc:dissolve",
+      "bank:whip",
+      "quinc:whip",
+      "tower:zoom",
+      "tower:cut"
+    ],
+    "avg_shot_s": 2.0,
+    "opening": "frame 0: a stampede of share buyers rushes down the narrow rue Quincampoix toward the camera, certificates flying"
   }
 ]

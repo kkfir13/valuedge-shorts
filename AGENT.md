@@ -17,6 +17,10 @@ The scheduled task fires every 4 hours, and runs can also be started by hand. A 
   Then read `claims.json` again: if another claim younger than 4 h has the same story or theme and an earlier `started`,
   drop yours and pick another story. Never choose a story claimed in the last 24 h or listed in `posted.json`.
 - **Slug** = `<YYYY-MM-DD>-<HHMM>` of the run's start time (Asia/Jerusalem), not of the slot.
+- **YouTube takes at most 2 videos a day** (Buffer returns "daily posting limit for this channel has been reached" on
+  the third, and the YouTube post is lost). YouTube posts go only into the 08:30 and 16:30 slots; a video whose slot is
+  00:30 goes to Instagram and TikTok only (record `"youtube": "skipped (00:30 slot)"`). Never move a YouTube post to
+  another day to catch up, and never retry a YouTube post that failed with the daily-limit error.
 - **Pick the slot when publishing**, not at the start: the earliest of 08:30 / 16:30 / 00:30 Asia/Jerusalem that is at
   least 25 minutes away and has no ValuEdge post (scheduled, sending or sent) on any of the three channels. Days ahead is fine.
 - In the same commit that appends to `posted.json`, remove your claim from `claims.json`. A failed run removes its claim

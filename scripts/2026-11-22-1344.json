@@ -1,0 +1,102 @@
+{
+  "slug": "2026-11-22-1344",
+  "title": "Why You Sell Your Winners",
+  "film": true,
+  "seed": 31,
+  "narrator": "am_fenrir",
+  "beats": [
+    {
+      "text": "You'll sell your best stock, keep your worst, and feel smart doing it."
+    },
+    {
+      "text": "In the nineties, an economist studied seven years of trades from ten thousand accounts at a discount broker."
+    },
+    {
+      "text": "Meet Gary. He owns a rocket that's up and a dud that's down."
+    },
+    {
+      "text": "Gary needs cash. Which one goes?"
+    },
+    {
+      "text": "The rocket."
+    },
+    {
+      "text": "A stock that was up was over fifty percent more likely to be sold."
+    },
+    {
+      "text": "So why dump the winner and hug the loser?"
+    },
+    {
+      "text": "Worse, the winners they sold kept beating the losers they kept."
+    },
+    {
+      "text": "You see, it's like a late bus. The longer you wait, the harder it is to leave."
+    },
+    {
+      "text": "Selling the winner proves you were right. Selling the loser makes the mistake real."
+    },
+    {
+      "text": "Only one month flipped it: December."
+    },
+    {
+      "text": "Suddenly losers went first, because a loss sold before New Year can cut your tax bill.",
+      "twist": true
+    },
+    {
+      "text": "Eleven months of pride. It took the taxman to make them admit it.",
+      "finale": true
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Odean analysed trading records of 10,000 accounts at a large (nationwide) discount brokerage house",
+      "sources": [
+        "https://faculty.haas.berkeley.edu/odean/papers/disposition/disposition.html",
+        "https://faculty.haas.berkeley.edu/odean/papers/disposition/disposit.pdf",
+        "https://en.wikipedia.org/wiki/Disposition_effect"
+      ]
+    },
+    {
+      "claim": "Data covered January 1987 through December 1993 (seven years); paper published Journal of Finance 53(5), October 1998",
+      "sources": [
+        "https://rpc.cfainstitute.org/-/media/documents/article/cfa-digest/1999/dig-v29-n2-469-pdf.pdf",
+        "https://faculty.haas.berkeley.edu/odean/papers/disposition/disposit.pdf",
+        "https://en.wikipedia.org/wiki/Disposition_effect"
+      ]
+    },
+    {
+      "claim": "A stock that is up in value is more than 50 percent more likely to be sold than one that is down (PGR 0.148 vs PLR 0.098 for the year)",
+      "sources": [
+        "https://faculty.haas.berkeley.edu/odean/papers/disposition/disposit.pdf",
+        "https://en.wikipedia.org/wiki/Disposition_effect"
+      ]
+    },
+    {
+      "claim": "The winners investors chose to sell continued to outperform the losers they kept; subsequent performance does not justify the behaviour",
+      "sources": [
+        "https://faculty.haas.berkeley.edu/odean/papers/disposition/disposition.html",
+        "https://rpc.cfainstitute.org/-/media/documents/article/cfa-digest/1999/dig-v29-n2-469-pdf.pdf"
+      ]
+    },
+    {
+      "claim": "In December the pattern reverses (PLR 0.128 > PGR 0.108): tax-motivated selling of losses is most evident in December",
+      "sources": [
+        "https://faculty.haas.berkeley.edu/odean/papers/disposition/disposit.pdf",
+        "https://en.wikipedia.org/wiki/Disposition_effect",
+        "https://faculty.haas.berkeley.edu/odean/papers/disposition/disposition.html"
+      ]
+    },
+    {
+      "claim": "Gary is a fictional illustrative investor, not a real person; the economist is not shown",
+      "sources": []
+    }
+  ],
+  "caption": "Ten thousand real brokerage accounts, 1987 to 1993: a stock that was up was over 50% more likely to be sold than one that was down.\nThe winners they sold kept beating the losers they kept.\nOnly December flipped it. Taxes.\n\n#behavioralfinance #dispositioneffect #investing #longterminvesting #valueinvesting #stockmarket\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+  "yt_title": "10,000 Investors Studied: They Sold Their Winners and Kept Their Losers. Except in December.",
+  "sources": [
+    "https://faculty.haas.berkeley.edu/odean/papers/disposition/disposition.html",
+    "https://faculty.haas.berkeley.edu/odean/papers/disposition/disposit.pdf",
+    "https://rpc.cfainstitute.org/-/media/documents/article/cfa-digest/1999/dig-v29-n2-469-pdf.pdf",
+    "https://en.wikipedia.org/wiki/Disposition_effect"
+  ]
+}

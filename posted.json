@@ -939,5 +939,64 @@
       "bed:whip"
     ],
     "avg_shot_s": 2.02
+  },
+  {
+    "date": "2026-11-22",
+    "slug": "2026-11-22-1344",
+    "title": "Why You Sell Your Winners",
+    "yt_title": "10,000 Investors Studied: They Sold Their Winners and Kept Their Losers. Except in December.",
+    "sources": [
+      "https://faculty.haas.berkeley.edu/odean/papers/disposition/disposition.html",
+      "https://faculty.haas.berkeley.edu/odean/papers/disposition/disposit.pdf",
+      "https://rpc.cfainstitute.org/-/media/documents/article/cfa-digest/1999/dig-v29-n2-469-pdf.pdf",
+      "https://en.wikipedia.org/wiki/Disposition_effect"
+    ],
+    "buffer": {
+      "instagram": "6b02e5d9d864a01105c37340",
+      "youtube": "6b02e5d9d864a01105c37384",
+      "tiktok": "6b02e5da02479690924d94d8"
+    },
+    "scheduled": "2026-11-24T00:30:00+02:00",
+    "retry": null,
+    "voice": "kokoro:am_fenrir",
+    "voice_note": "ElevenLabs connector needs reconnecting (not available in this run)",
+    "sets": [
+      "summer back garden with picket fence: a sunflower tagged UP yanked out on frame 0, a wilted weed tagged DOWN in a pot watered with love, COMPOST box",
+      "1990s DISCOUNT BROKER branch: blue carpet, beige monitors, a tower of TRADES paper boxes that grows, green WINNERS vs red LOSERS 3D bars (+50%)",
+      "Gary's 1990s living room: mustard wallpaper, chunky TV, two little monitors ROCKET (up) and DUD (down), RENT/BILL papers",
+      "desert launch pad at golden hour/sunset: white-red WINNER rocket stamped SOLD then blasting off, grey LOSER lump left behind",
+      "snowy night bus stop on a brick street: bench, BUS STOP sign, spinning clock, Gary stands up and sits back down",
+      "inside Gary's head (mind control room): I WAS WRONG / I WAS RIGHT wall signs, SELL WINNER lever rings confetti, SELL LOSER lever jams under red alarm light",
+      "snowy December street: TAX OFFICE facade, giant calendar flipping JAN..NOV..DEC, LOSSES bin, bowler-hatted taxman, TAX BILL shrinking; finale SLAM of the dud into the bin"
+    ],
+    "shots": [
+      "garden:cut",
+      "garden:dissolve",
+      "garden:whip",
+      "office:whip",
+      "office:cut",
+      "home:dissolve",
+      "home:cut",
+      "home:whip",
+      "launch:smash",
+      "office:whip",
+      "garden:dissolve",
+      "launch:whip",
+      "launch:cut",
+      "bus:whip",
+      "bus:cut",
+      "bus:dissolve",
+      "mind:zoom",
+      "mind:whip",
+      "dec:flash",
+      "dec:whip",
+      "dec:cut",
+      "dec:cut",
+      "dec:whip",
+      "dec:cut",
+      "dec:whip"
+    ],
+    "avg_shot_s": 1.94,
+    "duration_s": 48.566667
   }
 ]

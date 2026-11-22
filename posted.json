@@ -998,5 +998,71 @@
     ],
     "avg_shot_s": 1.94,
     "duration_s": 48.566667
+  },
+  {
+    "date": "2026-11-22",
+    "slug": "2026-11-22-1743",
+    "title": "The Price of the Last Chair",
+    "yt_title": "1901: A Railroad Stock Went 10x in One Week. The Railroad Hadn't Changed.",
+    "sources": [
+      "https://www.americanheritage.com/jacob-schiff-and-northern-pacific-corner",
+      "https://mnopedia.org/node/9546",
+      "https://novelinvestor.com/the-biggest-short-squeeze-of-the-last-century/",
+      "https://dynamic-rsnz.natlib.govt.nz/newspapers/TDN19010513.2.19",
+      "https://en.wikipedia.org/wiki/Panic_of_1901",
+      "https://archive.nyu.edu/bitstream/2451/26571/2/FIN-04-038.pdf"
+    ],
+    "buffer": {
+      "instagram": "6b031ee8c72676f5e9450a0c",
+      "tiktok": "6b031ee9d5eabfb8ccc3a2af",
+      "youtube": "skipped (00:30 slot)"
+    },
+    "scheduled": "2026-11-23T00:30:00+02:00 (Instagram, TikTok)",
+    "retry": null,
+    "voice": "eleven:jackson-v4",
+    "voice_note": "ElevenLabs Jackson eleven_v4, transcript matched 139/139 words",
+    "video_url": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-22/2026-11-22-1743.mp4",
+    "mode": "film",
+    "era": "1901",
+    "duration": 51.333333,
+    "sets": [
+      "Northern Pacific line through pine forest and mountains: black-and-red steam locomotive with NORTHERN PACIFIC tender charging on frame 0, later calm at sunset with a SAME. sign",
+      "1901 exchange floor: marble hall, round wooden Northern Pacific trading post, chalk price board $100 / $200 / $1,000, OTHER STOCKS board with falling arrows, crowd of brokers in bowlers and top hats, THURSDAY MAY 9 1901",
+      "Harriman's night office: dark panelling, green desk lamp, telegraph key, growing pile of certificates, safe, UNION PACIFIC poster",
+      "bank counter piled with cash under a BUY · N. PACIFIC sign, vault door (lender, Hill and banker)",
+      "navy duel stage: giant ONE SHARE certificate between Harriman and Hill, gold padlock CLICK; later red market bars crashing, truce",
+      "small town dirt street: neighbor's ladder sold over a fence, a man carrying every ladder, LADDERS shop SOLD OUT, 'My ladder?'",
+      "purple musical-chairs stage: one golden chair tagged 1 SHARE, gramophone, ring of short sellers, everyone dives; $1,000 tag slams onto the chair on the last word"
+    ],
+    "shots": [
+      "plains:cut",
+      "floor:whip",
+      "floor:cut",
+      "floor:whip",
+      "bank:dissolve",
+      "bank:cut",
+      "floor:whip",
+      "duel:smash",
+      "office:whip",
+      "bank:whip",
+      "duel:whip",
+      "floor:dissolve",
+      "town:whip",
+      "town:whip",
+      "town:cut",
+      "floor:flash",
+      "floor:cut",
+      "chairs:zoom",
+      "chairs:smash",
+      "floor:smash",
+      "floor:whip",
+      "duel:whip",
+      "duel:dissolve",
+      "floor:cut",
+      "plains:whip",
+      "chairs:dissolve",
+      "chairs:cut"
+    ],
+    "avg_shot_s": 1.9
   }
 ]

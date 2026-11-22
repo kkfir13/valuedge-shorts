@@ -1,0 +1,120 @@
+{
+  "slug": "2026-11-22-1743",
+  "title": "The Price of the Last Chair",
+  "film": true,
+  "seed": 7,
+  "tempo": 1.05,
+  "voice_label": "eleven:jackson-v4",
+  "beats": [
+    {
+      "text": "In nineteen oh one, a railroad stock went up ten times in one week."
+    },
+    {
+      "text": "Imagine you sold it short."
+    },
+    {
+      "text": "You borrowed shares, sold them, and plan to buy back cheaper."
+    },
+    {
+      "text": "But two railroad giants want the same company."
+    },
+    {
+      "text": "Harriman buys in secret. Hill and Morgan's bank buy to stop him."
+    },
+    {
+      "text": "And nobody sells."
+    },
+    {
+      "text": "So why is that your problem?"
+    },
+    {
+      "text": "You see, it's like selling a neighbor's ladder, then finding someone bought every ladder in town."
+    },
+    {
+      "text": "On May ninth, every short seller needs shares at once."
+    },
+    {
+      "text": "Musical chairs, and the music stopped."
+    },
+    {
+      "text": "One thousand dollars a share."
+    },
+    {
+      "text": "Short sellers dump everything else to pay, and the market crashes."
+    },
+    {
+      "text": "The giants call a truce and let them off the hook."
+    },
+    {
+      "text": "And the railroad? Exactly the same.",
+      "twist": true
+    },
+    {
+      "text": "That thousand dollars wasn't a railroad's price. It was the price of the last chair.",
+      "finale": true
+    }
+  ],
+  "facts": [
+    {
+      "claim": "May 1901: Northern Pacific common went to about ten times its price of a week earlier (under/about $100 to $1,000)",
+      "sources": [
+        "https://www.americanheritage.com/jacob-schiff-and-northern-pacific-corner",
+        "https://mnopedia.org/node/9546",
+        "https://novelinvestor.com/the-biggest-short-squeeze-of-the-last-century/"
+      ]
+    },
+    {
+      "claim": "Peak of $1,000 a share came on Thursday, May 9, 1901",
+      "sources": [
+        "https://mnopedia.org/node/9546",
+        "https://www.americanheritage.com/jacob-schiff-and-northern-pacific-corner",
+        "https://novelinvestor.com/the-biggest-short-squeeze-of-the-last-century/",
+        "https://archive.nyu.edu/bitstream/2451/26571/2/FIN-04-038.pdf"
+      ]
+    },
+    {
+      "claim": "E. H. Harriman (Union Pacific, with Kuhn, Loeb) bought Northern Pacific quietly to take control; James J. Hill and J.P. Morgan's bank bought to keep it (fight began over the Burlington railroad)",
+      "sources": [
+        "https://www.americanheritage.com/jacob-schiff-and-northern-pacific-corner",
+        "https://novelinvestor.com/the-biggest-short-squeeze-of-the-last-century/",
+        "https://dynamic-rsnz.natlib.govt.nz/newspapers/TDN19010513.2.19",
+        "https://en.wikipedia.org/wiki/Panic_of_1901"
+      ]
+    },
+    {
+      "claim": "Most of the shares sold in the frenzy had been sold short; more shares were sold short than could be bought back",
+      "sources": [
+        "https://www.americanheritage.com/jacob-schiff-and-northern-pacific-corner",
+        "https://novelinvestor.com/the-biggest-short-squeeze-of-the-last-century/",
+        "https://dynamic-rsnz.natlib.govt.nz/newspapers/TDN19010513.2.19"
+      ]
+    },
+    {
+      "claim": "Short sellers sold other stocks to cover, and the broader market crashed (Panic of 1901)",
+      "sources": [
+        "https://www.americanheritage.com/jacob-schiff-and-northern-pacific-corner",
+        "https://novelinvestor.com/the-biggest-short-squeeze-of-the-last-century/",
+        "https://en.wikipedia.org/wiki/Panic_of_1901",
+        "https://dynamic-rsnz.natlib.govt.nz/newspapers/TDN19010513.2.19"
+      ]
+    },
+    {
+      "claim": "The Morgan and Kuhn, Loeb groups called a truce and did not force delivery from the short sellers",
+      "sources": [
+        "https://www.americanheritage.com/jacob-schiff-and-northern-pacific-corner",
+        "https://novelinvestor.com/the-biggest-short-squeeze-of-the-last-century/",
+        "https://dynamic-rsnz.natlib.govt.nz/newspapers/TDN19010513.2.19"
+      ]
+    }
+  ],
+  "caption": "May 1901: Northern Pacific went from about $100 to $1,000 a share in a week.\nHarriman on one side, Hill and Morgan's bank on the other, short sellers caught in the middle, and the rest of the market crashed.\nSame trains. Same tracks.\n\n#stockmarkethistory #shortsqueeze #valueinvesting #investing #longterminvesting\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+  "yt_title": "1901: A Railroad Stock Went 10x in One Week. The Railroad Hadn't Changed.",
+  "sources": [
+    "https://www.americanheritage.com/jacob-schiff-and-northern-pacific-corner",
+    "https://mnopedia.org/node/9546",
+    "https://novelinvestor.com/the-biggest-short-squeeze-of-the-last-century/",
+    "https://dynamic-rsnz.natlib.govt.nz/newspapers/TDN19010513.2.19",
+    "https://en.wikipedia.org/wiki/Panic_of_1901",
+    "https://archive.nyu.edu/bitstream/2451/26571/2/FIN-04-038.pdf"
+  ]
+}

@@ -873,5 +873,71 @@
     ],
     "avg_shot_s": 2.0,
     "opening": "frame 0: a stampede of share buyers rushes down the narrow rue Quincampoix toward the camera, certificates flying"
+  },
+  {
+    "date": "2026-11-22",
+    "slug": "2026-11-22-0543",
+    "title": "The Economist Who Stopped Forecasting",
+    "yt_title": "Keynes Tried to Forecast the Market and Missed 1929. Then He Stopped, and Beat It.",
+    "sources": [
+      "https://www.nber.org/papers/w20421.pdf",
+      "https://blogs.cfainstitute.org/blog/2014/10/20/keynes-the-investor-lessons-to-be-learned/",
+      "https://www.jbs.cam.ac.uk/insight/2012/from-top-to-bottom",
+      "https://www.jbs.cam.ac.uk/insight/2013/investing-in-2013-ask-john-maynard-keynes",
+      "https://www.jbs.cam.ac.uk/2016/unconventional-investments-what-we-can-learn-from-keynes/",
+      "https://theconversation.com/would-keynes-have-bought-bitcoin-172065",
+      "https://papers.ssrn.com/abstract=2287262"
+    ],
+    "buffer": {
+      "instagram": "6b027e0b0247969092275788",
+      "youtube": "6b027e0bd5eabfb8cc84f04e",
+      "tiktok": "6b027e0cd5eabfb8cc84f07f"
+    },
+    "scheduled": "2026-11-23T08:30:00+02:00",
+    "retry": null,
+    "voice": "kokoro:am_fenrir",
+    "voice_reason": "ElevenLabs connector not available in this run (needs reconnect)",
+    "video_url": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-22/2026-11-22-0543.mp4",
+    "mode": "film",
+    "era": "1921-1946",
+    "duration": 52.5,
+    "sets": [
+      "hot-air balloon race over green Cambridgeshire fields: blue-striped KING'S balloon climbing past a grey MARKET balloon (frame-0 launch, 16% vs 10.4% labels)",
+      "King's College Cambridge: long sandstone Gothic chapel with four corner spires and stained-glass rows, cobbled path across the lawn, KING'S COLLEGE sign, provost in top hat handing over the money",
+      "1920s bursar's study: dark wood panels, BUSINESS CYCLE wave chart on the wall, desk lamp, globe, glowing crystal ball that drops, goes cloudy and is thrown out of the window",
+      "1929 roller coaster on a teal stage: red track climbing to a 1929 sign, Keynes riding a blue cart that plunges off the drop (CRASH!)",
+      "1930s grocery: green-checked tiles, red-white checkerboard floor, TILL 1 / TILL 2 checkout counters; Keynes switches lines and the old line speeds off",
+      "night-blue picking stage (metaphor): nine company crates (SHIPS, MINES, MOTORS, TIN...), three lift up and glow, the rest sink; he hugs his three",
+      "Keynes's bedroom, morning: sage wallpaper, big bed with red quilt, stack of papers, telephone, wall clock, 30 MIN; finale FLUMP on the pillow"
+    ],
+    "shots": [
+      "sky:cut",
+      "study:whip",
+      "kings:whip",
+      "kings:cut",
+      "kings:dissolve",
+      "study:whip",
+      "study:cut",
+      "coaster:whip",
+      "coaster:smash",
+      "study:cut",
+      "study:dissolve",
+      "shop:whip",
+      "shop:cut",
+      "shop:whip",
+      "study:dissolve",
+      "study:cut",
+      "study:whip",
+      "pick:zoom",
+      "pick:cut",
+      "bed:dissolve",
+      "bed:cut",
+      "sky:whip",
+      "sky:cut",
+      "sky:whip",
+      "study:dissolve",
+      "bed:whip"
+    ],
+    "avg_shot_s": 2.02
   }
 ]

@@ -1,0 +1,143 @@
+{
+ "slug": "2026-11-23-0144",
+ "title": "Goblin Gold",
+ "film": true,
+ "seed": 11,
+ "tempo": 1.05,
+ "voice_label": "eleven:jackson-v4",
+ "beats": [
+  {
+   "text": "The first book about the stock market says your profits are goblin treasure."
+  },
+  {
+   "text": "Amsterdam, sixteen eighty-eight. Joseph de la Vega writes it as a conversation about East India Company shares."
+  },
+  {
+   "text": "Imagine you're the shareholder: shares climb, you're a king; they fall, you're ruined."
+  },
+  {
+   "text": "So what advice does the book give?"
+  },
+  {
+   "text": "Rule one: never give anyone advice to buy or sell."
+  },
+  {
+   "text": "Rule two: take your gain, don't mourn the profit you missed."
+  },
+  {
+   "text": "Rule three: profits on the exchange are goblin treasure."
+  },
+  {
+   "text": "Red jewels, then coal, diamonds, pebbles, morning dew, then tears."
+  },
+  {
+   "text": "You see, it's like checking your bank app ten times a day: nothing you own changed, only the number did."
+  },
+  {
+   "text": "And while he was still writing, the market crashed."
+  },
+  {
+   "text": "Rule four: to win this game, you need two things.",
+   "twist": true
+  },
+  {
+   "text": "Patience. And money.",
+   "finale": true
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Confusion de Confusiones (Confusión de Confusiones), by Joseph (Penso) de la Vega, Amsterdam 1688, written in Spanish, is the first/earliest known book about a stock exchange",
+   "sources": [
+    "https://www.bloomberg.com/news/articles/2018-12-04/the-first-book-written-about-a-stock-market-is-selling-for-300-000",
+    "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/penso-de-la-vega-joseph",
+    "https://www.ifa.com/book-library/1148/Confusions_de_Confusiones",
+    "https://novelinvestor.com/lessons-from-a-300-year-old-book-on-markets/",
+    "https://en.wikipedia.org/wiki/Joseph_de_la_Vega"
+   ]
+  },
+  {
+   "claim": "De la Vega was a merchant",
+   "sources": [
+    "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/penso-de-la-vega-joseph",
+    "https://www.bloomberg.com/news/articles/2018-12-04/the-first-book-written-about-a-stock-market-is-selling-for-300-000"
+   ]
+  },
+  {
+   "claim": "Written as dialogues among a philosopher, a merchant and a shareholder (four dialogues)",
+   "sources": [
+    "https://www.gwern.net/doc/economics/1688-delavega-confusionofconfusions.pdf",
+    "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/penso-de-la-vega-joseph",
+    "https://theticker.org/8472/business/confusions-de-confusiones-provides-early-record-of-stock-exchange-dealings",
+    "https://novelinvestor.com/lessons-from-a-300-year-old-book-on-markets/",
+    "https://dbnl.org/tekst/vega002conf01_01/vega002conf01_01_0005.php"
+   ]
+  },
+  {
+   "claim": "The trading discussed is mostly in Dutch East India Company (VOC) shares",
+   "sources": [
+    "https://www.gwern.net/doc/economics/1688-delavega-confusionofconfusions.pdf",
+    "https://novelinvestor.com/lessons-from-a-300-year-old-book-on-markets/",
+    "https://dbnl.org/tekst/vega002conf01_01/vega002conf01_01_0005.php",
+    "https://www.posenlibrary.com/node/6209"
+   ]
+  },
+  {
+   "claim": "First principle: never give anyone the advice to buy or sell shares",
+   "sources": [
+    "https://www.gwern.net/doc/economics/1688-delavega-confusionofconfusions.pdf",
+    "https://novelinvestor.com/lessons-from-a-300-year-old-book-on-markets/",
+    "https://crossingwallstreet.com/?p=24295",
+    "https://en.wikipedia.org/wiki/Joseph_de_la_Vega"
+   ]
+  },
+  {
+   "claim": "Second principle: take every gain without showing remorse about missed profits",
+   "sources": [
+    "https://www.gwern.net/doc/economics/1688-delavega-confusionofconfusions.pdf",
+    "https://novelinvestor.com/lessons-from-a-300-year-old-book-on-markets/",
+    "https://crossingwallstreet.com/?p=24295"
+   ]
+  },
+  {
+   "claim": "Third principle: profits on the exchange are the treasures of goblins - carbuncle stones (red gems), then coals, then diamonds, then flint-stones/pebbles, then morning dew, then tears",
+   "sources": [
+    "https://www.gwern.net/doc/economics/1688-delavega-confusionofconfusions.pdf",
+    "https://novelinvestor.com/lessons-from-a-300-year-old-book-on-markets/",
+    "https://crossingwallstreet.com/?p=24295",
+    "https://en.wikipedia.org/wiki/Joseph_de_la_Vega"
+   ]
+  },
+  {
+   "claim": "Fourth principle: whoever wishes to win in this game must have patience and money",
+   "sources": [
+    "https://www.gwern.net/doc/economics/1688-delavega-confusionofconfusions.pdf",
+    "https://novelinvestor.com/lessons-from-a-300-year-old-book-on-markets/",
+    "https://crossingwallstreet.com/?p=24295",
+    "https://en.wikipedia.org/wiki/Joseph_de_la_Vega",
+    "https://www.ifa.com/book-library/1148/Confusions_de_Confusiones"
+   ]
+  },
+  {
+   "claim": "A crisis/crash hit the Amsterdam market in 1688 while the author was still writing the book",
+   "sources": [
+    "https://www.gwern.net/doc/economics/1688-delavega-confusionofconfusions.pdf",
+    "https://en.wikipedia.org/wiki/Joseph_de_la_Vega",
+    "https://theticker.org/8472/business/confusions-de-confusiones-provides-early-record-of-stock-exchange-dealings"
+   ]
+  }
+ ],
+ "caption": "Amsterdam, 1688: Joseph de la Vega wrote the first book ever about the stock market, Confusion of Confusions.\nHis third rule: profits on the exchange are goblin treasure. Jewels, then coal, then diamonds, then tears.\nHis fourth: patience and money.\n\n#stockmarkethistory #valueinvesting #investing #longterminvesting #patience\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "The First Stock Market Book Ever (1688) Said Your Profits Are Goblin Gold",
+ "sources": [
+  "https://www.gwern.net/doc/economics/1688-delavega-confusionofconfusions.pdf",
+  "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/penso-de-la-vega-joseph",
+  "https://www.bloomberg.com/news/articles/2018-12-04/the-first-book-written-about-a-stock-market-is-selling-for-300-000",
+  "https://novelinvestor.com/lessons-from-a-300-year-old-book-on-markets/",
+  "https://en.wikipedia.org/wiki/Joseph_de_la_Vega",
+  "https://crossingwallstreet.com/?p=24295",
+  "https://www.ifa.com/book-library/1148/Confusions_de_Confusiones",
+  "https://theticker.org/8472/business/confusions-de-confusiones-provides-early-record-of-stock-exchange-dealings",
+  "https://dbnl.org/tekst/vega002conf01_01/vega002conf01_01_0005.php"
+ ]
+}

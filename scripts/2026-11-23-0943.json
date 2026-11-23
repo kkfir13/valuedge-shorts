@@ -1,0 +1,119 @@
+{
+  "slug": "2026-11-23-0943",
+  "title": "A Very Good Line",
+  "film": true,
+  "seed": 7,
+  "tempo": 1.05,
+  "voice_label": "eleven:jackson-v4",
+  "beats": [
+    {
+      "text": "In eighteen forty-six, Charlotte Brontë begged her sisters to sell a very good railway."
+    },
+    {
+      "text": "Imagine you're Charlotte, in a windy Yorkshire parsonage."
+    },
+    {
+      "text": "Quiet Emily put your aunt's money into the York and North Midland Railway."
+    },
+    {
+      "text": "Now Britain has railway fever. The vicar buys shares. His horse looks worried."
+    },
+    {
+      "text": "A very good line, you write, but not at these premiums."
+    },
+    {
+      "text": "So why sell a great railway?"
+    },
+    {
+      "text": "You see, picture the finest house on your street."
+    },
+    {
+      "text": "Lovely house. At triple the price, a terrible buy."
+    },
+    {
+      "text": "Emily won't sell, so you give in."
+    },
+    {
+      "text": "Then the fever breaks, and the Railway King, George Hudson, falls."
+    },
+    {
+      "text": "Eighteen forty-nine. Your shares, issued at fifty pounds, once hit one hundred and twenty.",
+      "twist": true
+    },
+    {
+      "text": "Now they're down at twenty."
+    },
+    {
+      "text": "Same tracks. Same trains. A very good line, at a very bad price.",
+      "finale": true
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Aunt Elizabeth Branwell died in October 1842 and left the Brontë sisters money/investments",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Elizabeth_Branwell",
+        "https://www.therailwayhub.co.uk/64365/the-brontes-by-rail/",
+        "https://thelongbuildjournal.substack.com/p/who-gets-rich-when-the-world-changes",
+        "https://www.annebronte.org/2020/09/27/2164/"
+      ]
+    },
+    {
+      "claim": "Emily managed the sisters' joint funds and invested in railway shares of the York and North Midland Railway (one of George Hudson's lines)",
+      "sources": [
+        "https://www.annebronte.org/2020/09/27/2164/",
+        "https://www.therailwayhub.co.uk/64365/the-brontes-by-rail/",
+        "https://thelongbuildjournal.substack.com/p/who-gets-rich-when-the-world-changes",
+        "https://www.open.ac.uk/Arts/reading/UK/record_details.php?id=28466"
+      ]
+    },
+    {
+      "claim": "Letter of 30 January 1846 to Miss Wooler: 'The York and Midland is, as you say, a very good line'; 'I cannot think that even the very best lines will continue for many years at their present premiums'; 'I have been most anxious for us to sell our shares ere it be too late'; she lets Emily manage rather than hurt her feelings",
+      "sources": [
+        "https://novel.tingroom.com/mingren/4761/122498.html",
+        "https://www.annebronte.org/2020/09/27/2164/",
+        "https://thelongbuildjournal.substack.com/p/who-gets-rich-when-the-world-changes"
+      ]
+    },
+    {
+      "claim": "Railway mania / 'railway panic' in Britain, 1845-1846; bubble burst 1846",
+      "sources": [
+        "https://novel.tingroom.com/mingren/4761/122498.html",
+        "https://www.therailwayhub.co.uk/64365/the-brontes-by-rail/",
+        "https://www.markethistories.com/en/the-railway-mania-britains-victorian-tech-bubble-1840s"
+      ]
+    },
+    {
+      "claim": "George Hudson, the 'Railway King', paid dividends out of capital and was exposed in 1849 (Prance report on the YNMR, April 1849)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/George_Hudson",
+        "https://www.annebronte.org/2020/09/27/2164/",
+        "https://thebubbleblog.substack.com/p/the-price-of-a-prophet"
+      ]
+    },
+    {
+      "claim": "1849 letter from Charlotte to her publisher: shares issued at 50, at one time rose to 120, now down at 20",
+      "sources": [
+        "https://www.annebronte.org/2020/09/27/2164/",
+        "https://thelongbuildjournal.substack.com/p/who-gets-rich-when-the-world-changes",
+        "https://thebubbleblog.substack.com/p/the-price-of-a-prophet"
+      ]
+    },
+    {
+      "claim": "Vicar's horse, house analogy: illustrative jokes, not historical claims",
+      "sources": []
+    }
+  ],
+  "caption": "Haworth, 1846: during Britain's railway mania, Charlotte Brontë wanted to sell the sisters' York and North Midland shares. 'A very good line', she wrote, but not at these premiums.\nEmily held. By 1849 the shares, issued at 50 and once at 120, were down at 20.\n\n#stockmarkethistory #valueinvesting #bubbles #longterminvesting #investing #bronte\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+  "yt_title": "Charlotte Brontë Begged Her Sisters to Sell Their Railway Shares in 1846. She Was Right.",
+  "sources": [
+    "https://novel.tingroom.com/mingren/4761/122498.html",
+    "https://www.open.ac.uk/Arts/reading/UK/record_details.php?id=28466",
+    "https://www.annebronte.org/2020/09/27/2164/",
+    "https://www.therailwayhub.co.uk/64365/the-brontes-by-rail/",
+    "https://thelongbuildjournal.substack.com/p/who-gets-rich-when-the-world-changes",
+    "https://en.wikipedia.org/wiki/George_Hudson",
+    "https://thebubbleblog.substack.com/p/the-price-of-a-prophet",
+    "https://en.wikipedia.org/wiki/Elizabeth_Branwell"
+  ]
+}

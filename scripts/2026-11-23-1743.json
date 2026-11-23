@@ -1,0 +1,141 @@
+{
+ "slug": "2026-11-23-1743",
+ "title": "The Coffee Can",
+ "film": true,
+ "seed": 11,
+ "tempo": 1.05,
+ "voice_label": "eleven:jackson-v4",
+ "beats": [
+  {
+   "text": "One forgotten stock beat your whole managed portfolio."
+  },
+  {
+   "text": "Nineteen fifties. You manage a wealthy woman's money."
+  },
+  {
+   "text": "For about ten years, you buy, sell, trim, rebalance."
+  },
+  {
+   "text": "Then her husband dies, and his stocks land on your desk."
+  },
+  {
+   "text": "He'd been copying you. Half of you."
+  },
+  {
+   "text": "Whenever you said buy, he put in about five thousand dollars,"
+  },
+  {
+   "text": "dropped the certificate in a safe deposit box, and forgot it."
+  },
+  {
+   "text": "Whenever you said sell? Nothing."
+  },
+  {
+   "text": "So how did your lazy copycat do?"
+  },
+  {
+   "text": "Some shrank below two thousand dollars. Several grew past a hundred thousand."
+  },
+  {
+   "text": "You see, it's the Old West coffee can under the mattress."
+  },
+  {
+   "text": "A dud can only lose what's inside. A winner has no ceiling."
+  },
+  {
+   "text": "One small bet in a company called Haloid grew past eight hundred thousand dollars.",
+   "twist": true
+  },
+  {
+   "text": "Haloid became Xerox. That one stock outgrew his wife's whole portfolio. Yours.",
+   "finale": true
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Story told by money manager Robert G. Kirby in 'The Coffee Can Portfolio', Journal of Portfolio Management, Fall 1984",
+   "sources": [
+    "https://seekingwinners.substack.com/api/v1/file/cb90e20b-2a1d-46b7-ae71-28c11840e1b2.pdf",
+    "https://www.gurufocus.com/news/103426/buy-and-holding-investing-how-a-coffee-can-can-make-you-rich",
+    "https://www.stingyinvestor.com/SI/articles/0602.shtml",
+    "https://www.aaii.com/journal/article/60944-filling-your-coffee-can-portfolio-to-stash-away"
+   ]
+  },
+  {
+   "claim": "It happened in the 1950s at an investment counsel firm; Kirby managed a woman client's money",
+   "sources": [
+    "https://seekingwinners.substack.com/api/v1/file/cb90e20b-2a1d-46b7-ae71-28c11840e1b2.pdf",
+    "https://www.aaii.com/journal/article/60944-filling-your-coffee-can-portfolio-to-stash-away"
+   ]
+  },
+  {
+   "claim": "Kirby had worked with her for about ten years when her husband suddenly died",
+   "sources": [
+    "https://seekingwinners.substack.com/api/v1/file/cb90e20b-2a1d-46b7-ae71-28c11840e1b2.pdf",
+    "https://novelinvestor.com/the-coffee-can-approach/",
+    "https://www.aaii.com/journal/article/60944-filling-your-coffee-can-portfolio-to-stash-away"
+   ]
+  },
+  {
+   "claim": "The husband had followed Kirby's buy recommendations, putting about $5,000 into each",
+   "sources": [
+    "https://seekingwinners.substack.com/api/v1/file/cb90e20b-2a1d-46b7-ae71-28c11840e1b2.pdf",
+    "https://novelinvestor.com/the-coffee-can-approach/",
+    "https://www.stingyinvestor.com/SI/articles/0602.shtml",
+    "https://www.aaii.com/journal/article/60944-filling-your-coffee-can-portfolio-to-stash-away"
+   ]
+  },
+  {
+   "claim": "He put each certificate in his safe-deposit box and forgot it",
+   "sources": [
+    "https://seekingwinners.substack.com/api/v1/file/cb90e20b-2a1d-46b7-ae71-28c11840e1b2.pdf",
+    "https://novelinvestor.com/the-coffee-can-approach/",
+    "https://www.stingyinvestor.com/SI/articles/0602.shtml"
+   ]
+  },
+  {
+   "claim": "He paid no attention to the sale recommendations",
+   "sources": [
+    "https://seekingwinners.substack.com/api/v1/file/cb90e20b-2a1d-46b7-ae71-28c11840e1b2.pdf",
+    "https://www.gurufocus.com/news/103426/buy-and-holding-investing-how-a-coffee-can-can-make-you-rich",
+    "https://www.stingyinvestor.com/SI/articles/0602.shtml",
+    "https://www.aaii.com/journal/article/60944-filling-your-coffee-can-portfolio-to-stash-away",
+    "https://novelinvestor.com/the-coffee-can-approach/"
+   ]
+  },
+  {
+   "claim": "Some holdings were worth less than $2,000; several were worth more than $100,000",
+   "sources": [
+    "https://seekingwinners.substack.com/api/v1/file/cb90e20b-2a1d-46b7-ae71-28c11840e1b2.pdf",
+    "https://www.stingyinvestor.com/SI/articles/0602.shtml",
+    "https://www.aaii.com/journal/article/60944-filling-your-coffee-can-portfolio-to-stash-away"
+   ]
+  },
+  {
+   "claim": "One jumbo holding worth over $800,000 came from a small commitment in Haloid, which became Xerox, and exceeded the total value of the wife's portfolio",
+   "sources": [
+    "https://seekingwinners.substack.com/api/v1/file/cb90e20b-2a1d-46b7-ae71-28c11840e1b2.pdf",
+    "https://www.gurufocus.com/news/103426/buy-and-holding-investing-how-a-coffee-can-can-make-you-rich",
+    "https://www.stingyinvestor.com/SI/articles/0602.shtml",
+    "https://www.aaii.com/journal/article/60944-filling-your-coffee-can-portfolio-to-stash-away"
+   ]
+  },
+  {
+   "claim": "The name alludes to the Old West, when people kept valuables in a coffee can under the mattress",
+   "sources": [
+    "https://seekingwinners.substack.com/api/v1/file/cb90e20b-2a1d-46b7-ae71-28c11840e1b2.pdf",
+    "https://novelinvestor.com/the-coffee-can-approach/",
+    "https://www.aaii.com/journal/article/60944-filling-your-coffee-can-portfolio-to-stash-away"
+   ]
+  }
+ ],
+ "caption": "1950s: a money manager's client lost her husband, and he found the man had been quietly copying his buy advice: about $5,000 a stock, certificate in the safe-deposit box, every sell ignored.\nOne small Haloid stake, later Xerox, was worth over $800,000, more than her whole managed portfolio. Robert Kirby called it the Coffee Can Portfolio (1984).\n\n#valueinvesting #buyandhold #longterminvesting #stockmarkethistory #investing #compounding\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "1950s: He Copied His Wife's Adviser, Ignored Every Sell, and Beat Her Whole Portfolio",
+ "sources": [
+  "https://seekingwinners.substack.com/api/v1/file/cb90e20b-2a1d-46b7-ae71-28c11840e1b2.pdf",
+  "https://novelinvestor.com/the-coffee-can-approach/",
+  "https://www.gurufocus.com/news/103426/buy-and-holding-investing-how-a-coffee-can-can-make-you-rich",
+  "https://www.stingyinvestor.com/SI/articles/0602.shtml",
+  "https://www.aaii.com/journal/article/60944-filling-your-coffee-can-portfolio-to-stash-away"
+ ]
+}

@@ -1358,5 +1358,69 @@
       "chairs:whip"
     ],
     "avg_shot_s": 1.62
+  },
+  {
+    "date": "2026-11-24",
+    "slug": "2026-11-24-1743",
+    "title": "The Stocks You'd Never Sell",
+    "yt_title": "1972's 'Never Sell' Stocks Crashed 90%. Then a Professor Checked the Math",
+    "sources": [
+      "https://www.aaii.com/journal/article/valuing-growth-stocks-revisiting-the-nifty-fifty",
+      "https://awealthofcommonsense.com/2020/07/the-nifty-fifty-and-the-old-normal/",
+      "https://www.omanobserver.om/article/1155386/opinion/business/a-warning-from-history-about-large-cap-stock-booms",
+      "https://moneyweek.com/93195/when-it-makes-sense-to-buy-at-the-top-62310",
+      "https://moneyweek.com/investments/investment-strategy/601456/lessons-for-investors-from-the-go-go-years",
+      "https://www.fool.com/archive/portfolios/rulemaker/2000/07/25/sears-and-avon-circa-1972.aspx",
+      "https://aaoresearch.substack.com/p/priced-for-perfection-crushed-by",
+      "https://en.wikipedia.org/wiki/Nifty_Fifty"
+    ],
+    "buffer": {
+      "instagram": "6b05bb607140293a5e3bc9c4",
+      "tiktok": "6b05bb60c6e17c232fc0bbb3",
+      "youtube": "6b05bb61c021876fcc855034"
+    },
+    "retry": null,
+    "scheduled": "2026-11-25T16:30:00+02:00",
+    "voice": "eleven:jackson-v4",
+    "duration": 56.9,
+    "video_url": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-24/2026-11-24-1743.mp4",
+    "sets": [
+      "purple velvet-rope showroom (metaphor): THE NIFTY FIFTY bulb sign, golden exhibits on pedestals (giant instant camera POLAROID, giant lipstick AVON, gold box PHILIP MORRIS), rows of small gold exhibits, a NEVER SELL plaque slamming on frame 0, a red BUY button, price tags 95x / -86% / -90% / 24x -> WORTH 68x, the camera toppling (CRASH!)",
+      "New York avenue 1972 (brick + glass, TRUST CO./DELI/RECORDS signs, 70s cars); same avenue in a storm with a big quote board line falling, shocked passers-by",
+      "1972 bank trust department: orange wallpaper, avocado carpet, lava lamp, BUY & HOLD poster, Mr. Pembroke sliding THE NIFTY FIFTY list across the desk, both men dozing (zz)",
+      "1998 professor's library at night: book walls, mortarboard on the desk, screen line from the Dec 1972 peak, NIFTY 50 vs MARKET bars growing almost level, the grey-haired you: 'Nearly a tie!'",
+      "CHEZ MARKET restaurant (analogy + mechanism): crimson wallpaper, checkered floor, silver cloche lifting off a perfect dish, a $9,500 bill unrolling to the floor, PRICE column towering over WORTH, giant THE PRICE tag slamming down on the last word"
+    ],
+    "shots": [
+      "show:cut",
+      "show:whip",
+      "show:cut",
+      "ave:whip",
+      "office:dissolve",
+      "office:cut",
+      "office:cut",
+      "show:whip",
+      "office:dissolve",
+      "show:whip",
+      "office:whip",
+      "ave:smash",
+      "show:whip",
+      "show:whip",
+      "office:whip",
+      "lib:flash",
+      "lib:cut",
+      "lib:dissolve",
+      "lib:dissolve",
+      "rest:zoom",
+      "rest:cut",
+      "rest:whip",
+      "rest:whip",
+      "rest:dissolve",
+      "show:whip",
+      "show:smash",
+      "rest:whip",
+      "rest:whip"
+    ],
+    "avg_shot_s": 2.03
   }
 ]

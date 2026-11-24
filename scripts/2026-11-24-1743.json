@@ -1,0 +1,46 @@
+{
+  "slug": "2026-11-24-1743",
+  "title": "The Stocks You'd Never Sell",
+  "film": true,
+  "seed": 7,
+  "tempo": 1.05,
+  "voice_label": "eleven:jackson-v4",
+  "beats": [
+    {"text": "In nineteen seventy-two, Wall Street found fifty stocks you'd never have to sell."},
+    {"text": "Imagine you're a young bank trust officer, and old Mister Pembroke slides you the list."},
+    {"text": "The Nifty Fifty. One-decision stocks: buy once, never think again."},
+    {"text": "Polaroid costs ninety-five times earnings. Pembroke doesn't blink."},
+    {"text": "Then the market falls almost in half."},
+    {"text": "Avon drops eighty-six percent. Polaroid drops ninety."},
+    {"text": "So were the experts just fools?"},
+    {"text": "Later, a professor tested it: the whole list, bought at the very top."},
+    {"text": "Twenty-six years on, it had nearly matched the market."},
+    {"text": "You see, it's like dinner at a great restaurant. Perfect food can't save a crazy bill."},
+    {"text": "Polaroid was priced about eight times higher than its future could pay."},
+    {"text": "Philip Morris looked pricey at twenty-four times earnings."},
+    {"text": "It was worth sixty-eight.", "twist": true},
+    {"text": "The one decision was never the stock. It was the price.", "finale": true}
+  ],
+  "facts": [
+    {"claim": "In 1972 a group of about fifty large growth stocks, the 'Nifty Fifty', were called 'one-decision' stocks: buy and never sell; bank trust departments (largest: Morgan Guaranty) led the buying", "sources": ["https://www.aaii.com/journal/article/valuing-growth-stocks-revisiting-the-nifty-fifty", "https://www.omanobserver.om/article/1155386/opinion/business/a-warning-from-history-about-large-cap-stock-booms", "https://moneyweek.com/investments/investment-strategy/601456/lessons-for-investors-from-the-go-go-years", "https://en.wikipedia.org/wiki/Nifty_Fifty"]},
+    {"claim": "Polaroid traded at about 95 times earnings in December 1972 (94.8; 'around 90' at peak), vs 18.9 for the S&P 500", "sources": ["https://www.aaii.com/journal/article/valuing-growth-stocks-revisiting-the-nifty-fifty", "https://awealthofcommonsense.com/2020/07/the-nifty-fifty-and-the-old-normal/", "https://www.fool.com/archive/portfolios/rulemaker/2000/07/25/sears-and-avon-circa-1972.aspx", "https://moneyweek.com/investments/investment-strategy/601456/lessons-for-investors-from-the-go-go-years"]},
+    {"claim": "In 1973-74 the S&P 500 fell by nearly half (nearly 50% Jan 1973-Sep 1974; 'more than 45%')", "sources": ["https://www.omanobserver.om/article/1155386/opinion/business/a-warning-from-history-about-large-cap-stock-booms", "https://aaoresearch.substack.com/p/priced-for-perfection-crushed-by"]},
+    {"claim": "Avon fell 86% and Polaroid about 90% (90-91%) from their peaks", "sources": ["https://www.omanobserver.om/article/1155386/opinion/business/a-warning-from-history-about-large-cap-stock-booms", "https://aaoresearch.substack.com/p/priced-for-perfection-crushed-by", "https://awealthofcommonsense.com/2020/07/the-nifty-fifty-and-the-old-normal/"]},
+    {"claim": "Professor Jeremy Siegel measured an equal-weighted Nifty Fifty portfolio bought at the December 1972 peak through August 1998 (about 26 years): it nearly matched the S&P 500", "sources": ["https://www.aaii.com/journal/article/valuing-growth-stocks-revisiting-the-nifty-fifty", "https://moneyweek.com/93195/when-it-makes-sense-to-buy-at-the-top-62310", "https://awealthofcommonsense.com/2020/07/the-nifty-fifty-and-the-old-normal/"]},
+    {"claim": "Polaroid's price was almost eight times higher than justified by its future returns", "sources": ["https://www.aaii.com/journal/article/valuing-growth-stocks-revisiting-the-nifty-fifty", "https://awealthofcommonsense.com/2020/07/the-nifty-fifty-and-the-old-normal/"]},
+    {"claim": "Investors paid 24 times 1972 earnings for Philip Morris; by Siegel's math it was worth 68.5 times", "sources": ["https://www.aaii.com/journal/article/valuing-growth-stocks-revisiting-the-nifty-fifty", "https://awealthofcommonsense.com/2020/07/the-nifty-fifty-and-the-old-normal/", "https://moneyweek.com/93195/when-it-makes-sense-to-buy-at-the-top-62310"]},
+    {"claim": "'Mister Pembroke' and the young trust officer are fictional characters; the viewer is placed in the role", "sources": []}
+  ],
+  "caption": "1972: Wall Street's 'Nifty Fifty' were one-decision stocks. Buy once, never sell.\nPolaroid cost about 95 times earnings. Then 1973-74 hit: Polaroid fell 90%, Avon 86%.\nYears later Jeremy Siegel ran the numbers from the very top: the whole list nearly matched the S&P 500. The difference was the price paid.\n\n#niftyfifty #valueinvesting #stockmarkethistory #valuation #longterminvesting #investing\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+  "yt_title": "1972's 'Never Sell' Stocks Crashed 90%. Then a Professor Checked the Math",
+  "sources": [
+    "https://www.aaii.com/journal/article/valuing-growth-stocks-revisiting-the-nifty-fifty",
+    "https://awealthofcommonsense.com/2020/07/the-nifty-fifty-and-the-old-normal/",
+    "https://www.omanobserver.om/article/1155386/opinion/business/a-warning-from-history-about-large-cap-stock-booms",
+    "https://moneyweek.com/93195/when-it-makes-sense-to-buy-at-the-top-62310",
+    "https://moneyweek.com/investments/investment-strategy/601456/lessons-for-investors-from-the-go-go-years",
+    "https://www.fool.com/archive/portfolios/rulemaker/2000/07/25/sears-and-avon-circa-1972.aspx",
+    "https://aaoresearch.substack.com/p/priced-for-perfection-crushed-by",
+    "https://en.wikipedia.org/wiki/Nifty_Fifty"
+  ]
+}

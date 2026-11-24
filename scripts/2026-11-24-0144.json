@@ -1,0 +1,149 @@
+{
+ "slug": "2026-11-24-0144",
+ "title": "The Man in the Closet",
+ "film": true,
+ "seed": 17,
+ "tempo": 1.08,
+ "voice_label": "eleven:jackson-v4",
+ "beats": [
+  {
+   "text": "Imagine beating Wall Street for twenty-eight years from a desk in a closet."
+  },
+  {
+   "text": "New York, nineteen fifty-five. Walter Schloss skipped college but learned from Benjamin Graham."
+  },
+  {
+   "text": "No tips. No connections. Just manuals, and over a hundred cheap, dull stocks."
+  },
+  {
+   "text": "Stocks so boring they'd put a cocktail party to sleep."
+  },
+  {
+   "text": "Yet his investors earn about sixteen percent a year. The market? About eight."
+  },
+  {
+   "text": "So how do you beat Wall Street from a closet?"
+  },
+  {
+   "text": "Easy, said the skeptics. Luck."
+  },
+  {
+   "text": "You see, get two hundred twenty-five million people flipping coins every morning."
+  },
+  {
+   "text": "After twenty days, about two hundred are still winning. Geniuses!"
+  },
+  {
+   "text": "But in nineteen eighty-four, a famous talk noticed so many big winners shared one teacher. Graham."
+  },
+  {
+   "text": "Walter's method fit on a coin: worth a dollar? Buy it for forty cents.",
+   "twist": true
+  },
+  {
+   "text": "The coin-flippers needed luck. Walter just needed a discount.",
+   "finale": true
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Schloss shared Tweedy, Browne's office in a tiny closet-sized office (Buffett: a sub-lease on a portion of a closet); used a desk in their office",
+   "sources": [
+    "https://fhmagazine.org/financial-history-139-fall-2021/0883599001635940960/p29",
+    "https://www.stockopedia.com/content/the-superinvestors-of-graham-and-doddsville-walter-schloss-90668",
+    "https://en.wikipedia.org/wiki/Tweedy,_Browne"
+   ]
+  },
+  {
+   "claim": "Schloss never went to college and took Benjamin Graham's courses (NYSE Institute / NY Institute of Finance), later worked at Graham-Newman",
+   "sources": [
+    "https://business.columbia.edu/insights/chazen-global-insights/superinvestors-graham-and-doddsville",
+    "https://en.wikipedia.org/wiki/Walter_Schloss",
+    "https://www.investmentnews.com/industry-news/legendary-graham-disciple-and-buffett-favorite-dead-at-95/42387",
+    "https://fhmagazine.org/financial-history-139-fall-2021/0883599001635940960/p27"
+   ]
+  },
+  {
+   "claim": "Left Graham-Newman and started his own partnership in 1955 (with $100,000)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Walter_Schloss",
+    "https://www.investmentnews.com/industry-news/legendary-graham-disciple-and-buffett-favorite-dead-at-95/42387",
+    "https://www.grahamanddoddsville.net/?p=1394",
+    "https://hedgefundalpha.com/walter-schloss/",
+    "https://fhmagazine.org/financial-history-139-fall-2021/0883599001635940960/p29"
+   ]
+  },
+  {
+   "claim": "No connections, not fed ideas; looks up the numbers in the manuals and sends for annual reports (Adam Smith, Supermoney 1972); minimal contact with management; Value Line and reports",
+   "sources": [
+    "https://business.columbia.edu/insights/chazen-global-insights/superinvestors-graham-and-doddsville",
+    "https://www.grahamanddoddsville.net/?p=1394",
+    "https://hedgefundalpha.com/walter-schloss/",
+    "https://www.investmentnews.com/industry-news/legendary-graham-disciple-and-buffett-favorite-dead-at-95/42387",
+    "https://fhmagazine.org/financial-history-139-fall-2021/0883599001635940960/p29"
+   ]
+  },
+  {
+   "claim": "Owned well over 100 stocks at a time; ~1,000 securities over his career, mostly of a lackluster type",
+   "sources": [
+    "https://business.columbia.edu/insights/chazen-global-insights/superinvestors-graham-and-doddsville",
+    "https://monevator.com/walter-schloss/print/",
+    "https://www.investmentnews.com/industry-news/legendary-graham-disciple-and-buffett-favorite-dead-at-95/42387",
+    "https://www.gurufocus.com/news/162757/walter-schloss-superinvestor-and-graham-disciple-dies-at-95"
+   ]
+  },
+  {
+   "claim": "1956 to Q1 1984 (28 years): limited partners 16.1% a year compounded vs S&P 500 8.4% (partnership gross 21.3%)",
+   "sources": [
+    "https://business.columbia.edu/insights/chazen-global-insights/superinvestors-graham-and-doddsville",
+    "https://en.wikipedia.org/wiki/Walter_Schloss"
+   ]
+  },
+  {
+   "claim": "Buffett's 1984 Columbia talk/essay: 225 million Americans flip coins, a dollar each; after 20 days about 215 winners with over $1 million each",
+   "sources": [
+    "https://business.columbia.edu/insights/chazen-global-insights/superinvestors-graham-and-doddsville",
+    "https://oreilly.com/library/view/warren-buffett-on/9780470502303/9780470502303_excerpt_from_the_warren_buffett_article.html"
+   ]
+  },
+  {
+   "claim": "Winners disproportionately came from one intellectual village with a common patriarch, Ben Graham (Graham-and-Doddsville)",
+   "sources": [
+    "https://business.columbia.edu/insights/chazen-global-insights/superinvestors-graham-and-doddsville",
+    "https://gurufocus.com/news/1014917/lessons-from-the-super-investors-of-grahamanddoddsville"
+   ]
+  },
+  {
+   "claim": "Schloss's approach as described by Buffett: if a business is worth a dollar and I can buy it for 40 cents, something good may happen",
+   "sources": [
+    "https://business.columbia.edu/insights/chazen-global-insights/superinvestors-graham-and-doddsville",
+    "https://www.grahamanddoddsville.net/?p=1394",
+    "https://hedgefundalpha.com/walter-schloss/",
+    "https://monevator.com/walter-schloss/print/"
+   ]
+  },
+  {
+   "claim": "Schloss died in 2012 aged 95; Graham died 1976 (no living people as characters)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Walter_Schloss",
+    "https://www.investmentnews.com/industry-news/legendary-graham-disciple-and-buffett-favorite-dead-at-95/42387",
+    "https://www.gurufocus.com/news/162757/walter-schloss-superinvestor-and-graham-disciple-dies-at-95"
+   ]
+  }
+ ],
+ "caption": "Walter Schloss never went to college. From 1955 he ran his own fund, for decades from a closet-sized office, bought over a hundred cheap, dull stocks and read the manuals instead of chasing tips.\n1956-1984: about 16% a year for his investors vs about 8% for the S&P 500. Luck? Buffett's famous 1984 coin-flip talk said no.\n\n#valueinvesting #benjamingraham #stockmarkethistory #marginofsafety #longterminvesting #investing\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "He Beat Wall Street for 28 Years From a Closet. Skeptics Said Luck. A Coin Flip Said No.",
+ "sources": [
+  "https://business.columbia.edu/insights/chazen-global-insights/superinvestors-graham-and-doddsville",
+  "https://en.wikipedia.org/wiki/Walter_Schloss",
+  "https://www.investmentnews.com/industry-news/legendary-graham-disciple-and-buffett-favorite-dead-at-95/42387",
+  "https://fhmagazine.org/financial-history-139-fall-2021/0883599001635940960/p27",
+  "https://fhmagazine.org/financial-history-139-fall-2021/0883599001635940960/p29",
+  "https://www.stockopedia.com/content/the-superinvestors-of-graham-and-doddsville-walter-schloss-90668",
+  "https://hedgefundalpha.com/walter-schloss/",
+  "https://www.grahamanddoddsville.net/?p=1394",
+  "https://oreilly.com/library/view/warren-buffett-on/9780470502303/9780470502303_excerpt_from_the_warren_buffett_article.html",
+  "https://monevator.com/walter-schloss/print/",
+  "https://www.gurufocus.com/news/162757/walter-schloss-superinvestor-and-graham-disciple-dies-at-95"
+ ]
+}

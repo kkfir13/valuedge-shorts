@@ -1,0 +1,125 @@
+{
+  "slug": "2026-11-24-0944",
+  "title": "The Chairs Never Lost",
+  "film": true,
+  "seed": 23,
+  "tempo": 1.05,
+  "voice_label": "eleven:jackson-v4",
+  "beats": [
+    {
+      "text": "The world's most famous stock index fired every company it started with."
+    },
+    {
+      "text": "Picture New York, eighteen ninety-six."
+    },
+    {
+      "text": "Charles Dow adds twelve stock prices, divides by twelve, and gets forty point nine four."
+    },
+    {
+      "text": "Your giants? Leather, sugar, tobacco, gas, and a whiskey trust feeding cattle its leftover mash."
+    },
+    {
+      "text": "The whiskey trust is out by eighteen ninety-nine."
+    },
+    {
+      "text": "By twenty eighteen, the last original is gone, swapped for a drugstore chain."
+    },
+    {
+      "text": "Not one of the twelve is left."
+    },
+    {
+      "text": "This year, the Dow crossed fifty thousand."
+    },
+    {
+      "text": "How does a list outlive everything on it?"
+    },
+    {
+      "text": "You see, it's like your school's football team."
+    },
+    {
+      "text": "Every kid in the old photo graduated, and the jersey still plays Friday."
+    },
+    {
+      "text": "A fading company gets benched; a rising one takes its seat."
+    },
+    {
+      "text": "All twelve giants got cut.",
+      "twist": true
+    },
+    {
+      "text": "The chairs never lost a game.",
+      "finale": true
+    }
+  ],
+  "facts": [
+    {
+      "claim": "On May 26, 1896 Charles Dow added the prices of 12 industrial stocks, divided by 12 (a simple arithmetic average) and published 40.94",
+      "sources": [
+        "https://www.spglobal.com/spdji/en/documents/education/education-130-years-of-stewardship-the-evolution-of-the-dow.pdf",
+        "https://press.spglobal.com/2026-05-26-Dow-Jones-Industrial-Average-R-Celebrates-130-Years-as-Iconic-American-Benchmark",
+        "https://en.wikipedia.org/wiki/Dow_Jones_Industrial_Average",
+        "https://stacker.com/business-economy/12-original-companies-dow-jones-industrial-average-and-what-happened-them"
+      ]
+    },
+    {
+      "claim": "The original twelve included U.S. Leather, American Sugar, American Tobacco, Chicago Gas and Laclede Gas, and the Distilling & Cattle Feeding Company (the Whiskey Trust)",
+      "sources": [
+        "https://historyofinformation.com/detail.php?entryid=3878",
+        "https://fortune.com/2018/06/19/ge-last-original-dow-industrial-stock-out-walgreens-in/",
+        "https://stacker.com/business-economy/12-original-companies-dow-jones-industrial-average-and-what-happened-them"
+      ]
+    },
+    {
+      "claim": "The Whiskey Trust fed the spent grain/stillage from its distilleries to cattle (hence 'Cattle Feeding')",
+      "sources": [
+        "https://www.goodbeerhunting.com/blog/2022/3/1/in-liquor-we-trust-the-rise-fall-and-rebirth-of-americas-original-whiskey-boomtown",
+        "https://www.aol.com/finance/dow-jones-12-original-companies-202145931.html"
+      ]
+    },
+    {
+      "claim": "Distilling & Cattle Feeding was dropped from the Dow in 1899",
+      "sources": [
+        "https://www.aol.com/finance/dow-jones-12-original-companies-202145931.html",
+        "https://businessinsider.nl/the-dow-jones-industrial-average-turned-125-years-old-today-heres-what-happened-to-its-12-original-members/"
+      ]
+    },
+    {
+      "claim": "GE, the last original member, was replaced by Walgreens Boots Alliance (a drugstore chain) on June 26, 2018; no original member remains",
+      "sources": [
+        "https://fortune.com/2018/06/19/ge-last-original-dow-industrial-stock-out-walgreens-in/",
+        "https://www.cbsnews.com/news/ge-booted-from-the-blue-chip-dow-jones-index/",
+        "https://en.wikipedia.org/wiki/Historical_components_of_the_Dow_Jones_Industrial_Average"
+      ]
+    },
+    {
+      "claim": "The Dow crossed 50,000 for the first time on February 6, 2026",
+      "sources": [
+        "https://press.spglobal.com/2026-05-26-Dow-Jones-Industrial-Average-R-Celebrates-130-Years-as-Iconic-American-Benchmark",
+        "https://www.washingtontimes.com/news/2026/feb/6/dow-closes-record-high-crossing-50000-first-time/",
+        "https://fortune.com/2026/02/06/stock-market-today-dow-50000-chips-airlines-rebound-gold-silver-bitcoin/"
+      ]
+    },
+    {
+      "claim": "Components are replaced over time (30 seats since 1928); e.g. Alphabet replaced Verizon in 2026",
+      "sources": [
+        "https://www.spglobal.com/spdji/en/documents/education/education-130-years-of-stewardship-the-evolution-of-the-dow.pdf",
+        "https://en.wikipedia.org/wiki/Historical_components_of_the_Dow_Jones_Industrial_Average"
+      ]
+    }
+  ],
+  "caption": "May 26, 1896: Charles Dow added up 12 industrial stock prices, divided by 12, and got 40.94. Leather, sugar, tobacco, gas, even a whiskey trust that fed cattle its leftover mash.\nOne by one they were dropped. GE, the last original, left in 2018.\nIn February 2026 the Dow crossed 50,000 anyway.\n\n#stockmarkethistory #dowjones #indexinvesting #longterminvesting #investing\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+  "yt_title": "1896: The First Dow Had 12 Companies. Every One Got Cut. It Hit 50,000 Anyway.",
+  "sources": [
+    "https://www.spglobal.com/spdji/en/documents/education/education-130-years-of-stewardship-the-evolution-of-the-dow.pdf",
+    "https://press.spglobal.com/2026-05-26-Dow-Jones-Industrial-Average-R-Celebrates-130-Years-as-Iconic-American-Benchmark",
+    "https://en.wikipedia.org/wiki/Dow_Jones_Industrial_Average",
+    "https://en.wikipedia.org/wiki/Historical_components_of_the_Dow_Jones_Industrial_Average",
+    "https://fortune.com/2018/06/19/ge-last-original-dow-industrial-stock-out-walgreens-in/",
+    "https://www.cbsnews.com/news/ge-booted-from-the-blue-chip-dow-jones-index/",
+    "https://historyofinformation.com/detail.php?entryid=3878",
+    "https://stacker.com/business-economy/12-original-companies-dow-jones-industrial-average-and-what-happened-them",
+    "https://www.aol.com/finance/dow-jones-12-original-companies-202145931.html",
+    "https://www.goodbeerhunting.com/blog/2022/3/1/in-liquor-we-trust-the-rise-fall-and-rebirth-of-americas-original-whiskey-boomtown",
+    "https://www.washingtontimes.com/news/2026/feb/6/dow-closes-record-high-crossing-50000-first-time/"
+  ]
+}

@@ -1527,5 +1527,45 @@
     "video_url": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-25/2026-11-25-0944.mp4",
     "mode": "film",
     "era": "1636-1637 Dutch Republic"
+  },
+  {
+    "date": "2026-11-25",
+    "slug": "2026-11-25-1743",
+    "title": "The Darts Never Got a Fan Club",
+    "yt_title": "Wall Street Pros vs. Darts, 1988-2002: The Pros Won 87 of 142. Here's the Catch",
+    "sources": [
+      "http://busecon.wvu.edu/divecon/finance/akurov/FIN322/Articles/WSJ%20Stock%20Picking.htm",
+      "https://www.eurocapital.gr/permalink/98234.html",
+      "https://www.dailyprincetonian.com/article/2002/05/fourteen-years-of-darts-on-wall-street-lead-malkiel-to-reassert-stock-theory",
+      "https://ideas.repec.org/a/cup/jfinqa/v28y1993i02p273-284_00.html",
+      "https://ideas.repec.org/a/ucp/jnlbus/v72y1999i1p119-34.html",
+      "https://priceonomics.com/how-well-do-blindfolded-monkeys-play-the-stock/",
+      "https://www.kellogg.northwestern.edu/kwo/sum04/indepth/monkey.htm",
+      "https://talkingbiznews.com/they-talk-biz-news/darts-beat-pros-in-wsj-stock-picking/",
+      "https://www.fool.com/investing/dividends-income/2006/01/17/darts-beat-people-again.aspx"
+    ],
+    "buffer": {
+      "instagram": "6b070d4388ec107e026a6be2",
+      "tiktok": "6b070d447865fd0c915a4eed",
+      "youtube": "6b070d45b7866694fd7ad6c7"
+    },
+    "scheduled": "2026-11-26T16:30:00+02:00",
+    "retry": null,
+    "voice": "eleven:jackson-v4",
+    "voice_note": "ElevenLabs Jackson eleven_v4, transcript matched 144/144 words, tempo 1.05",
+    "video_url": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-25/2026-11-25-1743.mp4",
+    "mode": "film",
+    "era": "1988-2002",
+    "duration": 53.7,
+    "sets": [
+      "boxing ring in a dark navy arena (metaphor): the pro in his corner vs a giant dartboard on a stand, THUNK dart on frame 0, CONTESTS scoreboard counting to 142 / PROS WON 87, green +10.2% vs red +3.5% result bars, readers pushing a yellow READERS BUYING segment onto the pros' bar",
+      "jungle clearing (the 1973 book's joke): palms, a red 1973 book on a stump, a blindfolded cartoon monkey flinging a dart at a STOCKS page nailed to a palm, NO MONKEY poof",
+      "1988 newsroom: beige monitors and typewriters, DARTBOARD CONTEST sign, stock tables pinned to the back wall with darts stuck in them, staffer Dot throwing, editor 'Get the darts!', 1 MONTH -> 6 MONTHS calendar",
+      "the pro's night office: city windows, green banker's lamp, piles of annual reports, research screen",
+      "city street with a TINY DINER: famous critic 'Best in town!', a queue forming, SAME FOOD burger insert; finale newsstand PROS' PICKS sold out vs untouched DART PICKS, a giant dart THUNKs into the stack on the last word",
+      "printing press room: rollers printing PROS' PICKS, readers reading, price screen jumping (2 DAYS), readers running to a BROKER: BUY window"
+    ],
+    "shots": 28,
+    "avg_shot_s": 1.92
   }
 ]

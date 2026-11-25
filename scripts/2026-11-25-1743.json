@@ -1,0 +1,133 @@
+{
+  "slug": "2026-11-25-1743",
+  "title": "The Darts Never Got a Fan Club",
+  "film": true,
+  "seed": 17,
+  "tempo": 1.05,
+  "voice_label": "eleven:jackson-v4",
+  "beats": [
+    {
+      "text": "For fourteen years, Wall Street's best stock pickers battled a dartboard."
+    },
+    {
+      "text": "An old book joked a blindfolded monkey could match the experts."
+    },
+    {
+      "text": "So in nineteen eighty-eight, the Wall Street Journal tried it."
+    },
+    {
+      "text": "No monkey. Just staffers, throwing darts at stock tables on the wall."
+    },
+    {
+      "text": "Imagine you're the pro. Weeks of research, against one dart."
+    },
+    {
+      "text": "After a hundred and forty-two contests, the pros had won eighty-seven."
+    },
+    {
+      "text": "Ten percent a contest. The darts? Three and a half."
+    },
+    {
+      "text": "So why did the paper stretch every contest from one month to six?"
+    },
+    {
+      "text": "You see, when a famous critic praises a tiny diner, there's a line. Same food."
+    },
+    {
+      "text": "The pros' picks were printed for every reader to see."
+    },
+    {
+      "text": "For two days, those stocks jumped as readers rushed to buy."
+    },
+    {
+      "text": "So part of the experts' win came from their own readers.",
+      "twist": true
+    },
+    {
+      "text": "Nobody ever rushed out to buy the dart's picks.",
+      "finale": true
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The WSJ Investment Dartboard ran about 14 years, began in (October) 1988 and was retired in April 2002",
+      "sources": [
+        "http://busecon.wvu.edu/divecon/finance/akurov/FIN322/Articles/WSJ%20Stock%20Picking.htm",
+        "https://www.dailyprincetonian.com/article/2002/05/fourteen-years-of-darts-on-wall-street-lead-malkiel-to-reassert-stock-theory",
+        "https://talkingbiznews.com/they-talk-biz-news/darts-beat-pros-in-wsj-stock-picking/"
+      ]
+    },
+    {
+      "claim": "It was inspired by the 1973 book A Random Walk Down Wall Street: a blindfolded monkey throwing darts at the financial pages could select a portfolio as good as the experts'",
+      "sources": [
+        "http://busecon.wvu.edu/divecon/finance/akurov/FIN322/Articles/WSJ%20Stock%20Picking.htm",
+        "https://priceonomics.com/how-well-do-blindfolded-monkeys-play-the-stock/"
+      ]
+    },
+    {
+      "claim": "No monkeys and no blindfolds: WSJ staffers threw darts at stock tables posted on the office walls",
+      "sources": [
+        "http://busecon.wvu.edu/divecon/finance/akurov/FIN322/Articles/WSJ%20Stock%20Picking.htm",
+        "https://priceonomics.com/how-well-do-blindfolded-monkeys-play-the-stock/"
+      ]
+    },
+    {
+      "claim": "142 six-month contests; pros beat the darts 87 times (WSJ 87-55; Kellogg: pros on top 87 times)",
+      "sources": [
+        "http://busecon.wvu.edu/divecon/finance/akurov/FIN322/Articles/WSJ%20Stock%20Picking.htm",
+        "https://www.dailyprincetonian.com/article/2002/05/fourteen-years-of-darts-on-wall-street-lead-malkiel-to-reassert-stock-theory",
+        "https://www.kellogg.northwestern.edu/kwo/sum04/indepth/monkey.htm"
+      ]
+    },
+    {
+      "claim": "Pros averaged a 10.2% six-month gain vs 3.5% for the darts",
+      "sources": [
+        "http://busecon.wvu.edu/divecon/finance/akurov/FIN322/Articles/WSJ%20Stock%20Picking.htm",
+        "https://www.dailyprincetonian.com/article/2002/05/fourteen-years-of-darts-on-wall-street-lead-malkiel-to-reassert-stock-theory"
+      ]
+    },
+    {
+      "claim": "The contest started as one month long and was extended to six months, in part because of the possible publicity effect",
+      "sources": [
+        "http://busecon.wvu.edu/divecon/finance/akurov/FIN322/Articles/WSJ%20Stock%20Picking.htm",
+        "https://www.dailyprincetonian.com/article/2002/05/fourteen-years-of-darts-on-wall-street-lead-malkiel-to-reassert-stock-theory",
+        "https://priceonomics.com/how-well-do-blindfolded-monkeys-play-the-stock/"
+      ]
+    },
+    {
+      "claim": "Starting price was the 4 p.m. price the day before publication, so the publication-day move counted for the pros",
+      "sources": [
+        "http://busecon.wvu.edu/divecon/finance/akurov/FIN322/Articles/WSJ%20Stock%20Picking.htm",
+        "https://www.dailyprincetonian.com/article/2002/05/fourteen-years-of-darts-on-wall-street-lead-malkiel-to-reassert-stock-theory"
+      ]
+    },
+    {
+      "claim": "The pros' picks showed abnormal positive returns and double volume in the two days after publication (Barber & Loeffler 1993: ~4%, partially reversed within 25 trading days; Liang 1999: two-day announcement effect reversed within fifteen days), attributed partly to naive buying pressure by readers",
+      "sources": [
+        "https://ideas.repec.org/a/cup/jfinqa/v28y1993i02p273-284_00.html",
+        "https://ideas.repec.org/a/ucp/jnlbus/v72y1999i1p119-34.html",
+        "https://priceonomics.com/how-well-do-blindfolded-monkeys-play-the-stock/"
+      ]
+    },
+    {
+      "claim": "Few readers rush to buy the dart picks",
+      "sources": [
+        "https://www.fool.com/investing/dividends-income/2006/01/17/darts-beat-people-again.aspx",
+        "https://priceonomics.com/how-well-do-blindfolded-monkeys-play-the-stock/"
+      ]
+    }
+  ],
+  "caption": "For 14 years the Wall Street Journal pitted top stock pickers against darts thrown at the stock tables on its office wall.\nThe pros won 87 of 142 contests. But their picks were printed for every reader to see, and they jumped for two days as readers bought them.\n\n#stockmarkethistory #stockpicking #efficientmarkets #investing #longterminvesting #valueinvesting\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+  "yt_title": "Wall Street Pros vs. Darts, 1988-2002: The Pros Won 87 of 142. Here's the Catch",
+  "sources": [
+    "http://busecon.wvu.edu/divecon/finance/akurov/FIN322/Articles/WSJ%20Stock%20Picking.htm",
+    "https://www.eurocapital.gr/permalink/98234.html",
+    "https://www.dailyprincetonian.com/article/2002/05/fourteen-years-of-darts-on-wall-street-lead-malkiel-to-reassert-stock-theory",
+    "https://ideas.repec.org/a/cup/jfinqa/v28y1993i02p273-284_00.html",
+    "https://ideas.repec.org/a/ucp/jnlbus/v72y1999i1p119-34.html",
+    "https://priceonomics.com/how-well-do-blindfolded-monkeys-play-the-stock/",
+    "https://www.kellogg.northwestern.edu/kwo/sum04/indepth/monkey.htm",
+    "https://talkingbiznews.com/they-talk-biz-news/darts-beat-pros-in-wsj-stock-picking/",
+    "https://www.fool.com/investing/dividends-income/2006/01/17/darts-beat-people-again.aspx"
+  ]
+}

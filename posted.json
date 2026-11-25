@@ -1522,6 +1522,10 @@
     "avg_shot_s": 2.13,
     "narrator": "eleven:jackson-v4",
     "story": "Tulip mania 1636-37 retested in the archives: the trade was promises on bulbs still in the ground, payable in June; most buyers never paid and historians found almost no bankruptcies",
-    "theme": "bubble myth vs archive data (tulip mania)"
+    "theme": "bubble myth vs archive data (tulip mania)",
+    "voice_note": "ElevenLabs Jackson eleven_v4, tempo 1.05, transcript matched 142/142 words",
+    "video_url": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-25/2026-11-25-0944.mp4",
+    "mode": "film",
+    "era": "1636-1637 Dutch Republic"
   }
 ]

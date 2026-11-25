@@ -1422,5 +1422,45 @@
       "rest:whip"
     ],
     "avg_shot_s": 2.03
+  },
+  {
+    "date": "2026-11-25",
+    "slug": "2026-11-25-0544",
+    "title": "Who Needs Cash Tonight",
+    "yt_title": "1907: Money Cost 100% Interest. Morgan Locked the Bankers In Until They Signed",
+    "sources": [
+      "https://www.federalreservehistory.org/essays/panic-of-1907",
+      "https://www.themorgan.org/exhibitions/online/guide/stop-23-panic-1907",
+      "https://www.npr.org/13998405",
+      "https://www.npr.org/transcripts/643777741",
+      "https://en.wikipedia.org/wiki/Panic_of_1907",
+      "https://www.americanheritage.com/lion-street",
+      "https://www.americanheritage.com/magnitude-j-p-morgan",
+      "https://history.com/articles/federal-reserve-bank-origins-history",
+      "https://blogs.loc.gov/inside_adams/2021/03/united-copper-panic-of-1907/"
+    ],
+    "buffer": {
+      "instagram": "6b0663fa40e1d58d12f9a7de",
+      "tiktok": "6b0663fbb6204bca46c6b84b",
+      "youtube": "skipped (00:30 slot)"
+    },
+    "scheduled": "2026-11-26T00:30:00+02:00 (Instagram, TikTok)",
+    "retry": null,
+    "voice": "eleven:jackson-v4",
+    "voice_note": "ElevenLabs Jackson eleven_v4, transcript matched 145/145 words, tempo 1.05",
+    "video_url": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-25/2026-11-25-0544.mp4",
+    "mode": "film",
+    "era": "1907",
+    "duration": 56.033333,
+    "sets": [
+      "J. P. Morgan's library at night: red-striped damask walls, fireplace with flames, tapestry, bookcases, a heavy oak door SLAMMED on frame 0 and a big brass key turned and pocketed; dawn light and a 4:45 clock for the signing, a PLEDGE $25,000,000 card",
+      "New York Stock Exchange floor 1907: marble hall, columns, octagonal trading posts COPPER/STEEL/RAILS/SUGAR, a green CALL MONEY board flipping 6 % to red 100 %, paper litter, Lucky Lou flinging certificates, the floor cheering with confetti",
+      "Fifth Avenue morning (cold light): victorian/brick shopfronts and a column-fronted KNICKERBOCKER TRUST temple, depositors stampeding, a red CLOSED sign slamming down",
+      "J. P. MORGAN & CO. office: walnut panelling, green carpet, wall clock racing ten minutes, money bags dropping on the desk ($25,000,000), the exchange president bursting in ('We have to close!')",
+      "rented attic at midnight (analogy): plank walls, upright piano, landlord at the door with RENT DUE, clock ticking to twelve, buyer paying $20 and rolling the piano out",
+      "teal metaphor stage: UNITED COPPER bar exploding on a pedestal, a dry golden MONEY tap over an empty bucket, the piano on a pedestal with a crossed-out $20 tag, a giant scale where a CASH bag slams down and flings STOCKS up on the last word"
+    ],
+    "shots": 30,
+    "avg_shot_s": 1.87
   }
 ]

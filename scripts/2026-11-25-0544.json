@@ -1,0 +1,47 @@
+{
+  "slug": "2026-11-25-0544",
+  "title": "Who Needs Cash Tonight",
+  "film": true,
+  "seed": 11,
+  "tempo": 1.05,
+  "voice_label": "eleven:jackson-v4",
+  "beats": [
+    {"text": "In nineteen-oh-seven, a banker locked New York's bankers in his library and kept the key."},
+    {"text": "Imagine you're a young broker, buying stocks with money borrowed by the day."},
+    {"text": "Then a copper gamble blows up, and depositors stampede a trust company."},
+    {"text": "Nobody will lend. One-day money costs a hundred percent a year."},
+    {"text": "Lucky Lou dumps his best stocks at any price."},
+    {"text": "The exchange president begs Morgan: we have to close!"},
+    {"text": "Morgan gives the banks ten minutes to find twenty-five million. They do."},
+    {"text": "So why would anyone sell good stocks so cheap?"},
+    {"text": "You see, it's like needing rent by midnight. You'd sell your piano for twenty bucks."},
+    {"text": "Not because it's worth twenty."},
+    {"text": "Nine days later, Morgan locks the trust bosses in his library until they pledge twenty-five million."},
+    {"text": "They sign before dawn.", "twist": true},
+    {"text": "In a panic, prices don't tell you what stocks are worth. Only who needs cash.", "finale": true}
+  ],
+  "facts": [
+    {"claim": "On the night of November 2-3, 1907, J. P. Morgan gathered bank and trust company heads in his library, locked the doors and kept the key in his pocket until the trust presidents agreed to a $25 million pledge; they signed in the early morning (about 4:45 a.m. / 'just after four' / conference broke up at five)", "sources": ["https://en.wikipedia.org/wiki/Panic_of_1907", "https://www.npr.org/transcripts/643777741", "https://www.themorgan.org/exhibitions/online/guide/stop-23-panic-1907", "https://history.com/articles/federal-reserve-bank-origins-history", "https://www.americanheritage.com/lion-street"]},
+    {"claim": "Stock-exchange houses financed positions with call loans (money lent day to day); on October 24, 1907 the call-money rate reached 100 percent (annualized)", "sources": ["https://www.federalreservehistory.org/essays/panic-of-1907", "https://www.npr.org/13998405", "https://en.wikipedia.org/wiki/Panic_of_1907"]},
+    {"claim": "The panic began when an attempt to corner United Copper stock failed (October 16, 1907), followed by a run on the Knickerbocker Trust Company, where depositors withdrew about $8 million before it suspended", "sources": ["https://www.federalreservehistory.org/essays/panic-of-1907", "https://en.wikipedia.org/wiki/Panic_of_1907", "https://blogs.loc.gov/inside_adams/2021/03/united-copper-panic-of-1907/"]},
+    {"claim": "On October 24, 1907, NYSE president Ransom H. Thomas told Morgan the exchange would have to close; Morgan told bank presidents $25 million must be raised in ten or twelve minutes; the subscription was filled by 2:16 p.m. and the floor roared/cheered", "sources": ["https://www.npr.org/13998405", "https://en.wikipedia.org/wiki/Panic_of_1907", "https://www.americanheritage.com/lion-street", "https://www.americanheritage.com/magnitude-j-p-morgan"]},
+    {"claim": "Morgan was seventy years old in 1907", "sources": ["https://www.americanheritage.com/lion-street", "https://history.com/articles/federal-reserve-bank-origins-history"]},
+    {"claim": "The New York Stock Exchange fell almost 50% from its peak of the previous year (caption only)", "sources": ["https://en.wikipedia.org/wiki/Panic_of_1907", "https://blogs.loc.gov/inside_adams/2021/03/united-copper-panic-of-1907/", "https://history.com/articles/federal-reserve-bank-origins-history"]},
+    {"claim": "The trust-company meeting was in Morgan's library; Morgan sat in the West Room, his office with red wallpaper and a fireplace, while bankers met in the East Room with three tiers of bookcases", "sources": ["https://www.americanheritage.com/magnitude-j-p-morgan", "https://en.wikipedia.org/wiki/Panic_of_1907", "https://www.npr.org/transcripts/643777741"]},
+    {"claim": "The panic led to the founding of the Federal Reserve System in 1913 (caption only)", "sources": ["https://www.themorgan.org/exhibitions/online/guide/stop-23-panic-1907", "https://en.wikipedia.org/wiki/Panic_of_1907"]},
+    {"claim": "The young broker ('you') and his neighbour 'Lucky Lou' are fictional; the rent/piano line is an analogy", "sources": []}
+  ],
+  "caption": "October 1907: overnight money on the New York Stock Exchange hit 100% interest. The exchange president wanted to close. J.P. Morgan, 70, gave the banks ten minutes to raise $25 million.\nNine days later he locked the trust bosses in his library until they signed. Stocks had fallen almost half from the year before.\n\n#stockmarkethistory #panicof1907 #valueinvesting #longterminvesting #investing\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+  "yt_title": "1907: Money Cost 100% Interest. Morgan Locked the Bankers In Until They Signed",
+  "sources": [
+    "https://www.federalreservehistory.org/essays/panic-of-1907",
+    "https://www.themorgan.org/exhibitions/online/guide/stop-23-panic-1907",
+    "https://www.npr.org/13998405",
+    "https://www.npr.org/transcripts/643777741",
+    "https://en.wikipedia.org/wiki/Panic_of_1907",
+    "https://www.americanheritage.com/lion-street",
+    "https://www.americanheritage.com/magnitude-j-p-morgan",
+    "https://history.com/articles/federal-reserve-bank-origins-history",
+    "https://blogs.loc.gov/inside_adams/2021/03/united-copper-panic-of-1907/"
+  ]
+}

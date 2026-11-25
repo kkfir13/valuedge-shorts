@@ -1462,5 +1462,66 @@
     ],
     "shots": 30,
     "avg_shot_s": 1.87
+  },
+  {
+    "date": "2026-11-25",
+    "slug": "2026-11-25-0944",
+    "title": "The Crash That Ruined Nobody",
+    "yt_title": "1637's Tulip Crash Was Real. The Ruin Wasn't: Almost Nobody Had Paid Yet",
+    "sources": [
+      "https://www.historytoday.com/node/54516",
+      "https://reviews.history.ac.uk/review/666",
+      "https://www.smithsonianmag.com/history/there-never-was-real-tulip-fever-180964915/",
+      "https://penelope.uchicago.edu/~grout/encyclopaedia_romana/aconite/tulipomania.html"
+    ],
+    "buffer": {
+      "instagram": "6b069d09d8874a038c07806b",
+      "tiktok": "6b069d0ac68d7845a495f43e",
+      "youtube": "6b069d0bd8874a038c0780d1"
+    },
+    "scheduled": "2026-11-26T08:30:00+02:00",
+    "retry": null,
+    "voice": "eleven:jackson-v4",
+    "duration": 55.433333,
+    "sets": [
+      "Haarlem tavern, winter 1636: plaster walls, dark beams, brick fireplace, BIDS TONIGHT slate, long bidding table with candles, a striped tulip in a clay pot, a bulb on a red cushion, gavel SOLD! slam on frame 0, toy house popping up for 'the price of a house', paper promise notes, a money bag thudding down on the last word",
+      "Haarlem market square in snow (night snowfall WINTER 1636; cold day 3 FEBRUARY 1637): gabled plaster/brick houses, a lonely TULIP SALE stand, empty snow-covered benches, crier asking 'Anyone?'",
+      "purple book stage (metaphor/legend): giant open red book MADNESS OF CROWDS 1841 / TULIPOMANIA slamming open, a patched merchant 'BEGGARY', a sailor stamped LEGEND biting a giant bulb (CHOMP!)",
+      "Dutch archive: walls of year-labelled boxes 1634-1639, reading desk with ledger HAARLEM 1637 and sweeping magnifier, a drawer TULIP RUIN sliding out almost empty (ALMOST NONE)",
+      "modern living room (analogy): blue sofa, laptop PRE-ORDER, FEB calendar",
+      "frozen soil cutaway stage (mechanism): dirt block under snow with sleeping bulbs, PAY IN JUNE tag, tulips shooting up in golden light, TULIP PRICES board and a red arrow crashing down with confetti"
+    ],
+    "shots": [
+      "tavern:cut",
+      "soil:smash",
+      "tavern:whip",
+      "tavern:dissolve",
+      "square:dissolve",
+      "tavern:whip",
+      "tavern:cut",
+      "square:flash",
+      "square:cut",
+      "tavern:whip",
+      "book:zoom",
+      "book:dissolve",
+      "book:whip",
+      "book:cut",
+      "archive:whip",
+      "archive:dissolve",
+      "tavern:whip",
+      "living:zoom",
+      "soil:whip",
+      "soil:dissolve",
+      "soil:cut",
+      "tavern:whip",
+      "tavern:cut",
+      "soil:smash",
+      "tavern:whip",
+      "tavern:dissolve"
+    ],
+    "avg_shot_s": 2.13,
+    "narrator": "eleven:jackson-v4",
+    "story": "Tulip mania 1636-37 retested in the archives: the trade was promises on bulbs still in the ground, payable in June; most buyers never paid and historians found almost no bankruptcies",
+    "theme": "bubble myth vs archive data (tulip mania)"
   }
 ]

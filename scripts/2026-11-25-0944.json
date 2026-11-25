@@ -1,0 +1,124 @@
+{
+  "slug": "2026-11-25-0944",
+  "title": "The Crash That Ruined Nobody",
+  "film": true,
+  "seed": 13,
+  "tempo": 1.05,
+  "voice_label": "eleven:jackson-v4",
+  "beats": [
+    {
+      "text": "The most famous market crash in history ruined almost nobody."
+    },
+    {
+      "text": "Imagine you're in a smoky Haarlem tavern, winter, sixteen thirty-six."
+    },
+    {
+      "text": "Men are bidding on tulips. Some bulbs fetch the price of a house."
+    },
+    {
+      "text": "Then, on February third, a Haarlem sale finds no buyers at all."
+    },
+    {
+      "text": "Within days, the tulip market is dead."
+    },
+    {
+      "text": "Books later wrote of merchants reduced to beggary."
+    },
+    {
+      "text": "Legend says a sailor even ate a priceless bulb like an onion."
+    },
+    {
+      "text": "But a historian who searched the Dutch archives could barely find a single bankruptcy."
+    },
+    {
+      "text": "So where did all that money go?"
+    },
+    {
+      "text": "You see, it was a preorder."
+    },
+    {
+      "text": "The bulbs were still underground, not delivered or paid for until they bloomed in June."
+    },
+    {
+      "text": "So the taverns traded promises. No bulbs, no cash."
+    },
+    {
+      "text": "When prices collapsed, most buyers just never paid.",
+      "twist": true
+    },
+    {
+      "text": "It's hard to lose a fortune that never left your pocket.",
+      "finale": true
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Archival research (Anne Goldgar, Tulipmania, 2007) found almost no bankruptcies attributable to tulipmania and no prolonged depression; 'I couldn't find anybody that went bankrupt' / 'difficult to find any bankrupts at all' / 'few, if any'",
+      "sources": [
+        "https://www.smithsonianmag.com/history/there-never-was-real-tulip-fever-180964915/",
+        "https://www.historytoday.com/node/54516",
+        "https://penelope.uchicago.edu/~grout/encyclopaedia_romana/aconite/tulipomania.html",
+        "https://reviews.history.ac.uk/review/666"
+      ]
+    },
+    {
+      "claim": "Tulips were traded in taverns/inns in Haarlem and Amsterdam during the mania (peak winter 1636-37)",
+      "sources": [
+        "https://www.historytoday.com/node/54516",
+        "https://reviews.history.ac.uk/review/666"
+      ]
+    },
+    {
+      "claim": "Some bulbs sold for about the price of a house (a pound of Switsers for 1,100 guilders, 'about the price of a reasonably nice house'; Semper Augustus for more than a mansion)",
+      "sources": [
+        "https://www.historytoday.com/node/54516",
+        "https://www.smithsonianmag.com/history/there-never-was-real-tulip-fever-180964915/"
+      ]
+    },
+    {
+      "claim": "On 3 February 1637 a tulip sale in Haarlem failed to find buyers; within days the market collapsed (early February 1637)",
+      "sources": [
+        "https://www.historytoday.com/node/54516",
+        "https://penelope.uchicago.edu/~grout/encyclopaedia_romana/aconite/tulipomania.html",
+        "https://www.smithsonianmag.com/history/there-never-was-real-tulip-fever-180964915/"
+      ]
+    },
+    {
+      "claim": "Charles Mackay (1841) wrote that substantial merchants were reduced almost to beggary",
+      "sources": [
+        "https://www.historytoday.com/node/54516",
+        "https://www.smithsonianmag.com/history/there-never-was-real-tulip-fever-180964915/"
+      ]
+    },
+    {
+      "claim": "The sailor who ate a rare bulb thinking it was an onion is a popular myth (framed in the script as legend)",
+      "sources": [
+        "https://www.smithsonianmag.com/history/there-never-was-real-tulip-fever-180964915/",
+        "https://www.historytoday.com/node/54516"
+      ]
+    },
+    {
+      "claim": "The bulbs were in the ground; trades were promises/notes and bulbs were not delivered or paid for until they flowered in June",
+      "sources": [
+        "https://www.historytoday.com/node/54516",
+        "https://reviews.history.ac.uk/review/666",
+        "https://penelope.uchicago.edu/~grout/encyclopaedia_romana/aconite/tulipomania.html"
+      ]
+    },
+    {
+      "claim": "After the collapse very few buyers ever paid; Haarlem later let contracts be cancelled for 3.5% and buyers in practice paid 5% or less",
+      "sources": [
+        "https://reviews.history.ac.uk/review/666",
+        "https://penelope.uchicago.edu/~grout/encyclopaedia_romana/aconite/tulipomania.html"
+      ]
+    }
+  ],
+  "caption": "February 3, 1637: a tulip sale in Haarlem found no buyers, and history's most famous bubble burst.\nBut the bulbs were still in the ground, nothing was due until June, and most buyers never paid. Historians in the Dutch archives found almost no bankruptcies.\n\n#tulipmania #stockmarkethistory #bubbles #valueinvesting #longterminvesting #investing\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+  "yt_title": "1637's Tulip Crash Was Real. The Ruin Wasn't: Almost Nobody Had Paid Yet",
+  "sources": [
+    "https://www.historytoday.com/node/54516",
+    "https://reviews.history.ac.uk/review/666",
+    "https://www.smithsonianmag.com/history/there-never-was-real-tulip-fever-180964915/",
+    "https://penelope.uchicago.edu/~grout/encyclopaedia_romana/aconite/tulipomania.html"
+  ]
+}

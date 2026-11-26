@@ -1,0 +1,142 @@
+{
+ "slug": "2026-11-26-0143",
+ "title": "The Box Worth More Than Its Contents",
+ "film": true,
+ "seed": 26,
+ "tempo": 1.065,
+ "voice_label": "eleven:jackson-v4",
+ "beats": [
+  {
+   "text": "In nineteen twenty-nine, Wall Street sold boxes of stocks for more than what's inside."
+  },
+  {
+   "text": "December nineteen twenty-eight. Goldman Sachs opens a trust, a company that only owns other shares."
+  },
+  {
+   "text": "You pay a hundred and four dollars for about a hundred dollars of stocks."
+  },
+  {
+   "text": "Within weeks, your shares more than double."
+  },
+  {
+   "text": "So how is a box worth more than its contents?"
+  },
+  {
+   "text": "Nobody asks. That summer, the trust launches a trust, which launches another."
+  },
+  {
+   "text": "A trust owning a trust owning a trust, on borrowed money."
+  },
+  {
+   "text": "You see, it's a fruit basket. The bow costs extra."
+  },
+  {
+   "text": "Now baskets hold baskets, some bought with a loan."
+  },
+  {
+   "text": "The fruit slips a little, the loan doesn't, so the top baskets crash."
+  },
+  {
+   "text": "And the bow you paid extra for? Gone first."
+  },
+  {
+   "text": "By nineteen thirty-two, the market had lost nearly ninety percent.",
+   "twist": true
+  },
+  {
+   "text": "Your hundred-and-four-dollar share? A dollar seventy-five. The baskets fell further than the fruit.",
+   "finale": true
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Goldman Sachs launched the Goldman Sachs Trading Corporation, an investment trust (closed-end fund), in December 1928 (Dec 4, 1928)",
+   "sources": [
+    "https://www.goldmansachs.com/our-firm/history/moments/1928-goldman-sachs-trading-corporation",
+    "https://novelinvestor.com/the-fall-of-the-goldman-sachs-trading-corp/",
+    "https://www.scripophily.net/gosatrco19.html",
+    "https://nber.org/system/files/working_papers/w3523/w3523.pdf"
+   ]
+  },
+  {
+   "claim": "Shares were offered to the public at $104 each (one million shares)",
+   "sources": [
+    "https://www.goldmansachs.com/our-firm/history/moments/1928-goldman-sachs-trading-corporation",
+    "https://novelinvestor.com/the-fall-of-the-goldman-sachs-trading-corp/",
+    "https://www.scripophily.net/gosatrco19.html"
+   ]
+  },
+  {
+   "claim": "Behind each share sat about $100 of assets: Goldman bought the 1,000,000-share issue for $100 million; net asset value around $100 million (GS: $50M capital + $50M surplus)",
+   "sources": [
+    "https://novelinvestor.com/the-fall-of-the-goldman-sachs-trading-corp/",
+    "https://nber.org/system/files/working_papers/w3523/w3523.pdf",
+    "https://www.goldmansachs.com/our-firm/history/moments/1928-goldman-sachs-trading-corporation"
+   ]
+  },
+  {
+   "claim": "Within weeks (early 1929) the shares more than doubled: GS history 'within three days shares had more than doubled over their initial value'; Novel Investor: $222.50 two months after launch, double its asset value",
+   "sources": [
+    "https://www.goldmansachs.com/our-firm/history/moments/1928-goldman-sachs-trading-corporation",
+    "https://novelinvestor.com/the-fall-of-the-goldman-sachs-trading-corp/"
+   ]
+  },
+  {
+   "claim": "1929 investment trusts traded at premiums above the value of the stocks they held (median seasoned-fund premium ~47-50% in Q3 1929; GSTC at double asset value)",
+   "sources": [
+    "https://nber.org/system/files/working_papers/w3523/w3523.pdf",
+    "https://novelinvestor.com/the-fall-of-the-goldman-sachs-trading-corp/"
+   ]
+  },
+  {
+   "claim": "In July and August 1929 the trust launched Shenandoah Corporation, which in turn launched Blue Ridge Corporation (Shenandoah's capital used to buy Blue Ridge)",
+   "sources": [
+    "https://www.goldmansachs.com/our-firm/history/moments/1928-goldman-sachs-trading-corporation",
+    "https://novelinvestor.com/the-fall-of-the-goldman-sachs-trading-corp/",
+    "https://content.time.com/time/subscriber/article/0,33009,769810-2,00.html"
+   ]
+  },
+  {
+   "claim": "The structure was interlocking and highly leveraged (debt and preferred stock; 'a premium to a premium to a premium')",
+   "sources": [
+    "https://www.goldmansachs.com/our-firm/history/moments/1928-goldman-sachs-trading-corporation",
+    "https://novelinvestor.com/the-fall-of-the-goldman-sachs-trading-corp/",
+    "https://nber.org/system/files/working_papers/w3523/w3523.pdf",
+    "https://en.wikipedia.org/wiki/The_Great_Crash,_1929"
+   ]
+  },
+  {
+   "claim": "Premiums vanished: by end of 1929 GSTC and most seasoned funds traded below net asset value (median discount 8% in Dec 1929)",
+   "sources": [
+    "https://novelinvestor.com/the-fall-of-the-goldman-sachs-trading-corp/",
+    "https://nber.org/system/files/working_papers/w3523/w3523.pdf"
+   ]
+  },
+  {
+   "claim": "By 1932 stocks had lost nearly 90 percent of their value (Dow 381.2 in Sept 1929)",
+   "sources": [
+    "https://www.goldmansachs.com/our-firm/history/moments/1929-financial-crash",
+    "https://www.federalreservehistory.org/essays/stock-market-crash-of-1929"
+   ]
+  },
+  {
+   "claim": "GSTC shares (split-adjusted) fell to $1.75 by mid-1932",
+   "sources": [
+    "https://www.goldmansachs.com/our-firm/history/moments/1928-goldman-sachs-trading-corporation",
+    "https://www.scripophily.net/gosatrco19.html",
+    "https://novelinvestor.com/the-fall-of-the-goldman-sachs-trading-corp/"
+   ]
+  }
+ ],
+ "caption": "December 1928: the Goldman Sachs Trading Corporation sold shares at $104 for about $100 of stocks, and within weeks they more than doubled.\nThen the trust launched a trust that launched another, stacked on borrowed money. By 1932 the share was $1.75.\n\n#stockmarkethistory #1929 #investmenttrusts #leverage #valueinvesting #longterminvesting\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "1929: Investors Paid More Than the Stocks Inside Were Worth. $104 Became $1.75",
+ "sources": [
+  "https://www.goldmansachs.com/our-firm/history/moments/1928-goldman-sachs-trading-corporation",
+  "https://www.goldmansachs.com/our-firm/history/moments/1929-financial-crash",
+  "https://novelinvestor.com/the-fall-of-the-goldman-sachs-trading-corp/",
+  "https://www.scripophily.net/gosatrco19.html",
+  "https://nber.org/system/files/working_papers/w3523/w3523.pdf",
+  "https://content.time.com/time/subscriber/article/0,33009,769810-2,00.html",
+  "https://en.wikipedia.org/wiki/The_Great_Crash,_1929"
+ ]
+}

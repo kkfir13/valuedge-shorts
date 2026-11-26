@@ -1,0 +1,131 @@
+{
+  "slug": "2026-11-26-0943",
+  "title": "The Wrong Zoom",
+  "film": true,
+  "seed": 43,
+  "tempo": 1.05,
+  "voice_label": "eleven:jackson-v4",
+  "beats": [
+    {
+      "text": "Imagine a stock jumping from three dollars to past twenty in a month."
+    },
+    {
+      "text": "Its company hasn't said a word since twenty fifteen."
+    },
+    {
+      "text": "March twenty twenty. Everyone's stuck at home on Zoom."
+    },
+    {
+      "text": "So you type ZOOM and hit buy."
+    },
+    {
+      "text": "So does everyone. The price needs a seatbelt."
+    },
+    {
+      "text": "Why is a silent company suddenly worth seven times as much?"
+    },
+    {
+      "text": "The app is Z M. This ZOOM is a tiny firm last heard from in Beijing."
+    },
+    {
+      "text": "In twenty thirteen, a bankrupt chain called Tweeter jumped over tenfold when Twitter filed to go public."
+    },
+    {
+      "text": "You see, it's like grabbing a black suitcase off the airport belt because the tag looks right."
+    },
+    {
+      "text": "A Journal of Finance study found look-alike tickers move together."
+    },
+    {
+      "text": "Prices snap back within days."
+    },
+    {
+      "text": "On March twenty sixth, regulators froze ZOOM for ten trading days.",
+      "twist": true
+    },
+    {
+      "text": "Everyone checked the ticker. Nobody checked the company.",
+      "finale": true
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Zoom Technologies (OTC ticker ZOOM) rose from around $3 a share in mid-February 2020 to more than $20 (high $20.90) about a month later, nearly sevenfold",
+      "sources": [
+        "https://fortune.com/2020/03/26/zoom-stock-halt-zm-ticker/",
+        "https://thenextweb.com/news/sec-halts-zoom-after-coronavirus-traders-confuse-it-for-zoom-app"
+      ]
+    },
+    {
+      "claim": "Zoom Technologies had made no public disclosure since 2015",
+      "sources": [
+        "https://www.sec.gov/files/litigation/suspensions/2020/34-88477-o.pdf",
+        "https://fortune.com/2020/03/26/zoom-stock-halt-zm-ticker/"
+      ]
+    },
+    {
+      "claim": "Its last reported principal executive offices were in Beijing, China",
+      "sources": [
+        "https://www.sec.gov/files/litigation/suspensions/2020/34-88477-o.pdf",
+        "https://fortune.com/2020/03/26/zoom-stock-halt-zm-ticker/",
+        "https://jost.syr.edu/sec-halts-zoom-technologies-trading-due-to-investor-confusion/"
+      ]
+    },
+    {
+      "claim": "The SEC cited concerns about investors confusing it with a similarly named Nasdaq-listed issuer, Zoom Video Communications (ticker ZM)",
+      "sources": [
+        "https://www.sec.gov/files/litigation/suspensions/2020/34-88477-o.pdf",
+        "https://fortune.com/2020/03/26/zoom-stock-halt-zm-ticker/",
+        "https://thenextweb.com/news/sec-halts-zoom-after-coronavirus-traders-confuse-it-for-zoom-app",
+        "https://www.fool.com/investing/2020/03/26/recuing-investors-from-ignorance-sec-suspends-trad.aspx"
+      ]
+    },
+    {
+      "claim": "The SEC suspended trading from 9:30 a.m. EDT March 26, 2020 through April 8, 2020 = ten business days (Section 12(k) limit)",
+      "sources": [
+        "https://www.sec.gov/files/litigation/suspensions/2020/34-88477-o.pdf",
+        "https://jost.syr.edu/sec-halts-zoom-technologies-trading-due-to-investor-confusion/",
+        "https://fortune.com/2020/03/26/zoom-stock-halt-zm-ticker/"
+      ]
+    },
+    {
+      "claim": "In 2020 people worked from home and used the Zoom video app; ZM hit an all-time high March 19, 2020",
+      "sources": [
+        "https://fortune.com/2020/03/26/zoom-stock-halt-zm-ticker/",
+        "https://thenextweb.com/news/sec-halts-zoom-after-coronavirus-traders-confuse-it-for-zoom-app"
+      ]
+    },
+    {
+      "claim": "Tweeter Home Entertainment, a consumer electronics retailer bankrupt since 2007, ticker TWTRQ, rose from about 1 cent to a 15-cent high on Oct 4, 2013 (over ten times) after Twitter filed IPO papers on Oct 3, 2013; FINRA halted it",
+      "sources": [
+        "https://money.cnn.com/2013/10/04/investing/twitter-tweet-shares",
+        "https://www.cnbc.com/2013/10/04/tweeter-isnt-twitter-but-people-are-throwing-money-at-it.html",
+        "https://www.theregister.com/2013/10/10/twitter_tweeter_stock_symbol_change/",
+        "https://www.pbs.org/newshour/economy/eager-investors-fail"
+      ]
+    },
+    {
+      "claim": "Rashes, 'Massively Confused Investors Making Conspicuously Ignorant Choices (MCI-MCIC)', Journal of Finance 56(5), 2001: stocks with similar ticker symbols show significant comovement in returns, volume and volatility; deviations from fundamental value reverse within several days",
+      "sources": [
+        "https://ideas.repec.org/a/bla/jfinan/v56y2001i5p1911-1927.html",
+        "https://econpapers.repec.org/RePEc:bla:jfinan:v:56:y:2001:i:5:p:1911-1927"
+      ]
+    }
+  ],
+  "caption": "March 2020: the world lived on one video app, so investors typed ZOOM and hit buy. Wrong company.\nZoom Technologies, silent since 2015, went from about $3 to over $20 in a month, until the SEC froze it.\n\n#stockmarkethistory #investing #duediligence #behavioralfinance #longterminvesting #valueinvesting\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+  "yt_title": "2020: Investors Bought the Wrong Zoom. A Silent Stock Went From $3 to $20 in a Month",
+  "sources": [
+    "https://www.sec.gov/files/litigation/suspensions/2020/34-88477-o.pdf",
+    "https://fortune.com/2020/03/26/zoom-stock-halt-zm-ticker/",
+    "https://thenextweb.com/news/sec-halts-zoom-after-coronavirus-traders-confuse-it-for-zoom-app",
+    "https://jost.syr.edu/sec-halts-zoom-technologies-trading-due-to-investor-confusion/",
+    "https://www.fool.com/investing/2020/03/26/recuing-investors-from-ignorance-sec-suspends-trad.aspx",
+    "https://www.cnbc.com/2019/04/18/investors-appear-to-trade-wrong-zoom-company-shares-before-ipo.html",
+    "https://money.cnn.com/2013/10/04/investing/twitter-tweet-shares",
+    "https://www.cnbc.com/2013/10/04/tweeter-isnt-twitter-but-people-are-throwing-money-at-it.html",
+    "https://www.theregister.com/2013/10/10/twitter_tweeter_stock_symbol_change/",
+    "https://www.pbs.org/newshour/economy/eager-investors-fail",
+    "https://ideas.repec.org/a/bla/jfinan/v56y2001i5p1911-1927.html",
+    "https://econpapers.repec.org/RePEc:bla:jfinan:v:56:y:2001:i:5:p:1911-1927"
+  ]
+}

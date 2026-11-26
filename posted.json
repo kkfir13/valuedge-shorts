@@ -1677,5 +1677,66 @@
       "airport:cut"
     ],
     "avg_shot_s": 1.85
+  },
+  {
+    "date": "2026-11-26",
+    "slug": "2026-11-26-1744",
+    "title": "The Butter Forecast",
+    "yt_title": "Bangladeshi Butter 'Predicted' 75% of the S&P 500. With Sheep, 99%. It Was a Joke",
+    "story": "Data-mining joke: Bangladesh butter production 'explained' 75% of the S&P 500; with US cheese and Bangladeshi/US sheep 99%; useless outside the fitted years; mined from a UN database; investors still asked for the butter numbers",
+    "sources": [
+      "https://www.marottaonmoney.com/wp-content/uploads/2023/01/Stupid-Data-Miner-Tricks-Overfitting-The-SP-500.pdf",
+      "https://jasonzweig.com/data-mining-isnt-a-good-bet-for-stock-market-predictions/",
+      "https://www.fool.com/investing/general/2007/10/12/getting-rich-on-sheep-butter-and-cheese.aspx",
+      "https://www.cbsnews.com/news/what-butter-production-means-for-your-portfolio",
+      "https://en.wikipedia.org/wiki/David_Leinweber"
+    ],
+    "buffer": {
+      "instagram": "6b085c8f4e32cfdd23069613",
+      "tiktok": "6b085c90f9be35f0933378ce",
+      "youtube": "6b085c91f9be35f093337931"
+    },
+    "scheduled": "2026-11-27T16:30:00+02:00",
+    "voice": "eleven:jackson-v4 (139/139 words matched)",
+    "duration": 55.533333,
+    "sets": [
+      "butter-yellow metaphor stage: a giant gold-foil butter block THUDS onto a white/gold pedestal on frame 0, a two-line chart screen (green STOCK MARKET vs yellow BUTTER, BANGLADESH) whose lines squeeze together, 75% / 99% plates, a giant U.S. CHEESE wedge dropping, a flock of AMERICAN SHEEP raining down ('Baaa!'), TESTED YEARS window with the butter line wandering off, the butter melting (USELESS), JUST A JOKE stamp and a WARNING: DATA MINING sign",
+      "Bangladesh dairy yard at golden dawn: palms, tin-roof DAIRY shed (later FORECAST HQ), wooden butter churn pumping, butter pats on a banana leaf, a black-and-white cow, farmer Rina in orange, sheep tumbling in, three suited fund managers peering over the fence at the cow",
+      "top-floor fund office at night: painted city-skyline window, MORTY · FUND MANAGER nameplate, desk lamp, candlestick phone, a chart folder sliding in from off-frame ('Genius!', 'Latest butter numbers?'), a giant butter block SPLAT on the desk on the last word",
+      "ballpark at sunset: blue bleachers, HOME TEAM scoreboard flipping GAME 1/7/12/19: LOST then WIN!, Morty in a red cap holding up striped lucky socks ('It's the socks!')",
+      "UN DATABASE archive: library shelves, crates labelled RAINFALL/TEA/JUTE/GOATS/RICE..., papers flying, BUTTER crate tagged FITS!, RAINFALL tagged NOPE and toppling",
+      "pure-chance metaphor: purple stage with a giant glass lottery drum of coloured balls, a golden ball rolling out down a chute, PERFECT MATCH"
+    ],
+    "shots": [
+      "stage:cut",
+      "farm:whip",
+      "farm:cut",
+      "office:whip",
+      "office:cut",
+      "stage:zoom",
+      "stage:smash",
+      "stage:whip",
+      "stage:cut",
+      "farm:whip",
+      "stage:whip",
+      "stage:smash",
+      "office:whip",
+      "farm:dissolve",
+      "farm:whip",
+      "stage:whip",
+      "stage:cut",
+      "ballpark:whip",
+      "ballpark:dissolve",
+      "ballpark:smash",
+      "archive:whip",
+      "archive:cut",
+      "drum:zoom",
+      "drum:cut",
+      "stage:flash",
+      "stage:cut",
+      "office:whip",
+      "office:smash"
+    ],
+    "avg_shot_s": 1.98
   }
 ]

@@ -1,0 +1,120 @@
+{
+  "slug": "2026-11-26-1744",
+  "title": "The Butter Forecast",
+  "film": true,
+  "seed": 17,
+  "tempo": 1.05,
+  "voice_label": "eleven:jackson-v4",
+  "beats": [
+    {
+      "text": "The best stock market forecast ever found ran on butter."
+    },
+    {
+      "text": "Imagine a quant slides you one chart."
+    },
+    {
+      "text": "Butter production in Bangladesh explained seventy-five percent of the stock market's moves."
+    },
+    {
+      "text": "Add American cheese, and the lines got even tighter."
+    },
+    {
+      "text": "Then he threw in sheep, Bangladeshi and American, every last one."
+    },
+    {
+      "text": "Ninety-nine percent. A near-perfect forecast from a farmyard."
+    },
+    {
+      "text": "So why isn't every fund on earth watching cows?"
+    },
+    {
+      "text": "Because outside the years he tested, the magic died."
+    },
+    {
+      "text": "You see, it's like your lucky socks."
+    },
+    {
+      "text": "Wear them to enough games, and some day your team wins anyway."
+    },
+    {
+      "text": "He'd dug through a United Nations database and kept whatever fit the past."
+    },
+    {
+      "text": "Search enough numbers, and pure chance hands you a perfect match."
+    },
+    {
+      "text": "The whole thing was a joke, built to warn investors.",
+      "twist": true
+    },
+    {
+      "text": "And investors still called him, asking for the latest butter numbers.",
+      "finale": true
+    }
+  ],
+  "facts": [
+    {
+      "claim": "In David Leinweber's data-mining demonstration, annual butter production in Bangladesh 'explained' 75% of the variation in the S&P 500 (R-squared 0.75)",
+      "sources": [
+        "https://www.marottaonmoney.com/wp-content/uploads/2023/01/Stupid-Data-Miner-Tricks-Overfitting-The-SP-500.pdf",
+        "https://jasonzweig.com/data-mining-isnt-a-good-bet-for-stock-market-predictions/",
+        "https://www.cbsnews.com/news/what-butter-production-means-for-your-portfolio",
+        "https://en.wikipedia.org/wiki/David_Leinweber"
+      ]
+    },
+    {
+      "claim": "Adding US cheese production (and US butter) raised the fit to about 95%, then adding the sheep population of Bangladesh and the US raised it to 99%",
+      "sources": [
+        "https://www.marottaonmoney.com/wp-content/uploads/2023/01/Stupid-Data-Miner-Tricks-Overfitting-The-SP-500.pdf",
+        "https://jasonzweig.com/data-mining-isnt-a-good-bet-for-stock-market-predictions/",
+        "https://www.fool.com/investing/general/2007/10/12/getting-rich-on-sheep-butter-and-cheese.aspx",
+        "https://en.wikipedia.org/wiki/David_Leinweber"
+      ]
+    },
+    {
+      "claim": "The relationship was useless outside the fitted period ('a total crock before 1983 or after 1993' / 'useless as a predictor before 1983 or after 1999'); sources differ on the exact years, so the narration names none",
+      "sources": [
+        "https://www.marottaonmoney.com/wp-content/uploads/2023/01/Stupid-Data-Miner-Tricks-Overfitting-The-SP-500.pdf",
+        "https://www.fool.com/investing/general/2007/10/12/getting-rich-on-sheep-butter-and-cheese.aspx",
+        "https://www.cbsnews.com/news/what-butter-production-means-for-your-portfolio"
+      ]
+    },
+    {
+      "claim": "The data series were mined from a United Nations database (CD-ROM) of international economic data",
+      "sources": [
+        "https://www.marottaonmoney.com/wp-content/uploads/2023/01/Stupid-Data-Miner-Tricks-Overfitting-The-SP-500.pdf",
+        "https://www.cbsnews.com/news/what-butter-production-means-for-your-portfolio"
+      ]
+    },
+    {
+      "claim": "It was intended as a joke / tongue-in-cheek warning about data mining and overfitting in quantitative investing",
+      "sources": [
+        "https://www.marottaonmoney.com/wp-content/uploads/2023/01/Stupid-Data-Miner-Tricks-Overfitting-The-SP-500.pdf",
+        "https://jasonzweig.com/data-mining-isnt-a-good-bet-for-stock-market-predictions/",
+        "https://www.cbsnews.com/news/what-butter-production-means-for-your-portfolio",
+        "https://en.wikipedia.org/wiki/David_Leinweber"
+      ]
+    },
+    {
+      "claim": "Investors and money managers later contacted him asking for the latest Bangladeshi butter production numbers",
+      "sources": [
+        "https://jasonzweig.com/data-mining-isnt-a-good-bet-for-stock-market-predictions/",
+        "https://www.cbsnews.com/news/what-butter-production-means-for-your-portfolio"
+      ]
+    },
+    {
+      "claim": "Leinweber is not named or depicted (living person); he is referred to only as 'a quant'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/David_Leinweber"
+      ]
+    }
+  ],
+  "caption": "Butter production in Bangladesh once 'explained' 75% of the S&P 500. Add cheese and sheep: 99%.\nIt was a joke about data mining, and it only worked on the past. Investors still asked for the butter numbers.\n\n#backtesting #datamining #stockmarket #investing #longterminvesting #valueinvesting\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+  "yt_title": "Bangladeshi Butter 'Predicted' 75% of the S&P 500. With Sheep, 99%. It Was a Joke",
+  "sources": [
+    "https://www.marottaonmoney.com/wp-content/uploads/2023/01/Stupid-Data-Miner-Tricks-Overfitting-The-SP-500.pdf",
+    "https://jasonzweig.com/data-mining-isnt-a-good-bet-for-stock-market-predictions/",
+    "https://www.fool.com/investing/general/2007/10/12/getting-rich-on-sheep-butter-and-cheese.aspx",
+    "https://www.cbsnews.com/news/what-butter-production-means-for-your-portfolio",
+    "https://en.wikipedia.org/wiki/David_Leinweber"
+  ]
+}

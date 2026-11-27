@@ -1738,5 +1738,69 @@
       "office:smash"
     ],
     "avg_shot_s": 1.98
+  },
+  {
+    "date": "2026-11-27",
+    "slug": "2026-11-27-0143",
+    "title": "Same Number, Thirty-Four Years Later",
+    "yt_title": "1989: Japan's Stocks Hit 60x Earnings. The Nikkei Needed 34 Years to Get Back",
+    "story": "Nikkei 225 record close 38,915.87 on 29 Dec 1989 (last trading day of 1989); low 7,054.98 in March 2009; first close above the record 22 Feb 2024 (39,098.68), 34 years later; P/E about 60 at the peak vs about 16 in 2024; Japan over 40% of world stock value",
+    "sources": [
+      "https://www.nippon.com/en/japan-data/h01927/nikkei-index-sets-first-record-high-since-1989.html",
+      "https://www.rte.ie/news/business/2024/0222/1433805-japans-nikkei-index-hits-new-high",
+      "https://www.bostonglobe.com/2024/02/22/business/japans-nikkei-stock-index-breaks-its-1989-record-surges-an-all-time-high/",
+      "https://www.investing.com/news/stock-market-news/factboxjapans-nikkei-then-and-now-as-shares-near-89-record-3310556",
+      "https://www.nasdaq.com/articles/14-fascinating-facts-about-japanese-stocks-1989-2017-05-23",
+      "https://indexes.nikkei.co.jp/atoz/2018/03/20090310.html",
+      "https://www.rnz.co.nz/news/business/40848/nikkei-stock-index-drops-to-new-low",
+      "https://theglobeandmail.com/investing/investment-ideas/article-japans-crazy-1980s-bubble-a-dim-memory-as-nikkei-hits-record-high/",
+      "https://csmonitor.com/1990/0328/enippon.html",
+      "https://amp.scmp.com/magazines/style/news-trends/article/3091222/japan-1980s-when-tokyos-imperial-palace-was-worth-more"
+    ],
+    "buffer": {
+      "instagram": "6b08cee78899c4e77900812e",
+      "tiktok": "6b08cee770e2a88e2ce17376",
+      "youtube": "skipped (00:30 slot)"
+    },
+    "scheduled": "2026-11-28T00:30:00+02:00",
+    "voice": "eleven:jackson-v4 (143/143 words matched, tempo 1.07)",
+    "duration": 57.7,
+    "sets": [
+      "1989 Tokyo exchange hall: marble walls, a wall of amber LED quote boards (NIKKEI 225 38,915.87 / DEC 29, 1989), trading desks with phones, a 3 o'clock clock, DEC 29 wall calendar, a red BUY ticket STAMPED on the desk on frame 0, paper confetti; later dim and empty (8,109.53 / 2003)",
+      "Ginza-style night street: lit modern facades with SECURITIES/BANK/KARAOKE signs, flickering neon bars, a giant amber quote board on a tower counting up to the record; the same street in cold 2009 rain (7,054.98, an umbrella) and by day in 2024 (39,098.68 NEW RECORD, grey-haired Kenji 'Finally!')",
+      "country club: green fairway, flag on the putting green, COUNTRY CLUB clubhouse, a giant spinning gold GOLF MEMBERSHIP / PRICE: MILLIONS card, the boss holding his club upside down ('Which end?'), Kenji whiffing (MISS)",
+      "red rising-sun metaphor stage: a world-stocks pie chart filling to a 45% red JAPAN slice; a five-bar gold price tower (38,915) with Kenji on top whose floor gives way (CRACK!), four bars vanishing in puffs (7,054, -82%); a giant scale of gold PRICE coins vs green EARNINGS coins (60x -> 16x); a green PROFITS block SLAMS down behind the tower on the last word",
+      "waiting tunnel: deep-blue void, Kenji on a bench beside a draining hourglass, a big calendar flipping 1990 -> 2023, pages flying, 34 YEARS, zz",
+      "suburban lemonade stand (analogy): striped yellow awning, LEMONADE sign, a kid in a yellow cap, a $60 price tag slapping on, bills on the counter, a single coin dropping into a jar ($1 A YEAR), GREAT STAND / TERRIBLE PRICE"
+    ],
+    "shots": [
+      "hall:cut",
+      "hall:whip",
+      "tunnel:whip",
+      "tunnel:cut",
+      "ginza:whip",
+      "ginza:smash",
+      "sun:zoom",
+      "sun:cut",
+      "golf:whip",
+      "golf:cut",
+      "sun:whip",
+      "ginza:whip",
+      "sun:cut",
+      "hall:dissolve",
+      "hall:cut",
+      "lemon:whip",
+      "lemon:cut",
+      "lemon:cut",
+      "lemon:dissolve",
+      "sun:zoom",
+      "sun:dissolve",
+      "ginza:whip",
+      "ginza:smash",
+      "sun:flash",
+      "ginza:whip",
+      "sun:zoom"
+    ],
+    "avg_shot_s": 2.22
   }
 ]

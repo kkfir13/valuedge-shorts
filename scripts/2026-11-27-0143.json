@@ -1,0 +1,127 @@
+{
+  "slug": "2026-11-27-0143",
+  "title": "Same Number, Thirty-Four Years Later",
+  "film": true,
+  "seed": 23,
+  "tempo": 1.07,
+  "voice_label": "eleven:jackson-v4",
+  "beats": [
+    {
+      "text": "Imagine buying Japanese stocks on the last trading day of nineteen eighty-nine."
+    },
+    {
+      "text": "Then you wait thirty-four years for the price to come back."
+    },
+    {
+      "text": "That Friday, Tokyo's Nikkei closes near thirty-nine thousand, a record."
+    },
+    {
+      "text": "Japan is over forty percent of the world's stock market."
+    },
+    {
+      "text": "Your whole office wants a golf membership costing millions, and nobody even plays."
+    },
+    {
+      "text": "Then the floor gives way."
+    },
+    {
+      "text": "By two thousand nine, it's near seven thousand. Over four fifths, gone."
+    },
+    {
+      "text": "So how does a rich country's market stay down for decades?"
+    },
+    {
+      "text": "You see, it's sixty dollars for a lemonade stand earning one dollar a year."
+    },
+    {
+      "text": "Great stand. Terrible price."
+    },
+    {
+      "text": "In eighty-nine, Tokyo cost about sixty times earnings."
+    },
+    {
+      "text": "Profits needed decades to catch up."
+    },
+    {
+      "text": "In February twenty twenty-four, the Nikkei finally beats it."
+    },
+    {
+      "text": "By then it costs about sixteen times earnings.",
+      "twist": true
+    },
+    {
+      "text": "Same number. This time, the profits are actually behind it.",
+      "finale": true
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The Nikkei 225's record close of 38,915.87 was set on 29 December 1989, the last trading day of 1989 (a Friday)",
+      "sources": [
+        "https://www.nippon.com/en/japan-data/h01927/nikkei-index-sets-first-record-high-since-1989.html",
+        "https://www.bostonglobe.com/2024/02/22/business/japans-nikkei-stock-index-breaks-its-1989-record-surges-an-all-time-high/",
+        "https://www.rte.ie/news/business/2024/0222/1433805-japans-nikkei-index-hits-new-high"
+      ]
+    },
+    {
+      "claim": "The Nikkei first closed above that record on 22 February 2024 at 39,098.68, 34 years later",
+      "sources": [
+        "https://www.nippon.com/en/japan-data/h01927/nikkei-index-sets-first-record-high-since-1989.html",
+        "https://www.rte.ie/news/business/2024/0222/1433805-japans-nikkei-index-hits-new-high",
+        "https://www.japantimes.co.jp/business/2024/02/22/markets/japan-stocks-hits-record-high/"
+      ]
+    },
+    {
+      "claim": "At the bubble peak Japanese stocks were more than 40% (about 45%) of global stock market value",
+      "sources": [
+        "https://www.investing.com/news/stock-market-news/factboxjapans-nikkei-then-and-now-as-shares-near-89-record-3310556",
+        "https://www.nasdaq.com/articles/14-fascinating-facts-about-japanese-stocks-1989-2017-05-23",
+        "https://theglobeandmail.com/investing/investment-ideas/article-japans-crazy-1980s-bubble-a-dim-memory-as-nikkei-hits-record-high/"
+      ]
+    },
+    {
+      "claim": "Golf club memberships cost hundreds of millions of yen (400-500 million yen, about US$3.5-3.7 million); a bubble-era worker recalls everyone wanting one though none of them was into golf",
+      "sources": [
+        "https://theglobeandmail.com/investing/investment-ideas/article-japans-crazy-1980s-bubble-a-dim-memory-as-nikkei-hits-record-high/",
+        "https://amp.scmp.com/magazines/style/news-trends/article/3091222/japan-1980s-when-tokyos-imperial-palace-was-worth-more"
+      ]
+    },
+    {
+      "claim": "Post-bubble low close 7,054.98 on 10 March 2009 (a fall of about 82% from 38,915.87)",
+      "sources": [
+        "https://indexes.nikkei.co.jp/atoz/2018/03/20090310.html",
+        "https://www.rnz.co.nz/news/business/40848/nikkei-stock-index-drops-to-new-low",
+        "https://www.nippon.com/en/japan-data/h01927/nikkei-index-sets-first-record-high-since-1989.html"
+      ]
+    },
+    {
+      "claim": "P/E of Nikkei companies about 60 at the 1989 peak (TSE first section ~58 in early 1989; '60 or more' in 1990)",
+      "sources": [
+        "https://www.investing.com/news/stock-market-news/factboxjapans-nikkei-then-and-now-as-shares-near-89-record-3310556",
+        "https://www.nasdaq.com/articles/14-fascinating-facts-about-japanese-stocks-1989-2017-05-23",
+        "https://csmonitor.com/1990/0328/enippon.html"
+      ]
+    },
+    {
+      "claim": "P/E about 16 when the record was regained in February 2024",
+      "sources": [
+        "https://www.investing.com/news/stock-market-news/factboxjapans-nikkei-then-and-now-as-shares-near-89-record-3310556",
+        "https://www.bostonglobe.com/2024/02/22/business/japans-nikkei-stock-index-breaks-its-1989-record-surges-an-all-time-high/"
+      ]
+    }
+  ],
+  "caption": "Buy Japanese stocks on the last trading day of 1989 and the Nikkei takes 34 years to get back to your price.\nIn 1989 the market cost about 60 times earnings. When the record finally fell in 2024, about 16.\n\n#stockmarkethistory #valuation #valueinvesting #investing #longterminvesting #japan\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+  "yt_title": "1989: Japan's Stocks Hit 60x Earnings. The Nikkei Needed 34 Years to Get Back",
+  "sources": [
+    "https://www.nippon.com/en/japan-data/h01927/nikkei-index-sets-first-record-high-since-1989.html",
+    "https://www.rte.ie/news/business/2024/0222/1433805-japans-nikkei-index-hits-new-high",
+    "https://www.bostonglobe.com/2024/02/22/business/japans-nikkei-stock-index-breaks-its-1989-record-surges-an-all-time-high/",
+    "https://www.investing.com/news/stock-market-news/factboxjapans-nikkei-then-and-now-as-shares-near-89-record-3310556",
+    "https://www.nasdaq.com/articles/14-fascinating-facts-about-japanese-stocks-1989-2017-05-23",
+    "https://indexes.nikkei.co.jp/atoz/2018/03/20090310.html",
+    "https://www.rnz.co.nz/news/business/40848/nikkei-stock-index-drops-to-new-low",
+    "https://theglobeandmail.com/investing/investment-ideas/article-japans-crazy-1980s-bubble-a-dim-memory-as-nikkei-hits-record-high/",
+    "https://csmonitor.com/1990/0328/enippon.html",
+    "https://amp.scmp.com/magazines/style/news-trends/article/3091222/japan-1980s-when-tokyos-imperial-palace-was-worth-more"
+  ]
+}

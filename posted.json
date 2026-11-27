@@ -1872,5 +1872,77 @@
       "cert:zoom"
     ],
     "avg_shot_s": 2.04
+  },
+  {
+    "date": "2026-11-27",
+    "slug": "2026-11-27-1744",
+    "title": "Trust Only Each Other",
+    "yt_title": "1792: He Borrowed From Everyone and Crashed. Two Months Later, the NYSE's Founding Deal",
+    "story": "Panic of 1792: William Duer, Hamilton's former Treasury assistant, borrowed from everyone and with rich partner Alexander Macomb tried to corner US government bonds, endorsing each other's notes; in March 1792 he stopped paying, prices fell 20%+ in weeks, he went to debtors' prison (died there 1799); on May 17, 1792, 24 brokers signed the Buttonwood Agreement (legend: under a buttonwood tree): minimum 1/4% commission and preference to each other; it grew into the NYSE",
+    "sources": [
+      "https://libertystreeteconomics.newyorkfed.org/2014/05/crisis-chronicles-central-bank-crisis-management-during-wall-streets-first-crash-1792",
+      "https://conference.nber.org/confer/2006/si2006/dae/sylla.pdf",
+      "https://sechistorical.org/museum/galleries/sro/sro02b.php",
+      "https://americanheritage.com/great-crash-1792",
+      "https://en.wikipedia.org/wiki/Panic_of_1792",
+      "https://en.wikipedia.org/wiki/William_Duer_(Continental_congressman)",
+      "https://en.wikipedia.org/wiki/Buttonwood_Agreement",
+      "https://www.history.com/articles/new-york-stock-exchange-origin-buttonwood-agreement-tree",
+      "https://time.com/4777959/buttonwood-agreement-stock-exchange",
+      "https://www.cambridge.org/core/journals/prospects/article/how-the-buttonwood-tree-grew-the-making-of-a-new-york-stock-exchange-legend/68D4F4577C720CFC004C6BB6076D46F6"
+    ],
+    "buffer": {
+      "instagram": "6b09af73015034238d40a730",
+      "tiktok": "6b09af73b83ec61257e26cfb",
+      "youtube": "6b09af7434d224b14a9bceac"
+    },
+    "scheduled": "2026-11-28T16:30:00+02:00",
+    "retry": null,
+    "voice": "eleven:jackson-v4",
+    "voice_note": "ElevenLabs Jackson eleven_v4, transcript matched 148/148 words, tempo 1.08 (raw read 61.0 s)",
+    "video_url": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-27/2026-11-27-1744.mp4",
+    "mode": "film",
+    "era": "1792",
+    "duration": 57.166667,
+    "sets": [
+      "plum metaphor stage: frame 0 a teetering tower of IOU paper bundles (red ribbons, BONDS on top) with Duer waving on top; it topples on 'crash'; later rebuilt block by block (BORROWED / CORNER THE BONDS) and left as rubble with a WALL ST sign and lenders holding IOUs",
+      "1792 Wall Street: cobbles, low brick/plaster fronts (COFFEE HOUSE, AUCTIONS, BROKER, TAVERN), lamp posts, Duer's brick front door 'W. DUER, ESQ.' (lenders with money bags by day, door slammed by night), a giant buttonwood tree with a deal table and parchment, a columned STOCK EXCHANGE that rises out of the cobbles; MEMBERS ONLY doors SLAM on the last word",
+      "Duer's candle-lit study: green wallpaper, desk nameplate W. DUER · TREASURY, BONDS 6% frame, an empty CASH chest (puff of dust), two IOU notes swapping across the desk",
+      "coffee house interior: plaster walls, round tables, a chalk price board 'U.S. BONDS' whose line dives (-20%)",
+      "stone debtors' prison cell: bars, sliding barred door (CLANG), high barred window, stool, cold light",
+      "kitchen pantry (analogy): tiled walls, red/white checker floor, tall shelf with a GAINS jar on top, you on Ned's shoulders, WOBBLE, both hit the floor (BONK)"
+    ],
+    "shots": [
+      "tower:cut",
+      "tower:cut",
+      "wall:whip",
+      "wall:cut",
+      "study:dissolve",
+      "study:cut",
+      "tower:zoom",
+      "study:cut",
+      "study:cut",
+      "wall:whip",
+      "coffee:whip",
+      "coffee:cut",
+      "prison:smash",
+      "tower:dissolve",
+      "pantry:whip",
+      "pantry:cut",
+      "pantry:cut",
+      "pantry:cut",
+      "wall:whip",
+      "wall:cut",
+      "wall:dissolve",
+      "wall:cut",
+      "wall:cut",
+      "wall:dissolve",
+      "wall:cut",
+      "prison:cut",
+      "tower:whip",
+      "wall:whip",
+      "wall:cut"
+    ],
+    "avg_shot_s": 1.97
   }
 ]

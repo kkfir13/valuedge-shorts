@@ -1,0 +1,140 @@
+{
+  "slug": "2026-11-27-1744",
+  "title": "Trust Only Each Other",
+  "film": true,
+  "seed": 1792,
+  "tempo": 1.08,
+  "voice_label": "eleven:jackson-v4",
+  "beats": [
+    {
+      "text": "The world's most famous stock exchange was born from a crash."
+    },
+    {
+      "text": "New York, seventeen ninety-two. Everyone wants to lend to William Duer."
+    },
+    {
+      "text": "He was Hamilton's assistant at the Treasury."
+    },
+    {
+      "text": "With rich partner Alexander Macomb, he borrows big to corner government bonds."
+    },
+    {
+      "text": "Short of cash? They sign each other's notes."
+    },
+    {
+      "text": "Then, in March, Duer stops paying."
+    },
+    {
+      "text": "Prices fall over twenty percent in weeks. Duer lands in debtors' prison."
+    },
+    {
+      "text": "So how did that build Wall Street?"
+    },
+    {
+      "text": "You see, borrowing is standing on a friend's shoulders to reach the top shelf."
+    },
+    {
+      "text": "When he wobbles, you both hit the floor."
+    },
+    {
+      "text": "Two months later, you and twenty-three brokers sign a deal."
+    },
+    {
+      "text": "Legend says, under a buttonwood tree."
+    },
+    {
+      "text": "A minimum fee, and you trade with each other first."
+    },
+    {
+      "text": "That deal grew into the New York Stock Exchange. Duer never left prison.",
+      "twist": true
+    },
+    {
+      "text": "He'd borrowed from everybody. So the brokers agreed to trust only each other.",
+      "finale": true
+    }
+  ],
+  "facts": [
+    {
+      "claim": "William Duer had been Assistant Secretary of the Treasury under Alexander Hamilton (from 1789), a former Treasury official and Hamilton's friend",
+      "sources": [
+        "https://americanheritage.com/great-crash-1792",
+        "https://en.wikipedia.org/wiki/William_Duer_(Continental_congressman)",
+        "https://libertystreeteconomics.newyorkfed.org/2014/05/crisis-chronicles-central-bank-crisis-management-during-wall-streets-first-crash-1792",
+        "https://conference.nber.org/confer/2006/si2006/dae/sylla.pdf"
+      ]
+    },
+    {
+      "claim": "Many were eager to lend Duer money; with his wealthy partner Alexander Macomb he borrowed heavily in an attempt to corner/gain control of the market in US government debt securities (late 1791 - early 1792)",
+      "sources": [
+        "https://americanheritage.com/great-crash-1792",
+        "https://en.wikipedia.org/wiki/Panic_of_1792",
+        "https://libertystreeteconomics.newyorkfed.org/2014/05/crisis-chronicles-central-bank-crisis-management-during-wall-streets-first-crash-1792"
+      ]
+    },
+    {
+      "claim": "Duer and Macomb created their own credit by endorsing one another's notes",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Panic_of_1792",
+        "https://conference.nber.org/confer/2006/si2006/dae/sylla.pdf"
+      ]
+    },
+    {
+      "claim": "Duer stopped paying his creditors in March 1792 (March 9); securities prices fell more than 20% within weeks (nearly a quarter in two weeks)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Panic_of_1792",
+        "https://libertystreeteconomics.newyorkfed.org/2014/05/crisis-chronicles-central-bank-crisis-management-during-wall-streets-first-crash-1792",
+        "https://conference.nber.org/confer/2006/si2006/dae/sylla.pdf"
+      ]
+    },
+    {
+      "claim": "Duer was put in debtors' prison in March 1792 (Macomb followed in April) and never got out; he died there in 1799",
+      "sources": [
+        "https://americanheritage.com/great-crash-1792",
+        "https://en.wikipedia.org/wiki/William_Duer_(Continental_congressman)",
+        "https://en.wikipedia.org/wiki/Panic_of_1792"
+      ]
+    },
+    {
+      "claim": "On May 17, 1792, two months after the panic, 24 brokers signed the Buttonwood Agreement; legend says under a buttonwood tree on Wall Street (the document itself mentions no tree)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Buttonwood_Agreement",
+        "https://www.history.com/articles/new-york-stock-exchange-origin-buttonwood-agreement-tree",
+        "https://time.com/4777959/buttonwood-agreement-stock-exchange",
+        "https://sechistorical.org/museum/galleries/sro/sro02b.php",
+        "https://libertystreeteconomics.newyorkfed.org/2014/05/crisis-chronicles-central-bank-crisis-management-during-wall-streets-first-crash-1792",
+        "https://www.cambridge.org/core/journals/prospects/article/how-the-buttonwood-tree-grew-the-making-of-a-new-york-stock-exchange-legend/68D4F4577C720CFC004C6BB6076D46F6"
+      ]
+    },
+    {
+      "claim": "Terms: no commission less than one quarter percent, and 'we will give a preference to each other in our negotiations'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Buttonwood_Agreement",
+        "https://sechistorical.org/museum/galleries/sro/sro02b.php"
+      ]
+    },
+    {
+      "claim": "The agreement is regarded as the origin of what became the New York Stock Exchange (New York Stock & Exchange Board, 1817)",
+      "sources": [
+        "https://libertystreeteconomics.newyorkfed.org/2014/05/crisis-chronicles-central-bank-crisis-management-during-wall-streets-first-crash-1792",
+        "https://sechistorical.org/museum/galleries/sro/sro02b.php",
+        "https://www.history.com/articles/new-york-stock-exchange-origin-buttonwood-agreement-tree",
+        "https://conference.nber.org/confer/2006/si2006/dae/sylla.pdf"
+      ]
+    }
+  ],
+  "caption": "1792: William Duer, Hamilton's former Treasury assistant, borrowed from everyone to corner government bonds. In March he stopped paying, prices fell over 20%, and he went to debtors' prison.\nTwo months later 24 brokers signed a short deal: a minimum fee, and trade with each other first. It grew into the New York Stock Exchange.\n\n#stockmarkethistory #wallstreet #leverage #investing #longterminvesting #valueinvesting\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+  "yt_title": "1792: He Borrowed From Everyone and Crashed. Two Months Later, the NYSE's Founding Deal",
+  "sources": [
+    "https://libertystreeteconomics.newyorkfed.org/2014/05/crisis-chronicles-central-bank-crisis-management-during-wall-streets-first-crash-1792",
+    "https://conference.nber.org/confer/2006/si2006/dae/sylla.pdf",
+    "https://sechistorical.org/museum/galleries/sro/sro02b.php",
+    "https://americanheritage.com/great-crash-1792",
+    "https://en.wikipedia.org/wiki/Panic_of_1792",
+    "https://en.wikipedia.org/wiki/William_Duer_(Continental_congressman)",
+    "https://en.wikipedia.org/wiki/Buttonwood_Agreement",
+    "https://www.history.com/articles/new-york-stock-exchange-origin-buttonwood-agreement-tree",
+    "https://time.com/4777959/buttonwood-agreement-stock-exchange",
+    "https://www.cambridge.org/core/journals/prospects/article/how-the-buttonwood-tree-grew-the-making-of-a-new-york-stock-exchange-legend/68D4F4577C720CFC004C6BB6076D46F6"
+  ]
+}

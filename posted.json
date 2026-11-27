@@ -1802,5 +1802,75 @@
       "sun:zoom"
     ],
     "avg_shot_s": 2.22
+  },
+  {
+    "date": "2026-11-27",
+    "slug": "2026-11-27-0944",
+    "title": "Paid in Engine Parts",
+    "yt_title": "1903: Two Brothers Got 10% of Ford for Engine Parts. They Sued Over Dividends. $25 Million",
+    "story": "Dodge v. Ford: Henry Ford couldn't pay the Dodge brothers' machine-shop bill in 1903, so $10,000 of parts bought 10% of Ford; dividends poured in; in 1916 Ford stopped special dividends to build cheaper cars; the Dodges sued; 1919 Michigan Supreme Court: a company is run primarily for the profit of the stockholders, ~$19.3M dividend; Ford announced a new company with a cheaper car and bought all minority shares by July 1919; the Dodges got $25M",
+    "sources": [
+      "https://ophelia.sdsu.edu:8443/henryford_org/09-28-2014/exhibits/pic/2003/fordcheckbook/investors.asp.html",
+      "https://ophelia.sdsu.edu:8443/henryford_org/03-23-2014/exhibits/pic/2003/fordcheckbook/dodge.asp.html",
+      "https://askus.thehenryford.org/researchguides/faq/414680",
+      "https://en.wikipedia.org/wiki/Dodge_v._Ford_Motor_Co.",
+      "https://corpgov.law.harvard.edu/2021/12/01/dodge-v-ford-what-happened-and-why/",
+      "https://www.britannica.com/money/Henry-Ford/Control-of-the-company",
+      "https://www.history.com/this-day-in-history/january-14/dodge-co-founder-dies",
+      "https://americancarhistorian.com/tag/dodge-v-ford/",
+      "https://automotivehistory.org/?p=26259",
+      "https://jalopnik.com/bar-fights-lawsuits-and-the-flu-pandemic-the-war-betw-1830081587"
+    ],
+    "buffer": {
+      "instagram": "6b093fed1fd46e62e7288abe",
+      "tiktok": "6b093fee049983dcfba0fb1a",
+      "youtube": "6b093fef776ce21276fd5a64"
+    },
+    "scheduled": "2026-11-28T08:30:00+02:00",
+    "retry": null,
+    "voice": "eleven:jackson-v4",
+    "voice_note": "ElevenLabs Jackson eleven_v4, transcript matched 144/144 words, tempo 1.05",
+    "video_url": "https://raw.githubusercontent.com/kkfir13/valuedge-shorts/media/media/2026-11-27/2026-11-27-0944.mp4",
+    "mode": "film",
+    "era": "1903-1919",
+    "duration": 55.133333,
+    "sets": [
+      "teal stock-certificate stage (metaphor): an engine block THUDS onto a gold pedestal on frame 0 under a giant 10-slice FORD MOTOR COMPANY certificate; a gold 10% slice slides out to the brothers; a gold DIVIDENDS pipe pouring coins into a money bag, a red valve Henry cranks shut, then bursting open ($19 MILLION, confetti); slices turning FORD-blue as shareholders sell; a giant stamp SLAMS 100% FORD on the last word",
+      "Dodge Brothers machine shop at night: brick walls, DODGE BROTHERS MACHINE SHOP sign, belt-drive wheel, workbench of engines/axles/gears, Henry shrugging with John's BILL ('Take shares instead?'); later the parts heap turning into gold bars, cash and coins ($25,000,000)",
+      "Detroit brick street 1903/1910s: cobbles, gas lamps, DETROIT banner, shops; black Model Ts rolling past the brothers",
+      "Henry's factory: brick hall, assembly line of black car bodies, FORD MOTOR CO. sign, 1916 calendar, blueprint easel (MORE FACTORIES / CHEAPER CARS -> NEW COMPANY / CHEAPER CAR), desk where the LAWSUIT slaps down, spinning newspaper FORD PLANS NEW COMPANY",
+      "Michigan Supreme Court courtroom: panelled walls, raised bench, scales, judge in black, ruling scroll 'For the profit of the stockholders', gavel BANG, CASE: LOST tag on Henry",
+      "John & Sal's pizzeria (analogy): tiled walls, counter, a six-slice pizza, partner Sal sweeping every slice into a brick oven that swells ('For the oven!')"
+    ],
+    "shots": [
+      "cert:cut",
+      "cert:cut",
+      "detroit:whip",
+      "shop:cut",
+      "shop:dissolve",
+      "cert:zoom",
+      "detroit:whip",
+      "cert:whip",
+      "plant:whip",
+      "cert:whip",
+      "plant:smash",
+      "court:dissolve",
+      "court:cut",
+      "pizza:whip",
+      "pizza:cut",
+      "court:whip",
+      "court:cut",
+      "court:cut",
+      "cert:whip",
+      "plant:whip",
+      "plant:cut",
+      "cert:dissolve",
+      "cert:cut",
+      "shop:dissolve",
+      "shop:cut",
+      "court:whip",
+      "cert:zoom"
+    ],
+    "avg_shot_s": 2.04
   }
 ]

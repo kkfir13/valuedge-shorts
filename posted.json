@@ -1986,5 +1986,43 @@
     ],
     "shots": 29,
     "avg_shot_s": 1.94
+  },
+  {
+    "date": "2026-11-28",
+    "slug": "2026-11-28-0943",
+    "title": "The Ones Who Stayed",
+    "yt_title": "1973-74: Charlie Munger Lost Over Half His Partners' Money. Then Came 1975",
+    "story": "Charlie Munger's partnership (Wheeler, Munger & Co.), 1962-75: no losing year 1962-69, then 1973 -31.9% and 1974 -31.5% (a dollar became ~47 cents), 1975 +73.2%; 19.8% a year vs the Dow's 5.0% over fourteen years, $1 -> $12.57; 2009 BBC: if you can't handle a 50% drop 'you deserve the mediocre result you're going to get'. Fictional everyman Hank cashes out at the bottom; movie analogy",
+    "sources": [
+      "https://www.lapasserelle.com/courses/advanced_finance/documents/TheSuperinvestorsofGraham-and-Doddsville-WarrenE.Buffett.pdf",
+      "https://business.columbia.edu/insights/chazen-global-insights/superinvestors-graham-and-doddsville",
+      "https://www.gurufocus.com/news/1355608",
+      "https://g.foolcdn.com/EveningNews/foth/1999/foth990415.htm",
+      "https://en.wikipedia.org/wiki/Charlie_Munger",
+      "https://www.nbcnews.com/business/business-news/charlie-munger-investing-genius-warren-buffetts-right-hand-man-dies-99-rcna127076",
+      "https://fhmagazine.org/mag/0678390001707395176/p14",
+      "https://www.dailyjournal.com/articles/375936-charles-t-munger-1924-2023",
+      "https://www.nbclosangeles.com/news/business/money-report/charlie-mungers-advice-for-volatile-markets-if-you-cant-handle-swings-you-deserve-the-mediocre-result/3675495",
+      "https://finance.yahoo.com/news/charlie-mungers-brutal-truth-investors-131630883.html"
+    ],
+    "buffer": {
+      "instagram": "6b0a90b2c84d4c572b488a48",
+      "tiktok": "6b0a90bd51953b4559374fff",
+      "youtube": "6b0a90beced9496800a90337"
+    },
+    "scheduled": "2026-11-29T08:30:00+02:00",
+    "voice": "eleven:jackson-v4 (144/144 words matched, tempo 1.08)",
+    "duration": 57.7,
+    "sets": [
+      "cobalt metaphor stage: frame 0 a red coaster cart already clanking up a giant roller coaster shaped like the partnership's ride (YOU, YOUR SAVINGS, Munger 'Hold on.'), crest 1972, plunge 1973 (-32%), a deep valley with an EXIT platform (1974) where Hank gets off, a higher second peak 1975 (+73%, confetti, THE WHOLE RIDE); payoff a tin MEDIOCRE cup CLANGs onto Hank's head",
+      "sunny 1962 Los Angeles: stucco shop fronts (DINER, LAW OFFICES, MOTEL), palms, LOS ANGELES sign, a pink convertible cruising past, Munger in a grey suit",
+      "Munger's 1960s partnership office: gold wallpaper, WHEELER, MUNGER & CO. door glass, desk with a green ticker screen, you hand over a money bag, a coin stack growing $1 -> $12.57",
+      "your orange 1974 den: wood-box TV with a red crash line (-31%), brown sofa, coffee table with a $1 bill shrinking to 47 cents, Hank marching out the door 'Told you so!'",
+      "mustard bar-chart stage: fourteen yearly bars of $1's value ('62-'75, red dips '73-'74, gold '75), then MUNGER 19.8% vs DOW 5%",
+      "red-velvet movie theatre (analogy): rows of red seats, a shadow monster with yellow eyes rearing on the screen (BOO!), green EXIT door, ticket stamped YOU SAW: WORST 20 MIN",
+      "2009 interview studio: dark blue panels, armchairs, white-haired Munger stern in an armchair"
+    ],
+    "shots": 29,
+    "avg_shot_s": 1.99
   }
 ]

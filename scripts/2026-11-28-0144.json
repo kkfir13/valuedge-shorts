@@ -1,0 +1,161 @@
+{
+ "slug": "2026-11-28-0144",
+ "title": "The Locked Box",
+ "film": true,
+ "seed": 1911,
+ "tempo": 1.05,
+ "voice_label": "eleven:jackson-v4",
+ "beats": [
+  {
+   "text": "In nineteen eleven, Standard Oil got smashed into thirty-four pieces. And John D. Rockefeller got richer."
+  },
+  {
+   "text": "Imagine you own its stock."
+  },
+  {
+   "text": "It once refined nine of every ten American barrels, and it loved secrets."
+  },
+  {
+   "text": "Then the Supreme Court gives it six months to split up."
+  },
+  {
+   "text": "Your one stock becomes thirty-four, a slice of every piece."
+  },
+  {
+   "text": "Rockefeller owns a quarter. Surely, this ends him."
+  },
+  {
+   "text": "Two years later, the pieces are worth twice the old whole."
+  },
+  {
+   "text": "And Rockefeller's fortune triples."
+  },
+  {
+   "text": "So how does chopping something up make it bigger?"
+  },
+  {
+   "text": "You see, picture a locked toolbox at a yard sale."
+  },
+  {
+   "text": "Open it, tag every tool, and the same stuff sells for more."
+  },
+  {
+   "text": "Standard Oil was that locked box."
+  },
+  {
+   "text": "The breakup made investors look inside and price every piece."
+  },
+  {
+   "text": "Same refineries. Same pipelines. Same oil.",
+   "twist": true
+  },
+  {
+   "text": "The court didn't shrink Rockefeller. It opened his box.",
+   "finale": true
+  }
+ ],
+ "facts": [
+  {
+   "claim": "US Supreme Court ruled on May 15, 1911 that Standard Oil be dissolved",
+   "sources": [
+    "https://www.fool.com/investing/general/2013/05/15/the-day-big-oil-was-broken.aspx",
+    "https://www.abajournal.com/magazine/article/may-15-1911-supreme-court-orders-standard-oil-breakup",
+    "https://www.wikiwand.com/en/articles/Breakup_of_Standard_Oil",
+    "https://www.saturdayeveningpost.com/sep-keyword/standard-oil/"
+   ]
+  },
+  {
+   "claim": "Broken into 34 companies (Britannica/one wiki section say 33; ABA says 37 - narration uses 34, the majority figure)",
+   "sources": [
+    "https://blogs.loc.gov/inside_adams/2020/01/rockefeller-billionaire/",
+    "https://www.fool.com/investing/general/2013/05/15/the-day-big-oil-was-broken.aspx",
+    "https://www.investmentoffice.com/Observations/Markets_in_History/The_First_Billion-Dollar_Company.html",
+    "https://learnorbis.com/encyclopedia/standard-oil",
+    "https://uk.finance.yahoo.com/news/happened-worlds-first-billionaires-fortune-160000879.html",
+    "https://jpt.spe.org/twa/john-d-rockefeller-the-man-who-built-america"
+   ]
+  },
+  {
+   "claim": "Six months to carry out the breakup",
+   "sources": [
+    "https://www.fool.com/investing/general/2013/05/15/the-day-big-oil-was-broken.aspx",
+    "https://uk.finance.yahoo.com/news/happened-worlds-first-billionaires-fortune-160000879.html",
+    "https://en.wikipedia.org/wiki/History_of_United_States_antitrust_law"
+   ]
+  },
+  {
+   "claim": "Standard Oil controlled about 90% of American refining (1879 / late 1880s)",
+   "sources": [
+    "https://blogs.loc.gov/inside_adams/2020/01/rockefeller-billionaire/",
+    "https://www.abajournal.com/magazine/article/may-15-1911-supreme-court-orders-standard-oil-breakup",
+    "https://www.saturdayeveningpost.com/sep-keyword/standard-oil/"
+   ]
+  },
+  {
+   "claim": "Standard Oil was secretive (secret subsidiaries, secret trust agreement, no full accounts of subsidiaries)",
+   "sources": [
+    "https://www.ebsco.com/research-starters/history/standard-oil-company-incorporated",
+    "https://wellwiki.org/wiki/Standard_Oil",
+    "https://www.investmentoffice.com/Observations/Markets_in_History/The_First_Billion-Dollar_Company.html"
+   ]
+  },
+  {
+   "claim": "Every shareholder received a pro rata slice of shares in each of the 34 companies",
+   "sources": [
+    "https://www.investmentoffice.com/Observations/Markets_in_History/The_First_Billion-Dollar_Company.html",
+    "https://www.investmentoffice.com/Observations/Markets_in_History/Goodbye_to_a_Legacy_Exxon_Mobil.html",
+    "https://learnorbis.com/encyclopedia/standard-oil"
+   ]
+  },
+  {
+   "claim": "Rockefeller owned about a quarter of the shares (SPE: nearly 30%)",
+   "sources": [
+    "https://www.investmentoffice.com/Observations/Markets_in_History/The_First_Billion-Dollar_Company.html",
+    "https://wellwiki.org/wiki/Standard_Oil",
+    "https://jpt.spe.org/twa/john-d-rockefeller-the-man-who-built-america"
+   ]
+  },
+  {
+   "claim": "Within about two years the pieces were worth roughly double (GFD: combined ~$665M in 1911 vs ~$1,263M in 1913; PSU: 1913 value doubled; wellwiki: share values mostly doubled)",
+   "sources": [
+    "https://www.investmentoffice.com/Observations/Markets_in_History/Goodbye_to_a_Legacy_Exxon_Mobil.html",
+    "https://courses.ems.psu.edu/egee120/node/510",
+    "https://wellwiki.org/wiki/Standard_Oil"
+   ]
+  },
+  {
+   "claim": "Rockefeller's fortune tripled after the breakup (Orbis: ~$300M to ~$900M in two years)",
+   "sources": [
+    "https://emerald.com/insight/content/doi/10.1016/S0193-5895(04)21002-8/full/html",
+    "https://learnorbis.com/encyclopedia/standard-oil"
+   ]
+  },
+  {
+   "claim": "The breakup forced investors to investigate the true value of Standard Oil and its subsidiaries; the pieces were worth more separately than as one",
+   "sources": [
+    "https://www.investmentoffice.com/Observations/Markets_in_History/The_First_Billion-Dollar_Company.html",
+    "https://learnorbis.com/encyclopedia/standard-oil",
+    "https://www.fool.com/investing/general/2013/05/15/the-day-big-oil-was-broken.aspx"
+   ]
+  }
+ ],
+ "caption": "1911: the Supreme Court broke Standard Oil into 34 companies, and every shareholder got a slice of each.\nTwo years later the pieces were worth about twice the old whole, and Rockefeller's fortune had tripled. Same refineries, same oil: investors could finally price every piece.\n\n#stockmarkethistory #sumoftheparts #shareholders #investing #longterminvesting #valueinvesting\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+ "yt_title": "1911: Standard Oil Was Broken Into 34 Pieces. Two Years Later, Worth Twice as Much",
+ "sources": [
+  "https://blogs.loc.gov/inside_adams/2020/01/rockefeller-billionaire/",
+  "https://www.abajournal.com/magazine/article/may-15-1911-supreme-court-orders-standard-oil-breakup",
+  "https://www.fool.com/investing/general/2013/05/15/the-day-big-oil-was-broken.aspx",
+  "https://www.investmentoffice.com/Observations/Markets_in_History/The_First_Billion-Dollar_Company.html",
+  "https://www.investmentoffice.com/Observations/Markets_in_History/Goodbye_to_a_Legacy_Exxon_Mobil.html",
+  "https://learnorbis.com/encyclopedia/standard-oil",
+  "https://emerald.com/insight/content/doi/10.1016/S0193-5895(04)21002-8/full/html",
+  "https://courses.ems.psu.edu/egee120/node/510",
+  "https://wellwiki.org/wiki/Standard_Oil",
+  "https://www.ebsco.com/research-starters/history/standard-oil-company-incorporated",
+  "https://jpt.spe.org/twa/john-d-rockefeller-the-man-who-built-america",
+  "https://uk.finance.yahoo.com/news/happened-worlds-first-billionaires-fortune-160000879.html",
+  "https://www.saturdayeveningpost.com/sep-keyword/standard-oil/",
+  "https://www.wikiwand.com/en/articles/Breakup_of_Standard_Oil",
+  "https://en.wikipedia.org/wiki/History_of_United_States_antitrust_law"
+ ]
+}

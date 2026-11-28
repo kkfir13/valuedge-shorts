@@ -1944,5 +1944,47 @@
       "wall:cut"
     ],
     "avg_shot_s": 1.97
+  },
+  {
+    "date": "2026-11-28",
+    "slug": "2026-11-28-0144",
+    "title": "The Locked Box",
+    "yt_title": "1911: Standard Oil Was Broken Into 34 Pieces. Two Years Later, Worth Twice as Much",
+    "story": "Standard Oil breakup: on May 15, 1911 the Supreme Court gave it six months to split; it became 34 companies and every shareholder got a slice of each; Rockefeller owned about a quarter; two years later the pieces were worth about twice the old whole and his fortune had tripled; the secretive giant had been a locked box and the breakup made investors price every piece",
+    "sources": [
+      "https://blogs.loc.gov/inside_adams/2020/01/rockefeller-billionaire/",
+      "https://www.abajournal.com/magazine/article/may-15-1911-supreme-court-orders-standard-oil-breakup",
+      "https://www.fool.com/investing/general/2013/05/15/the-day-big-oil-was-broken.aspx",
+      "https://www.investmentoffice.com/Observations/Markets_in_History/The_First_Billion-Dollar_Company.html",
+      "https://www.investmentoffice.com/Observations/Markets_in_History/Goodbye_to_a_Legacy_Exxon_Mobil.html",
+      "https://learnorbis.com/encyclopedia/standard-oil",
+      "https://emerald.com/insight/content/doi/10.1016/S0193-5895(04)21002-8/full/html",
+      "https://courses.ems.psu.edu/egee120/node/510",
+      "https://wellwiki.org/wiki/Standard_Oil",
+      "https://www.ebsco.com/research-starters/history/standard-oil-company-incorporated",
+      "https://jpt.spe.org/twa/john-d-rockefeller-the-man-who-built-america",
+      "https://uk.finance.yahoo.com/news/happened-worlds-first-billionaires-fortune-160000879.html",
+      "https://www.saturdayeveningpost.com/sep-keyword/standard-oil/",
+      "https://www.wikiwand.com/en/articles/Breakup_of_Standard_Oil",
+      "https://en.wikipedia.org/wiki/History_of_United_States_antitrust_law"
+    ],
+    "buffer": {
+      "instagram": "6b0a210deab081a3f50d0ac1",
+      "tiktok": "6b0a210eeada83daa6afdd22",
+      "youtube": "skipped (00:30 slot)"
+    },
+    "scheduled": "2026-11-29T00:30:00+02:00",
+    "voice": "eleven:jackson-v4 (140/140 words matched)",
+    "duration": 56.133333,
+    "sets": [
+      "burnt-orange metaphor stage: frame 0 a giant mallet falls on a black STANDARD OIL drum (SMASH!) which bursts into 34 small orange-banded drums in a grid (34 COMPANIES); share certificates drop onto each drum; drums swell in 1913; a two-bar chart 1911 vs 1913 (x2); later a price tag pops on every drum",
+      "1911 refinery yard: white storage tanks (S.O. No. 1), brick smokestacks with smoke, pipe rack, a row of ten blue barrels hopping (9 OF EVERY 10), a PRIVATE / KEEP OUT gate where Rockefeller says 'Shh. Private.'; same yard at dusk for the twist",
+      "Edwardian investor's parlor: mauve wallpaper, red armchair, framed STANDARD OIL CO. One Share certificate, newspaper 'STANDARD OIL MUST SPLIT UP', hourglass (6 MONTHS), a fan of 34 share certificates bursting out, 'He's finished!'",
+      "Rockefeller's panelled office: desk with ticker, STANDARD OIL CO. plaque, pie-chart easel filling a gold quarter (ABOUT 1/4), three money bags thumping down (FORTUNE x3)",
+      "sunny yard sale (analogy): house, fence, YARD SALE sign, seller Gus, a locked red toolbox with a $2 tag ('Two bucks, tops.'), lid flips open, tools pop out with tags $5 $8 $4 $9 $3, buyers crowd in, TOTAL: $29",
+      "navy vault stage: a giant chained STANDARD OIL chest with a gold padlock; chains SNAP off, investors gather, the lid cracks with light; on the last word the lid blasts OPEN in coins and confetti"
+    ],
+    "shots": 29,
+    "avg_shot_s": 1.94
   }
 ]

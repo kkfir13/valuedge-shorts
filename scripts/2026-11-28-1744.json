@@ -1,0 +1,147 @@
+{
+  "slug": "2026-11-28-1744",
+  "title": "The Promise on the Goatskin",
+  "film": true,
+  "seed": 7,
+  "tempo": 1.05,
+  "voice_label": "eleven:jackson-v4",
+  "beats": [
+    {
+      "text": "A loan from sixteen forty-eight still pays interest today."
+    },
+    {
+      "text": "Imagine you run a Dutch water board, and the river's eating your dike."
+    },
+    {
+      "text": "So you write a promise on goatskin."
+    },
+    {
+      "text": "Lend us a thousand guilders, and we'll pay five percent. Forever."
+    },
+    {
+      "text": "A man named Niclaes de Meijer signs."
+    },
+    {
+      "text": "Soon the rate gets halved, but the payments keep coming."
+    },
+    {
+      "text": "They're scribbled on the goatskin till it's full, so they attach paper."
+    },
+    {
+      "text": "In two thousand three, Yale buys it at auction."
+    },
+    {
+      "text": "Twelve years later, it collects. One hundred thirty-six euros, for twelve years."
+    },
+    {
+      "text": "So where did the money go?"
+    },
+    {
+      "text": "You see, it's like grandma's birthday card with the same five dollars, every year."
+    },
+    {
+      "text": "The card never changes. What five dollars buys does."
+    },
+    {
+      "text": "Prices rose for centuries, and every coin shrank."
+    },
+    {
+      "text": "Today, forever pays eleven euros thirty-five a year."
+    },
+    {
+      "text": "Every promise was kept.",
+      "twist": true
+    },
+    {
+      "text": "The money just melted.",
+      "finale": true
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Bond issued 1648 (May 15, 1648) by water board Hoogheemraadschap Lekdijk Bovendams for work on the dike/river Lek",
+      "sources": [
+        "https://news.yale.edu/2015/09/22/living-artifact-dutch-golden-age-yale-s-367-year-old-water-bond-still-pays-interest",
+        "https://www.yalealumnimagazine.com/articles/5627-infinity-has-a-price",
+        "https://en.wikipedia.org/wiki/Perpetual_bond"
+      ]
+    },
+    {
+      "claim": "Written on goatskin (vellum)",
+      "sources": [
+        "https://news.yale.edu/2015/09/22/living-artifact-dutch-golden-age-yale-s-367-year-old-water-bond-still-pays-interest",
+        "https://som.yale.edu/story/2026/prof-rouwenhorst-discusses-yales-378-year-old-perpetual-bond-bbc",
+        "https://www.amusingplanet.com/2018/08/the-17th-century-bond-thats-still.html"
+      ]
+    },
+    {
+      "claim": "1,000 Carolus guilders at 5% in perpetuity",
+      "sources": [
+        "https://news.yale.edu/2015/09/22/living-artifact-dutch-golden-age-yale-s-367-year-old-water-bond-still-pays-interest",
+        "https://en.wikipedia.org/wiki/Perpetual_bond",
+        "https://www.yalealumnimagazine.com/articles/5627-infinity-has-a-price"
+      ]
+    },
+    {
+      "claim": "Issued to Niclaes de Meijer",
+      "sources": [
+        "https://news.yale.edu/2015/09/22/living-artifact-dutch-golden-age-yale-s-367-year-old-water-bond-still-pays-interest",
+        "https://www.yalealumnimagazine.com/articles/5627-infinity-has-a-price"
+      ]
+    },
+    {
+      "claim": "Rate later reduced (via 3.5%) to 2.5% in the 17th century, i.e. halved from 5%",
+      "sources": [
+        "https://news.yale.edu/2015/09/22/living-artifact-dutch-golden-age-yale-s-367-year-old-water-bond-still-pays-interest",
+        "https://www.amusingplanet.com/2018/08/the-17th-century-bond-thats-still.html",
+        "https://www.yalealumnimagazine.com/articles/5627-infinity-has-a-price"
+      ]
+    },
+    {
+      "claim": "Payments recorded on the vellum until no room was left; a paper addendum (allonge) was attached in the 1940s",
+      "sources": [
+        "https://news.yale.edu/2015/09/22/living-artifact-dutch-golden-age-yale-s-367-year-old-water-bond-still-pays-interest",
+        "https://www.yalealumnimagazine.com/articles/5627-infinity-has-a-price",
+        "https://www.amusingplanet.com/2018/08/the-17th-century-bond-thats-still.html"
+      ]
+    },
+    {
+      "claim": "Yale (Beinecke Library) acquired it at auction in 2003",
+      "sources": [
+        "https://news.yale.edu/2015/09/22/living-artifact-dutch-golden-age-yale-s-367-year-old-water-bond-still-pays-interest",
+        "https://www.yalealumnimagazine.com/articles/5627-infinity-has-a-price",
+        "https://en.wikipedia.org/wiki/Perpetual_bond"
+      ]
+    },
+    {
+      "claim": "In 2015 Yale collected 136.20 euros, 12 years of interest, from successor water authority Stichtse Rijnlanden",
+      "sources": [
+        "https://news.yale.edu/2015/09/22/living-artifact-dutch-golden-age-yale-s-367-year-old-water-bond-still-pays-interest",
+        "https://www.amusingplanet.com/2018/08/the-17th-century-bond-thats-still.html"
+      ]
+    },
+    {
+      "claim": "Annual interest now 11.35 euros",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Perpetual_bond",
+        "https://som.yale.edu/story/2026/prof-rouwenhorst-discusses-yales-378-year-old-perpetual-bond-bbc"
+      ]
+    },
+    {
+      "claim": "Inflation since 1648 eroded the payment's value",
+      "sources": [
+        "https://www.yalealumnimagazine.com/articles/5627-infinity-has-a-price",
+        "https://www.amusingplanet.com/2018/08/the-17th-century-bond-thats-still.html"
+      ]
+    }
+  ],
+  "caption": "1648: a Dutch water board borrowed 1,000 guilders on goatskin and promised 5% interest. Forever.\nIt has kept that promise for centuries. Yale owns the bond today, and forever now pays 11.35 euros a year.\n\n#bonds #inflation #stockmarkethistory #compounding #longterminvesting #investing\n\nNot financial advice. Stories for long-term investors. valuedge.app",
+  "yt_title": "This 1648 Bond Still Pays Interest. Forever Is Now Worth 11.35 Euros a Year",
+  "sources": [
+    "https://news.yale.edu/2015/09/22/living-artifact-dutch-golden-age-yale-s-367-year-old-water-bond-still-pays-interest",
+    "https://www.yalealumnimagazine.com/articles/5627-infinity-has-a-price",
+    "https://som.yale.edu/story/2026/prof-rouwenhorst-discusses-yales-378-year-old-perpetual-bond-bbc",
+    "https://en.wikipedia.org/wiki/Perpetual_bond",
+    "https://www.amusingplanet.com/2018/08/the-17th-century-bond-thats-still.html"
+  ]
+}
